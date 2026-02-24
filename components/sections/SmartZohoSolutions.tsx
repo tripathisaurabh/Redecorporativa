@@ -149,7 +149,7 @@ export default function SmartZohoSolutions() {
           <div className="mx-auto mt-4 h-1 w-32 bg-sky-500" />
         </div>
 
-        <div className="mt-8 hidden flex-wrap items-center justify-center gap-3 lg:flex">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           {tabs.map((tab) => {
             const isActive = tab.key === active.key;
             return (
@@ -196,27 +196,6 @@ export default function SmartZohoSolutions() {
               Learn More
               <span aria-hidden>→</span>
             </Link>
-
-            <div className="mt-6 -mx-1 flex gap-2 overflow-x-auto pb-1 pr-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:hidden">
-              {tabs.map((tab) => {
-                const isActive = tab.key === active.key;
-                return (
-                  <button
-                    key={tab.key}
-                    type="button"
-                    onClick={() => setActiveTab(tab.key)}
-                    className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-xs font-semibold transition-colors ${
-                      isActive
-                        ? "bg-[#253877] text-white"
-                        : "bg-white text-slate-700 hover:bg-slate-100"
-                    }`}
-                    aria-pressed={isActive}
-                  >
-                    {tab.label}
-                  </button>
-                );
-              })}
-            </div>
           </div>
 
           <div>
