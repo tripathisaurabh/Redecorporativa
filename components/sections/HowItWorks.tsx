@@ -1,5 +1,4 @@
 import Container from "../ui/Container";
-import SectionHeader from "../ui/SectionHeader";
 
 const steps = [
   {
@@ -22,28 +21,32 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="bg-slate-50 py-20 md:py-28" id="customers">
+    <section className="bg-slate-50 py-12 md:py-16" id="process">
       <Container>
-        <SectionHeader
-          eyebrow="How it works"
-          title="A proven path to predictable CRM performance"
-          subtitle="Four steps to launch a scalable Business Operations engine."
-        />
-        <div className="relative grid gap-6 md:grid-cols-4">
-          <div className="absolute left-0 right-0 top-6 hidden h-px bg-slate-200 md:block"></div>
+        <div className="text-center">
+          {/* <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">How It Works</p> */}
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+            A proven path to predictable CRM performance
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-600 md:text-base">
+            Four focused steps to launch and optimize your business operations stack.
+          </p>
+        </div>
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
-            <div key={step.title} className="relative">
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white">
+            <article
+              key={step.title}
+              className="group rounded-2xl border border-slate-300 bg-slate-100 p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-indigo-300 hover:shadow-md"
+            >
+              <div className="flex items-center gap-2.5">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1b2f67] text-xs font-semibold text-white">
                   {index + 1}
                 </span>
-                <span className="h-px flex-1 bg-slate-200 md:hidden"></span>
+                <h3 className="text-lg font-semibold text-[#1b2f67]">{step.title}</h3>
               </div>
-              <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
-                <h3 className="text-lg font-semibold text-slate-900">{step.title}</h3>
-                <p className="mt-2 text-sm text-slate-600">{step.description}</p>
-              </div>
-            </div>
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">{step.description}</p>
+            </article>
           ))}
         </div>
       </Container>

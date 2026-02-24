@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Hero from "../components/sections/Hero";
 import LogoMarquee from "../components/sections/LogoMarquee";
-import WhatWeDo from "../components/sections/WhatWeDo";
-import Solutions from "../components/sections/Solutions";
+import WhyChooseUs from "../components/sections/WhyChooseUs";
+import Capabilities from "../components/sections/Capabilities";
+import SmartZohoSolutions from "../components/sections/SmartZohoSolutions";
 import HowItWorks from "../components/sections/HowItWorks";
 import CaseStudies from "../components/sections/CaseStudies";
 import Testimonials from "../components/sections/Testimonials";
@@ -100,9 +101,10 @@ export default function HomePage() {
       />
       <Hero />
       <LogoMarquee />
-      <WhatWeDo />
-      <Solutions />
+      <WhyChooseUs />
+      <Capabilities />
       <HowItWorks />
+      <SmartZohoSolutions />
       <CaseStudies />
       <Testimonials />
       <FAQ />

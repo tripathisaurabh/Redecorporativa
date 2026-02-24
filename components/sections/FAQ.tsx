@@ -56,7 +56,7 @@ export default function FAQ() {
               Get a tailored Business Operations plan with clear next steps.
             </p>
             <div className="mt-6">
-              <Button href="/contact">Book a Free Audit</Button>
+              <Button href="/book-us">Book a Free Audit</Button>
             </div>
           </div>
         </div>

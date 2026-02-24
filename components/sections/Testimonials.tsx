@@ -1,82 +1,134 @@
+"use client";
+
+import Image from "next/image";
+import { useEffect, useMemo, useState } from "react";
 import Container from "../ui/Container";
-import Card from "../ui/Card";
-import SectionHeader from "../ui/SectionHeader";
 
 const testimonials = [
   {
     quote:
       "Their Business Operations plan gave our team instant clarity on follow-ups and pipeline hygiene.",
-    name: "Priya S.",
+    name: "Grace",
     role: "Head of Sales",
-    company: "Cloudridge"
+    company: "Cloudridge",
+    avatar: "/testimonials/graces.png"
   },
   {
     quote:
       "We finally have real-time dashboards and AI summaries that leadership actually uses.",
-    name: "Marcus L.",
+    name: "Marcus Lee",
     role: "Founder",
-    company: "Northwind"
+    company: "Northwind",
+    avatar: "/testimonials/marcus-lee.png"
   },
   {
     quote:
       "Integrations and automations removed hours of manual work each week.",
-    name: "Anita R.",
+    name: "Anita Rao",
     role: "Operations Lead",
-    company: "Brightlane"
+    company: "Brightlane",
+    avatar: "/testimonials/anita-rao.png"
+  },
+  {
+    quote:
+      "The CRM workflow and SLA setup improved our response quality across sales and support.",
+    name: "Samuel Khanna",
+    role: "Business Director",
+    company: "Finspire",
+    avatar: "/testimonials/samuel-khanna.png"
   }
 ];
 
+const intervalMs = 5500;
+
 export default function Testimonials() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const active = useMemo(() => testimonials[activeIndex] ?? testimonials[0], [activeIndex]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % testimonials.length);
+    }, intervalMs);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const next = () => setActiveIndex((prev) => (prev + 1) % testimonials.length);
+  const prev = () =>
+    setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-20 md:py-28">
-      <div className="absolute -top-24 left-10 h-56 w-56 rounded-full bg-indigo-500/10 blur-3xl"></div>
+    <section className="bg-slate-50 py-14 md:py-20" id="customers">
       <Container>
-        <SectionHeader
-          eyebrow="Testimonials"
-          title="Teams trust Zonic Tech Solutions to run Business Operations"
-          subtitle="Trusted partnerships that deliver consistent CRM performance."
-        />
-        <div className="grid gap-6 lg:grid-cols-2">
-          <Card className="p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
-            <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
-                <span className="text-xs font-semibold">★</span>
-              </span>
-              <span className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
-                Highlight
-              </span>
-            </div>
-            <p className="mt-4 text-sm text-slate-600">"{testimonials[0].quote}"</p>
-            <div className="mt-6">
-              <p className="text-sm font-semibold text-slate-900">{testimonials[0].name}</p>
-              <p className="text-xs text-slate-500">
-                {testimonials[0].role} · {testimonials[0].company}
+        <div className="text-center">
+          {/* <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Testimonials</p> */}
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+            Our Clients Say
+          </h2>
+          <div className="mx-auto mt-3 h-1 w-24 bg-sky-500" />
+        </div>
+
+        <div className="mx-auto mt-8 max-w-4xl rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <div className="flex items-center justify-between gap-4">
+            <button
+              type="button"
+              onClick={prev}
+              aria-label="Previous testimonial"
+              className="inline-flex h-10 min-w-10 items-center justify-center rounded-md border border-slate-300 bg-white px-2 text-lg text-[#253877] transition-colors hover:bg-slate-100"
+            >
+              ‹
+            </button>
+
+            <div className="mx-auto text-center">
+              <div className="mx-auto h-24 w-24 overflow-hidden rounded-full border-4 border-[#253877] bg-slate-100 md:h-28 md:w-28">
+                <Image
+                  src={active.avatar}
+                  alt={`${active.name} testimonial profile`}
+                  width={112}
+                  height={112}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-700 md:text-xl">
+                “{active.quote}”
+              </p>
+              <p className="mt-4 text-xl font-semibold tracking-wide text-[#1b2f67]">
+                {active.name}
+              </p>
+              <p className="mt-1 text-sm text-slate-500">
+                {active.role} · {active.company}
               </p>
             </div>
-          </Card>
-          <div className="grid gap-6">
-            {testimonials.slice(1).map((item) => (
-              <Card
-                key={item.name}
-                className="p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
-                    <span className="text-xs font-semibold">TS</span>
-                  </span>
-                  <span className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
-                    Testimonial
-                  </span>
-                </div>
-                <p className="mt-4 text-sm text-slate-600">"{item.quote}"</p>
-                <div className="mt-4">
-                  <p className="text-sm font-semibold text-slate-900">{item.name}</p>
-                  <p className="text-xs text-slate-500">
-                    {item.role} · {item.company}
-                  </p>
-                </div>
-              </Card>
-            ))}
+
+            <button
+              type="button"
+              onClick={next}
+              aria-label="Next testimonial"
+              className="inline-flex h-10 min-w-10 items-center justify-center rounded-md border border-slate-300 bg-white px-2 text-lg text-[#253877] transition-colors hover:bg-slate-100"
+            >
+              ›
+            </button>
+          </div>
+
+          <div className="mt-7 flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {testimonials.map((item, index) => {
+              const isActive = index === activeIndex;
+              return (
+                <button
+                  key={item.name}
+                  type="button"
+                  aria-label={`Go to testimonial ${index + 1}`}
+                  onClick={() => setActiveIndex(index)}
+                  className={`border-b-2 pb-1 text-sm font-semibold transition-colors ${
+                    isActive
+                      ? "border-[#253877] text-[#253877]"
+                      : "border-transparent text-slate-500 hover:text-slate-700"
+                  }`}
+                >
+                  {item.name}
+                </button>
+              );
+            })}
           </div>
         </div>
       </Container>

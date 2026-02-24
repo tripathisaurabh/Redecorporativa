@@ -4,8 +4,6 @@ export type LeadPayload = {
   phone?: string;
   company?: string;
   message: string;
-  preferredDate?: string;
-  preferredTime?: string;
 };
 
 type ZohoTokenResponse = {
@@ -116,20 +114,11 @@ export async function createLead(payload: LeadPayload) {
   const accessToken = await getAccessToken();
   const apiDomain = tokenCache.apiDomain ?? getApiDomain();
 
-  const preferredDate = payload.preferredDate?.trim();
-  const preferredTime = payload.preferredTime?.trim();
-  const preferenceLines: string[] = [];
-  if (preferredDate) preferenceLines.push(`Preferred date: ${preferredDate}`);
-  if (preferredTime) preferenceLines.push(`Preferred time: ${preferredTime}`);
-  const description = preferenceLines.length
-    ? `${payload.message}\n\n${preferenceLines.join("\n")}`
-    : payload.message;
-
   const record: Record<string, string> = {
     Last_Name: lastName,
     Company: company,
     Email: payload.email,
-    Description: description,
+    Description: payload.message,
     Lead_Source: "Website"
   };
 

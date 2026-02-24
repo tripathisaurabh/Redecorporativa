@@ -113,7 +113,7 @@ export default function AboutPage() {
             and leadership teams can move faster with clarity and control.
           </p>
           <div className="mt-8">
-            <Button href="/contact">Book Free Audit</Button>
+            <Button href="/book-us">Book Free Audit</Button>
           </div>
         </Container>
       </section>

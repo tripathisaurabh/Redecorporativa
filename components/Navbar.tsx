@@ -7,10 +7,9 @@ import Container from "./ui/Container";
 import Button from "./ui/Button";
 
 const navItems = [
-  { label: "Product", href: "/#product" },
+  { label: "Products", href: "/products" },
   { label: "Solutions", href: "/#solutions" },
-  { label: "Customers", href: "/#customers" },
-  { label: "Resources", href: "/#resources" },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "Contact", href: "/contact" }
 ];
 
@@ -49,14 +48,14 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800 bg-[rgba(1,10,52,1)] text-slate-200">
-      <Container className="relative flex h-16 items-center justify-between">
+      <Container className="relative flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3 text-lg font-semibold text-white">
           <Image
             src="/logo_zonic-removebg-preview.png"
             alt="Zonic Tech Solutions logo"
-            width={32}
-            height={32}
-            className="h-8 w-auto"
+            width={40}
+            height={40}
+            className="h-10 w-auto"
             priority
           />
           <span>Zonic Tech Solutions</span>
@@ -71,7 +70,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="/contact#book-demo">Book a Consultation</Button>
+          <Button href="/book-us">Book a Consultation</Button>
         </div>
 
         <button
@@ -129,7 +128,7 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Button href="/contact#book-demo" className="mt-2 w-full active:scale-[0.98]" onClick={closeMenu}>
+            <Button href="/book-us" className="mt-2 w-full active:scale-[0.98]" onClick={closeMenu}>
               Book a Consultation
             </Button>
           </div>

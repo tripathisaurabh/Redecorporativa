@@ -4,10 +4,9 @@ import Container from "./ui/Container";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE_DISPLAY, SITE_NAME } from "../lib/constants";
 
 const navLinks = [
-  { label: "Product", href: "/#product" },
+  { label: "Products", href: "/products" },
   { label: "Solutions", href: "/#solutions" },
-  { label: "Customers", href: "/#customers" },
-  { label: "Resources", href: "/#resources" },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" }
 ];

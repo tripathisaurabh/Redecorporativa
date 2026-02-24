@@ -23,7 +23,7 @@ export default function FinalCTA({
               <p className="mt-3 text-sm text-indigo-100">{subtitle}</p>
             </div>
             <Button
-              href="/contact"
+              href="/book-us"
               variant="outline"
               className="border-white/60 bg-transparent text-white hover:bg-white hover:text-indigo-700"
             >

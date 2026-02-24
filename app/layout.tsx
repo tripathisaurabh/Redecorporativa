@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import Navbar from "../components/Navbar";
+import TopInfoBar from "../components/TopInfoBar";
 import Footer from "../components/Footer";
 import { defaultMetadata } from "../lib/seo";
 import { Analytics } from "@vercel/analytics/next";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={inter.className}>
+        <TopInfoBar />
         <Navbar />
         <main>{children}</main>
         <Footer />

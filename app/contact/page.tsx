@@ -44,63 +44,58 @@ const contactOptions = [
 
 export default function ContactPage() {
   return (
-    <section className="section bg-slate-50">
+    <section
+      className="py-16 md:py-20"
+      style={{
+        background: "linear-gradient(180deg, rgba(239,246,255,1) 0%, rgba(226,236,248,1) 100%)"
+      }}
+    >
       <Container>
-        <div className="mb-12">
-          <h1 className="text-3xl font-semibold text-slate-900">Talk to a CRM Ops + AI Expert</h1>
-          <p className="mt-3 text-base text-slate-600">
+        <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Contact Us</p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-5xl">
+            Talk to a CRM Ops + AI Expert
+          </h1>
+          <div className="mx-auto mt-4 h-1 w-28 bg-sky-500" />
+          <p className="mx-auto mt-4 max-w-3xl text-base text-slate-600 md:text-lg">
             Tell us what's broken. We'll suggest a clear CRM + AI plan.
           </p>
         </div>
-        <div className="flex flex-col items-center gap-8">
-          <div className="w-full flex justify-center">
-            <Card id="book-demo" className="w-full max-w-lg scroll-mt-24 overflow-hidden p-0">
-              <div className="border-b border-slate-200 px-4 py-2 text-center">
-                <h2 className="text-base font-semibold text-slate-900">Book a Consultation</h2>
-                <p className="mt-1 text-xs text-slate-600">Pick a time that works for you.</p>
-              </div>
-              <div className="p-2">
-                <div
-                  className="calendly-inline-widget h-[520px] w-full min-w-[320px]"
-                  data-url="https://calendly.com/admin-zonictechsolutions/30min"
+
+        <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_1.2fr]">
+          <div className="space-y-4">
+            <ContactLinks options={contactOptions} />
+            <Card>
+              <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Location</p>
+              <p className="mt-2 text-base text-slate-700">{SITE_ADDRESS}</p>
+            </Card>
+            <Card className="overflow-hidden p-0">
+              <div className="h-64 w-full">
+                <iframe
+                  title="Zonic Tech Solutions location"
+                  src="https://www.google.com/maps?q=Noida,+UP,+India&output=embed"
+                  className="h-full w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
             </Card>
           </div>
-          <div className="w-full">
-            <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
-              <div className="space-y-4">
-                <ContactLinks options={contactOptions} />
-                <Card>
-                  <p className="text-sm font-semibold text-slate-900">Location</p>
-                  <p className="mt-2 text-sm text-slate-600">{SITE_ADDRESS}</p>
-                </Card>
-                <Card className="overflow-hidden p-0">
-                  <div className="h-64 w-full">
-                    <iframe
-                      title="Zonic Tech Solutions location"
-                      src="https://www.google.com/maps?q=Noida,+UP,+India&output=embed"
-                      className="h-full w-full"
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    />
-                  </div>
-                </Card>
-              </div>
-              <Card>
-                <h2 className="text-lg font-semibold text-slate-900">Send a message</h2>
-                <p className="mt-2 text-sm text-slate-600">We usually respond within one business day.</p>
-                <div className="mt-6">
-                  <ContactForm />
-                </div>
-              </Card>
+          <Card className="border-slate-300 bg-white/95">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Send a message</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              Share your challenge and our team will get back within one business day.
+            </p>
+            <div className="mt-6 rounded-2xl bg-slate-50 p-4 md:p-5">
+              <ContactForm />
             </div>
-            <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
-            <Script
-              id="google-ads-conversion"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
+          </Card>
+        </div>
+        <Script
+          id="google-ads-conversion"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
                   function gtag_report_conversion(url) {
                     var callback = function () {
                       if (typeof(url) != 'undefined') {
@@ -118,10 +113,8 @@ export default function ContactPage() {
                     return false;
                   }
                 `
-              }}
-            />
-          </div>
-        </div>
+          }}
+        />
       </Container>
     </section>
   );
