@@ -25,13 +25,13 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative flex justify-center md:justify-end md:-mr-8">
+        <div className="relative mx-auto flex w-full justify-center md:mx-0 md:justify-end md:-mr-8">
           <Image
             src="/hero.png"
             alt="CRM automation dashboard visual"
             width={1100}
             height={1100}
-            className="w-full max-w-[840px] md:max-w-none md:w-[120%] lg:w-[132%]"
+            className="mx-auto block w-[88%] max-w-[620px] sm:w-full md:max-w-none md:w-[120%] lg:w-[132%]"
             priority
           />
         </div>

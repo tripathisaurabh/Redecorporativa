@@ -10,13 +10,20 @@ import CaseStudies from "../components/sections/CaseStudies";
 import Testimonials from "../components/sections/Testimonials";
 import FAQ from "../components/sections/FAQ";
 import FinalCTA from "../components/sections/FinalCTA";
-import { buildCanonical } from "../lib/seo";
+import { buildCanonical, buildKeywords } from "../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_NAME, SITE_PHONE, SITE_URL } from "../lib/constants";
 
 export const metadata: Metadata = {
   title: "Business Operations + AI Automation",
   description:
     "Business Operations and AI automation services that improve conversions, reduce manual work, and deliver clear reporting.",
+  keywords: buildKeywords(
+    "Zoho consulting USA",
+    "CRM operations services",
+    "AI-powered CRM workflows",
+    "Revenue acceleration services",
+    "CRM setup and optimization"
+  ),
   alternates: {
     canonical: buildCanonical("/")
   },

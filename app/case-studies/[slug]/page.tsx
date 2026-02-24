@@ -5,7 +5,7 @@ import Image from "next/image";
 import Container from "../../../components/ui/Container";
 import Button from "../../../components/ui/Button";
 import { caseStudies, getCaseStudyBySlug } from "../../../lib/caseStudies";
-import { buildCanonical } from "../../../lib/seo";
+import { buildCanonical, buildKeywords } from "../../../lib/seo";
 import { SITE_URL } from "../../../lib/constants";
 
 type CaseStudyDetailPageProps = {
@@ -72,6 +72,7 @@ export function generateMetadata({ params }: CaseStudyDetailPageProps): Metadata
   if (!study) {
     return {
       title: "Case Study Not Found",
+      keywords: buildKeywords("Case study"),
       robots: {
         index: false,
         follow: false
@@ -82,6 +83,13 @@ export function generateMetadata({ params }: CaseStudyDetailPageProps): Metadata
   return {
     title: study.title,
     description: study.summary,
+    keywords: buildKeywords(
+      `${study.platform} case study`,
+      `${study.industry} case study`,
+      `${study.platform} implementation`,
+      `${study.industry} automation`,
+      "CRM implementation results"
+    ),
     alternates: {
       canonical: buildCanonical(`/case-studies/${study.slug}`)
     },

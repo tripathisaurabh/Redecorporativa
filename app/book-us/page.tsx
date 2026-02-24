@@ -2,12 +2,19 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Container from "../../components/ui/Container";
 import Card from "../../components/ui/Card";
-import { buildCanonical } from "../../lib/seo";
+import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
   title: "Book a Consultation",
   description: "Pick a time that works for you and book a consultation with our team.",
+  keywords: buildKeywords(
+    "Book consultation",
+    "Book Zoho consultation",
+    "Free CRM consultation",
+    "Schedule CRM expert call",
+    "Zoho implementation consultation"
+  ),
   alternates: {
     canonical: buildCanonical("/book-us")
   },
@@ -38,8 +45,8 @@ export default function BookUsPage() {
           </div>
           <div className="p-2">
             <div
-              className="calendly-inline-widget h-[640px] w-full min-w-[320px]"
-              data-url="https://calendly.com/admin-zonictechsolutions/30min"
+              className="calendly-inline-widget h-[700px] w-full min-w-[320px]"
+              data-url="https://calendly.com/admin-zonictechsolutions/zoho-implementation-consultation-no-obligation"
             />
           </div>
         </Card>

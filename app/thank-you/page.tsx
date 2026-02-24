@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import Button from "../../components/ui/Button";
 import Container from "../../components/ui/Container";
+import { buildKeywords } from "../../lib/seo";
 import { SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
   title: "Thank You",
   description: "Thanks — we received your request and will be in touch shortly.",
+  keywords: buildKeywords(
+    "Thank you page",
+    "Consultation request received",
+    "CRM consultation confirmation"
+  ),
   openGraph: {
     title: "Thank You",
     description: "Thanks — we received your request and will be in touch shortly.",

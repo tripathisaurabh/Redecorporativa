@@ -4,12 +4,19 @@ import Container from "../../components/ui/Container";
 import Card from "../../components/ui/Card";
 import ContactForm from "../../components/ContactForm";
 import ContactLinks from "../../components/ContactLinks";
-import { buildCanonical } from "../../lib/seo";
+import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_LINK, SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
   title: "Talk to a CRM Ops + AI Expert",
   description: "Tell us what's broken. We'll suggest a clear CRM + AI plan.",
+  keywords: buildKeywords(
+    "Contact Zonic Tech Solutions",
+    "Book CRM consultation",
+    "Zoho consultation call",
+    "CRM ops expert contact",
+    "AI automation consultation"
+  ),
   alternates: {
     canonical: buildCanonical("/contact")
   },

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Script from "next/script";
 import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
-import { buildCanonical } from "../../lib/seo";
+import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_NAME, SITE_URL } from "../../lib/constants";
 
 type ProductSection = {
@@ -218,6 +218,16 @@ export const metadata: Metadata = {
   title: "Zoho Products",
   description:
     "Explore Zoho products and get implementation support for CRM, finance, HR, marketing, and automation use-cases.",
+  keywords: buildKeywords(
+    "Zoho products consulting",
+    "Zoho One implementation",
+    "Zoho CRM implementation",
+    "Zoho Finance Plus setup",
+    "Zoho People Plus consulting",
+    "Zoho Creator development",
+    "Zoho Books setup",
+    "Zoho Marketing Automation services"
+  ),
   alternates: {
     canonical: buildCanonical("/products")
   },

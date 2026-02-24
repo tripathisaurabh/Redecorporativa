@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-slate-800 pt-6 text-sm text-slate-400">
-          <div className="flex flex-col items-start justify-between gap-2 md:flex-row">
+          <div className="flex flex-col items-start justify-between gap-2">
             <span>© {new Date().getFullYear()} {SITE_NAME}. All rights reserved.</span>
             <span>Business Operations + AI Automation</span>
           </div>

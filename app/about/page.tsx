@@ -3,13 +3,20 @@ import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
 import SectionHeader from "../../components/ui/SectionHeader";
 import FinalCTA from "../../components/sections/FinalCTA";
-import { buildCanonical } from "../../lib/seo";
+import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
   title: "About Zonic Tech Solutions | Business operations & AI Automation",
   description:
     "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and AI to improve conversion, clarity, and execution.",
+  keywords: buildKeywords(
+    "About Zonic Tech Solutions",
+    "Zoho consulting team",
+    "CRM operations specialists",
+    "5 years Zoho experience",
+    "AI automation consultants"
+  ),
   alternates: {
     canonical: buildCanonical("/about")
   },
