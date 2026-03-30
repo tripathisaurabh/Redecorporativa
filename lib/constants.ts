@@ -8,7 +8,11 @@ export const SITE_ADDRESS = "684 Noida, UP, India";
 export const WHATSAPP_LINK = "https://wa.me/917999645921";
 
 export const SOCIAL_LINKS = [
-  { label: "LinkedIn", href: "#" },
-  { label: "Facebook", href: "#" },
-  { label: "Instagram", href: "#" }
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/zonic-tech-solutions/posts/?feedView=all"
+  },
+  { label: "Instagram", href: "https://www.instagram.com/zonictechsolutions/" },
+  { label: "Facebook", href: "https://www.facebook.com/zonictechsolutions" },
+  { label: "X", href: "https://x.com/zonictechsolutions" }
 ];

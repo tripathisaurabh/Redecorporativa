@@ -69,7 +69,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
           <Button href="/book-us">Book a Consultation</Button>
         </div>
 
