@@ -1,8 +1,3 @@
-# zonictechsolutions
-# zonictechsolutions
-
-
-
 ## Contact form → Zoho CRM
 
 The contact form posts to `/api/lead`, which creates a Lead in Zoho CRM using OAuth.
