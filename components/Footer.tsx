@@ -71,7 +71,7 @@ export default function Footer() {
             {/* <p className="text-sm text-slate-400">{SITE_ADDRESS}</p> */}
             <div className="inline-flex items-center gap-3 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-2">
               <Image
-                src="/partnership /partner.png"
+                src="/partnership/partner.png"
                 alt="Zoho Premium Partner badge"
                 width={110}
                 height={40}
