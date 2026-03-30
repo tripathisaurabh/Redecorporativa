@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     quote:
-      "We finally have real-time dashboards and AI summaries that leadership actually uses.",
+      "We finally have real-time dashboards and automated summaries that leadership actually uses.",
     name: "Marcus Lee",
     role: "Founder",
     company: "Northwind",

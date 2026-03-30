@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 
 const steps = [
   {
-    title: "Audit",
+    title: "Discovery",
     description: "Understand your current CRM, lead flow, and conversion blockers."
   },
   {
@@ -12,7 +12,7 @@ const steps = [
   },
   {
     title: "Build",
-    description: "Implement workflows, integrations, and AI automation quickly."
+    description: "Implement workflows, integrations, and automation quickly."
   },
   {
     title: "Optimize",

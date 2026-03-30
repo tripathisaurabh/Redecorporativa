@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Zoho case studies",
     "CRM implementation case studies",
     "Business automation success stories",
-    "Revenue operations case studies"
+    "Growth operations case studies"
   ),
   alternates: {
     canonical: buildCanonical("/case-studies")

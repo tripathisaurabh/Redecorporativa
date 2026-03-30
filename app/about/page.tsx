@@ -7,29 +7,29 @@ import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Zonic Tech Solutions | Business operations & AI Automation",
+  title: "About Zonic Tech Solutions | Business operations & Workflow Automation",
   description:
-    "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and AI to improve conversion, clarity, and execution.",
+    "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and business workflows to improve conversion, clarity, and execution.",
   keywords: buildKeywords(
     "About Zonic Tech Solutions",
     "Zoho consulting team",
     "CRM operations specialists",
     "5 years Zoho experience",
-    "AI automation consultants"
+    "Workflow automation consultants"
   ),
   alternates: {
     canonical: buildCanonical("/about")
   },
   openGraph: {
-    title: "About Zonic Tech Solutions | Business operations & AI Automation",
+    title: "About Zonic Tech Solutions | Business operations & Workflow Automation",
     description:
-      "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and AI to improve conversion, clarity, and execution.",
+      "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and business workflows to improve conversion, clarity, and execution.",
     url: `${SITE_URL}/about`
   },
   twitter: {
-    title: "About Zonic Tech Solutions | Business operations & AI Automation",
+    title: "About Zonic Tech Solutions | Business operations & Workflow Automation",
     description:
-      "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and AI to improve conversion, clarity, and execution."
+      "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and business workflows to improve conversion, clarity, and execution."
   }
 };
 
@@ -44,7 +44,7 @@ const philosophyItems = [
   },
   {
     title: "Surfaces insights instead of hiding data",
-    description: "Dashboards and AI summaries deliver clarity, not noise."
+    description: "Dashboards and automated summaries deliver clarity, not noise."
   },
   {
     title: "Scales with the business",
@@ -56,7 +56,7 @@ const differentiators = [
   "Operations-first, not feature-first",
   "Built for sales, ops, and founders",
   "Automation with intent",
-  "Practical AI, not hype",
+  "Practical automation, not hype",
   "Systems that evolve over time"
 ];
 
@@ -64,7 +64,7 @@ const services = [
   "Business operations architecture & governance",
   "Lead routing, SLAs, lifecycle design",
   "WhatsApp, email, ads, payment integrations",
-  "AI summaries, lead scoring, auto-actions",
+  "Automated summaries, lead scoring, auto-actions",
   "Dashboards for founders and teams",
   "Ongoing optimization & support"
 ];
@@ -79,12 +79,12 @@ const industries = [
 
 const steps = [
   {
-    title: "Audit",
+    title: "Discovery",
     description: "Review CRM setup and operational blockers."
   },
   {
     title: "Design",
-    description: "Map operations, automation, and AI workflows."
+    description: "Map operations, automation, and business workflows."
   },
   {
     title: "Build",
@@ -116,11 +116,11 @@ export default function AboutPage() {
             We help teams run Business operations that actually drive revenue
           </h1>
           <p className="mt-4 max-w-3xl text-base text-slate-600 md:text-lg">
-            Zonic Tech Solutions designs CRM systems powered by automation and AI—so sales, operations,
+            Zonic Tech Solutions designs CRM systems powered by automation and business workflows, so sales, operations,
             and leadership teams can move faster with clarity and control.
           </p>
           <div className="mt-8">
-            <Button href="/book-us">Book Free Audit</Button>
+            <Button href="/book-us">Book Free Consultation</Button>
           </div>
         </Container>
       </section>
@@ -139,7 +139,7 @@ export default function AboutPage() {
             </p>
             <p>
               Zonic Tech Solutions fixes the operating system behind the CRM by combining disciplined
-              CRM ops with automation and AI—so teams execute consistently.
+              CRM ops with automation and business workflows, so teams execute consistently.
             </p>
           </div>
         </Container>
@@ -190,7 +190,7 @@ export default function AboutPage() {
         <Container>
           <SectionHeader
             eyebrow="WHAT WE DO"
-            title="End-to-end Business operations and AI automation"
+            title="End-to-end Business operations and workflow automation"
             subtitle="Systems that remove bottlenecks and accelerate revenue execution."
           />
           <div className="grid gap-4 md:grid-cols-2">
@@ -280,8 +280,8 @@ export default function AboutPage() {
 
       <FinalCTA
         title="Ready to fix your Business operations?"
-        subtitle="Book a free CRM + AI audit and get a clear, actionable roadmap tailored to your business."
-        buttonLabel="Book Free Audit"
+        subtitle="Book a free CRM + business automation consultation and get a clear, actionable roadmap tailored to your business."
+        buttonLabel="Book Free Consultation"
       />
     </>
   );

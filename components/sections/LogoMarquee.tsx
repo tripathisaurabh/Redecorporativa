@@ -13,7 +13,7 @@ const items = [
   "Agencies",
   "Consulting",
   "Sales Ops",
-  "RevOps",
+  "Growth Ops",
   "Support Ops",
   "Field Sales"
 ];

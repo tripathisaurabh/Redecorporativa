@@ -7,9 +7,9 @@ export const BASE_SEO_KEYWORDS = [
   "Zoho implementation",
   "Zoho CRM setup",
   "CRM automation",
-  "AI automation",
+  "Business automation",
   "Business operations consulting",
-  "Revenue operations",
+  "Growth operations",
   "Sales process automation",
   "Lead management automation",
   "Workflow automation",
@@ -23,11 +23,11 @@ export const buildKeywords = (...pageKeywords: string[]) =>
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Business Operations + AI Automation`,
+    default: `${SITE_NAME} | Business Operations + Workflow Automation`,
     template: `%s | ${SITE_NAME}`
   },
   description:
-    "Business Operations, automation, and AI insights that improve conversions and reduce manual work.",
+    "Business Operations, automation, and workflow insights that improve conversions and reduce manual work.",
   keywords: [...BASE_SEO_KEYWORDS],
   robots: {
     index: true,
@@ -37,16 +37,16 @@ export const defaultMetadata: Metadata = {
     type: "website",
     siteName: SITE_NAME,
     url: SITE_URL,
-    title: `${SITE_NAME} | Business Operations + AI Automation`,
+    title: `${SITE_NAME} | Business Operations + Workflow Automation`,
     description:
-      "Business Operations, automation, and AI insights that improve conversions and reduce manual work.",
+      "Business Operations, automation, and workflow insights that improve conversions and reduce manual work.",
     locale: "en_IN"
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} | Business Operations + AI Automation`,
+    title: `${SITE_NAME} | Business Operations + Workflow Automation`,
     description:
-      "Business Operations, automation, and AI insights that improve conversions and reduce manual work."
+      "Business Operations, automation, and workflow insights that improve conversions and reduce manual work."
   }
 };
 

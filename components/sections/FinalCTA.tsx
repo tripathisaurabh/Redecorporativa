@@ -8,9 +8,9 @@ type FinalCTAProps = {
 };
 
 export default function FinalCTA({
-  title = "Get a free Business operations & AI audit",
-  subtitle = "Book a 30-minute audit and get a clear Business operations roadmap.",
-  buttonLabel = "Book Free Audit"
+  title = "Build smarter systems for faster business growth",
+  subtitle = "Book a 30-minute consultation to explore how Zoho and automation can streamline your operations.",
+  buttonLabel = "Book Free Consultation"
 }: FinalCTAProps) {
   return (
     <section className="section">

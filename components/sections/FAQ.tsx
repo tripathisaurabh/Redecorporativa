@@ -17,7 +17,7 @@ const faqItems = [
   {
     id: "faq-fix",
     title: "Do you fix existing CRM setups?",
-    content: "Yes. We audit and clean existing CRMs, then redesign workflows for better adoption."
+    content: "Yes. We review and clean existing CRMs, then redesign workflows for better adoption."
   },
   {
     id: "faq-whatsapp",
@@ -30,9 +30,9 @@ const faqItems = [
     content: "Ongoing optimization and support are available as monthly retainers."
   },
   {
-    id: "faq-ai",
-    title: "Is AI safe for business data?",
-    content: "We follow data privacy best practices and only use approved, secure AI workflows."
+    id: "faq-workflows",
+    title: "Are automated workflows safe for business data?",
+    content: "We follow data privacy best practices and only use approved, secure automation workflows."
   }
 ];
 
@@ -42,8 +42,8 @@ export default function FAQ() {
       <Container>
         <SectionHeader
           eyebrow="FAQ"
-          title="Clear answers before you book the audit"
-          subtitle="Straight answers before you book the audit."
+          title="Clear answers before you book a consultation"
+          subtitle="Straight answers before you book a consultation."
         />
         <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
           <Accordion items={faqItems} />
@@ -51,12 +51,12 @@ export default function FAQ() {
             <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
               Still have questions?
             </p>
-            <h3 className="mt-3 text-lg font-semibold text-slate-900">Book a Free Audit</h3>
+            <h3 className="mt-3 text-lg font-semibold text-slate-900">Book a Free Consultation</h3>
             <p className="mt-3 text-sm text-slate-600">
               Get a tailored Business Operations plan with clear next steps.
             </p>
             <div className="mt-6">
-              <Button href="/book-us">Book a Free Audit</Button>
+              <Button href="/book-us">Book a Free Consultation</Button>
             </div>
           </div>
         </div>

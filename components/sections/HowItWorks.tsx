@@ -2,7 +2,7 @@ import Container from "../ui/Container";
 
 const steps = [
   {
-    title: "Audit",
+    title: "Discovery",
     description: "Review CRM setup, lead flow, and conversion blockers."
   },
   {
@@ -11,7 +11,7 @@ const steps = [
   },
   {
     title: "Build",
-    description: "Implement integrations, AI rules, and reporting."
+    description: "Implement integrations, automation rules, and reporting."
   },
   {
     title: "Optimize",

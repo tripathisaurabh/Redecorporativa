@@ -325,7 +325,7 @@ export default function ProductsPage() {
             Product Suite
           </p>
           <h1 className="mx-auto mt-6 max-w-5xl text-4xl font-semibold tracking-tight text-[#1d2f69] md:text-6xl">
-            Build A Connected Zoho Stack For Revenue Operations
+            Build A Connected Zoho Stack For Growth Operations
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-800 md:text-xl">
             Explore implementation-ready Zoho products designed to remove bottlenecks and

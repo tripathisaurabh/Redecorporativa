@@ -10,10 +10,10 @@ const solutions = [
     icon: "O"
   },
   {
-    title: "AI Automation Layer",
-    description: "AI summaries, lead scoring, and intelligent actions that keep teams aligned and proactive.",
-    includes: ["AI summaries", "Lead scoring", "Auto tasks"],
-    icon: "AI"
+    title: "Workflow Automation Layer",
+    description: "Automated summaries, lead scoring, and intelligent actions that keep teams aligned and proactive.",
+    includes: ["Automated summaries", "Lead scoring", "Auto tasks"],
+    icon: "W"
   },
   {
     title: "Integrations",
@@ -91,7 +91,7 @@ export default function Solutions() {
                 <ul className="mt-3 space-y-2 text-sm text-slate-600">
                   <li>Assign owner by region + SLA</li>
                   <li>Send WhatsApp intro message</li>
-                  <li>Create AI summary for SDR</li>
+                  <li>Create summary brief for SDR</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-4">

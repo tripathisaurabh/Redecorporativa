@@ -3,24 +3,24 @@ import Script from "next/script";
 import Hero from "../components/sections/Hero";
 import LogoMarquee from "../components/sections/LogoMarquee";
 import WhyChooseUs from "../components/sections/WhyChooseUs";
+import PartnershipShowcase from "../components/sections/PartnershipShowcase";
 import Capabilities from "../components/sections/Capabilities";
 import SmartZohoSolutions from "../components/sections/SmartZohoSolutions";
 import HowItWorks from "../components/sections/HowItWorks";
 import CaseStudies from "../components/sections/CaseStudies";
-import Testimonials from "../components/sections/Testimonials";
 import FAQ from "../components/sections/FAQ";
 import FinalCTA from "../components/sections/FinalCTA";
 import { buildCanonical, buildKeywords } from "../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_NAME, SITE_PHONE, SITE_URL } from "../lib/constants";
 
 export const metadata: Metadata = {
-  title: "Business Operations + AI Automation",
+  title: "Business Operations + Workflow Automation",
   description:
-    "Business Operations and AI automation services that improve conversions, reduce manual work, and deliver clear reporting.",
+    "Business Operations and workflow automation services that improve conversions, reduce manual work, and deliver clear reporting.",
   keywords: buildKeywords(
     "Zoho consulting USA",
     "CRM operations services",
-    "AI-powered CRM workflows",
+    "Automation-driven CRM workflows",
     "Revenue acceleration services",
     "CRM setup and optimization"
   ),
@@ -28,15 +28,15 @@ export const metadata: Metadata = {
     canonical: buildCanonical("/")
   },
   openGraph: {
-    title: "Business Operations + AI Automation",
+    title: "Business Operations + Workflow Automation",
     description:
-      "Business Operations and AI automation services that improve conversions, reduce manual work, and deliver clear reporting.",
+      "Business Operations and workflow automation services that improve conversions, reduce manual work, and deliver clear reporting.",
     url: SITE_URL
   },
   twitter: {
-    title: "Business Operations + AI Automation",
+    title: "Business Operations + Workflow Automation",
     description:
-      "Business Operations and AI automation services that improve conversions, reduce manual work, and deliver clear reporting."
+      "Business Operations and workflow automation services that improve conversions, reduce manual work, and deliver clear reporting."
   }
 };
 
@@ -80,16 +80,16 @@ const crmServiceSchema = {
   serviceType: "Business Operations"
 };
 
-const aiServiceSchema = {
+const automationServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "AI Automation",
+  name: "Workflow Automation",
   provider: {
     "@type": "Organization",
     name: SITE_NAME
   },
   areaServed: "IN",
-  serviceType: "AI Automation"
+  serviceType: "Workflow Automation"
 };
 
 export default function HomePage() {
@@ -102,18 +102,18 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@graph": [organizationSchema, localBusinessSchema, crmServiceSchema, aiServiceSchema]
+            "@graph": [organizationSchema, localBusinessSchema, crmServiceSchema, automationServiceSchema]
           })
         }}
       />
       <Hero />
       <LogoMarquee />
       <WhyChooseUs />
+      <PartnershipShowcase />
       <Capabilities />
       <HowItWorks />
       <SmartZohoSolutions />
       <CaseStudies />
-      <Testimonials />
       <FAQ />
       <FinalCTA />
     </>

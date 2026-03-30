@@ -8,26 +8,26 @@ import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_LINK, SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
-  title: "Talk to a CRM Ops + AI Expert",
-  description: "Tell us what's broken. We'll suggest a clear CRM + AI plan.",
+  title: "Talk to a CRM Ops + Automation Expert",
+  description: "Tell us what's broken. We'll suggest a clear CRM + automation plan.",
   keywords: buildKeywords(
     "Contact Zonic Tech Solutions",
     "Book CRM consultation",
     "Zoho consultation call",
     "CRM ops expert contact",
-    "AI automation consultation"
+    "Business automation consultation"
   ),
   alternates: {
     canonical: buildCanonical("/contact")
   },
   openGraph: {
-    title: "Talk to a CRM Ops + AI Expert",
-    description: "Tell us what's broken. We'll suggest a clear CRM + AI plan.",
+    title: "Talk to a CRM Ops + Automation Expert",
+    description: "Tell us what's broken. We'll suggest a clear CRM + automation plan.",
     url: `${SITE_URL}/contact`
   },
   twitter: {
-    title: "Talk to a CRM Ops + AI Expert",
-    description: "Tell us what's broken. We'll suggest a clear CRM + AI plan."
+    title: "Talk to a CRM Ops + Automation Expert",
+    description: "Tell us what's broken. We'll suggest a clear CRM + automation plan."
   }
 };
 
@@ -61,22 +61,22 @@ export default function ContactPage() {
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Contact Us</p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-5xl">
-            Talk to a CRM Ops + AI Expert
+            Talk to a CRM Ops + Automation Expert
           </h1>
           <div className="mx-auto mt-4 h-1 w-28 bg-sky-500" />
           <p className="mx-auto mt-4 max-w-3xl text-base text-slate-600 md:text-lg">
-            Tell us what's broken. We'll suggest a clear CRM + AI plan.
+            Tell us what's broken. We'll suggest a clear CRM + automation plan.
           </p>
         </div>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_1.2fr]">
           <div className="space-y-4">
             <ContactLinks options={contactOptions} />
-            <Card>
+            {/* <Card>
               <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Location</p>
               <p className="mt-2 text-base text-slate-700">{SITE_ADDRESS}</p>
-            </Card>
-            <Card className="overflow-hidden p-0">
+            </Card> */}
+            {/* <Card className="overflow-hidden p-0">
               <div className="h-64 w-full">
                 <iframe
                   title="Zonic Tech Solutions location"
@@ -86,7 +86,7 @@ export default function ContactPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-            </Card>
+            </Card> */}
           </div>
           <Card className="border-slate-300 bg-white/95">
             <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Send a message</h2>

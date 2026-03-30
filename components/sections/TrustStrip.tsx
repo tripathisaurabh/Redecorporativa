@@ -2,7 +2,7 @@ import Container from "../ui/Container";
 
 const tags = [
   "Business Operations",
-  "AI Automation",
+  "Workflow Automation",
   "Integrations",
   "Analytics",
   "Support"

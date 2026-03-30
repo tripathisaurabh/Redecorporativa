@@ -12,7 +12,7 @@ const solutions = [
   "Automated routing + SLA",
   "Smart follow-ups",
   "Real-time dashboards",
-  "AI summaries and insights"
+  "Automated summaries and insights"
 ];
 
 export default function ProblemSolution() {
