@@ -35,13 +35,41 @@ body {
 }
 
 .hero {
-  background-color: #eef8ff;
-  background-image: url("/herobg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   overflow: hidden;
+  background:
+    radial-gradient(circle at top, rgba(99, 102, 241, 0.06), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.hero-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroReveal 720ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-reveal-delay-1 {
+  animation-delay: 80ms;
+}
+
+.hero-reveal-delay-2 {
+  animation-delay: 150ms;
+}
+
+.hero-reveal-delay-3 {
+  animation-delay: 220ms;
+}
+
+.hero-reveal-delay-4 {
+  animation-delay: 290ms;
+}
+
+.hero-reveal-delay-5 {
+  animation-delay: 360ms;
+}
+
+.hero-reveal-delay-6 {
+  animation-delay: 430ms;
 }
 
 .marquee {
@@ -56,5 +84,25 @@ body {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes heroReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-reveal,
+  .marquee {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }
