@@ -7,11 +7,10 @@ import { SITE_URL } from "../../lib/constants";
 export const metadata: Metadata = {
   title: "Thank You",
   description: "Thanks — we received your request and will be in touch shortly.",
-  keywords: buildKeywords(
-    "Thank you page",
-    "Consultation request received",
-    "CRM consultation confirmation"
-  ),
+  robots: {
+    index: false,
+    follow: false
+  },
   openGraph: {
     title: "Thank You",
     description: "Thanks — we received your request and will be in touch shortly.",

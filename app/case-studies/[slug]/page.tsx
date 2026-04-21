@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Script from "next/script";
 import Container from "../../../components/ui/Container";
 import Button from "../../../components/ui/Button";
 import { caseStudies, getCaseStudyBySlug } from "../../../lib/caseStudies";
 import { buildCanonical, buildKeywords } from "../../../lib/seo";
-import { SITE_URL } from "../../../lib/constants";
+import { SITE_NAME, SITE_URL } from "../../../lib/constants";
 
 type CaseStudyDetailPageProps = {
   params: { slug: string };
@@ -94,13 +95,23 @@ export function generateMetadata({ params }: CaseStudyDetailPageProps): Metadata
       canonical: buildCanonical(`/case-studies/${study.slug}`)
     },
     openGraph: {
-      title: study.title,
+      title: `${study.title} | Zonic Tech Solutions`,
       description: study.summary,
-      url: `${SITE_URL}/case-studies/${study.slug}`
+      url: `${SITE_URL}/case-studies/${study.slug}`,
+      type: "article",
+      images: [
+        {
+          url: `${SITE_URL}${study.coverImage}`,
+          width: 1200,
+          height: 630,
+          alt: study.title
+        }
+      ]
     },
     twitter: {
-      title: study.title,
-      description: study.summary
+      title: `${study.title} | Zonic Tech Solutions`,
+      description: study.summary,
+      images: [`${SITE_URL}${study.coverImage}`]
     }
   };
 }
@@ -137,8 +148,56 @@ export default function CaseStudyDetailPage({ params }: CaseStudyDetailPageProps
     implementation: study.sectionImages?.implementation ?? study.coverImage
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: study.title,
+    description: study.summary,
+    image: `${SITE_URL}${study.coverImage}`,
+    datePublished: study.publishDate,
+    author: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo_zonic-removebg-preview.png`
+      }
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/case-studies/${study.slug}`
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Case Studies", item: `${SITE_URL}/case-studies` },
+      { "@type": "ListItem", position: 3, name: study.title, item: `${SITE_URL}/case-studies/${study.slug}` }
+    ]
+  };
+
   return (
     <section className="bg-slate-50 py-14 md:py-20">
+      <Script
+        id={`ld-json-case-${study.slug}`}
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [articleSchema, breadcrumbSchema]
+          })
+        }}
+      />
       <Container>
         <Link
           href="/case-studies"

@@ -1,288 +1,353 @@
-import type { Metadata } from "next";
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
 import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
-import SectionHeader from "../../components/ui/SectionHeader";
-import FinalCTA from "../../components/sections/FinalCTA";
-import { buildCanonical, buildKeywords } from "../../lib/seo";
-import { SITE_URL } from "../../lib/constants";
 
-export const metadata: Metadata = {
-  title: "About Zonic Tech Solutions | Business operations & Workflow Automation",
-  description:
-    "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and business workflows to improve conversion, clarity, and execution.",
-  keywords: buildKeywords(
-    "About Zonic Tech Solutions",
-    "Zoho consulting team",
-    "CRM operations specialists",
-    "5 years Zoho experience",
-    "Workflow automation consultants"
-  ),
-  alternates: {
-    canonical: buildCanonical("/about")
-  },
-  openGraph: {
-    title: "About Zonic Tech Solutions | Business operations & Workflow Automation",
-    description:
-      "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and business workflows to improve conversion, clarity, and execution.",
-    url: `${SITE_URL}/about`
-  },
-  twitter: {
-    title: "About Zonic Tech Solutions | Business operations & Workflow Automation",
-    description:
-      "Learn how Zonic Tech Solutions helps teams run scalable Business operations with automation and business workflows to improve conversion, clarity, and execution."
-  }
-};
+const certifications = [
+  { label: "Zoho Partner", src: "/partnership/partner.png" },
+  { label: "Zoho Administrator", src: "/partnership/administrator.png" },
+  { label: "Zoho Associate", src: "/partnership/associate.png" },
+  { label: "Zoho Recruit", src: "/partnership/recruit.png" },
+];
 
-const philosophyItems = [
+const supportPills = [
+  "Post-Delivery Support",
+  "Flexible Working Hours",
+  "Customer First Approach",
+  "24x7 Support Available"
+];
+
+const coreValues = [
+  "Client Success",
+  "Innovation",
+  "Transparency",
+  "Excellence",
+];
+
+const stats = [
+  { value: "100+", label: "Clients Served" },
+  { value: "5+", label: "Years of Experience" },
+  { value: "55+", label: "Zoho Products Expertise" },
+  { value: "4", label: "Countries Served" },
+];
+
+const missionVision = [
   {
-    title: "Enforces discipline without slowing teams down",
-    description: "Clear ownership, SLAs, and routing rules that keep momentum high."
+    title: "Mission",
+    description:
+      "We support businesses to enable growth, efficiency, and sustainability by implementing innovative cloud-based IT solutions."
   },
   {
-    title: "Guides people on what to do next",
-    description: "Every stage has defined actions, handoffs, and follow-ups."
-  },
-  {
-    title: "Surfaces insights instead of hiding data",
-    description: "Dashboards and automated summaries deliver clarity, not noise."
-  },
-  {
-    title: "Scales with the business",
-    description: "Operations grow with new teams, regions, and channels."
+    title: "Vision",
+    description: "Enabling growth through digital transformation."
   }
 ];
 
-const differentiators = [
-  "Operations-first, not feature-first",
-  "Built for sales, ops, and founders",
-  "Automation with intent",
-  "Practical automation, not hype",
-  "Systems that evolve over time"
-];
-
-const services = [
-  "Business operations architecture & governance",
-  "Lead routing, SLAs, lifecycle design",
-  "WhatsApp, email, ads, payment integrations",
-  "Automated summaries, lead scoring, auto-actions",
-  "Dashboards for founders and teams",
-  "Ongoing optimization & support"
-];
-
-const industries = [
-  "B2B service companies",
-  "SaaS and tech teams",
-  "Fintech and EdTech",
-  "Sales-driven organizations",
-  "Growing teams scaling beyond spreadsheets"
-];
-
-const steps = [
+const workSteps = [
   {
-    title: "Discovery",
-    description: "Review CRM setup and operational blockers."
+    step: "01",
+    title: "Discover",
+    description: "We map your workflows, pain points, and current stack before any implementation begins."
   },
   {
+    step: "02",
     title: "Design",
-    description: "Map operations, automation, and business workflows."
+    description: "We shape a practical delivery plan that fits your team, timelines, and growth priorities."
   },
   {
+    step: "03",
     title: "Build",
-    description: "Implement CRM workflows and integrations."
+    description: "We configure the systems, automations, and integrations that remove manual work."
   },
   {
-    title: "Optimize",
-    description: "Continuous improvement and support."
+    step: "04",
+    title: "Launch",
+    description: "We test, train, and roll out the new flow so the team can adopt it with confidence."
+  },
+  {
+    step: "05",
+    title: "Support",
+    description: "We stay available after go-live to refine, troubleshoot, and improve the setup."
   }
-];
-
-const promises = [
-  "Clear ownership and accountability",
-  "Faster lead response times",
-  "Reduced manual CRM work",
-  "Better leadership visibility",
-  "A CRM system teams actually trust"
 ];
 
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-white py-20 md:py-28">
-        <Container className="flex flex-col items-center text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
-            ABOUT ZONIC TECH SOLUTIONS
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-[rgba(1,10,52,1)] py-24 md:py-32">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url('/herobg.png')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(1,10,52,0.6)] to-[rgba(1,10,52,1)]" />
+        <Container className="relative z-10 flex flex-col items-center text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-400">
+            About Zonic Tech Solutions
           </p>
-          <h1 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight text-slate-900 md:text-5xl">
-            We help teams run Business operations that actually drive revenue
+          <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
+            Helping businesses grow with{" "}
+            <span className="text-indigo-400">Zoho &amp; Automation</span>
           </h1>
-          <p className="mt-4 max-w-3xl text-base text-slate-600 md:text-lg">
-            Zonic Tech Solutions designs CRM systems powered by automation and business workflows, so sales, operations,
-            and leadership teams can move faster with clarity and control.
+          <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 md:text-lg">
+            Zonic Tech Solutions is a trusted IT consulting firm offering Zoho CRM, Zoho One, and 55+
+            Zoho product solutions — proudly serving clients across India, US, UK, UAE, and Australia.
           </p>
-          <div className="mt-8">
-            <Button href="/book-us">Book Free Consultation</Button>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Button href="/book-us">Get in Touch</Button>
+            <Link
+              href="/#solutions"
+              className="inline-flex h-11 items-center rounded-full border border-slate-500 px-6 text-sm font-medium text-slate-200 transition hover:border-white hover:text-white"
+            >
+              Explore Solutions
+            </Link>
           </div>
         </Container>
       </section>
 
-      <section className="bg-slate-50 py-20 md:py-28">
+      {/* Stats strip */}
+      <section className="border-b border-slate-800 bg-[rgba(1,10,52,0.97)] py-10">
         <Container>
-          <SectionHeader
-            eyebrow="WHO WE ARE"
-            title="Business operations specialists, not just implementers"
-            subtitle="We focus on operational clarity that makes CRM adoption stick."
-          />
-          <div className="grid gap-6 text-sm text-slate-600 md:grid-cols-2">
-            <p>
-              Most CRM failures happen because operations were never designed. Leads fall through cracks,
-              follow-ups break, and data becomes unreliable.
-            </p>
-            <p>
-              Zonic Tech Solutions fixes the operating system behind the CRM by combining disciplined
-              CRM ops with automation and business workflows, so teams execute consistently.
-            </p>
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+            {stats.map((s) => (
+              <div key={s.label} className="flex flex-col items-center text-center">
+                <span className="text-4xl font-bold text-indigo-400">{s.value}</span>
+                <span className="mt-1 text-sm text-slate-400">{s.label}</span>
+              </div>
+            ))}
           </div>
         </Container>
       </section>
 
+      {/* About Us */}
       <section className="bg-white py-20 md:py-28">
         <Container>
-          <SectionHeader
-            eyebrow="OUR PHILOSOPHY"
-            title="CRM is not software. It’s an operating system."
-            subtitle="We build CRMs that drive behavior, not just store data."
-          />
-          <div className="grid gap-6 md:grid-cols-2">
-            {philosophyItems.map((item) => (
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            {/* Left: text */}
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
+                Who We Are
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+                About Us
+              </h2>
+              {/* <p className="mt-2 text-sm font-medium text-slate-500">
+                ISO 9001-2015 &amp; ISO 27001:2022 Certified Company
+              </p> */}
+
+              <div className="mt-6 flex flex-wrap items-center gap-4">
+                <Image
+                  src="/partnership/partner.png"
+                  alt="Zoho Premium Partner"
+                  width={140}
+                  height={50}
+                  className="h-auto w-32 object-contain"
+                />
+              </div>
+
+              <p className="mt-6 text-sm leading-7 text-slate-600">
+                Zonic Tech Solutions, based in India since 2019, is a trusted IT consulting firm
+                offering Zoho CRM, Zoho One, Zoho Creator, and 55+ Zoho product solutions.
+                Proudly serving clients across the world, we have delivered projects to businesses
+                globally. Our expert team makes digital transformation seamless through Zoho.
+              </p>
+              <p className="mt-4 text-sm leading-7 text-slate-600">
+                We don&apos;t just implement software — we design operational systems that drive revenue,
+                reduce manual work, and give leadership the visibility they need to scale with
+                confidence.
+              </p>
+
+              <div className="mt-8">
+                <Button href="/book-us">Get Free Consultation</Button>
+              </div>
+            </div>
+
+            {/* Right: image with overlay badge */}
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl shadow-xl">
+                <Image
+                  src="/What-is-it-like-working-in-IT-e1651761435165.jpg"
+                  alt="Zonic Tech Solutions IT team at work"
+                  width={600}
+                  height={420}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-5 -left-5 rounded-xl bg-indigo-600 px-5 py-4 text-white shadow-lg">
+                <p className="text-2xl font-bold">100+</p>
+                <p className="text-xs text-indigo-200">Happy Clients Worldwide</p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Support Pills */}
+      <section className="border-y border-slate-200 bg-white py-6 md:py-8">
+        <Container>
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+            {supportPills.map((pill) => (
               <div
-                key={item.title}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+                key={pill}
+                className="rounded-full bg-sky-100 px-6 py-5 text-center text-base font-semibold text-slate-900 shadow-sm md:text-lg"
               >
-                <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
-                <p className="mt-3 text-sm text-slate-600">{item.description}</p>
+                {pill}
               </div>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="bg-slate-50 py-20 md:py-28">
+      {/* Certifications */}
+      <section className="bg-white py-16">
         <Container>
-          <SectionHeader
-            eyebrow="WHY ZONIC"
-            title="Built for real teams and real operations"
-            subtitle="Operator-first systems that scale with accountability and visibility."
-          />
-          <div className="grid gap-6 md:grid-cols-2">
-            {differentiators.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
-              >
-                <p className="text-sm font-semibold text-slate-900">{item}</p>
+          <div className="mb-10 text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
+              Certified Experts
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900">
+              Verified Zoho Certifications
+            </h2>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-10">
+            {certifications.map((c) => (
+              <div key={c.label} className="flex flex-col items-center gap-3">
+                <Image
+                  src={c.src}
+                  alt={c.label}
+                  width={100}
+                  height={100}
+                  className="h-20 w-auto object-contain"
+                />
+                <span className="text-xs text-slate-500">{c.label}</span>
               </div>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="bg-white py-20 md:py-28">
+      {/* Mission / Vision / Core Values */}
+      <section
+        className="relative overflow-hidden py-16 md:py-24"
+        style={{
+          backgroundColor: "#f6f9fc",
+          backgroundImage:
+            "repeating-linear-gradient(135deg, rgba(15,23,42,0.06) 0 2px, transparent 2px 20px), repeating-linear-gradient(45deg, rgba(15,23,42,0.04) 0 2px, transparent 2px 18px)",
+        }}
+      >
         <Container>
-          <SectionHeader
-            eyebrow="WHAT WE DO"
-            title="End-to-end Business operations and workflow automation"
-            subtitle="Systems that remove bottlenecks and accelerate revenue execution."
-          />
-          <div className="grid gap-4 md:grid-cols-2">
-            {services.map((item) => (
-              <div
-                key={item}
-                className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm"
-              >
-                <span className="mt-1 h-2 w-2 rounded-full bg-indigo-500"></span>
-                <p className="text-sm text-slate-700">{item}</p>
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* Left: Mission + Vision */}
+            <div className="space-y-10 text-center lg:text-left">
+              {missionVision.map((item) => (
+                <div key={item.title}>
+                  <h2 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+                    {item.title}
+                  </h2>
+                  <div className="mx-auto mt-3 flex items-center justify-center gap-1 lg:mx-0 lg:justify-start">
+                    <span className="h-1 w-6 rounded-full bg-sky-500" />
+                    <span className="h-1 w-2 rounded-full bg-sky-400" />
+                    <span className="h-1 w-2 rounded-full bg-sky-300" />
+                  </div>
+                  <p className="mx-auto mt-4 max-w-sm text-sm leading-7 text-slate-600 lg:mx-0">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Right: Core Values */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+                Core Values
+              </h2>
+              <div className="mx-auto mt-3 flex items-center justify-center gap-1 lg:mx-0 lg:justify-start">
+                <span className="h-1 w-6 rounded-full bg-sky-500" />
+                <span className="h-1 w-2 rounded-full bg-sky-400" />
+                <span className="h-1 w-2 rounded-full bg-sky-300" />
               </div>
+              <p className="mx-auto mt-4 max-w-sm text-sm leading-7 text-slate-600 lg:mx-0">
+                We believe in transparency, teamwork, and putting clients first. We work closely with
+                every business to deliver solutions that truly make a difference.
+              </p>
+              <div className="mt-8 grid grid-cols-2 gap-4">
+                {coreValues.map((value) => (
+                  <div
+                    key={value}
+                    className="flex items-center justify-center rounded-xl bg-[#27357c] px-4 py-5 text-center shadow-sm"
+                  >
+                    <span className="text-sm font-semibold text-white">{value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* How We Work */}
+      <section className="relative overflow-hidden bg-[#1d2f69] py-20 md:py-28">
+        <div
+          className="absolute inset-0 opacity-35"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 50% 0%, rgba(255,255,255,0.22), transparent 34%), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px)",
+            backgroundSize: "auto, 120px 120px, 120px 120px",
+            backgroundPosition: "center top, center, center"
+          }}
+        />
+        <Container className="relative z-10">
+          <div className="text-center">
+            <h2 className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
+              How We Work for Our Customers
+            </h2>
+            <div className="mx-auto mt-5 h-1 w-28 rounded-full bg-sky-400" />
+          </div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-5">
+            {workSteps.map((step) => (
+              <article
+                key={step.step}
+                className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-[0_8px_30px_rgba(15,23,42,0.08)]"
+              >
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-sky-100 text-lg font-semibold text-[#1d2f69]">
+                  {step.step}
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-slate-900">{step.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{step.description}</p>
+              </article>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="bg-slate-50 py-20 md:py-28">
-        <Container>
-          <SectionHeader
-            eyebrow="WHO WE WORK WITH"
-            title="Teams that care about execution and outcomes"
-            subtitle="If CRM performance impacts revenue, we’re a strong fit."
-          />
-          <div className="grid gap-4 md:grid-cols-3">
-            {industries.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-700 shadow-sm"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-          <p className="mt-6 text-sm text-slate-600">
-            If CRM performance impacts revenue, we’re a strong fit.
+      {/* CTA */}
+      <section className="bg-indigo-600 py-20">
+        <Container className="flex flex-col items-center text-center">
+          <h2 className="text-3xl font-semibold text-white md:text-4xl">
+            Ready to transform your operations?
+          </h2>
+          <p className="mt-4 max-w-xl text-base text-indigo-100">
+            Book a free consultation and get a clear, actionable roadmap tailored to your business.
           </p>
-        </Container>
-      </section>
-
-      <section className="bg-white py-20 md:py-28">
-        <Container>
-          <SectionHeader
-            eyebrow="OUR APPROACH"
-            title="A simple, repeatable way to improve CRM performance"
-            subtitle="Each step builds operational clarity and measurable progress."
-          />
-          <div className="relative grid gap-6 md:grid-cols-4">
-            <div className="absolute left-0 right-0 top-6 hidden h-px bg-slate-200 md:block"></div>
-            {steps.map((step, index) => (
-              <div key={step.title} className="relative">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white">
-                    {index + 1}
-                  </span>
-                  <span className="h-px flex-1 bg-slate-200 md:hidden"></span>
-                </div>
-                <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
-                  <h3 className="text-lg font-semibold text-slate-900">{step.title}</h3>
-                  <p className="mt-2 text-sm text-slate-600">{step.description}</p>
-                </div>
-              </div>
-            ))}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/book-us"
+              className="inline-flex h-11 items-center rounded-full bg-white px-8 text-sm font-semibold text-indigo-600 transition hover:bg-indigo-50"
+            >
+              Book Free Consultation
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex h-11 items-center rounded-full border border-indigo-400 px-8 text-sm font-medium text-white transition hover:border-white"
+            >
+              Contact Us
+            </Link>
           </div>
         </Container>
       </section>
-
-      <section className="bg-slate-50 py-20 md:py-28">
-        <Container>
-          <SectionHeader
-            eyebrow="OUR PROMISE"
-            title="What you can expect when working with us"
-            subtitle="Outcome-focused Business operations with measurable impact."
-          />
-          <div className="grid gap-4 md:grid-cols-2">
-            {promises.map((item) => (
-              <div
-                key={item}
-                className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-              >
-                <span className="mt-1 h-2 w-2 rounded-full bg-indigo-500"></span>
-                <p className="text-sm text-slate-700">{item}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <FinalCTA
-        title="Ready to fix your Business operations?"
-        subtitle="Book a free CRM + business automation consultation and get a clear, actionable roadmap tailored to your business."
-        buttonLabel="Book Free Consultation"
-      />
     </>
   );
 }

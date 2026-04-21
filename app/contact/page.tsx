@@ -23,11 +23,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Talk to a CRM Ops + Automation Expert",
     description: "Tell us what's broken. We'll suggest a clear CRM + automation plan.",
-    url: `${SITE_URL}/contact`
+    url: `${SITE_URL}/contact`,
+    images: [{ url: `${SITE_URL}/hero.png`, width: 1200, height: 630, alt: "Contact Zonic Tech Solutions" }]
   },
   twitter: {
     title: "Talk to a CRM Ops + Automation Expert",
-    description: "Tell us what's broken. We'll suggest a clear CRM + automation plan."
+    description: "Tell us what's broken. We'll suggest a clear CRM + automation plan.",
+    images: [`${SITE_URL}/hero.png`]
   }
 };
 

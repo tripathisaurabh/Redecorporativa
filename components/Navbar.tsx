@@ -7,7 +7,8 @@ import Container from "./ui/Container";
 import Button from "./ui/Button";
 
 const navItems = [
-  { label: "Products", href: "/products" },
+  { label: "About", href: "/about" },
+  { label: "Zoho Services", href: "/products" },
   { label: "Solutions", href: "/#solutions" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Contact", href: "/contact" }

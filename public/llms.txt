@@ -1,0 +1,88 @@
+# Zonic Tech Solutions
+
+> Certified Zoho Premium Partner providing CRM implementation, workflow automation, and business operations consulting for growing businesses.
+
+Zonic Tech Solutions is an IT consulting firm based in Noida, India, founded in 2019. We are a Zoho Premium Partner with 5+ years of hands-on Zoho experience, serving 100+ clients across India, United States, United Kingdom, UAE, and Australia.
+
+## What We Do
+
+We help businesses automate operations and remove manual work by implementing and configuring Zoho products, designing custom workflows, and integrating systems across their tech stack.
+
+Our core services:
+- **Zoho CRM Implementation** – Pipeline setup, lead routing, automation, and follow-up workflows
+- **Workflow Automation** – WhatsApp alerts, email sequences, cross-system integrations, approval flows
+- **Zoho One Setup** – Full-suite deployment connecting sales, finance, HR, and operations
+- **Zoho Finance Plus** – Accounting, invoicing, GST, and cash flow automation
+- **Zoho People Plus** – HR onboarding, attendance, and performance management
+- **Zoho Books** – Bookkeeping, billing, and financial reporting
+- **Zoho Marketing Automation** – Lead scoring, nurture journeys, and campaign analytics
+- **Zoho Creator** – Low-code custom app development
+- **CRM Audit & Optimisation** – Reviewing and rebuilding existing broken CRM setups
+- **Ongoing Support Retainers** – Monthly optimization and support packages
+
+## Who We Serve
+
+Growing businesses and teams across e-commerce, manufacturing, automobile, EV, finance, healthcare, and professional services who want to:
+- Reduce manual data entry and repetitive tasks
+- Get a single source of truth across sales, finance, and operations
+- Improve lead follow-up rates and pipeline visibility
+- Scale without hiring more operations staff
+
+## Key Facts
+
+- **Founded:** 2019
+- **Location:** Noida, Uttar Pradesh, India
+- **Clients served:** 100+
+- **Countries:** India, USA, UK, UAE, Australia
+- **Zoho products expertise:** 55+
+- **Certifications:** Zoho Premium Partner, Zoho Administrator, Zoho Associate, Zoho Recruit
+
+## Frequently Asked Questions
+
+**What CRMs do you work with?**
+We primarily implement and support Zoho CRM but also work with HubSpot, Salesforce, and custom CRMs.
+
+**How long does a typical implementation take?**
+Most projects are delivered in 2–6 weeks depending on scope and the number of integrations involved.
+
+**Do you fix existing broken CRM setups?**
+Yes. We audit existing CRM configurations, identify gaps, and redesign workflows for better team adoption and data quality.
+
+**Do you offer WhatsApp automation?**
+Yes. We connect WhatsApp Business API for lead alerts, automated follow-ups, payment reminders, and support notifications.
+
+**Do you provide ongoing support?**
+Yes. Monthly retainers are available for ongoing optimization, troubleshooting, and system improvements.
+
+**What does a free systems audit include?**
+We map your current workflow, identify bottlenecks, and provide a prioritised recommendation for improving your CRM and automation stack.
+
+## Contact
+
+- **Website:** https://www.zonictechsolutions.com
+- **Email:** admin@zonictechsolutions.com
+- **Phone:** +91 79996 45921
+- **WhatsApp:** https://wa.me/917999645921
+- **Book a Free Consultation:** https://www.zonictechsolutions.com/book-us
+
+## Social Profiles
+
+- LinkedIn: https://www.linkedin.com/company/zonic-tech-solutions/posts/?feedView=all
+- Instagram: https://www.instagram.com/zonictechsolutions/
+- Facebook: https://www.facebook.com/zonictechsolutions
+- X (Twitter): https://x.com/zonictechsolutions
+
+## Case Studies
+
+- **E-Commerce (D2C Brand):** Implemented Zoho CRM + workflow automation for order lifecycle, customer follow-ups, and support. Result: 41% higher repeat-order engagement, 34% faster support response.
+- **Automobile Manufacturing:** Standardised sales and partner onboarding workflows using Zoho CRM. Result: 2.1x improvement in pipeline movement speed.
+- **EV Charging Solutions Provider:** Built connected sales-to-operations workflow with billing coordination and service tracking. Result: Improved payment tracking and cross-team delivery visibility.
+
+## Important Pages
+
+- Home: https://www.zonictechsolutions.com/
+- Products & Services: https://www.zonictechsolutions.com/products
+- Case Studies: https://www.zonictechsolutions.com/case-studies
+- About Us: https://www.zonictechsolutions.com/about
+- Contact: https://www.zonictechsolutions.com/contact
+- Book Free Consultation: https://www.zonictechsolutions.com/book-us

@@ -12,8 +12,8 @@ const navLinks = [
 ];
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms", href: "#" }
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms" }
 ];
 
 function SocialIcon({ label }: { label: string }) {
@@ -120,9 +120,9 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               {legalLinks.map((link) => (
                 <li key={link.label}>
-                  <a className="text-slate-300 hover:text-white" href={link.href} aria-disabled>
+                  <Link className="text-slate-300 hover:text-white" href={link.href}>
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

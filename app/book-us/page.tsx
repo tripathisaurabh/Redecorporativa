@@ -6,26 +6,31 @@ import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
-  title: "Book a Consultation",
-  description: "Pick a time that works for you and book a consultation with our team.",
+  title: "Book a Free Zoho Consultation",
+  description:
+    "Book a free, no-obligation consultation with a certified Zoho partner. Get a clear CRM and automation plan tailored to your business in 30 minutes.",
   keywords: buildKeywords(
-    "Book consultation",
     "Book Zoho consultation",
     "Free CRM consultation",
-    "Schedule CRM expert call",
-    "Zoho implementation consultation"
+    "Schedule Zoho expert call",
+    "Zoho implementation consultation",
+    "Book free systems audit"
   ),
   alternates: {
     canonical: buildCanonical("/book-us")
   },
   openGraph: {
-    title: "Book a Consultation",
-    description: "Pick a time that works for you and book a consultation with our team.",
-    url: `${SITE_URL}/book-us`
+    title: "Book a Free Zoho Consultation | Zonic Tech Solutions",
+    description:
+      "No-obligation 30-minute consultation with a certified Zoho partner. Walk away with a clear action plan.",
+    url: `${SITE_URL}/book-us`,
+    images: [{ url: `${SITE_URL}/hero.png`, width: 1200, height: 630, alt: "Book a Free Zoho Consultation" }]
   },
   twitter: {
-    title: "Book a Consultation",
-    description: "Pick a time that works for you and book a consultation with our team."
+    title: "Book a Free Zoho Consultation | Zonic Tech Solutions",
+    description:
+      "No-obligation 30-minute consultation with a certified Zoho partner.",
+    images: [`${SITE_URL}/hero.png`]
   }
 };
 

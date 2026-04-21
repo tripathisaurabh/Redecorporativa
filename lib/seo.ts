@@ -39,14 +39,23 @@ export const defaultMetadata: Metadata = {
     url: SITE_URL,
     title: `${SITE_NAME} | Business Operations + Workflow Automation`,
     description:
-      "Business Operations, automation, and workflow insights that improve conversions and reduce manual work.",
-    locale: "en_IN"
+      "Certified Zoho Partner providing CRM implementation, workflow automation, and business operations consulting for companies in India, US, UK, UAE, and Australia.",
+    locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/hero.png`,
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} – Zoho Partner & Workflow Automation`
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} | Business Operations + Workflow Automation`,
     description:
-      "Business Operations, automation, and workflow insights that improve conversions and reduce manual work."
+      "Certified Zoho Partner providing CRM implementation, workflow automation, and business operations consulting.",
+    images: [`${SITE_URL}/hero.png`]
   }
 };
 

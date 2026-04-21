@@ -17,15 +17,17 @@ export const metadata: Metadata = {
     canonical: buildCanonical("/case-studies")
   },
   openGraph: {
-    title: "Case Studies",
+    title: "Case Studies | Zonic Tech Solutions",
     description:
       "Explore real-world implementation stories and measurable outcomes from Zoho consulting projects.",
-    url: `${SITE_URL}/case-studies`
+    url: `${SITE_URL}/case-studies`,
+    images: [{ url: `${SITE_URL}/hero.png`, width: 1200, height: 630, alt: "Zonic Tech Solutions Case Studies" }]
   },
   twitter: {
-    title: "Case Studies",
+    title: "Case Studies | Zonic Tech Solutions",
     description:
-      "Explore real-world implementation stories and measurable outcomes from Zoho consulting projects."
+      "Explore real-world implementation stories and measurable outcomes from Zoho consulting projects.",
+    images: [`${SITE_URL}/hero.png`]
   }
 };
 
