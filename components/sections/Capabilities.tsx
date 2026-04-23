@@ -65,10 +65,11 @@ export default function Capabilities() {
     >
       <Container>
         <div className="text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">Our Capabilities</h2>
+          <p className="text-xs font-semibold uppercase tracking-widest text-sky-400">Zoho Products We Implement</p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl md:text-4xl">Our Capabilities</h2>
           <div className="mx-auto mt-3 h-1 w-32 bg-sky-500" />
-          <p className="mx-auto mt-4 max-w-3xl text-base text-slate-200 md:text-lg">
-            Trusted by businesses across industries, we know what works for your team.
+          <p className="mx-auto mt-4 max-w-3xl text-sm text-slate-300 sm:text-base md:text-lg">
+            Certified across the full Zoho ecosystem — we implement the products that fit your business, not just the ones we know.
           </p>
         </div>
 
@@ -77,32 +78,31 @@ export default function Capabilities() {
             <Link
               key={item.title}
               href={item.href}
-              className="group rounded-2xl border border-slate-300 bg-slate-100 p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-400 hover:shadow-md"
+              className="group rounded-2xl border border-white/10 bg-white/8 p-5 backdrop-blur-sm transition-all duration-200 hover:-translate-y-1.5 hover:border-sky-400/50 hover:bg-white/12 hover:shadow-xl hover:shadow-black/20"
             >
-              <div className="mx-auto flex h-12 w-12 items-center justify-center">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 p-2.5 ring-1 ring-white/20 transition-colors duration-200 group-hover:bg-white/15">
                 <Image
                   src={item.icon}
                   alt={`${item.title} icon`}
                   width={64}
                   height={64}
-                  className="h-10 w-10 object-contain"
+                  className="h-9 w-9 object-contain"
                 />
               </div>
-              <h3 className="mt-3 text-center text-xl font-semibold tracking-tight text-[#1b2f67]">
+              <h3 className="mt-3 text-center text-base font-semibold tracking-tight text-white">
                 {item.title}
               </h3>
-              <p className="mt-2 text-center text-sm leading-relaxed text-slate-600">{item.description}</p>
-              <p className="mt-3 text-center text-xs font-semibold uppercase tracking-wide text-sky-600 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-                View details
+              <p className="mt-2 text-center text-xs leading-relaxed text-slate-300">{item.description}</p>
+              <p className="mt-3 flex items-center justify-center gap-1 text-xs font-semibold text-sky-400 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                View details <span aria-hidden>→</span>
               </p>
             </Link>
           ))}
         </div>
 
-        <div className="mt-8 flex justify-center">
-          <Button href="/products" className="bg-black px-7 py-2.5 text-sm text-[black]  focus-visible:ring-black">
-          {/* <Button href="/products" className="bg-black px-7 py-2.5 text-sm text-[black] hover:bg-slate-100 focus-visible:ring-black"> */}
-            Know More
+        <div className="mt-10 flex justify-center">
+          <Button href="/products" variant="light" className="px-8 py-3">
+            Explore All Zoho Products
           </Button>
         </div>
       </Container>

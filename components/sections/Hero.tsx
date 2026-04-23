@@ -5,57 +5,63 @@ import { WHATSAPP_LINK } from "../../lib/constants";
 
 export default function Hero() {
   return (
-    <section className="hero py-16 md:py-20" id="product">
+    <section className="hero py-16 md:py-24" id="product">
       <Container className="relative z-10">
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <div className="hero-reveal hero-reveal-delay-1 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-600 shadow-sm">
-            <span className="inline-flex h-2 w-2 rounded-full bg-indigo-500" />
-            Zoho Partner Delivery
+          {/* Partner badge */}
+          <div className="hero-reveal hero-reveal-delay-1 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-indigo-700 shadow-sm sm:px-4 sm:py-2 sm:text-[11px]">
+            <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-indigo-500" />
+            Certified Zoho Premium Partner
           </div>
 
-          <h1 className="hero-reveal hero-reveal-delay-2 mt-8 max-w-4xl text-4xl font-semibold leading-tight tracking-[-0.04em] text-slate-900 sm:text-5xl md:text-6xl">
-            Automate your business. Leave manual work behind.
+          <h1 className="hero-reveal hero-reveal-delay-2 mt-6 max-w-4xl text-3xl font-semibold leading-[1.18] tracking-[-0.02em] text-slate-900 sm:text-4xl md:text-5xl lg:text-[3.5rem]">
+            Automate your business.{" "}
+            <span className="gradient-text">Leave manual work behind.</span>
           </h1>
 
-          <p className="hero-reveal hero-reveal-delay-3 mt-6 max-w-3xl text-base leading-7 text-slate-600 md:text-lg">
-            We are a technology partner for growing businesses. Starting with Zoho and expanding
-            across your entire stack, we design, build, automate, and manage the systems that let
-            you scale without chaos.
+          <p className="hero-reveal hero-reveal-delay-3 mt-5 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base md:text-lg">
+            We design, build, and automate the Zoho systems that let your team scale without chaos — from a single CRM to a full Zoho One rollout.
           </p>
 
-            <div className="hero-reveal hero-reveal-delay-4 mt-6 flex flex-wrap items-center justify-center gap-3">
-              <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm">
-                <span className="h-2 w-2 rounded-full bg-indigo-500" />
-              Worked with 100+ clients
-              </div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm">
-              <span className="h-2 w-2 rounded-full bg-indigo-500" />
-              India, US, UK, UAE, Australia
+          {/* Trust pills */}
+          <div className="hero-reveal hero-reveal-delay-4 mt-6 flex flex-wrap items-center justify-center gap-2">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-medium text-slate-600 shadow-sm sm:px-4 sm:text-xs">
+              <svg className="h-3 w-3 shrink-0 text-indigo-500 sm:h-3.5 sm:w-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fillRule="evenodd" d="M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+              100+ clients delivered
+            </div>
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-medium text-slate-600 shadow-sm sm:px-4 sm:text-xs">
+              <svg className="h-3 w-3 shrink-0 text-indigo-500 sm:h-3.5 sm:w-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zm5.99 7.176A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" /></svg>
+              5+ years Zoho expertise
+            </div>
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-medium text-slate-600 shadow-sm sm:px-4 sm:text-xs">
+              <svg className="h-3 w-3 shrink-0 text-indigo-500 sm:h-3.5 sm:w-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fillRule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.273 1.765 11.842 11.842 0 00.976.544l.062.029.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" clipRule="evenodd" /></svg>
+              India · US · UK · UAE · AU
             </div>
           </div>
 
-          <div className="hero-reveal hero-reveal-delay-5 mt-8">
+          {/* Partnership badge */}
+          <div className="hero-reveal hero-reveal-delay-5 mt-7">
             <Image
               src="/partnership/partner.png"
-              alt="Zoho partnership badge"
+              alt="Zoho Premium Partnership badge"
               width={260}
               height={90}
-              className="h-auto w-[190px] md:w-[210px]"
+              className="h-auto w-[150px] opacity-90 sm:w-[170px] md:w-[200px]"
               priority
             />
           </div>
 
-          <div className="hero-reveal hero-reveal-delay-6 mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/book-us" className="min-w-[220px]">
+          {/* CTAs — full width on mobile, auto width from sm up */}
+          <div className="hero-reveal hero-reveal-delay-6 mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-center">
+            <Button href="/book-us" className="w-full py-3 text-sm sm:w-auto sm:min-w-[200px] sm:px-7">
               Book a Free Systems Audit
             </Button>
-
-            <Button href="/contact" variant="outline" className="min-w-[220px]">
+            <Button href="/contact" variant="outline" className="w-full py-3 text-sm sm:w-auto sm:min-w-[200px] sm:px-7">
               Try Zoho Free for 30 Days
             </Button>
           </div>
 
-          <p className="hero-reveal hero-reveal-delay-6 mt-4 text-sm text-slate-500">
+          <p className="hero-reveal hero-reveal-delay-6 mt-4 text-xs text-slate-400">
             No credit card required. If it&apos;s not the right fit, you pay nothing.
           </p>
         </div>

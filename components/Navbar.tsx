@@ -50,16 +50,16 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800 bg-[rgba(1,10,52,1)] text-slate-200">
       <Container className="relative flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 text-lg font-semibold text-white">
+        <Link href="/" className="flex items-center gap-2.5 font-semibold text-white">
           <Image
             src="/logo_zonic-removebg-preview.png"
             alt="Zonic Tech Solutions logo"
             width={40}
             height={40}
-            className="h-10 w-auto"
+            className="h-9 w-auto shrink-0 sm:h-10"
             priority
           />
-          <span>Zonic Tech Solutions</span>
+          <span className="text-sm sm:text-lg">Zonic Tech Solutions</span>
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">

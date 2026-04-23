@@ -20,7 +20,7 @@ export default function PartnershipShowcase() {
   return (
     <section className="bg-white py-8 md:py-12">
       <Container>
-        <div className="flex items-center justify-center gap-16 md:gap-28">
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 md:gap-20 lg:gap-28">
           {partnershipImages.map((item) => (
             <Image
               key={item.src}
@@ -28,7 +28,7 @@ export default function PartnershipShowcase() {
               alt={item.alt}
               width={200}
               height={200}
-              className="h-auto w-[140px] md:w-[180px] object-contain opacity-90 hover:opacity-100 transition duration-300"
+              className="h-auto w-[90px] sm:w-[120px] md:w-[160px] lg:w-[180px] object-contain opacity-90 transition duration-300 hover:opacity-100"
             />
           ))}
         </div>

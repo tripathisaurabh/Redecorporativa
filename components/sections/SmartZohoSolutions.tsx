@@ -149,49 +149,52 @@ export default function SmartZohoSolutions() {
           <div className="mx-auto mt-4 h-1 w-32 bg-sky-500" />
         </div>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          {tabs.map((tab) => {
-            const isActive = tab.key === active.key;
-            return (
-              <button
-                key={tab.key}
-                type="button"
-                onClick={() => setActiveTab(tab.key)}
-                className={`rounded-full px-5 py-2.5 text-xs font-semibold transition-colors md:px-7 md:text-sm ${
-                  isActive
-                    ? "bg-[#253877] text-white"
-                    : "bg-white text-slate-700 hover:bg-slate-100"
-                }`}
-                aria-pressed={isActive}
-              >
-                {tab.label}
-              </button>
-            );
-          })}
+        {/* Tab strip — horizontal scroll on mobile, centred wrap on md+ */}
+        <div className="-mx-4 mt-8 overflow-x-auto px-4 sm:mx-0 sm:px-0">
+          <div className="flex w-max gap-2 sm:w-auto sm:flex-wrap sm:justify-center sm:gap-3">
+            {tabs.map((tab) => {
+              const isActive = tab.key === active.key;
+              return (
+                <button
+                  key={tab.key}
+                  type="button"
+                  onClick={() => setActiveTab(tab.key)}
+                  className={`whitespace-nowrap rounded-full px-4 py-2 text-xs font-semibold transition-colors sm:px-5 sm:py-2.5 md:px-7 md:text-sm ${
+                    isActive
+                      ? "bg-[#253877] text-white"
+                      : "bg-white text-slate-700 hover:bg-slate-100"
+                  }`}
+                  aria-pressed={isActive}
+                >
+                  {tab.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="mt-10 grid items-start gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="mt-8 grid items-start gap-6 lg:mt-10 lg:gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
-            <h3 className="text-3xl font-semibold leading-tight text-[#1f2f64] md:text-4xl">
+            <h3 className="text-2xl font-semibold leading-tight text-[#1f2f64] sm:text-3xl md:text-4xl">
               {active.heading}
             </h3>
 
-            <h4 className="mt-8 text-xl font-semibold text-[#1f2f64] md:text-2xl">Current Gaps</h4>
-            <ul className="mt-4 space-y-2 text-base text-slate-900 md:text-lg">
+            <h4 className="mt-6 text-lg font-semibold text-[#1f2f64] sm:mt-8 sm:text-xl md:text-2xl">Current Gaps</h4>
+            <ul className="mt-3 space-y-2 text-sm text-slate-900 sm:mt-4 sm:text-base md:text-lg">
               {active.painPoints.map((point) => (
                 <li key={point} className="flex gap-3">
-                  <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-900" />
+                  <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-900 sm:mt-[9px]" />
                   <span>{point}</span>
                 </li>
               ))}
             </ul>
 
-            <h4 className="mt-8 text-xl font-semibold text-[#1f2f64] md:text-2xl">What We Implement</h4>
-            <p className="mt-4 text-base leading-relaxed text-slate-800 md:text-lg">{active.solutionText}</p>
+            <h4 className="mt-6 text-lg font-semibold text-[#1f2f64] sm:mt-8 sm:text-xl md:text-2xl">What We Implement</h4>
+            <p className="mt-3 text-sm leading-relaxed text-slate-800 sm:mt-4 sm:text-base md:text-lg">{active.solutionText}</p>
 
             <Link
               href="/book-us"
-              className="mt-7 inline-flex items-center gap-2 text-lg font-semibold text-[#1f2f64] hover:text-[#15224d]"
+              className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-[#1f2f64] hover:text-[#15224d] sm:mt-7 sm:text-lg"
             >
               Learn More
               <span aria-hidden>→</span>

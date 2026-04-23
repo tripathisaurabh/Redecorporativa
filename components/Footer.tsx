@@ -51,8 +51,8 @@ function SocialIcon({ label }: { label: string }) {
 export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-200">
-      <Container className="py-20">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <Container className="py-12 md:py-20">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Image
@@ -129,7 +129,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-slate-800 pt-6 text-sm text-slate-400">
+        <div className="mt-8 border-t border-slate-800 pt-6 text-sm text-slate-400 md:mt-12">
           <div className="flex flex-col items-start justify-between gap-2">
             <span>© {new Date().getFullYear()} {SITE_NAME}. All rights reserved.</span>
             {/* <span>Business Operations + Workflow Automation</span> */}

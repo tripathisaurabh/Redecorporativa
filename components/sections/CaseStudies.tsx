@@ -10,16 +10,16 @@ const trimSummary = (text: string, max = 132) =>
 
 export default function CaseStudies() {
   return (
-    <section className="bg-[#f3f4fa] py-12 md:py-14">
+    <section className="bg-[#f3f4fa] py-14 md:py-20">
       <Container>
         <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Case Studies</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#13234d] md:text-4xl">
             Real Results from CRM Implementations
           </h2>
           <div className="mx-auto mt-3 h-1 w-32 bg-sky-500" />
-          <p className="mx-auto mt-4 max-w-3xl text-sm text-slate-600 md:text-base">
-            See how teams improved conversion, execution speed, and operational visibility with practical
-            automation systems.
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 md:text-base">
+            See how teams improved conversion rates, execution speed, and operational visibility with Zoho automation.
           </p>
         </div>
 

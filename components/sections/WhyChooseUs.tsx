@@ -61,41 +61,45 @@ const highlights: Highlight[] = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-[#d9eaf6] py-6 md:py-8">
-      <Container className="flex min-h-[calc(100vh-5rem)] flex-col justify-center">
+    <section className="bg-[#eef4fb] py-14 md:py-20">
+      <Container>
         <div className="text-center">
-          <h2 className="text-2xl font-semibold tracking-tight text-[#1d2f69] md:text-4xl">
+          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Why Zonic Tech</p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#1d2f69] md:text-4xl">
             Why Teams Choose Us for Zoho Work
           </h2>
           <div className="mx-auto mt-3 h-1 w-32 bg-sky-500" />
-          <p className="mx-auto mt-3 max-w-4xl text-sm text-slate-700 md:text-base">
-            We have 5 years of hands-on Zoho experience. We set up, fix, and improve Zoho systems so
-            your team gets clear processes and better results.
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 md:text-base">
+            5 years of certified Zoho experience. We set up, fix, and improve Zoho systems so your
+            team gets clear processes and measurable results.
           </p>
         </div>
 
-        <div className="mt-5 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-          <div className="relative h-[30vh] w-full sm:h-[34vh] md:h-[40vh] lg:h-[43vh]">
+        {/* Banner image */}
+        <div className="mt-10 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-md">
+          <div className="relative h-[32vh] w-full sm:h-[36vh] md:h-[42vh]">
             <Image
               src="/produts/bsannercontact.png"
               alt="Team collaborating on Zoho implementation strategy"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               sizes="(min-width: 1024px) 1200px, 100vw"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1d2f69]/30 to-transparent" />
           </div>
         </div>
 
-        <div className="mt-4 grid overflow-hidden rounded-2xl border border-slate-300 bg-[#d9eaf6] sm:grid-cols-2 lg:grid-cols-5">
-          {highlights.map((item, index) => (
+        {/* Highlight cards — 1 col → 2 col → 3 col → 5 col, no orphan on mobile */}
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+          {highlights.map((item) => (
             <article
               key={item.title}
-              className={`flex flex-col items-center justify-center px-3 py-5 text-center md:py-6 ${
-                index !== highlights.length - 1 ? "border-b border-slate-300 lg:border-b-0 lg:border-r" : ""
-              }`}
+              className="flex flex-col items-center rounded-2xl border border-white bg-white px-4 py-6 text-center shadow-sm transition-shadow duration-200 hover:shadow-md"
             >
-              <div className="scale-90 text-[#1d2f69] md:scale-100">{item.icon}</div>
-              <h3 className="mt-3 max-w-[190px] text-xl font-semibold leading-tight text-[#1d2f69] md:text-2xl">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-indigo-50 text-[#1d2f69]">
+                {item.icon}
+              </div>
+              <h3 className="mt-4 text-base font-semibold leading-tight text-[#1d2f69]">
                 {item.title}
               </h3>
             </article>
