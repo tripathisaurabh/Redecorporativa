@@ -15,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="mqZ-JI1GniUckBmMaBB8h5SFCzWv-1Ye7lVoZGx_QD4" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=AW-17926414470" strategy="beforeInteractive" />
         <Script
           id="google-tag"
