@@ -8,14 +8,16 @@ import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_LINK, SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
-  title: "Talk to a CRM Ops + Automation Expert",
-  description: "Tell us what's broken. We'll suggest a clear CRM + automation plan.",
+  title: "Contact a Zoho CRM Expert | Free Strategy Call – Zonic Tech Solutions",
+  description:
+    "Get in touch with a certified Zoho consultant. Share your business challenge and we'll suggest a clear Zoho CRM and automation plan — no commitment required. Serving India, USA, UK, UAE & Australia.",
   keywords: buildKeywords(
-    "Contact Zonic Tech Solutions",
-    "Book CRM consultation",
-    "Zoho consultation call",
-    "CRM ops expert contact",
-    "Business automation consultation"
+    "contact Zoho consultant India",
+    "hire Zoho CRM expert",
+    "Zoho CRM consultation",
+    "talk to Zoho partner",
+    "Zoho implementation inquiry",
+    "free Zoho consultation India"
   ),
   alternates: {
     canonical: buildCanonical("/contact")

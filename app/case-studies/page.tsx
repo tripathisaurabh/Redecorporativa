@@ -4,14 +4,16 @@ import { SITE_URL } from "../../lib/constants";
 import CaseStudiesHub from "../../components/sections/CaseStudiesHub";
 
 export const metadata: Metadata = {
-  title: "Case Studies",
+  title: "Zoho Implementation Case Studies – Real Business Results",
   description:
-    "Explore real-world implementation stories and measurable outcomes from Zoho consulting projects.",
+    "See how Zonic Tech Solutions helped e-commerce, automobile, and EV businesses achieve measurable outcomes with Zoho CRM and workflow automation. Real projects, real numbers.",
   keywords: buildKeywords(
-    "Zoho case studies",
-    "CRM implementation case studies",
-    "Business automation success stories",
-    "Growth operations case studies"
+    "Zoho CRM case studies",
+    "Zoho implementation results",
+    "Zoho CRM success stories India",
+    "CRM automation results",
+    "Zoho business automation case study",
+    "Zoho partner success stories"
   ),
   alternates: {
     canonical: buildCanonical("/case-studies")

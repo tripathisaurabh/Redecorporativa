@@ -5,6 +5,7 @@ import LogoMarquee from "../components/sections/LogoMarquee";
 import WhyChooseUs from "../components/sections/WhyChooseUs";
 import PartnershipShowcase from "../components/sections/PartnershipShowcase";
 import Capabilities from "../components/sections/Capabilities";
+import Services from "../components/sections/Services";
 import SmartZohoSolutions from "../components/sections/SmartZohoSolutions";
 import HowItWorks from "../components/sections/HowItWorks";
 import CaseStudies from "../components/sections/CaseStudies";
@@ -14,18 +15,18 @@ import { buildCanonical, buildKeywords } from "../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_NAME, SITE_PHONE, SITE_URL, SOCIAL_LINKS } from "../lib/constants";
 
 export const metadata: Metadata = {
-  title: "Zoho Partner | Business Operations + Workflow Automation",
+  title: "Zoho Consulting & CRM Implementation | Certified Zoho Partner India",
   description:
-    "Zonic Tech Solutions is a certified Zoho Partner helping businesses automate workflows, streamline CRM operations, and scale without manual work. Serving clients in India, US, UK, UAE, and Australia.",
+    "Zonic Tech Solutions — certified Zoho Premium Partner since 2019. We implement Zoho CRM, Zoho One, workflow automation, and business operations for growing companies in India, USA, UK, UAE, and Australia. Book a free consultation.",
   keywords: buildKeywords(
-    "Zoho consulting USA",
-    "Zoho partner India",
-    "CRM operations services",
-    "Automation-driven CRM workflows",
-    "Revenue acceleration services",
-    "CRM setup and optimization",
-    "Zoho implementation partner",
-    "business process automation"
+    "Zoho consulting India",
+    "Zoho CRM implementation service",
+    "certified Zoho partner",
+    "Zoho One setup India",
+    "CRM implementation company India",
+    "Zoho automation service",
+    "Zoho CRM customization India",
+    "business workflow automation"
   ),
   alternates: {
     canonical: buildCanonical("/")
@@ -176,50 +177,57 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "What CRMs do you work with?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We primarily support Zoho CRM but also work with HubSpot, Salesforce, and custom CRMs."
-      }
+      acceptedAnswer: { "@type": "Answer", text: "We primarily implement and support Zoho CRM, but also work with HubSpot, Salesforce, and custom CRMs. As a certified Zoho Premium Partner, Zoho CRM is our core specialisation." }
     },
     {
       "@type": "Question",
-      name: "How long does implementation take?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most Business Operations builds are completed in 2–6 weeks depending on integrations."
-      }
+      name: "What is the difference between Zoho One and Zoho CRM?",
+      acceptedAnswer: { "@type": "Answer", text: "Zoho CRM is a dedicated sales and customer relationship tool. Zoho One is a full business suite that includes CRM plus 45+ apps — covering finance, HR, marketing, helpdesk, and operations — all under one licence. We help you decide which fits your stage and budget." }
     },
     {
       "@type": "Question",
-      name: "Do you fix existing CRM setups?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We review and clean existing CRMs, then redesign workflows for better adoption."
-      }
+      name: "How much does Zoho CRM implementation cost?",
+      acceptedAnswer: { "@type": "Answer", text: "Cost depends on the number of modules, integrations, and customisations required. Projects range from a starter CRM setup to a fully automated multi-department rollout. We provide a clear scope and fixed-price quote after a free discovery call — no surprises." }
     },
     {
       "@type": "Question",
-      name: "Do you provide WhatsApp automation?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We connect WhatsApp for lead alerts, follow-ups, and reminders."
-      }
+      name: "Can you migrate data from Salesforce, HubSpot, or spreadsheets to Zoho?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. We handle data migration from Salesforce, HubSpot, Pipedrive, Excel, Google Sheets, and other systems into Zoho. We map fields, clean duplicates, and validate data before go-live." }
     },
     {
       "@type": "Question",
-      name: "Do you offer ongoing support?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Ongoing optimization and support are available as monthly retainers."
-      }
+      name: "Do you provide Zoho consulting services outside India?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. We serve clients across India, USA, UK, UAE, and Australia. All engagements are delivered remotely with flexible working hours to match your timezone." }
     },
     {
       "@type": "Question",
-      name: "Are automated workflows safe for business data?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We follow data privacy best practices and only use approved, secure automation workflows."
-      }
+      name: "How long does a Zoho implementation take?",
+      acceptedAnswer: { "@type": "Answer", text: "A standard Zoho CRM setup typically takes 2–4 weeks. Larger rollouts with Zoho One, custom integrations, or multiple departments take 4–8 weeks. We share a detailed project timeline before work begins." }
+    },
+    {
+      "@type": "Question",
+      name: "Do you provide Zoho training for our team?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Every implementation includes handover training covering how to use the CRM, manage workflows, and run reports. We also offer follow-up training sessions for new staff." }
+    },
+    {
+      "@type": "Question",
+      name: "Can Zoho CRM integrate with WhatsApp, Google Ads, and other tools?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. We connect Zoho CRM with WhatsApp Business API, Google Ads, Meta Ads, Mailchimp, Shopify, payment gateways, and more — so all customer activity is visible in one place with automations firing across every channel." }
+    },
+    {
+      "@type": "Question",
+      name: "Do you fix existing broken Zoho CRM setups?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. We audit your current Zoho configuration, identify gaps and unused features, and rebuild workflows for better team adoption. Most businesses see immediate improvement in data quality and CRM usage after an audit." }
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer ongoing Zoho support after implementation?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Monthly retainers are available for ongoing optimisation, troubleshooting, new feature rollouts, and system improvements as your business grows." }
+    },
+    {
+      "@type": "Question",
+      name: "Are automated workflows safe for our business data?",
+      acceptedAnswer: { "@type": "Answer", text: "Absolutely. All automation is built on Zoho's enterprise-grade infrastructure with role-based access and audit logs. We follow data privacy best practices and only use secure, approved integration methods." }
     }
   ]
 };
@@ -287,6 +295,7 @@ export default function HomePage() {
       <WhyChooseUs />
       <PartnershipShowcase />
       <Capabilities />
+      <Services />
       <HowItWorks />
       <SmartZohoSolutions />
       <CaseStudies />

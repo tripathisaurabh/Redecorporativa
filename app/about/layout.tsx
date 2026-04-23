@@ -3,15 +3,17 @@ import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Us – Certified Zoho Partner Since 2019",
+  title: "About Us | Zoho Premium Partner & CRM Consulting Company India",
   description:
-    "Zonic Tech Solutions is a certified Zoho Premium Partner based in India, serving 100+ clients across India, US, UK, UAE, and Australia. 5+ years of Zoho implementation and workflow automation experience.",
+    "Zonic Tech Solutions — certified Zoho Premium Partner since 2019. Noida-based CRM consulting firm with 100+ clients served across India, USA, UK, UAE, and Australia. Expert team of Zoho CRM, Zoho One, and automation consultants.",
   keywords: buildKeywords(
-    "About Zonic Tech Solutions",
     "Zoho Premium Partner India",
-    "Zoho certified consultants",
-    "CRM consulting firm India",
-    "Zoho implementation team"
+    "Zoho certified consultants Noida",
+    "CRM consulting company India",
+    "Zoho implementation company",
+    "Zoho partner Noida Delhi NCR",
+    "Zoho CRM consulting team",
+    "best Zoho consultant India"
   ),
   alternates: {
     canonical: buildCanonical("/about")

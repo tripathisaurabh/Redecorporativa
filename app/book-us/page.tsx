@@ -6,15 +6,16 @@ import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
-  title: "Book a Free Zoho Consultation",
+  title: "Book a Free Zoho CRM Consultation | Certified Zoho Partner India",
   description:
-    "Book a free, no-obligation consultation with a certified Zoho partner. Get a clear CRM and automation plan tailored to your business in 30 minutes.",
+    "Schedule a free 30-minute consultation with a certified Zoho partner. Get a personalised Zoho CRM implementation plan, workflow audit, and automation roadmap — no cost, no commitment.",
   keywords: buildKeywords(
-    "Book Zoho consultation",
-    "Free CRM consultation",
-    "Schedule Zoho expert call",
-    "Zoho implementation consultation",
-    "Book free systems audit"
+    "book Zoho CRM consultation free",
+    "schedule Zoho implementation call",
+    "free CRM audit India",
+    "Zoho partner consultation",
+    "book Zoho expert India",
+    "Zoho implementation quote"
   ),
   alternates: {
     canonical: buildCanonical("/book-us")

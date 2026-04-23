@@ -231,18 +231,20 @@ const organizationSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Zoho Products & Implementation Services",
+  title: "Zoho Products Implementation – CRM, One, Finance, HR & More | India",
   description:
-    "Expert implementation of Zoho One, CRM, Finance Plus, People Plus, Books, Creator, and Marketing Automation. Build a connected Zoho stack for your growing business.",
+    "Certified Zoho partner offering expert implementation of Zoho One, Zoho CRM, Zoho Finance Plus, Zoho People Plus, Zoho Books, Zoho Creator, and Zoho Marketing Automation. Serving businesses in India, USA, UK, UAE & Australia.",
   keywords: buildKeywords(
-    "Zoho products consulting",
-    "Zoho One implementation",
-    "Zoho CRM implementation",
-    "Zoho Finance Plus setup",
-    "Zoho People Plus consulting",
-    "Zoho Creator development",
-    "Zoho Books setup",
-    "Zoho Marketing Automation services"
+    "Zoho products implementation India",
+    "Zoho One setup service",
+    "Zoho CRM implementation company",
+    "Zoho Finance Plus consultant",
+    "Zoho Books setup India",
+    "Zoho Books GST setup",
+    "Zoho People Plus HR consultant",
+    "Zoho Creator low-code developer",
+    "Zoho Marketing Automation consultant",
+    "Zoho CRM Plus setup"
   ),
   alternates: {
     canonical: buildCanonical("/products")
