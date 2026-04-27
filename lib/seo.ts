@@ -83,7 +83,7 @@ export const defaultMetadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: `${SITE_URL}/hero.png`,
+        url: `${SITE_URL}/logo_zonic-removebg-preview.png`,
         width: 1200,
         height: 630,
         alt: `${SITE_NAME} – Zoho Partner & Workflow Automation`
@@ -95,7 +95,7 @@ export const defaultMetadata: Metadata = {
     title: `${SITE_NAME} | Business Operations + Workflow Automation`,
     description:
       "Certified Zoho Partner providing CRM implementation, workflow automation, and business operations consulting.",
-    images: [`${SITE_URL}/hero.png`]
+    images: [`${SITE_URL}/logo_zonic-removebg-preview.png`]
   }
 };
 
