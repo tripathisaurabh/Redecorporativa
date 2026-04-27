@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     canonical: buildCanonical("/book-us")
   },
   openGraph: {
-    title: "Book a Free Zoho Consultation | Zonic Tech Solutions",
+    title: "Book a Free Zoho Consultation | Redecorporativa",
     description:
       "No-obligation 30-minute consultation with a certified Zoho partner. Walk away with a clear action plan.",
     url: `${SITE_URL}/book-us`,
     images: [{ url: `${SITE_URL}/hero.png`, width: 1200, height: 630, alt: "Book a Free Zoho Consultation" }]
   },
   twitter: {
-    title: "Book a Free Zoho Consultation | Zonic Tech Solutions",
+    title: "Book a Free Zoho Consultation | Redecorporativa",
     description:
       "No-obligation 30-minute consultation with a certified Zoho partner.",
     images: [`${SITE_URL}/hero.png`]

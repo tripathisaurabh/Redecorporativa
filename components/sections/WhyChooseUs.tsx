@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
     <section className="bg-[#eef4fb] py-14 md:py-20">
       <Container>
         <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Why Zonic Tech</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Why Redecorporativa</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#1d2f69] md:text-4xl">
             Why Teams Choose Us for Zoho Work
           </h2>

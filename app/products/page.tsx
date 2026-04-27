@@ -250,14 +250,14 @@ export const metadata: Metadata = {
     canonical: buildCanonical("/products")
   },
   openGraph: {
-    title: "Zoho Products & Implementation Services | Zonic Tech Solutions",
+    title: "Zoho Products & Implementation Services | Redecorporativa",
     description:
       "Expert Zoho implementation: CRM, Finance Plus, People Plus, Books, Creator, and more. Certified Zoho Partner.",
     url: `${SITE_URL}/products`,
     images: [{ url: `${SITE_URL}/hero.png`, width: 1200, height: 630, alt: "Zoho Products Implementation" }]
   },
   twitter: {
-    title: "Zoho Products & Implementation | Zonic Tech Solutions",
+    title: "Zoho Products & Implementation | Redecorporativa",
     description:
       "Expert Zoho implementation: CRM, Finance Plus, People Plus, Books, Creator, and more.",
     images: [`${SITE_URL}/hero.png`]

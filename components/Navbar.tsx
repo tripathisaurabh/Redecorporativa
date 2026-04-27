@@ -52,14 +52,14 @@ export default function Navbar() {
       <Container className="relative flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 font-semibold text-white">
           <Image
-            src="/logo_zonic-removebg-preview.png"
-            alt="Zonic Tech Solutions logo"
+            src="/logo-redecorporativa.png"
+            alt="Redecorporativa logo"
             width={40}
             height={40}
             className="h-9 w-auto shrink-0 sm:h-10"
             priority
           />
-          <span className="text-sm sm:text-lg">Zonic Tech Solutions</span>
+          <span className="text-sm sm:text-lg">Redecorporativa</span>
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">

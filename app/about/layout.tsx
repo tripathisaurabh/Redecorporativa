@@ -5,7 +5,7 @@ import { SITE_URL } from "../../lib/constants";
 export const metadata: Metadata = {
   title: "About Us | Zoho Premium Partner & CRM Consulting Company India",
   description:
-    "Zonic Tech Solutions — certified Zoho Premium Partner since 2019. Noida-based CRM consulting firm with 100+ clients served across India, USA, UK, UAE, and Australia. Expert team of Zoho CRM, Zoho One, and automation consultants.",
+    "Redecorporativa — certified Zoho Premium Partner since 2019. Noida-based CRM consulting firm with 100+ clients served across India, USA, UK, UAE, and Australia. Expert team of Zoho CRM, Zoho One, and automation consultants.",
   keywords: buildKeywords(
     "Zoho Premium Partner India",
     "Zoho certified consultants Noida",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: buildCanonical("/about")
   },
   openGraph: {
-    title: "About Zonic Tech Solutions – Certified Zoho Partner Since 2019",
+    title: "About Redecorporativa – Certified Zoho Partner Since 2019",
     description:
       "5+ years helping businesses automate with Zoho. 100+ clients across India, US, UK, UAE, and Australia.",
     url: `${SITE_URL}/about`,
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/herosection.png`,
         width: 1200,
         height: 630,
-        alt: "Zonic Tech Solutions team"
+        alt: "Redecorporativa team"
       }
     ]
   },
   twitter: {
-    title: "About Zonic Tech Solutions – Certified Zoho Partner",
+    title: "About Redecorporativa – Certified Zoho Partner",
     description:
       "5+ years of Zoho implementation experience. 100+ clients globally.",
     images: [`${SITE_URL}/herosection.png`]

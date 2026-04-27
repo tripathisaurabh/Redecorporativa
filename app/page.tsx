@@ -17,7 +17,7 @@ import { SITE_ADDRESS, SITE_EMAIL, SITE_NAME, SITE_PHONE, SITE_URL, SOCIAL_LINKS
 export const metadata: Metadata = {
   title: "Zoho Consulting & CRM Implementation | Certified Zoho Partner India",
   description:
-    "Zonic Tech Solutions — certified Zoho Premium Partner since 2019. We implement Zoho CRM, Zoho One, workflow automation, and business operations for growing companies in India, USA, UK, UAE, and Australia. Book a free consultation.",
+    "Redecorporativa — certified Zoho Premium Partner since 2019. We implement Zoho CRM, Zoho One, workflow automation, and business operations for growing companies in India, USA, UK, UAE, and Australia. Book a free consultation.",
   keywords: buildKeywords(
     "Zoho consulting India",
     "Zoho CRM implementation service",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: buildCanonical("/")
   },
   openGraph: {
-    title: "Zonic Tech Solutions | Zoho Partner & Workflow Automation",
+    title: "Redecorporativa | Zoho Partner & Workflow Automation",
     description:
       "Certified Zoho Partner helping businesses automate workflows, streamline CRM, and scale operations. Serving India, US, UK, UAE & Australia.",
     url: SITE_URL,
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/hero.png`,
         width: 1200,
         height: 630,
-        alt: "Zonic Tech Solutions – Zoho Partner & Workflow Automation"
+        alt: "Redecorporativa – Zoho Partner & Workflow Automation"
       }
     ]
   },
   twitter: {
-    title: "Zonic Tech Solutions | Zoho Partner & Workflow Automation",
+    title: "Redecorporativa | Zoho Partner & Workflow Automation",
     description:
       "Certified Zoho Partner helping businesses automate workflows, streamline CRM, and scale operations.",
     images: [`${SITE_URL}/hero.png`]
@@ -69,7 +69,7 @@ const organizationSchema = {
   url: SITE_URL,
   logo: {
     "@type": "ImageObject",
-    url: `${SITE_URL}/logo_zonic-removebg-preview.png`
+    url: `${SITE_URL}/logo-redecorporativa.png`
   },
   image: `${SITE_URL}/hero.png`,
   email: SITE_EMAIL,
@@ -85,7 +85,7 @@ const organizationSchema = {
   sameAs: SOCIAL_LINKS.map((s) => s.href),
   foundingDate: "2019",
   description:
-    "Zonic Tech Solutions is a certified Zoho Premium Partner providing CRM implementation, workflow automation, and business operations consulting to companies across India, US, UK, UAE, and Australia."
+    "Redecorporativa is a certified Zoho Premium Partner providing CRM implementation, workflow automation, and business operations consulting to companies across India, US, UK, UAE, and Australia."
 };
 
 const localBusinessSchema = {

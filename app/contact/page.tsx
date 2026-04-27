@@ -8,7 +8,7 @@ import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_LINK, SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact a Zoho CRM Expert | Free Strategy Call – Zonic Tech Solutions",
+  title: "Contact a Zoho CRM Expert | Free Strategy Call – Redecorporativa",
   description:
     "Get in touch with a certified Zoho consultant. Share your business challenge and we'll suggest a clear Zoho CRM and automation plan — no commitment required. Serving India, USA, UK, UAE & Australia.",
   keywords: buildKeywords(
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Talk to a CRM Ops + Automation Expert",
     description: "Tell us what's broken. We'll suggest a clear CRM + automation plan.",
     url: `${SITE_URL}/contact`,
-    images: [{ url: `${SITE_URL}/hero.png`, width: 1200, height: 630, alt: "Contact Zonic Tech Solutions" }]
+    images: [{ url: `${SITE_URL}/hero.png`, width: 1200, height: 630, alt: "Contact Redecorporativa" }]
   },
   twitter: {
     title: "Talk to a CRM Ops + Automation Expert",
@@ -83,7 +83,7 @@ export default function ContactPage() {
             {/* <Card className="overflow-hidden p-0">
               <div className="h-64 w-full">
                 <iframe
-                  title="Zonic Tech Solutions location"
+                  title="Redecorporativa location"
                   src="https://www.google.com/maps?q=Noida,+UP,+India&output=embed"
                   className="h-full w-full"
                   loading="lazy"

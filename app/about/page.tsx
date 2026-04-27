@@ -85,14 +85,14 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[rgba(1,10,52,0.6)] to-[rgba(1,10,52,1)]" />
         <Container className="relative z-10 flex flex-col items-center text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-indigo-400">
-            About Zonic Tech Solutions
+            About Redecorporativa
           </p>
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
             Helping businesses grow with{" "}
             <span className="text-indigo-400">Zoho &amp; Automation</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 md:text-lg">
-            Zonic Tech Solutions is a trusted IT consulting firm offering Zoho CRM, Zoho One, and 55+
+            Redecorporativa is a trusted IT consulting firm offering Zoho CRM, Zoho One, and 55+
             Zoho product solutions — proudly serving clients across India, US, UK, UAE, and Australia.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -148,7 +148,7 @@ export default function AboutPage() {
               </div>
 
               <p className="mt-6 text-sm leading-7 text-slate-600">
-                Zonic Tech Solutions, based in India since 2019, is a trusted IT consulting firm
+                Redecorporativa, based in India since 2019, is a trusted IT consulting firm
                 offering Zoho CRM, Zoho One, Zoho Creator, and 55+ Zoho product solutions.
                 Proudly serving clients across the world, we have delivered projects to businesses
                 globally. Our expert team makes digital transformation seamless through Zoho.
@@ -169,7 +169,7 @@ export default function AboutPage() {
               <div className="overflow-hidden rounded-2xl shadow-xl">
                 <Image
                   src="/What-is-it-like-working-in-IT-e1651761435165.jpg"
-                  alt="Zonic Tech Solutions IT team at work"
+                  alt="Redecorporativa IT team at work"
                   width={600}
                   height={420}
                   className="h-auto w-full object-cover"

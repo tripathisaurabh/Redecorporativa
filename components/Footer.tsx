@@ -56,8 +56,8 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/logo_zonic-removebg-preview.png"
-                alt="Zonic Tech Solutions logo"
+                src="/logo-redecorporativa.png"
+                alt="Redecorporativa logo"
                 width={36}
                 height={36}
                 className="h-9 w-auto"

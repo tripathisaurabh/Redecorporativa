@@ -95,7 +95,7 @@ export function generateMetadata({ params }: CaseStudyDetailPageProps): Metadata
       canonical: buildCanonical(`/case-studies/${study.slug}`)
     },
     openGraph: {
-      title: `${study.title} | Zonic Tech Solutions`,
+      title: `${study.title} | Redecorporativa`,
       description: study.summary,
       url: `${SITE_URL}/case-studies/${study.slug}`,
       type: "article",
@@ -109,7 +109,7 @@ export function generateMetadata({ params }: CaseStudyDetailPageProps): Metadata
       ]
     },
     twitter: {
-      title: `${study.title} | Zonic Tech Solutions`,
+      title: `${study.title} | Redecorporativa`,
       description: study.summary,
       images: [`${SITE_URL}${study.coverImage}`]
     }
@@ -166,7 +166,7 @@ export default function CaseStudyDetailPage({ params }: CaseStudyDetailPageProps
       name: SITE_NAME,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/logo_zonic-removebg-preview.png`
+        url: `${SITE_URL}/logo-redecorporativa.png`
       }
     },
     mainEntityOfPage: {

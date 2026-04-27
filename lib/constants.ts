@@ -1,4 +1,4 @@
-export const SITE_NAME = "Zonic Tech Solutions";
+export const SITE_NAME = "Redecorporativa";
 export const SITE_URL = "https://www.zonictechsolutions.com";
 export const SITE_EMAIL = "admin@zonictechsolutions.com";
 export const SITE_PHONE = "+917999645921";
