@@ -3,6 +3,8 @@ node_modules/
 .env
 *.tsbuildinfo
 .next_stale_*/
+.next_tmp_*/
+kk.json
 # dependencies
 node_modules/
 

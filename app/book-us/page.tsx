@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+import Link from "next/link";
 import Container from "../../components/ui/Container";
 import Card from "../../components/ui/Card";
+import Button from "../../components/ui/Button";
 import { buildCanonical, buildKeywords } from "../../lib/seo";
-import { SITE_URL } from "../../lib/constants";
+import { SITE_URL, WHATSAPP_LINK, SITE_EMAIL } from "../../lib/constants";
 
 export const metadata: Metadata = {
   title: "Book a Free Zoho CRM Consultation | Certified Zoho Partner India",
@@ -39,25 +40,42 @@ export default function BookUsPage() {
   return (
     <section className="section bg-slate-50">
       <Container className="flex flex-col items-center">
-        <div className="mb-8 text-center">
-          <h1 className="text-3xl font-semibold text-slate-900">Book a Consultation</h1>
-          <p className="mt-3 text-base text-slate-600">Pick a time that works for you.</p>
+        <div className="mb-10 text-center">
+          <h1 className="text-3xl font-semibold text-slate-900">Book a Free Consultation</h1>
+          <p className="mt-3 text-base text-slate-600 max-w-xl mx-auto">
+            Get a personalised Zoho CRM implementation plan, workflow audit, and automation roadmap — no cost, no commitment.
+          </p>
         </div>
 
-        <Card className="w-full max-w-3xl overflow-hidden p-0">
-          <div className="border-b border-slate-200 px-4 py-2 text-center">
-            <h2 className="text-base font-semibold text-slate-900">Book a Consultation</h2>
-            <p className="mt-1 text-xs text-slate-600">Pick a time that works for you.</p>
+        <Card className="w-full max-w-2xl p-8 md:p-12 text-center space-y-6">
+          <div className="space-y-2">
+            <p className="text-lg font-semibold text-slate-900">Ready to talk?</p>
+            <p className="text-slate-600 text-sm">
+              Reach out via WhatsApp or email and we will schedule a 30-minute call at a time that works for you.
+            </p>
           </div>
-          <div className="p-2">
-            <div
-              className="calendly-inline-widget h-[700px] w-full min-w-[320px]"
-              data-url="https://calendly.com/admin-zonictechsolutions/zoho-implementation-consultation-no-obligation"
-            />
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <Button href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+              Chat on WhatsApp
+            </Button>
+            <Link
+              href={`mailto:${SITE_EMAIL}`}
+              className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition hover:border-slate-500 hover:text-slate-900"
+            >
+              Send an Email
+            </Link>
           </div>
+
+          <p className="text-xs text-slate-400 pt-2">
+            Alternatively,{" "}
+            <Link href="/contact" className="underline underline-offset-2 hover:text-slate-600">
+              use the contact form
+            </Link>{" "}
+            and we will get back to you within one business day.
+          </p>
         </Card>
       </Container>
-      <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
     </section>
   );
 }

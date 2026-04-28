@@ -55,14 +55,15 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Image
-                src="/logo-redecorporativa.png"
-                alt="Redecorporativa logo"
-                width={36}
-                height={36}
-                className="h-9 w-auto"
-              />
-              <p className="text-lg font-semibold text-white">{SITE_NAME}</p>
+              <div className="rounded-lg bg-white px-2 py-1">
+                <Image
+                  src="/logo.png"
+                  alt="Redecorporativa logo"
+                  width={120}
+                  height={30}
+                  className="h-7 w-auto"
+                />
+              </div>
             </div>
             <p className="text-sm text-slate-300">
               Business Operations and workflow automation for teams that want predictable pipeline and faster
