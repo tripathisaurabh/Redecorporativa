@@ -49,7 +49,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white text-slate-700 shadow-sm">
-      <Container className="relative flex h-20 items-center justify-between">
+      <Container className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 font-semibold text-slate-900">
           <Image
             src="/logo.png"
@@ -100,40 +100,42 @@ export default function Navbar() {
             </svg>
           )}
         </button>
-
-        <div
-          className={`fixed inset-0 z-40 bg-slate-900/60 transition-opacity duration-200 md:hidden ${
-            open ? "opacity-100" : "pointer-events-none opacity-0"
-          }`}
-          aria-hidden
-        />
-
-        <div
-          ref={panelRef}
-          className={`absolute left-0 right-0 top-full z-50 mt-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-md transition-all duration-200 md:hidden ${
-            open
-              ? "opacity-100 translate-y-0 scale-100"
-              : "pointer-events-none opacity-0 -translate-y-2 scale-[0.98]"
-          }`}
-        >
-          <div className="flex flex-col gap-3 text-sm text-slate-700">
-            {navItems.map((item, index) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="rounded-lg px-2 py-2 hover:bg-slate-100 hover:text-slate-900 active:scale-[0.98]"
-                style={{ transitionDelay: open ? `${index * 35}ms` : "0ms" }}
-                onClick={closeMenu}
-              >
-                {item.label}
-              </Link>
-            ))}
-            <Button href="/book-us" className="mt-2 w-full active:scale-[0.98]" onClick={closeMenu}>
-              Book a Consultation
-            </Button>
-          </div>
-        </div>
       </Container>
+
+      {/* Backdrop — fixed so it covers the full viewport */}
+      <div
+        className={`fixed inset-0 z-40 bg-slate-900/60 transition-opacity duration-200 md:hidden ${
+          open ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+        aria-hidden
+      />
+
+      {/* Panel — fixed below the 80px sticky header, always in viewport */}
+      <div
+        ref={panelRef}
+        className={`fixed left-3 right-3 top-[84px] z-50 rounded-2xl border border-slate-200 bg-white p-4 shadow-md transition-all duration-200 md:hidden ${
+          open
+            ? "opacity-100 translate-y-0 scale-100"
+            : "pointer-events-none opacity-0 -translate-y-2 scale-[0.98]"
+        }`}
+      >
+        <div className="flex flex-col gap-3 text-sm text-slate-700">
+          {navItems.map((item, index) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className="rounded-lg px-2 py-2 hover:bg-slate-100 hover:text-slate-900 active:scale-[0.98]"
+              style={{ transitionDelay: open ? `${index * 35}ms` : "0ms" }}
+              onClick={closeMenu}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <Button href="/book-us" className="mt-2 w-full active:scale-[0.98]" onClick={closeMenu}>
+            Book a Consultation
+          </Button>
+        </div>
+      </div>
     </header>
   );
 }
