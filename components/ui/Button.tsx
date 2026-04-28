@@ -3,6 +3,8 @@ import { ReactNode } from "react";
 
 type ButtonProps = {
   href?: string;
+  target?: string;
+  rel?: string;
   type?: "button" | "submit" | "reset";
   variant?: "primary" | "secondary" | "outline" | "light" | "ghost";
   className?: string;
@@ -25,6 +27,8 @@ const variants: Record<NonNullable<ButtonProps["variant"]>, string> = {
 
 export default function Button({
   href,
+  target,
+  rel,
   type = "button",
   variant = "primary",
   className = "",
@@ -35,7 +39,7 @@ export default function Button({
 
   if (href) {
     return (
-      <Link className={classes} href={href} onClick={onClick}>
+      <Link className={classes} href={href} target={target} rel={rel} onClick={onClick}>
         {children}
       </Link>
     );
