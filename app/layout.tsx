@@ -35,6 +35,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <Script
+          id="zsiq-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}`
+          }}
+        />
+        <Script
+          id="zsiqscript"
+          src="https://salesiq.zohopublic.in/widget?wc=siqc04a77765480c02861c87635eb2f2e19efcb9e472bbb1f621a0e4812994c6129"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

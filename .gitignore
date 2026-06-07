@@ -31,3 +31,9 @@ pnpm-debug.log*
 
 # misc
 .vercel
+
+# local tooling / logs
+.ngrok.log
+
+# separate sub-project (kept locally, not part of the marketing site)
+/zoho/
