@@ -16,8 +16,11 @@ const navItems = [
 
 const serviceMenu = [
   { label: "Zoho CRM", href: "/zoho-crm" },
+  { label: "Zoho One", href: "/zoho-one" },
   { label: "Zoho Books", href: "/zoho-books" },
   { label: "Zoho Inventory", href: "/zoho-inventory" },
+  { label: "Zoho People", href: "/zoho-people" },
+  { label: "Zoho Creator", href: "/zoho-creator" },
   { label: "Business Process Automation", href: "/business-process-automation" },
   { label: "All Products", href: "/products" }
 ];
