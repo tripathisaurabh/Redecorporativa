@@ -4,6 +4,7 @@ import Hero from "../components/sections/Hero";
 import LogoMarquee from "../components/sections/LogoMarquee";
 import WhyChooseUs from "../components/sections/WhyChooseUs";
 import PartnershipShowcase from "../components/sections/PartnershipShowcase";
+import ZohoApps from "../components/sections/ZohoApps";
 import Capabilities from "../components/sections/Capabilities";
 import Services from "../components/sections/Services";
 import SmartZohoSolutions from "../components/sections/SmartZohoSolutions";
@@ -294,6 +295,7 @@ export default function HomePage() {
       <LogoMarquee />
       <WhyChooseUs />
       <PartnershipShowcase />
+      <ZohoApps />
       <Capabilities />
       <Services />
       <HowItWorks />
