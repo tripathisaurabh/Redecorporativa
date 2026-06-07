@@ -23,7 +23,7 @@ const products: ProductSection[] = [
     title: "Zoho One",
     description:
       "A unified business suite for teams that want one connected system across sales, finance, HR, and operations.",
-    icon: "/produts/Zoho-One-.webp",
+    icon: "/products/Zoho-One-.webp",
     background: "#efe8c5",
     painPoints: [
       "Teams keep switching between disconnected apps",
@@ -41,7 +41,7 @@ const products: ProductSection[] = [
     title: "Zoho Finance Plus",
     description:
       "A connected finance suite that aligns accounting, billing, inventory, and compliance in one workflow.",
-    icon: "/produts/financeplus-512.png",
+    icon: "/products/financeplus-512.png",
     background: "#c5efc9",
     painPoints: [
       "Month-end close takes too long due to manual reconciliation",
@@ -60,7 +60,7 @@ const products: ProductSection[] = [
     title: "Zoho People Plus",
     description:
       "An HR platform that combines hiring, onboarding, attendance, and performance into one consistent employee journey.",
-    icon: "/produts/zoho-people-plus-e1755504630286.webp",
+    icon: "/products/zoho-people-plus-e1755504630286.webp",
     background: "#f3dbc9",
     painPoints: [
       "Onboarding tasks are spread across email and sheets",
@@ -78,7 +78,7 @@ const products: ProductSection[] = [
     title: "Zoho CRM",
     description:
       "A sales CRM built for predictable pipelines, faster follow-ups, and better visibility from lead to close.",
-    icon: "/produts/Zoho-CRM.webp",
+    icon: "/products/Zoho-CRM.webp",
     background: "#c8dcf5",
     painPoints: [
       "Pipeline stages are used inconsistently by teams",
@@ -97,7 +97,7 @@ const products: ProductSection[] = [
     title: "Zoho CRM Plus",
     description:
       "An all-in-one customer operations platform for sales, marketing, and support teams that need shared context.",
-    icon: "/produts/crm-plus-512.png",
+    icon: "/products/crm-plus-512.png",
     background: "#e6c7ef",
     painPoints: [
       "Teams use different systems and lose shared context",
@@ -115,7 +115,7 @@ const products: ProductSection[] = [
     title: "Zoho Creator",
     description:
       "A low-code platform to build custom apps when off-the-shelf tools do not match your process.",
-    icon: "/produts/Zoho-Creator.png",
+    icon: "/products/Zoho-Creator.png",
     background: "#efe8c5",
     painPoints: [
       "Small process changes require long dev cycles",
@@ -134,7 +134,7 @@ const products: ProductSection[] = [
     title: "Zoho Books",
     description:
       "Accounting software for growing businesses that need clean invoicing, tax handling, and financial reporting.",
-    icon: "/produts/zoho-books-logo.webp",
+    icon: "/products/zoho-books-logo.webp",
     background: "#c5efc9",
     painPoints: [
       "Manual entries create avoidable reporting errors",
@@ -152,7 +152,7 @@ const products: ProductSection[] = [
     title: "Zoho Marketing Automation",
     description:
       "A marketing automation stack for campaign orchestration, audience journeys, and performance optimization.",
-    icon: "/produts/Zoho-marketing-automation.png",
+    icon: "/products/Zoho-marketing-automation.png",
     background: "#f3dbc9",
     painPoints: [
       "User behavior is hard to track across touchpoints",
@@ -170,31 +170,31 @@ const products: ProductSection[] = [
 
 const processSteps = [
   {
-    icon: "/produts/research.svg",
+    icon: "/products/research.svg",
     title: "Discovery Call",
     description:
       "We map your current setup, constraints, and business goals."
   },
   {
-    icon: "/produts/design-1.svg",
+    icon: "/products/design-1.svg",
     title: "Solution Blueprint",
     description:
       "Our team drafts an implementation plan with architecture and milestones."
   },
   {
-    icon: "/produts/remote.png.webp",
+    icon: "/products/remote.png.webp",
     title: "Specialist Allocation",
     description:
       "A domain specialist is assigned to drive execution end-to-end."
   },
   {
-    icon: "/produts/implementation-Business-Central.svg",
+    icon: "/products/implementation-Business-Central.svg",
     title: "Build & Integration",
     description:
       "We configure apps, integrate data flows, and deploy automations."
   },
   {
-    icon: "/produts/Contract-conditions.png",
+    icon: "/products/Contract-conditions.png",
     title: "Go-Live Support",
     description:
       "We validate results, train teams, and support adoption after launch."
@@ -377,7 +377,7 @@ export default function ProductsPage() {
             <div className="flex justify-center lg:justify-end">
               <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
                 <Image
-                  src="produts/Zoho-one.svg"
+                  src="/products/Zoho-one.svg"
                   alt="Zoho product ecosystem illustration"
                   width={558}
                   height={480}
@@ -444,7 +444,7 @@ export default function ProductsPage() {
               </div>
               <div className="h-full min-h-[300px] w-full">
                 <Image
-                  src="/produts/bsannercontact.png"
+                  src="/products/bsannercontact.png"
                   alt="Book a Zoho consultation"
                   width={900}
                   height={560}

@@ -79,7 +79,7 @@ export default function WhyChooseUs() {
         <div className="mt-10 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-md">
           <div className="relative h-[32vh] w-full sm:h-[36vh] md:h-[42vh]">
             <Image
-              src="/produts/bsannercontact.png"
+              src="/products/bsannercontact.png"
               alt="Team collaborating on Zoho implementation strategy"
               fill
               className="object-cover object-center"

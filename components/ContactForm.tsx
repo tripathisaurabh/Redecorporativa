@@ -17,7 +17,9 @@ const initialState = {
   email: "",
   phone: "",
   company: "",
-  message: ""
+  message: "",
+  // Honeypot: hidden from humans; bots tend to fill it. If set, the server drops the submission.
+  website: ""
 };
 
 export default function ContactForm() {
@@ -73,6 +75,19 @@ export default function ContactForm() {
 
   return (
     <form className="space-y-4" onSubmit={handleSubmit} noValidate>
+      {/* Honeypot field — hidden from real users, ignored by screen readers. Bots that fill it get silently dropped. */}
+      <div className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={formData.website}
+          onChange={handleChange}
+        />
+      </div>
       <div>
         <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="fullName">
           Full Name *

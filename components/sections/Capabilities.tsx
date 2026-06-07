@@ -7,49 +7,49 @@ const capabilities = [
   {
     title: "Zoho One",
     description: "Run CRM, finance, HR, and marketing from one connected suite.",
-    icon: "/produts/Zoho-One-.webp",
+    icon: "/products/Zoho-One-.webp",
     href: "/products#zoho-one"
   },
   {
     title: "Zoho CRM Plus",
     description: "Unify sales, marketing, and support in one customer platform.",
-    icon: "/produts/crm-plus-512.png",
+    icon: "/products/crm-plus-512.png",
     href: "/products#zoho-crm-plus"
   },
   {
     title: "Zoho CRM",
     description: "Track leads, pipelines, and follow-ups with workflow automation.",
-    icon: "/produts/Zoho-CRM.webp",
+    icon: "/products/Zoho-CRM.webp",
     href: "/products#zoho-crm"
   },
   {
     title: "Zoho Finance Plus",
     description: "Manage accounting, invoices, expenses, and reporting in one place.",
-    icon: "/produts/financeplus-512.png",
+    icon: "/products/financeplus-512.png",
     href: "/products#zoho-finance-plus"
   },
   {
     title: "Zoho People Plus",
     description: "Automate onboarding, attendance, and performance with connected HR tools.",
-    icon: "/produts/zoho-people-plus-e1755504630286.webp",
+    icon: "/products/zoho-people-plus-e1755504630286.webp",
     href: "/products#zoho-people-plus"
   },
   {
     title: "Zoho Books",
     description: "Simplify bookkeeping, GST, invoicing, and payment tracking.",
-    icon: "/produts/zoho-books-logo.webp",
+    icon: "/products/zoho-books-logo.webp",
     href: "/products#zoho-books"
   },
   {
     title: "Zoho Marketing Automation",
     description: "Automate campaigns, lead nurturing, and conversion analytics.",
-    icon: "/produts/Zoho-marketing-automation.png",
+    icon: "/products/Zoho-marketing-automation.png",
     href: "/products#zoho-marketing-automation"
   },
   {
     title: "Zoho Creator",
     description: "Build low-code business apps and automate custom workflows.",
-    icon: "/produts/Zoho-Creator.png",
+    icon: "/products/Zoho-Creator.png",
     href: "/products#zoho-creator"
   }
 ];
