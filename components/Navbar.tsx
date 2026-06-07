@@ -14,6 +14,14 @@ const navItems = [
   { label: "Contact", href: "/contact" }
 ];
 
+const serviceMenu = [
+  { label: "Zoho CRM", href: "/zoho-crm" },
+  { label: "Zoho Books", href: "/zoho-books" },
+  { label: "Zoho Inventory", href: "/zoho-inventory" },
+  { label: "Business Process Automation", href: "/business-process-automation" },
+  { label: "All Products", href: "/products" }
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement | null>(null);
@@ -62,11 +70,35 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
-          {navItems.map((item) => (
-            <Link key={item.label} href={item.href} className="hover:text-slate-900">
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            item.label === "Zoho Services" ? (
+              <div key={item.label} className="group relative">
+                <Link href={item.href} className="inline-flex items-center gap-1 hover:text-slate-900">
+                  {item.label}
+                  <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" aria-hidden="true" fill="none">
+                    <path d="M6 8l4 4 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+                <div className="invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                  <div className="rounded-2xl border border-slate-200 bg-white p-2 shadow-lg">
+                    {serviceMenu.map((sub) => (
+                      <Link
+                        key={sub.label}
+                        href={sub.href}
+                        className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+                      >
+                        {sub.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link key={item.label} href={item.href} className="hover:text-slate-900">
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -121,15 +153,32 @@ export default function Navbar() {
       >
         <div className="flex flex-col gap-3 text-sm text-slate-700">
           {navItems.map((item, index) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="rounded-lg px-2 py-2 hover:bg-slate-100 hover:text-slate-900 active:scale-[0.98]"
-              style={{ transitionDelay: open ? `${index * 35}ms` : "0ms" }}
-              onClick={closeMenu}
-            >
-              {item.label}
-            </Link>
+            <div key={item.label}>
+              <Link
+                href={item.href}
+                className="block rounded-lg px-2 py-2 hover:bg-slate-100 hover:text-slate-900 active:scale-[0.98]"
+                style={{ transitionDelay: open ? `${index * 35}ms` : "0ms" }}
+                onClick={closeMenu}
+              >
+                {item.label}
+              </Link>
+              {item.label === "Zoho Services" && (
+                <div className="ml-3 mt-1 flex flex-col gap-1 border-l border-slate-200 pl-3">
+                  {serviceMenu
+                    .filter((sub) => sub.href !== "/products")
+                    .map((sub) => (
+                      <Link
+                        key={sub.label}
+                        href={sub.href}
+                        className="rounded-lg px-2 py-1.5 text-[13px] text-slate-600 hover:bg-slate-100 hover:text-slate-900 active:scale-[0.98]"
+                        onClick={closeMenu}
+                      >
+                        {sub.label}
+                      </Link>
+                    ))}
+                </div>
+              )}
+            </div>
           ))}
           <Button href="/book-us" className="mt-2 w-full active:scale-[0.98]" onClick={closeMenu}>
             Book a Consultation

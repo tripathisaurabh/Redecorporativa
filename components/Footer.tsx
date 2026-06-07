@@ -11,6 +11,13 @@ const navLinks = [
   { label: "Contact", href: "/contact" }
 ];
 
+const serviceLinks = [
+  { label: "Zoho CRM", href: "/zoho-crm" },
+  { label: "Zoho Books", href: "/zoho-books" },
+  { label: "Zoho Inventory", href: "/zoho-inventory" },
+  { label: "Business Process Automation", href: "/business-process-automation" }
+];
+
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms" }
@@ -52,7 +59,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-200">
       <Container className="py-12 md:py-20">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="rounded-lg bg-white px-2 py-1">
@@ -103,6 +110,18 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
+          </div>
+          <div className="space-y-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Zoho Services</p>
+            <ul className="space-y-2 text-sm">
+              {serviceLinks.map((link) => (
+                <li key={link.label}>
+                  <Link className="text-slate-300 hover:text-white" href={link.href}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Navigation</p>
