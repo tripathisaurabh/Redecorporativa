@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Container from "../../components/ui/Container";
 import Card from "../../components/ui/Card";
-import ContactForm from "../../components/ContactForm";
+import ZohoLeadForm from "../../components/ZohoLeadForm";
 import ContactLinks from "../../components/ContactLinks";
 import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_LINK, SITE_URL } from "../../lib/constants";
@@ -98,7 +98,7 @@ export default function ContactPage() {
               Share your challenge and our team will get back within one business day.
             </p>
             <div className="mt-6 rounded-2xl bg-slate-50 p-4 md:p-5">
-              <ContactForm />
+              <ZohoLeadForm />
             </div>
           </Card>
         </div>
