@@ -73,34 +73,17 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_1.2fr]">
-          <div className="space-y-4">
-            <ContactLinks options={contactOptions} />
-            {/* <Card>
-              <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Location</p>
-              <p className="mt-2 text-base text-slate-700">{SITE_ADDRESS}</p>
-            </Card> */}
-            {/* <Card className="overflow-hidden p-0">
-              <div className="h-64 w-full">
-                <iframe
-                  title="Redecorporativa location"
-                  src="https://www.google.com/maps?q=Noida,+UP,+India&output=embed"
-                  className="h-full w-full"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
-            </Card> */}
-          </div>
-          <Card className="border-slate-300 bg-white/95">
+        <div className="mx-auto mt-10 max-w-3xl space-y-8">
+          <Card className="border-slate-200 bg-white">
             <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Send a message</h2>
             <p className="mt-2 text-sm text-slate-600">
               Share your challenge and our team will get back within one business day.
             </p>
-            <div className="mt-6 rounded-2xl bg-slate-50 p-4 md:p-5">
+            <div className="mt-6 overflow-hidden rounded-2xl bg-white">
               <ZohoLeadForm />
             </div>
           </Card>
+          <ContactLinks options={contactOptions} />
         </div>
         <Script
           id="google-ads-conversion"
