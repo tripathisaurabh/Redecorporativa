@@ -8,7 +8,7 @@ const faqItems = [
     id: "faq-crm",
     title: "What CRMs do you work with?",
     content:
-      "We primarily implement and support Zoho CRM, but also work with HubSpot, Salesforce, and custom CRMs. As a certified Zoho Premium Partner, Zoho CRM is our core specialisation."
+      "We primarily implement and support Zoho CRM, but also work with HubSpot, Salesforce, and custom CRMs. As a certified Zoho Authorized Partner, Zoho CRM is our core specialisation."
   },
   {
     id: "faq-zoho-one-vs-crm",

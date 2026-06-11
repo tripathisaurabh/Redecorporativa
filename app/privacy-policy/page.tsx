@@ -35,7 +35,7 @@ export default function PrivacyPolicyPage() {
           <div className="prose prose-slate mt-10 max-w-none text-slate-700">
             <h2 className="text-xl font-semibold text-slate-900">1. Who We Are</h2>
             <p className="mt-3 leading-7">
-              {SITE_NAME} (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is a Zoho Premium Partner and technology
+              {SITE_NAME} (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is a Zoho Authorized Partner and technology
               consulting firm based in Noida, India. We provide CRM implementation, workflow
               automation, and business operations services to clients globally. Our website is
               located at{" "}

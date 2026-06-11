@@ -140,7 +140,7 @@ export default function AboutPage() {
               <div className="mt-6 flex flex-wrap items-center gap-4">
                 <Image
                   src="/partnership/partner.png"
-                  alt="Zoho Premium Partner"
+                  alt="Zoho Authorized Partner"
                   width={140}
                   height={50}
                   className="h-auto w-32 object-contain"

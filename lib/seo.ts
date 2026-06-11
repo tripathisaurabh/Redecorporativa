@@ -18,7 +18,7 @@ export const BASE_SEO_KEYWORDS = [
   "Zoho CRM customization",
   "Zoho CRM integration",
   "Zoho authorized partner",
-  "Zoho premium partner India",
+  "Zoho authorized partner India",
   "Zoho partner India",
   "Zoho developer India",
   "hire Zoho consultant",

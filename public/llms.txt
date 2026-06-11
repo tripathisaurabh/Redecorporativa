@@ -1,8 +1,8 @@
 # Redecorporativa
 
-> Certified Zoho Premium Partner providing CRM implementation, workflow automation, and business operations consulting for growing businesses.
+> Certified Zoho Authorized Partner providing CRM implementation, workflow automation, and business operations consulting for growing businesses.
 
-Redecorporativa is an IT consulting firm based in Noida, India, founded in 2019. We are a Zoho Premium Partner with 5+ years of hands-on Zoho experience, serving 100+ clients across India, United States, United Kingdom, UAE, and Australia.
+Redecorporativa is an IT consulting firm based in Noida, India, founded in 2019. We are a Zoho Authorized Partner with 5+ years of hands-on Zoho experience, serving 100+ clients across India, United States, United Kingdom, UAE, and Australia.
 
 ## What We Do
 
@@ -35,7 +35,7 @@ Growing businesses and teams across e-commerce, manufacturing, automobile, EV, f
 - **Clients served:** 100+
 - **Countries:** India, USA, UK, UAE, Australia
 - **Zoho products expertise:** 55+
-- **Certifications:** Zoho Premium Partner, Zoho Administrator, Zoho Associate, Zoho Recruit
+- **Certifications:** Zoho Authorized Partner, Zoho Administrator, Zoho Associate, Zoho Recruit
 
 ## Frequently Asked Questions
 

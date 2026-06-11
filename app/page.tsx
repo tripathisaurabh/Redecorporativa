@@ -18,7 +18,7 @@ import { SITE_ADDRESS, SITE_EMAIL, SITE_NAME, SITE_PHONE, SITE_URL, SOCIAL_LINKS
 export const metadata: Metadata = {
   title: "Zoho Consulting & CRM Implementation | Certified Zoho Partner India",
   description:
-    "Redecorporativa — certified Zoho Premium Partner since 2019. We implement Zoho CRM, Zoho One, workflow automation, and business operations for growing companies in India, USA, UK, UAE, and Australia. Book a free consultation.",
+    "Redecorporativa — certified Zoho Authorized Partner since 2019. We implement Zoho CRM, Zoho One, workflow automation, and business operations for growing companies in India, USA, UK, UAE, and Australia. Book a free consultation.",
   keywords: buildKeywords(
     "Zoho consulting India",
     "Zoho CRM implementation service",
@@ -86,7 +86,7 @@ const organizationSchema = {
   sameAs: SOCIAL_LINKS.map((s) => s.href),
   foundingDate: "2019",
   description:
-    "Redecorporativa is a certified Zoho Premium Partner providing CRM implementation, workflow automation, and business operations consulting to companies across India, US, UK, UAE, and Australia."
+    "Redecorporativa is a certified Zoho Authorized Partner providing CRM implementation, workflow automation, and business operations consulting to companies across India, US, UK, UAE, and Australia."
 };
 
 const localBusinessSchema = {
@@ -178,7 +178,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "What CRMs do you work with?",
-      acceptedAnswer: { "@type": "Answer", text: "We primarily implement and support Zoho CRM, but also work with HubSpot, Salesforce, and custom CRMs. As a certified Zoho Premium Partner, Zoho CRM is our core specialisation." }
+      acceptedAnswer: { "@type": "Answer", text: "We primarily implement and support Zoho CRM, but also work with HubSpot, Salesforce, and custom CRMs. As a certified Zoho Authorized Partner, Zoho CRM is our core specialisation." }
     },
     {
       "@type": "Question",

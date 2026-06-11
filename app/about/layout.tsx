@@ -3,11 +3,11 @@ import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_URL } from "../../lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Us | Zoho Premium Partner & CRM Consulting Company India",
+  title: "About Us | Zoho Authorized Partner & CRM Consulting Company India",
   description:
-    "Redecorporativa — certified Zoho Premium Partner since 2019. Noida-based CRM consulting firm with 100+ clients served across India, USA, UK, UAE, and Australia. Expert team of Zoho CRM, Zoho One, and automation consultants.",
+    "Redecorporativa — certified Zoho Authorized Partner since 2019. Noida-based CRM consulting firm with 100+ clients served across India, USA, UK, UAE, and Australia. Expert team of Zoho CRM, Zoho One, and automation consultants.",
   keywords: buildKeywords(
-    "Zoho Premium Partner India",
+    "Zoho Authorized Partner India",
     "Zoho certified consultants Noida",
     "CRM consulting company India",
     "Zoho implementation company",

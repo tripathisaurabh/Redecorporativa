@@ -11,7 +11,7 @@ export default function Hero() {
           {/* Partner badge */}
           <div className="hero-reveal hero-reveal-delay-1 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-indigo-700 shadow-sm sm:px-4 sm:py-2 sm:text-[11px]">
             <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-indigo-500" />
-            Certified Zoho Premium Partner
+            Certified Zoho Authorized Partner
           </div>
 
           <h1 className="hero-reveal hero-reveal-delay-2 mt-6 max-w-4xl text-3xl font-semibold leading-[1.18] tracking-[-0.02em] text-slate-900 sm:text-4xl md:text-5xl lg:text-[3.5rem]">
@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="hero-reveal hero-reveal-delay-5 mt-7">
             <Image
               src="/partnership/partner.png"
-              alt="Zoho Premium Partnership badge"
+              alt="Zoho Authorized Partnership badge"
               width={260}
               height={90}
               className="h-auto w-[150px] opacity-90 sm:w-[170px] md:w-[200px]"
