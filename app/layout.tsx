@@ -76,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <Script
           id="zsiqscript"
-          src="https://salesiq.zohopublic.in/widget?wc=siqc04a77765480c02861c87635eb2f2e19efcb9e472bbb1f621a0e4812994c6129"
+          src="https://salesiq.zohopublic.com/widget?wc=siq3c88192900d878cab25700811cb721480e1817e6dc71acd4bec948b90b9a2fbf"
           strategy="afterInteractive"
         />
       </body>
