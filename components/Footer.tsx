@@ -80,17 +80,14 @@ export default function Footer() {
               conversions.
             </p>
             {/* <p className="text-sm text-slate-400">{SITE_ADDRESS}</p> */}
-            <div className="inline-flex items-center gap-3 rounded-lg border border-slate-800 bg-slate-900/80 px-3 py-2">
+            <div className="inline-flex w-fit items-center rounded-lg bg-white p-2">
               <Image
-                src="/partnership/partner.png"
+                src="/partnership/zoho-authorized-partner.png"
                 alt="Zoho Authorized Partner badge"
-                width={110}
-                height={40}
-                className="h-auto w-[88px] rounded-sm bg-white p-1"
+                width={358}
+                height={100}
+                className="h-auto w-[190px]"
               />
-              <span className="text-xs font-semibold uppercase tracking-wide text-slate-300">
-                Zoho Authorized Partner
-              </span>
             </div>
           </div>
           <div className="space-y-4">

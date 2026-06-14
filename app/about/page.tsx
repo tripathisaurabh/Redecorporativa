@@ -6,7 +6,7 @@ import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
 
 const certifications = [
-  { label: "Zoho Partner", src: "/partnership/partner.png" },
+  { label: "Zoho Authorized Partner", src: "/partnership/zoho-authorized-partner.png" },
   { label: "Zoho Administrator", src: "/partnership/administrator.png" },
   { label: "Zoho Associate", src: "/partnership/associate.png" },
   { label: "Zoho Recruit", src: "/partnership/recruit.png" },
@@ -139,11 +139,11 @@ export default function AboutPage() {
 
               <div className="mt-6 flex flex-wrap items-center gap-4">
                 <Image
-                  src="/partnership/partner.png"
+                  src="/partnership/zoho-authorized-partner.png"
                   alt="Zoho Authorized Partner"
                   width={140}
                   height={50}
-                  className="h-auto w-32 object-contain"
+                  className="h-auto w-44 object-contain"
                 />
               </div>
 

@@ -42,7 +42,7 @@ export default function Hero() {
           {/* Partnership badge */}
           <div className="hero-reveal hero-reveal-delay-5 mt-7">
             <Image
-              src="/partnership/partner.png"
+              src="/partnership/zoho-authorized-partner.png"
               alt="Zoho Authorized Partnership badge"
               width={260}
               height={90}
