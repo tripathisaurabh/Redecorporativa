@@ -56,34 +56,41 @@ const contactOptions = [
 export default function ContactPage() {
   return (
     <section
-      className="py-16 md:py-20"
+      className="py-12 md:py-16"
       style={{
         background: "linear-gradient(180deg, rgba(239,246,255,1) 0%, rgba(226,236,248,1) 100%)"
       }}
     >
       <Container>
-        <div className="text-center">
+        <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Contact Us</p>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-5xl">
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
             Talk to a CRM Ops + Automation Expert
           </h1>
-          <div className="mx-auto mt-4 h-1 w-28 bg-sky-500" />
-          <p className="mx-auto mt-4 max-w-3xl text-base text-slate-600 md:text-lg">
+          <p className="mx-auto mt-3 text-base text-slate-600">
             Tell us what's broken. We'll suggest a clear CRM + automation plan.
           </p>
         </div>
 
-        <div className="mx-auto mt-10 max-w-3xl space-y-8">
+        <div className="mx-auto mt-10 grid max-w-5xl items-start gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="space-y-4">
+            <ContactLinks options={contactOptions} />
+            <div className="rounded-2xl border border-slate-200 bg-white/70 p-5">
+              <p className="text-sm font-semibold text-slate-900">Quick response</p>
+              <p className="mt-1 text-sm text-slate-600">
+                We reply within one business day. Serving India, US, UK, UAE &amp; Australia.
+              </p>
+            </div>
+          </div>
           <Card className="border-slate-200 bg-white">
-            <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Send a message</h2>
-            <p className="mt-2 text-sm text-slate-600">
-              Share your challenge and our team will get back within one business day.
+            <h2 className="text-xl font-semibold tracking-tight text-slate-900">Send a message</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              Share your challenge and we'll get back within one business day.
             </p>
-            <div className="mt-6 overflow-hidden rounded-2xl bg-white">
+            <div className="mt-5 overflow-hidden rounded-xl bg-white">
               <ZohoLeadForm />
             </div>
           </Card>
-          <ContactLinks options={contactOptions} />
         </div>
         <Script
           id="google-ads-conversion"
