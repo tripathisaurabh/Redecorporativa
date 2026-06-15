@@ -47,7 +47,7 @@ export default function ZohoLeadForm() {
       aria-label="Contact Us"
       frameBorder={0}
       title="Contact Us"
-      style={{ height: 720, width: "100%", border: "none", background: "#ffffff" }}
+      style={{ height: 820, width: "100%", border: "none", background: "#ffffff" }}
       src={FORM_SRC}
     />
   );
