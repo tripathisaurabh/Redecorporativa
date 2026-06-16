@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "../../components/ui/Container";
 import Card from "../../components/ui/Card";
-import Button from "../../components/ui/Button";
+import ZohoLeadForm from "../../components/ZohoLeadForm";
 import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_URL, WHATSAPP_LINK, SITE_EMAIL } from "../../lib/constants";
 
 export const metadata: Metadata = {
   title: "Book a Free Zoho CRM Consultation | Certified Zoho Partner India",
   description:
-    "Schedule a free 30-minute consultation with a certified Zoho partner. Get a personalised Zoho CRM implementation plan, workflow audit, and automation roadmap — no cost, no commitment.",
+    "Book a free consultation with a certified Zoho partner. Share a few details and get a personalised Zoho CRM implementation plan, workflow audit, and automation roadmap — no cost, no commitment.",
   keywords: buildKeywords(
     "book Zoho CRM consultation free",
     "schedule Zoho implementation call",
@@ -24,57 +24,61 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Book a Free Zoho Consultation | Redecorporativa",
     description:
-      "No-obligation 30-minute consultation with a certified Zoho partner. Walk away with a clear action plan.",
+      "No-obligation consultation with a certified Zoho partner. Walk away with a clear action plan.",
     url: `${SITE_URL}/book-us`,
     images: [{ url: `${SITE_URL}/hero.png`, width: 1200, height: 630, alt: "Book a Free Zoho Consultation" }]
   },
   twitter: {
     title: "Book a Free Zoho Consultation | Redecorporativa",
-    description:
-      "No-obligation 30-minute consultation with a certified Zoho partner.",
+    description: "No-obligation consultation with a certified Zoho partner.",
     images: [`${SITE_URL}/hero.png`]
   }
 };
 
 export default function BookUsPage() {
   return (
-    <section className="section bg-slate-50">
-      <Container className="flex flex-col items-center">
-        <div className="mb-10 text-center">
-          <h1 className="text-3xl font-semibold text-slate-900">Book a Free Consultation</h1>
-          <p className="mt-3 text-base text-slate-600 max-w-xl mx-auto">
-            Get a personalised Zoho CRM implementation plan, workflow audit, and automation roadmap — no cost, no commitment.
+    <section
+      className="py-12 md:py-16"
+      style={{ background: "linear-gradient(180deg, rgba(239,246,255,1) 0%, rgba(226,236,248,1) 100%)" }}
+    >
+      <Container>
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Book a Consultation</p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+            Book a Free Consultation
+          </h1>
+          <p className="mx-auto mt-3 text-base text-slate-600">
+            Get a personalised Zoho implementation plan, workflow audit, and automation roadmap — no cost, no
+            commitment.
           </p>
         </div>
 
-        <Card className="w-full max-w-2xl p-8 md:p-12 text-center space-y-6">
-          <div className="space-y-2">
-            <p className="text-lg font-semibold text-slate-900">Ready to talk?</p>
-            <p className="text-slate-600 text-sm">
-              Reach out via WhatsApp or email and we will schedule a 30-minute call at a time that works for you.
-            </p>
-          </div>
+        <div className="mx-auto mt-8 max-w-2xl">
+          <Card className="border-slate-200 bg-white">
+            <h2 className="text-xl font-semibold tracking-tight text-slate-900">Tell us about your project</h2>
+            <p className="mt-1 text-sm text-slate-600">It only takes a minute — we reply within one business day.</p>
+            <div className="mt-5 overflow-hidden rounded-xl bg-white">
+              <ZohoLeadForm />
+            </div>
+          </Card>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-            <Button href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-              Chat on WhatsApp
-            </Button>
+          <p className="mt-5 text-center text-sm text-slate-600">
+            Prefer to talk first? Reach us on{" "}
             <Link
-              href={`mailto:${SITE_EMAIL}`}
-              className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition hover:border-slate-500 hover:text-slate-900"
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-indigo-600 hover:underline"
             >
-              Send an Email
-            </Link>
-          </div>
-
-          <p className="text-xs text-slate-400 pt-2">
-            Alternatively,{" "}
-            <Link href="/contact" className="underline underline-offset-2 hover:text-slate-600">
-              use the contact form
+              WhatsApp
             </Link>{" "}
-            and we will get back to you within one business day.
+            or{" "}
+            <Link href={`mailto:${SITE_EMAIL}`} className="font-semibold text-indigo-600 hover:underline">
+              email us
+            </Link>
+            .
           </p>
-        </Card>
+        </div>
       </Container>
     </section>
   );
