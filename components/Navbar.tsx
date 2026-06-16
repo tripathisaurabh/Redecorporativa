@@ -11,6 +11,7 @@ const navItems = [
   { label: "Zoho Services", href: "/products" },
   { label: "Solutions", href: "/#solutions" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" }
 ];
 

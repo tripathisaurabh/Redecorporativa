@@ -7,6 +7,9 @@ const navLinks = [
   { label: "Products", href: "/products" },
   { label: "Solutions", href: "/#solutions" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Blog", href: "/blog" },
+  { label: "Zoho vs Salesforce", href: "/zoho-vs-salesforce" },
+  { label: "Zoho vs HubSpot", href: "/zoho-vs-hubspot" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" }
 ];
@@ -150,6 +153,14 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-slate-800 pt-6 text-sm text-slate-400 md:mt-12">
+          <div className="mb-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500">
+            <span className="font-semibold uppercase tracking-wide text-slate-400">Zoho Partner in:</span>
+            <Link className="hover:text-white" href="/zoho-partner-noida">Noida</Link>
+            <span>·</span>
+            <Link className="hover:text-white" href="/zoho-partner-delhi-ncr">Delhi NCR</Link>
+            <span>·</span>
+            <Link className="hover:text-white" href="/zoho-partner-mumbai">Mumbai</Link>
+          </div>
           <div className="flex flex-col items-start justify-between gap-2">
             <span>© {new Date().getFullYear()} {SITE_NAME}. All rights reserved.</span>
             {/* <span>Business Operations + Workflow Automation</span> */}

@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { SITE_URL } from "../lib/constants";
 import { caseStudies } from "../lib/caseStudies";
+import { blogPosts } from "../lib/blog";
+import { locationPages } from "../lib/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -65,6 +67,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9
     },
     {
+      url: `${SITE_URL}/zoho-vs-salesforce`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85
+    },
+    {
+      url: `${SITE_URL}/zoho-vs-hubspot`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85
+    },
+    {
       url: `${SITE_URL}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -105,5 +119,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   ];
 
-  return [...staticPages, ...caseStudyPages];
+  const blogPages: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8
+    },
+    ...blogPosts.map((post) => ({
+      url: `${SITE_URL}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.75
+    }))
+  ];
+
+  const locationPagesSitemap: MetadataRoute.Sitemap = locationPages.map((loc) => ({
+    url: `${SITE_URL}/${loc.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8
+  }));
+
+  return [...staticPages, ...caseStudyPages, ...blogPages, ...locationPagesSitemap];
 }

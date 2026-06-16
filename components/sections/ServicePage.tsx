@@ -142,6 +142,18 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
                   Talk to a Consultant
                 </Button>
               </div>
+              <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium text-slate-700">
+                {["Free consultation", "Quote in 24 hours", "No lock-in"].map((perk) => (
+                  <span key={perk} className="inline-flex items-center gap-1.5">
+                    <span className="grid h-5 w-5 place-items-center rounded-full bg-[#1d74bb] text-white">
+                      <svg viewBox="0 0 20 20" className="h-3 w-3" fill="none">
+                        <path d="M5 10l3 3 7-7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    {perk}
+                  </span>
+                ))}
+              </div>
             </div>
             <div className="flex justify-center lg:justify-end">
               <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
@@ -154,6 +166,36 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
                   unoptimized
                 />
               </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Trust strip */}
+      <section className="border-y border-slate-200 bg-white py-6">
+        <Container>
+          <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
+            <div className="inline-flex items-center rounded-lg bg-white">
+              <Image
+                src="/partnership/zoho-authorized-partner.png"
+                alt="Zoho Authorized Partner badge"
+                width={358}
+                height={100}
+                className="h-auto w-[170px]"
+              />
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-center">
+              {[
+                { num: "100+", label: "Clients served" },
+                { num: "Since 2019", label: "Zoho expertise" },
+                { num: "55+", label: "Zoho products" },
+                { num: "5", label: "Countries served" }
+              ].map((stat) => (
+                <div key={stat.label}>
+                  <p className="text-xl font-semibold text-[#1d2f69]">{stat.num}</p>
+                  <p className="text-xs uppercase tracking-wide text-slate-500">{stat.label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </Container>
