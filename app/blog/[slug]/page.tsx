@@ -156,6 +156,14 @@ export default function BlogPostPage({ params }: Props) {
 
             <h1 className="mt-5 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">{post.title}</h1>
             <p className="mt-4 text-lg text-slate-600">{post.excerpt}</p>
+            {post.relatedApp && (
+              <Link
+                href={post.relatedApp.href}
+                className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 hover:underline"
+              >
+                Related service: {post.relatedApp.label} →
+              </Link>
+            )}
 
             <div className="mt-8 border-t border-slate-100 pt-2">
               {post.content.map((block, i) => (

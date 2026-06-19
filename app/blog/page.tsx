@@ -46,6 +46,8 @@ function formatDate(iso: string) {
 
 export default function BlogIndexPage() {
   const posts = [...blogPosts].sort((a, b) => +new Date(b.date) - +new Date(a.date));
+  const categories = Array.from(new Set(posts.map((p) => p.category)));
+  const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
   return (
     <>
@@ -67,28 +69,52 @@ export default function BlogIndexPage() {
 
       <section className="bg-white py-14 md:py-20">
         <Container>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md"
+          {/* Browse by section */}
+          <div className="mb-10 flex flex-wrap items-center gap-2">
+            <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">Browse by topic:</span>
+            {categories.map((cat) => (
+              <a
+                key={cat}
+                href={`#${slugify(cat)}`}
+                className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:border-indigo-200 hover:text-indigo-700"
               >
-                <div className="flex items-center gap-2 text-xs text-slate-500">
-                  <span className="rounded-full bg-indigo-50 px-2.5 py-1 font-semibold text-indigo-700">
-                    {post.category}
-                  </span>
-                  <span>{post.readMins} min read</span>
+                {cat}
+              </a>
+            ))}
+          </div>
+
+          <div className="space-y-16">
+            {categories.map((cat) => (
+              <div key={cat} id={slugify(cat)} className="scroll-mt-24">
+                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{cat}</h2>
+                <div className="mt-3 h-1 w-16 bg-sky-500" />
+                <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {posts
+                    .filter((post) => post.category === cat)
+                    .map((post) => (
+                      <Link
+                        key={post.slug}
+                        href={`/blog/${post.slug}`}
+                        className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md"
+                      >
+                        <div className="flex items-center gap-2 text-xs text-slate-500">
+                          <span className="rounded-full bg-indigo-50 px-2.5 py-1 font-semibold text-indigo-700">
+                            {post.category}
+                          </span>
+                          <span>{post.readMins} min read</span>
+                        </div>
+                        <h3 className="mt-4 text-lg font-semibold leading-snug text-slate-900 group-hover:text-indigo-700">
+                          {post.title}
+                        </h3>
+                        <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{post.excerpt}</p>
+                        <div className="mt-5 flex items-center justify-between text-xs text-slate-400">
+                          <span>{formatDate(post.date)}</span>
+                          <span className="font-semibold text-indigo-600 group-hover:translate-x-0.5">Read →</span>
+                        </div>
+                      </Link>
+                    ))}
                 </div>
-                <h2 className="mt-4 text-lg font-semibold leading-snug text-slate-900 group-hover:text-indigo-700">
-                  {post.title}
-                </h2>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{post.excerpt}</p>
-                <div className="mt-5 flex items-center justify-between text-xs text-slate-400">
-                  <span>{formatDate(post.date)}</span>
-                  <span className="font-semibold text-indigo-600 group-hover:translate-x-0.5">Read →</span>
-                </div>
-              </Link>
+              </div>
             ))}
           </div>
         </Container>

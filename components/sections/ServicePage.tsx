@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import Accordion from "../ui/Accordion";
 import { SITE_NAME, SITE_URL } from "../../lib/constants";
+import { blogPosts } from "../../lib/blog";
 
 export type ServiceFaq = {
   id: string;
@@ -62,6 +64,7 @@ const pricingModels = [
 
 export default function ServicePage({ data }: { data: ServicePageData }) {
   const pageUrl = `${SITE_URL}/${data.slug}`;
+  const relatedPosts = blogPosts.filter((p) => p.relatedApp?.href === `/${data.slug}`).slice(0, 3);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -324,6 +327,37 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
           </div>
         </Container>
       </section>
+
+      {/* Related guides (topic cluster) */}
+      {relatedPosts.length > 0 && (
+        <section className="bg-white py-16 md:py-20">
+          <Container>
+            <h2 className="text-3xl font-semibold tracking-tight text-[#1d2f69] md:text-4xl">Related guides</h2>
+            <div className="mt-4 h-1 w-24 bg-sky-500" />
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {relatedPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-sky-200 hover:shadow-md"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">{post.category}</p>
+                  <h3 className="mt-2 text-lg font-semibold leading-snug text-[#1d2f69] group-hover:text-sky-700">
+                    {post.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{post.excerpt}</p>
+                  <span className="mt-3 inline-block text-sm font-semibold text-sky-600">Read →</span>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-8">
+              <Link href="/blog" className="text-sm font-semibold text-sky-700 hover:underline">
+                View all guides →
+              </Link>
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* Final CTA */}
       <section className="bg-[#172a66] py-16 md:py-20">
