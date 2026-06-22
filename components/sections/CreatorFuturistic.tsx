@@ -5,6 +5,7 @@ import Button from "../ui/Button";
 import Accordion from "../ui/Accordion";
 import { SITE_NAME, SITE_URL } from "../../lib/constants";
 import { blogPosts } from "../../lib/blog";
+import { creatorSolutions } from "../../lib/creatorSolutions";
 
 const capabilities = [
   { title: "Custom App Development", body: "Forms, workflows, reports, and dashboards built on Zoho Creator for your exact process — fast, with low-code." },
@@ -268,6 +269,36 @@ export default function CreatorFuturistic() {
                 ))}
               </ul>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Creator solutions */}
+      <section className="py-16 md:py-20">
+        <Container>
+          <div className="text-center">
+            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Apps We Build on Creator</h2>
+            <div className="mx-auto mt-4 h-1 w-28 rounded bg-gradient-to-r from-cyan-400 to-violet-400" />
+            <p className="mx-auto mt-4 max-w-2xl text-slate-300">
+              Popular, ready-to-build solutions — each fully customised to your process and connected to your Zoho stack.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {creatorSolutions.map((s) => (
+              <Link
+                key={s.slug}
+                href={`/zoho-creator/solutions/${s.slug}`}
+                className="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-slate-200 transition-colors hover:border-cyan-400/40 hover:bg-white/[0.07]"
+              >
+                <span className="text-sm font-medium">{s.name}</span>
+                <span className="text-cyan-300">→</span>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/zoho-creator/solutions" className="text-sm font-semibold text-cyan-300 hover:underline">
+              View all Zoho Creator solutions →
+            </Link>
           </div>
         </Container>
       </section>

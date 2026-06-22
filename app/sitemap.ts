@@ -3,6 +3,7 @@ import { SITE_URL } from "../lib/constants";
 import { caseStudies } from "../lib/caseStudies";
 import { blogPosts } from "../lib/blog";
 import { locationPages } from "../lib/locations";
+import { creatorSolutions } from "../lib/creatorSolutions";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -141,5 +142,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8
   }));
 
-  return [...staticPages, ...caseStudyPages, ...blogPages, ...locationPagesSitemap];
+  const creatorSolutionPages: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/zoho-creator/solutions`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85
+    },
+    ...creatorSolutions.map((s) => ({
+      url: `${SITE_URL}/zoho-creator/solutions/${s.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8
+    }))
+  ];
+
+  return [...staticPages, ...caseStudyPages, ...blogPages, ...locationPagesSitemap, ...creatorSolutionPages];
 }
