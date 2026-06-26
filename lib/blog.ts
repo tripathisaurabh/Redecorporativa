@@ -462,6 +462,89 @@ export const blogPosts: BlogPost[] = [
         a: "Zoho One includes the full versions of the apps it bundles, so you get the same core functionality. Some apps still have premium add-ons or higher tiers beyond what's included, and GST adds 18% to either route — verify specifics and current pricing on Zoho's official pages."
       }
     ]
+  },
+  {
+    slug: "zoho-crm-implementation-checklist-smbs",
+    title: "Zoho CRM Implementation Checklist for SMBs",
+    metaTitle: "Zoho CRM Implementation Checklist for SMBs (2026)",
+    description:
+      "A practical, phase-by-phase Zoho CRM implementation checklist for small and mid-sized businesses in 2026 — from process mapping and configuration to migration, training, and the 90-day review.",
+    keywords: [
+      "Zoho CRM implementation checklist",
+      "Zoho CRM setup for SMB",
+      "Zoho CRM implementation steps",
+      "Zoho CRM for small business",
+      "how to implement Zoho CRM"
+    ],
+    category: "Zoho CRM",
+    date: "2026-06-26",
+    readMins: 8,
+    excerpt:
+      "Most CRM rollouts fail on process and adoption, not software. This phase-by-phase checklist keeps an SMB Zoho CRM implementation on track from kickoff to the 90-day review.",
+    relatedApp: { label: "Zoho CRM Implementation", href: "/zoho-crm" },
+    content: [
+      { type: "p", text: "Buying Zoho CRM is the easy part. The reason CRM projects stall is almost never the software — it's skipping the groundwork, migrating messy data into a half-built system, and rolling it out before anyone knows how to use it. For a small or mid-sized business with no full-time admin, a clear sequence matters more than clever features. This checklist walks through every phase, in order, so your implementation actually sticks." },
+      { type: "h2", text: "Phase 1 — Discovery and process mapping" },
+      { type: "p", text: "Before you touch a single setting, write down how a deal moves through your business today — from first enquiry to closed revenue. Document the real pain points (leads going cold, no follow-up visibility, reporting done in spreadsheets), list the other tools that must connect (email, telephony, accounting, WhatsApp), and decide up front what data is actually worth bringing across. This phase decides everything that follows; rushing it is the single most common mistake." },
+      {
+        type: "ul",
+        items: [
+          "Map your sales process end to end and define your pipeline stages",
+          "Identify integrations needed (email, phone, Books, marketing tools)",
+          "List current pain points and the metrics you want CRM to improve",
+          "Decide which historical data to migrate — and what to leave behind"
+        ]
+      },
+      { type: "h2", text: "Phase 2 — Configure Zoho CRM first" },
+      { type: "p", text: "Never migrate data into a system that isn't built. Set up your modules, custom fields, and picklist values so they match the process you mapped. Crucially, get your access model right: in Zoho CRM, Roles control which records a user can see (the hierarchy) and Profiles control what actions they can take (permissions). Building this before data and users arrive means ownership and visibility are correct from day one rather than retrofitted later." },
+      {
+        type: "table",
+        head: ["Phase", "Key actions", "Typical time"],
+        rows: [
+          ["1. Discovery", "Process mapping, integrations list, data decisions", "Few days–1 week"],
+          ["2. Configuration", "Modules, fields, pipeline, Roles & Profiles", "1–2 weeks"],
+          ["3. Data migration", "Clean, map, sequence, import", "Few days–1 week"],
+          ["4. Automation", "Assignment rules, workflows, blueprints", "Within configuration"],
+          ["5. Testing & training", "UAT, role-based sessions, guides", "1 week"],
+          ["6. Go-live & review", "Switch over, then 2 / 30 / 90-day reviews", "Ongoing"]
+        ]
+      },
+      { type: "note", text: "A typical SMB implementation runs about 2–8 weeks depending on customisation, data volume, and complexity. Zoho CRM plan pricing changes periodically — verify current rates on Zoho's official site before budgeting licences." },
+      { type: "h2", text: "Phase 3 — Clean and migrate your data" },
+      { type: "p", text: "Garbage in, garbage out — and cleaning data before import is far easier than fixing it afterwards, because Zoho's interface is built for editing individual records, not bulk surgery. Be honest about your existing data: how many duplicates exist, what share of contacts have complete details, are company names spelled consistently. Then create a field-mapping document so every column in your old export lines up with the right Zoho field, paying special attention to dates, phone formats, and picklist values that need renaming." },
+      { type: "p", text: "Import order matters: parent records must exist before child records can link to them. As a rule, import Accounts first, then Contacts, then Deals and activities — importing out of sequence breaks the relationships between records." },
+      { type: "h2", text: "Phase 4 — Set up automation that earns its place" },
+      { type: "p", text: "Automation is where an SMB gets its time back, but start with the few rules that remove daily friction rather than automating everything at once:" },
+      {
+        type: "ul",
+        items: [
+          "Assignment rules to route incoming leads to the right owner automatically",
+          "Workflow rules to handle repetitive tasks — follow-up reminders, field updates, alerts",
+          "Blueprints to enforce your sales process step by step so nothing gets skipped",
+          "Email and (optionally) WhatsApp notifications tied to stage changes"
+        ]
+      },
+      { type: "h2", text: "Phase 5 — Test, then train by role" },
+      { type: "p", text: "Run a short user-acceptance test with a couple of real records before go-live — create a lead, move it through the pipeline, check the automations fire and the reports populate. Then train people by role rather than in one giant session: sales, support, and management each use the CRM differently. Provide a one-page reference guide per role and leave time for questions. Adoption is won or lost here, not in configuration." },
+      { type: "h2", text: "Phase 6 — Go live, then review on a schedule" },
+      { type: "p", text: "Switching on is a milestone, not the finish line. Put three reviews in the calendar: at 2 weeks survey users on what's clunky, at 30 days check data quality and whether automations are behaving, and at 90 days assess adoption and refine. Most of the long-term value comes from these tune-ups, not the initial build." },
+      { type: "h2", text: "Where a partner saves you time" },
+      { type: "p", text: "An SMB can absolutely run this checklist in-house, but the phases that derail people — honest data clean-up, getting Roles and Profiles right, rebuilding automations, and driving adoption — are exactly where experience pays off. As a certified Zoho partner we handle the implementation end to end, or coach your team through the parts you'd rather own, so the rollout lands once instead of being redone." }
+    ],
+    faqs: [
+      {
+        q: "How long does a Zoho CRM implementation take for an SMB?",
+        a: "Usually about 2–8 weeks, depending on how much customisation you need, how much data you're migrating, and how clean that data is. The configuration and data clean-up phases — not the import itself — take most of the time."
+      },
+      {
+        q: "What's the difference between Roles and Profiles in Zoho CRM?",
+        a: "Roles define the record-visibility hierarchy — which records a user can see based on where they sit in the org. Profiles define permissions — what actions a user can perform. Set both up during configuration, before users and data arrive, so access is correct from day one."
+      },
+      {
+        q: "What order should I import data into Zoho CRM?",
+        a: "Import parent records before child records so relationships link correctly — typically Accounts first, then Contacts, then Deals and activities. Clean and de-duplicate the data before importing, since editing in bulk is much harder once it's inside the CRM."
+      }
+    ]
   }
 ];
 
