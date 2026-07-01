@@ -545,6 +545,141 @@ export const blogPosts: BlogPost[] = [
         a: "Import parent records before child records so relationships link correctly — typically Accounts first, then Contacts, then Deals and activities. Clean and de-duplicate the data before importing, since editing in bulk is much harder once it's inside the CRM."
       }
     ]
+  },
+  {
+    slug: "best-zoho-apps-manufacturing-india",
+    title: "Best Zoho Apps for Manufacturing Businesses in India",
+    metaTitle: "Best Zoho Apps for Manufacturing in India (2026) | Practical Guide",
+    description:
+      "Which Zoho apps actually matter for a manufacturing business in India? A practical 2026 guide to Inventory, Creator, Books, CRM and People — what each one solves on the shop floor and how they fit together.",
+    keywords: [
+      "Zoho apps for manufacturing",
+      "Zoho for manufacturing India",
+      "Zoho Inventory manufacturing",
+      "Zoho manufacturing ERP",
+      "best Zoho apps for factory"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-06-30",
+    readMins: 8,
+    excerpt:
+      "Manufacturing runs on stock, production orders, and tight margins — not generic CRM features. Here's which Zoho apps actually move the needle for Indian manufacturers, and how they connect.",
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" },
+    content: [
+      { type: "p", text: "Manufacturers don't need software that does everything — they need software that controls stock, tracks production, keeps GST-compliant books, and tells sales what can actually be promised. Zoho doesn't sell a single 'manufacturing ERP' box; instead, a few of its apps combine into a capable, affordable manufacturing stack. Here's what each app does for an Indian manufacturer in 2026, in the order most factories adopt them." },
+      { type: "h2", text: "1. Zoho Inventory — the operational core" },
+      { type: "p", text: "For most manufacturers this is the starting point. Zoho Inventory handles multi-warehouse stock, batch and serial tracking, and — crucially for production — Composite Items, which let you define a Bill of Materials by grouping raw materials and sub-assemblies into a finished good. When you build a finished product, raw-material stock is consumed and finished-goods stock goes up, so your numbers reflect what's actually on the shelf. It also manages purchase orders, sales orders, and order fulfilment across warehouses." },
+      {
+        type: "table",
+        head: ["Zoho Inventory plan", "Price (India, 2026)", "Best for"],
+        rows: [
+          ["Free", "₹0 (≈ 50 orders/mo)", "Micro units testing the waters"],
+          ["Standard", "≈ ₹1,499/mo (2 warehouses)", "Small manufacturers with basic multi-stock needs"],
+          ["Professional", "≈ ₹2,999/mo", "Growing factories with higher order volume"],
+          ["Premium", "≈ ₹4,999/mo (up to 25,000 orders/mo)", "High-volume, multi-warehouse operations"]
+        ]
+      },
+      { type: "note", text: "Indicative India pricing for 2026, before 18% GST. Order limits and warehouse counts scale by plan. Verify current pricing on Zoho's official Inventory pricing page before budgeting — Zoho updates plans and limits periodically." },
+      { type: "h2", text: "2. Zoho Creator — for the processes Inventory doesn't cover" },
+      { type: "p", text: "No off-the-shelf app maps perfectly to a shop floor. Zoho Creator is a low-code platform for building exactly the pieces you're missing — a manufacturing-order screen that tracks raw-material consumption and work-in-progress, a machine-maintenance log, a quality-check form with pass/fail gates, or a job-card system for operators. Creator apps are relational and instantly available as native mobile apps, so a supervisor can log production from the floor rather than on paper. This is what lets manufacturers tailor Zoho to their real process instead of bending the process to the software." },
+      { type: "h2", text: "3. Zoho Books — GST, costing and compliance" },
+      { type: "p", text: "Manufacturing margins live and die on accurate costing and clean compliance. Zoho Books gives you GST-compliant invoicing, e-invoicing and e-way bills, purchase and expense tracking, and financial reporting — and it shares item and order data with Zoho Inventory, so a purchase or a dispatch doesn't have to be keyed twice. For Indian manufacturers juggling vendor bills, input credits, and statutory filings, this connection removes a whole layer of double entry." },
+      { type: "h2", text: "4. Zoho CRM — from enquiry to confirmed order" },
+      { type: "p", text: "On the demand side, Zoho CRM manages distributors, dealers, and B2B enquiries, then hands clean orders to operations. When a quote is accepted in CRM, a sales order can be generated and pushed to Inventory for fulfilment — so the sales promise and the stock reality stay in sync. For manufacturers selling through channel partners, CRM also tracks the long, multi-touch sales cycles that spreadsheets lose." },
+      { type: "h2", text: "5. Zoho People — workforce on the floor" },
+      { type: "p", text: "Factories are people-heavy and shift-driven. Zoho People handles attendance, shift scheduling, leave, and basic HR for a workforce that often isn't sitting at desks — useful once the operational apps are in place and you want the human side measured too." },
+      { type: "h2", text: "How the stack fits together" },
+      { type: "p", text: "The reason to keep this within Zoho is that the apps are built to share data. A typical flow: an enquiry is qualified in CRM, becomes a sales order, drives a manufacturing order tracked in Creator, consumes raw materials recorded in Inventory, and is invoiced in Books — without re-keying at any step. Bought separately the apps add up; under Zoho One (around ₹1,500 per employee per month, billed annually, before GST) the whole suite is one per-person price, which often works out cheaper once a factory uses three or more apps." },
+      {
+        type: "table",
+        head: ["Business need", "Zoho app"],
+        rows: [
+          ["Stock, BOM, production output", "Zoho Inventory"],
+          ["Custom shop-floor & QC apps", "Zoho Creator"],
+          ["GST, e-invoicing, costing", "Zoho Books"],
+          ["Dealers, enquiries, orders", "Zoho CRM"],
+          ["Attendance, shifts, HR", "Zoho People"]
+        ]
+      },
+      { type: "h2", text: "Where a partner helps" },
+      { type: "p", text: "The hard part isn't buying these apps — it's modelling your Bills of Materials correctly, building the right Creator apps for your process, and wiring the apps together so data flows cleanly. As a certified Zoho partner we scope a manufacturer's real operation, start with the app that solves the biggest pain first (usually Inventory), and expand the stack in phases so the rollout is paid back as it goes rather than landing all at once." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho have a dedicated manufacturing ERP?",
+        a: "Not as a single boxed product. Zoho delivers manufacturing capability by combining apps — Zoho Inventory for stock and Bills of Materials, Zoho Creator for custom production and quality apps, Zoho Books for GST and costing, and Zoho CRM for orders. Together they cover most of what an SMB manufacturer needs at a fraction of traditional ERP cost."
+      },
+      {
+        q: "Can Zoho Inventory handle a Bill of Materials and production?",
+        a: "Yes. Zoho Inventory's Composite Items let you define a Bill of Materials, grouping raw materials and sub-assemblies into finished goods. Building a finished item consumes raw-material stock and increases finished-goods stock. For deeper production tracking — work-in-progress, job cards, quality gates — Zoho Creator adds custom apps on top."
+      },
+      {
+        q: "How much does a Zoho manufacturing setup cost in India?",
+        a: "It depends on which apps and how many users. Individually, Zoho Inventory starts around ₹1,499/month (before GST) with higher tiers for more volume. For a multi-app setup, Zoho One bundles the whole suite at around ₹1,500 per employee per month (billed annually, before GST), which is often cheaper once you use three or more apps. Confirm current pricing on Zoho's official site."
+      }
+    ]
+  },
+  {
+    slug: "zoho-crm-real-estate-setup-guide",
+    title: "Zoho CRM for Real Estate: A Practical Setup Guide",
+    metaTitle: "Zoho CRM for Real Estate Setup Guide (2026) | Leads, Properties & Portals",
+    description:
+      "A practical 2026 guide to setting up Zoho CRM for real estate — custom modules for properties, lead capture from 99acres and MagicBricks, site-visit workflows, and the automation that keeps deals moving.",
+    keywords: [
+      "Zoho CRM for real estate",
+      "Zoho CRM real estate setup",
+      "real estate CRM India",
+      "Zoho CRM property management",
+      "Zoho CRM 99acres MagicBricks integration"
+    ],
+    category: "Zoho CRM",
+    date: "2026-07-01",
+    readMins: 8,
+    excerpt:
+      "Real estate runs on leads, listings, and follow-up — not generic CRM fields. Here's how to configure Zoho CRM around property enquiries, portal leads, and site visits so nothing slips.",
+    relatedApp: { label: "Zoho CRM Implementation", href: "/zoho-crm" },
+    content: [
+      { type: "p", text: "Real estate is a follow-up business. Leads come from a dozen places — property portals, hoardings, referrals, WhatsApp — and the deal is won by whoever follows up fastest and never loses track. Zoho CRM is a strong fit for this, but only once it's configured around how property actually sells rather than left on its default sales settings. This guide walks through a practical setup for an Indian agency or developer in 2026." },
+      { type: "h2", text: "Step 1 — Model properties as their own module" },
+      { type: "p", text: "Zoho CRM's out-of-the-box fields are built for generic B2B sales, not property. The first move is to create a custom Properties module (or repurpose Products) to catalogue your listings — with fields for property type (1BHK, 2BHK, 3BHK, villa, plot, commercial), location, price, area, status (available, under offer, sold), and the owner or builder. Then link each Lead, Contact, and Deal to the property they're interested in, so every enquiry is tied to real inventory instead of a note in someone's head." },
+      { type: "h2", text: "Step 2 — Add the fields real estate actually needs" },
+      { type: "p", text: "In the Leads module, add the custom fields that decide whether a lead is worth chasing today: budget range, property interest, preferred location, financing status (loan vs cash), and timeline to buy. These few fields turn a flat list of enquiries into something you can prioritise and route. Rename standard modules where it helps — many agencies relabel 'Deals' to 'Bookings' so the pipeline speaks the team's language." },
+      { type: "h2", text: "Step 3 — Capture leads from every portal automatically" },
+      { type: "p", text: "This is where most agencies leak money. Leads from 99acres, MagicBricks, Housing.com, your website, and WhatsApp should land in CRM automatically, tagged with their source, not copied over by hand hours later. Set up a Lead Source picklist covering every channel, then use web-to-lead forms for your site and email parsing (each portal gets its own forwarding address with field mapping) so portal enquiries convert straight into leads. Tracking source properly also tells you, months later, which portals actually produce bookings and which just burn budget." },
+      {
+        type: "table",
+        head: ["Lead source", "How it feeds Zoho CRM"],
+        rows: [
+          ["Website enquiry", "Web-to-lead form maps straight into the Leads module"],
+          ["99acres / MagicBricks / Housing", "Email parsing — each portal forwards to a mapped address"],
+          ["WhatsApp", "WhatsApp Business channel creates and routes a lead"],
+          ["Referral / hoarding / walk-in", "Manual entry or a quick mobile form, tagged by source"]
+        ]
+      },
+      { type: "note", text: "Zoho CRM plan pricing changes periodically — verify current rates on Zoho's official site before budgeting licences. Zoho CRM doesn't ship with native 99acres/MagicBricks connectors, so portal capture is set up via email parsing and web forms as part of implementation." },
+      { type: "h2", text: "Step 4 — Route leads and automate the follow-up" },
+      { type: "p", text: "Speed-to-lead decides real estate. Use assignment rules to route a new enquiry to the right agent instantly — by location, project, or round-robin — and workflow rules to fire an immediate acknowledgement (email or WhatsApp) plus a follow-up task so no lead sits untouched. A blueprint can enforce your actual sales stages — New → Contacted → Site Visit Scheduled → Visited → Negotiation → Booked — so an agent can't skip a step, and managers can see exactly where every deal is stuck." },
+      { type: "h2", text: "Step 5 — Manage site visits and documents" },
+      { type: "p", text: "Site visits are the hinge of a property deal, so make them first-class in CRM. Integrate a scheduling tool (like Calendly) or use CRM calendar and reminders so visits are booked, confirmed, and followed up automatically. Keep property brochures, floor plans, price sheets, and agreements attached to the relevant property or deal record, so an agent pulls the right document in seconds instead of digging through a shared drive." },
+      { type: "h2", text: "Step 6 — Reporting and mobile" },
+      { type: "p", text: "Build dashboards for the numbers that run the business: leads by source, conversion by agent, site-visit-to-booking ratio, and pipeline value by project. Because agents live in the field, the Zoho CRM mobile app matters as much as the desktop view — leads, follow-ups, and property details all travel, and a visit can be logged from the site rather than remembered later. Zia, Zoho's AI assistant, can add lead scoring and next-best-action suggestions on top." },
+      { type: "h2", text: "Where a partner helps" },
+      { type: "p", text: "The features are all there; the value is in the configuration — modelling properties correctly, wiring up every portal so no lead is missed, and building automation that fits your sales process rather than a generic one. As a certified Zoho partner, Redecorporativa sets Zoho CRM up around your real estate workflow end to end — custom modules, portal lead capture, site-visit automation, and dashboards — so your team spends time closing rather than chasing." }
+    ],
+    faqs: [
+      {
+        q: "Can Zoho CRM capture leads from 99acres and MagicBricks?",
+        a: "Yes, though not through a native connector. Portal enquiries are captured via email parsing — each portal forwards to a dedicated address with its fields mapped into CRM — and website enquiries via web-to-lead forms. Every lead is tagged with its source, so you can see which portals actually produce bookings. This is set up as part of implementation."
+      },
+      {
+        q: "How do I track properties and listings in Zoho CRM?",
+        a: "Create a custom Properties module (or repurpose Products) with fields for type, location, price, area, and status, then link each lead, contact, and deal to the property they're interested in. That keeps every enquiry tied to real inventory and makes matching buyers to listings straightforward."
+      },
+      {
+        q: "Is Zoho CRM good for a small real estate agency?",
+        a: "Yes. With custom modules, portal lead capture, assignment rules, and a blueprint for your sales stages, even a small agency gets fast follow-up and clear pipeline visibility at a low per-user cost. The key is configuring it around a property workflow rather than using the default sales setup."
+      }
+    ]
   }
 ];
 
