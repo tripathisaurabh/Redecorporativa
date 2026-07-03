@@ -680,6 +680,79 @@ export const blogPosts: BlogPost[] = [
         a: "Yes. With custom modules, portal lead capture, assignment rules, and a blueprint for your sales stages, even a small agency gets fast follow-up and clear pipeline visibility at a low per-user cost. The key is configuring it around a property workflow rather than using the default sales setup."
       }
     ]
+  },
+  {
+    slug: "zoho-inventory-vs-zoho-books",
+    title: "Zoho Inventory vs Zoho Books: Which Do You Need First?",
+    metaTitle: "Zoho Inventory vs Zoho Books (2026) | Which One Do You Need First?",
+    description:
+      "Zoho Inventory and Zoho Books overlap on stock tracking but solve different problems. A 2026 guide to what each does, where they overlap, and which to start with.",
+    keywords: [
+      "Zoho Inventory vs Zoho Books",
+      "Zoho Inventory or Zoho Books",
+      "Zoho Books inventory management",
+      "Zoho Inventory pricing 2026",
+      "do I need Zoho Inventory"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-07-03",
+    readMins: 7,
+    excerpt:
+      "Both track stock, both are Zoho apps, and that's exactly why people get stuck choosing. Here's the real difference, where they overlap, and which one to start with.",
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" },
+    content: [
+      { type: "p", text: "Zoho Books has inventory tracking built in. Zoho Inventory is a dedicated inventory app. Both track stock, both are Zoho products, and both show up in the same search results — which is exactly why so many businesses get stuck deciding between them. The short answer: they solve different problems, and plenty of businesses eventually run both. Here's how to tell which one you need first." },
+      { type: "h2", text: "1. What each one is actually built for" },
+      { type: "p", text: "Zoho Books is accounting software. Its job is invoicing, expenses, GST returns, bank reconciliation, and financial reporting — with basic item and stock tracking included so you can invoice against inventory without a second system. Zoho Inventory is operations software. Its job is stock accuracy across multiple warehouses, purchase and sales order management, Bills of Materials for assembled goods, batch and serial tracking, and shipping integrations with couriers. One answers 'what did we earn and owe GST on'; the other answers 'what do we have, where, and how much can we sell right now.'" },
+      { type: "h2", text: "2. Where they overlap" },
+      { type: "p", text: "Both let you create items, track quantity on hand, and reduce stock when you invoice a sale. For a business selling a small number of products from one location with no assembly or multi-channel selling, Zoho Books' built-in inventory is often genuinely enough — adding Zoho Inventory on top would just be a second system to maintain." },
+      {
+        type: "table",
+        head: ["Capability", "Zoho Books", "Zoho Inventory"],
+        rows: [
+          ["Invoicing, expenses, GST filing", "Yes — core function", "No — syncs to Books"],
+          ["Basic stock quantity tracking", "Yes", "Yes"],
+          ["Multiple warehouses/locations", "Limited", "Yes"],
+          ["Bills of Materials / assembly", "No", "Yes (Composite Items)"],
+          ["Batch & serial number tracking", "No", "Yes"],
+          ["Multi-channel selling (Amazon, Shopify, etc.)", "No", "Yes"],
+          ["Purchase order & reorder automation", "Basic", "Advanced"],
+          ["Shipping carrier integration", "No", "Yes"]
+        ]
+      },
+      { type: "h2", text: "3. Signs you need Zoho Inventory, not just Zoho Books" },
+      {
+        type: "ul",
+        items: [
+          "You stock and sell from more than one warehouse or location",
+          "You manufacture or assemble finished goods from raw materials (Bills of Materials)",
+          "You sell the same products across multiple channels — website, Amazon, Flipkart, a physical store",
+          "You need batch or serial number tracking for compliance or warranty reasons",
+          "Your reorder points and purchase orders are currently a spreadsheet, not a system"
+        ]
+      },
+      { type: "h2", text: "4. Pricing — 2026" },
+      { type: "p", text: "Zoho Inventory is sold on its own tiered pricing, separate from Zoho Books, with a free plan for very small volumes and paid tiers scaling by monthly order volume and number of users/warehouses. If you're already on Zoho One, Zoho Inventory is typically included at no extra cost — worth checking before you buy it as a standalone subscription." },
+      { type: "note", text: "Zoho Inventory pricing scales by monthly order volume, users, and warehouses, and Zoho periodically revises tiers — verify current plans and rupee pricing on Zoho's official Inventory pricing page before budgeting. If you're on Zoho One, check your bundle first." },
+      { type: "h2", text: "5. How the two connect" },
+      { type: "p", text: "You don't have to choose forever. Zoho Inventory syncs natively with Zoho Books — sales orders, purchase orders, and stock movements in Inventory flow through to Books as invoices, bills, and journal entries, so your accountant sees a financially accurate picture without re-entering anything. The common path for a growing business is to start on Zoho Books alone, and add Zoho Inventory once operations outgrow what Books' basic tracking can handle — usually around the point of adding a second warehouse, a manufacturing step, or a second sales channel." },
+      { type: "h2", text: "Where a partner helps" },
+      { type: "p", text: "The decision itself is usually simple once you map it against your actual operation — the harder part is the setup: getting item structures, warehouses, and Bills of Materials modelled correctly from day one so a later migration isn't needed. As a certified Zoho partner, we assess whether Books alone covers you or Inventory is worth adding now, then configure whichever combination fits — with a clean sync to Books either way." }
+    ],
+    faqs: [
+      {
+        q: "Can I use Zoho Books without Zoho Inventory?",
+        a: "Yes. Zoho Books includes basic item and stock tracking, which is enough for a small business selling a limited product range from one location with no assembly. You only need Zoho Inventory once you add multiple warehouses, manufacturing/assembly, multi-channel selling, or batch and serial tracking."
+      },
+      {
+        q: "Is Zoho Inventory included in Zoho One?",
+        a: "For most Zoho One editions, yes — Zoho Inventory is bundled into the suite at no extra per-app cost. If you're already on Zoho One, check your specific plan before purchasing Zoho Inventory as a standalone subscription, since bundle inclusions can change."
+      },
+      {
+        q: "Do Zoho Inventory and Zoho Books sync automatically?",
+        a: "Yes. Sales orders, purchase orders, and stock movements recorded in Zoho Inventory flow through to Zoho Books as invoices, bills, and accounting entries, so finance sees an accurate, up-to-date picture without manual re-entry once the two are connected."
+      }
+    ]
   }
 ];
 
