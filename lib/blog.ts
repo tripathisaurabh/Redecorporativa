@@ -753,6 +753,83 @@ export const blogPosts: BlogPost[] = [
         a: "Yes. Sales orders, purchase orders, and stock movements recorded in Zoho Inventory flow through to Zoho Books as invoices, bills, and accounting entries, so finance sees an accurate, up-to-date picture without manual re-entry once the two are connected."
       }
     ]
+  },
+  {
+    slug: "zoho-inventory-pricing-plans-2026",
+    title: "Zoho Inventory Pricing in 2026: Plans, Limits, and Hidden Costs",
+    metaTitle: "Zoho Inventory Pricing 2026 | Plans, Order Limits & Add-On Costs Explained",
+    description:
+      "Zoho Inventory moved to a new plan structure in 2026 — Standard, Premium, Plus, and Enterprise. Here's what each plan costs, the order and user limits that matter, and the add-on costs to budget for.",
+    keywords: [
+      "Zoho Inventory pricing",
+      "Zoho Inventory plans 2026",
+      "Zoho Inventory cost",
+      "Zoho Inventory order limits",
+      "Zoho Inventory free plan"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-07-05",
+    readMins: 7,
+    excerpt:
+      "Zoho Inventory's 2026 lineup prices by organisation, not per user — but order volume, locations, and add-ons decide what you actually pay. A plain-English breakdown.",
+    content: [
+      { type: "p", text: "Zoho Inventory refreshed its plan lineup in 2026, and if you last looked at pricing a year or two ago, the names and limits you remember have changed. The old Standard / Professional / Premium ladder has been replaced by Standard, Premium, Plus, and Enterprise — priced per organisation, not per user — with order volume as the main lever. This guide walks through the current plans, the limits that actually decide which one you need, and the add-on costs that catch teams out." },
+      { type: "h2", text: "The 2026 plan lineup" },
+      { type: "p", text: "All plans are priced per organisation per month, billed annually. Every paid plan includes composite items, dropshipment, backordering, and a customer portal; the differences are volume and depth." },
+      {
+        type: "table",
+        head: ["Plan", "Price (USD, billed annually)", "Orders / month", "Users", "Locations"],
+        rows: [
+          ["Free", "$0", "50", "1", "1"],
+          ["Standard", "≈ $29 / org / month", "500", "3", "2"],
+          ["Premium", "≈ $79 / org / month", "3,000", "5", "4"],
+          ["Plus", "≈ $129 / org / month", "7,500", "10", "6"],
+          ["Enterprise", "≈ $249 / org / month", "15,000", "10", "10"]
+        ]
+      },
+      { type: "note", text: "Figures are from Zoho's official pricing as of mid-2026, exclusive of local taxes (18% GST applies on Indian invoices), and the Indian edition is priced separately in rupees. Zoho revises plans and limits periodically — always verify current pricing on Zoho's official site before budgeting." },
+      { type: "h2", text: "What you get as you move up" },
+      {
+        type: "ul",
+        items: [
+          "Standard covers structured order management — composite items, dropshipment, backordering, and the customer portal — enough for a small trading business moving beyond spreadsheets",
+          "Premium is where serious inventory control unlocks: serial number and batch tracking, barcode generation, stock counting, unit-of-measure conversion, workflow automation, bin locations, and a vendor portal",
+          "Plus bundles a premium Zoho Commerce plan — an online store builder with WhatsApp commerce, abandoned-cart recovery, and loyalty tools — useful if you sell D2C and want stock and storefront in one subscription",
+          "Enterprise adds Zoho Analytics for advanced reporting and per-contact multi-currency, aimed at high-volume, multi-location distribution"
+        ]
+      },
+      { type: "p", text: "For most product businesses we implement, Premium is the sweet spot: batch/serial tracking and barcode workflows are usually the features that justify moving off the entry plan, well before order volume does." },
+      { type: "h2", text: "The add-on costs people forget" },
+      { type: "p", text: "Because plans are priced per organisation, you don't pay per seat — but you do pay to stretch any limit. As of 2026, indicative add-on pricing (billed annually) is:" },
+      {
+        type: "ul",
+        items: [
+          "Extra users — ≈ $7.50 per user / month beyond your plan's included seats",
+          "Extra orders — ≈ $7.50 per additional block of 500 orders / month",
+          "Extra locations — ≈ $10 per location / month",
+          "Advanced autoscans — ≈ $8 per 50 document scans / month",
+          "Advanced warehousing (WMS features) — ≈ $124 / month, relevant only for serious multi-bin warehouse operations"
+        ]
+      },
+      { type: "p", text: "The practical implication: a Standard subscription with two extra users and one extra order block costs more than it first appears, and at that point comparing against Premium's bigger allowances is worth five minutes of arithmetic. Also remember an 'order' counts sales orders across all connected channels — Shopify, Amazon, Flipkart, and manual orders all draw from the same monthly quota." },
+      { type: "h2", text: "Free plan, trials, and Zoho One" },
+      { type: "p", text: "The free plan (50 orders, one user, one location) is a real working edition, not a demo — fine for validating the product or running a very small operation. Every sign-up also gets a 14-day trial of paid features. And if your business needs three or more Zoho apps, check Zoho One before buying Inventory standalone: most Zoho One editions bundle Inventory alongside CRM, Books, and forty-plus other apps, which changes the cost equation entirely. As a certified Zoho partner, we routinely find the bundle beats standalone subscriptions once two or three departments are involved — we'll model both against your order volumes before you commit." }
+    ],
+    faqs: [
+      {
+        q: "How much does Zoho Inventory cost per month in 2026?",
+        a: "On annual billing, Standard is around $29, Premium $79, Plus $129, and Enterprise $249 per organisation per month, plus local taxes. Pricing is per organisation, not per user — each plan includes a set number of users, orders, and locations, with paid add-ons beyond that. The Indian edition is priced separately in rupees; verify current figures on Zoho's official pricing page."
+      },
+      {
+        q: "What happens if I exceed my plan's monthly order limit?",
+        a: "You can purchase additional order blocks (around $7.50 per 500 orders per month, billed annually) or upgrade to the next plan. Orders from all connected sales channels count toward the same quota, so multi-channel sellers should size their plan on total order volume, not just one storefront."
+      },
+      {
+        q: "Is Zoho Inventory really free for small businesses?",
+        a: "Yes — the free plan supports 50 orders a month, one user, and one location, with core features like composite items, dropshipment, and backordering included. It suits very small or early-stage operations; most businesses outgrow it at the point they need more users or serial/batch tracking, which starts on paid plans."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" }
   }
 ];
 
