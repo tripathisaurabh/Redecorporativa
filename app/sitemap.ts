@@ -4,6 +4,7 @@ import { caseStudies } from "../lib/caseStudies";
 import { blogPosts } from "../lib/blog";
 import { locationPages } from "../lib/locations";
 import { creatorSolutions } from "../lib/creatorSolutions";
+import { statePages } from "../lib/states";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -157,5 +158,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   ];
 
-  return [...staticPages, ...caseStudyPages, ...blogPages, ...locationPagesSitemap, ...creatorSolutionPages];
+  const statePagesSitemap: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/zoho-partner`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85
+    },
+    ...statePages.map((s) => ({
+      url: `${SITE_URL}/zoho-partner/${s.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8
+    }))
+  ];
+
+  return [
+    ...staticPages,
+    ...caseStudyPages,
+    ...blogPages,
+    ...locationPagesSitemap,
+    ...creatorSolutionPages,
+    ...statePagesSitemap
+  ];
 }

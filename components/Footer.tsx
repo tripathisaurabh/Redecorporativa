@@ -162,6 +162,8 @@ export default function Footer() {
                 <Link className="hover:text-white" href={`/${loc.slug}`}>{loc.city}</Link>
               </span>
             ))}
+            <span aria-hidden>·</span>
+            <Link className="font-semibold text-slate-300 hover:text-white" href="/zoho-partner">All India →</Link>
           </div>
           <div className="flex flex-col items-start justify-between gap-2">
             <span>© {new Date().getFullYear()} {SITE_NAME}. All rights reserved.</span>
