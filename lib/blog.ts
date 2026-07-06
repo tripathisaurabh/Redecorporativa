@@ -830,6 +830,73 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-shopify-amazon-integration-guide",
+    title: "Connecting Zoho Inventory to Shopify and Amazon: A Practical Setup Guide",
+    metaTitle: "Zoho Inventory + Shopify & Amazon Integration (2026) | Setup Guide",
+    description:
+      "How to connect Shopify and Amazon to Zoho Inventory for one stock pool across channels — the setup steps, the mapping decisions that matter, and the mistakes that cause oversells.",
+    keywords: [
+      "Zoho Inventory Shopify integration",
+      "Zoho Inventory Amazon integration",
+      "multichannel inventory management",
+      "sync Shopify stock with Zoho Inventory",
+      "Zoho Inventory sales channels"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-07-06",
+    readMins: 7,
+    excerpt:
+      "One stock pool, every channel: what actually happens when you plug Shopify and Amazon into Zoho Inventory, and the four mapping decisions to get right before you switch on sync.",
+    content: [
+      { type: "p", text: "The moment a product business sells on more than one channel — a Shopify store plus an Amazon listing is the classic combination — stock control stops being a spreadsheet problem and becomes a timing problem. A unit sold on Amazon at 2 pm must disappear from Shopify before someone else buys it at 2:05. Zoho Inventory's native integrations exist to solve exactly this: orders from every connected channel flow into one system, and stock levels flow back out. This guide covers how the connection works, the configuration decisions that matter, and the traps we see businesses fall into." },
+      { type: "h2", text: "What the integrations actually do" },
+      { type: "p", text: "Both the Shopify and Amazon integrations are native — built and maintained by Zoho, no third-party connector required. Once connected, sales orders from the channel sync into Zoho Inventory automatically on a schedule you choose, and stock changes in Zoho Inventory push back to the channel. Items can be matched to your existing Zoho Inventory items or imported fresh, and fulfilment status flows both ways so a shipment recorded in Zoho marks the order fulfilled on the storefront." },
+      { type: "h2", text: "Setting up Shopify: the four decisions that matter" },
+      { type: "p", text: "The connection itself is quick — from Settings, choose Shopping Cart, set up Shopify, and authorise the app against your store. The configuration screen afterwards is where implementations succeed or fail. Four settings deserve real thought:" },
+      {
+        type: "ul",
+        items: [
+          "Item mapping — decide whether Shopify products link to existing Zoho items (match on SKU, so clean your SKUs first) or import as new records; mismatched items are the number-one cause of wrong stock counts",
+          "Warehouse mapping — map each Shopify location to a Zoho Inventory warehouse, or point everything at one primary warehouse; note that Zoho pushes your combined stock across warehouses to Shopify as one available quantity",
+          "Customer mapping — track every Shopify buyer as an individual contact, or roll all storefront orders under a single 'Shopify customer' record to keep your contact list lean",
+          "Sync frequency and import date — choose how often orders pull in and from which date history should backfill; more frequent sync means fresher stock figures on the storefront"
+        ]
+      },
+      { type: "p", text: "Multiple Shopify stores can connect to the same Zoho Inventory organisation — useful if you run separate storefronts per country or brand — and each store gets its own configuration and sync history." },
+      { type: "h2", text: "Adding Amazon to the mix" },
+      { type: "p", text: "The Amazon marketplace integration follows the same pattern: connect your seller account, map items, and orders sync in alongside your Shopify orders. The practical differences are operational. Amazon SKUs often differ from your website SKUs for the same physical product, so plan your item-matching before connecting — in Zoho Inventory a single item can be linked to its listing on each channel, which is what keeps one stock pool accurate everywhere. If you use FBA for some products, decide upfront which stock Zoho Inventory should treat as sellable for other channels, since Amazon-warehoused stock isn't available to fulfil your Shopify orders." },
+      { type: "h2", text: "The traps that cause oversells" },
+      {
+        type: "table",
+        head: ["Trap", "What happens", "How to avoid it"],
+        rows: [
+          ["Dirty SKUs before connecting", "Duplicate items, stock split across records", "Standardise SKUs in a cleanup pass first"],
+          ["Ignoring the order quota", "Sync stops mid-month when plan limit hits", "Size your plan on total orders across all channels"],
+          ["Manual stock edits on the channel", "Zoho and storefront figures drift apart", "Make Zoho Inventory the single source of truth"],
+          ["Untracked bundles/kits", "Components oversold", "Model bundles as composite items in Zoho"]
+        ]
+      },
+      { type: "note", text: "Channel integrations are available on Zoho Inventory's paid plans, and every synced order — Shopify, Amazon, or manual — counts against your plan's monthly order limit. Plan tiers and limits change periodically, so verify current plan details and pricing on Zoho's official site before committing." },
+      { type: "h2", text: "When native sync isn't enough" },
+      { type: "p", text: "The native integrations cover the common cases well. You'll need extra tooling — Zoho Flow, a custom function, or a middleware pass — when you have channel-specific pricing rules, partial-location stock allocation (say, only 80% of stock visible to Amazon), or marketplaces Zoho doesn't natively support. That's implementation work, not a product limitation, and it's where a partner earns their fee: we've seen more multichannel projects fail from skipped SKU hygiene than from any missing feature. A half-day audit of your item master before connecting anything is the cheapest insurance you can buy." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho Inventory sync stock to Shopify and Amazon in real time?",
+        a: "Sync runs on a configurable schedule rather than instantaneously, and you can trigger a manual sync at any time. For most businesses the scheduled sync keeps channels accurate enough to prevent oversells; very high-velocity sellers should keep safety stock buffers on fast-moving SKUs."
+      },
+      {
+        q: "Can I connect more than one Shopify store to Zoho Inventory?",
+        a: "Yes — multiple Shopify stores can connect to a single Zoho Inventory organisation, each with its own item mapping, warehouse mapping, and sync history. This suits businesses running separate storefronts per brand or country while managing one stock pool."
+      },
+      {
+        q: "Do Shopify and Amazon orders count toward my Zoho Inventory plan limit?",
+        a: "Yes. Orders from every connected channel, plus manually created orders, draw from the same monthly order quota on your plan. Multichannel sellers should size their plan on combined volume across all channels — and check current plan limits on Zoho's official pricing page, as tiers change periodically."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" }
   }
 ];
 
