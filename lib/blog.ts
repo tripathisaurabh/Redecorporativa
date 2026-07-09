@@ -897,6 +897,81 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-people-vs-keka-hr-software-india",
+    title: "Zoho People vs Keka: HR Software Costs for Indian SMBs (2026)",
+    metaTitle: "Zoho People vs Keka (2026) | HR Software Comparison for Indian SMBs",
+    description:
+      "Zoho People and Keka price HR software in completely different ways — per employee vs fixed blocks. A 2026 cost comparison for Indian SMBs at 25, 100, and 300 headcount.",
+    keywords: [
+      "Zoho People vs Keka",
+      "Zoho People pricing India",
+      "Keka pricing",
+      "HR software for SMBs India",
+      "HRMS comparison India"
+    ],
+    category: "Zoho People",
+    date: "2026-07-08",
+    readMins: 7,
+    excerpt:
+      "The biggest difference between Zoho People and Keka isn't features — it's how they charge. Here's what each actually costs at 25, 100, and 300 employees in 2026.",
+    content: [
+      { type: "p", text: "Most Zoho People vs Keka comparisons argue about features. In our experience implementing HR systems for Indian SMBs, the decision usually turns on something more basic: the two products charge in completely different ways, and the same company can pay wildly different amounts depending on headcount. This guide runs the numbers at three team sizes, then covers where each product is actually stronger." },
+      { type: "h2", text: "Two opposite pricing models" },
+      { type: "p", text: "Zoho People charges per employee per month, starting near ₹50 and rising by plan tier — so a 20-person company pays for exactly 20 people. Keka sells fixed monthly blocks: as of 2026, plans start around ₹9,999 per month covering up to 100 employees, with a per-employee charge beyond that. The block model means a 25-person company pays the same base as a 95-person company." },
+      {
+        type: "table",
+        head: ["Headcount", "Zoho People (approx.)", "Keka (approx.)"],
+        rows: [
+          ["25 employees", "₹1,250–5,750 / month depending on plan", "₹9,999+ / month (base block)"],
+          ["100 employees", "₹5,000–23,000 / month depending on plan", "₹9,999–15,999 / month"],
+          ["300 employees", "₹15,000–69,000 / month depending on plan", "₹27,999–45,999 / month"]
+        ]
+      },
+      { type: "note", text: "Indicative 2026 figures, billed annually, before 18% GST. Zoho People tiers run roughly ₹50–₹230 per employee per month (Essential to Enterprise); Keka's blocks and per-employee overage vary by plan, and Keka typically adds a one-time setup fee. Both vendors revise pricing — verify current rates on the official Zoho People and Keka pricing pages before budgeting." },
+      { type: "p", text: "The pattern is clear: under about 75 employees, Zoho People is almost always cheaper — often by a factor of three or more. Between 100 and 300 employees the gap narrows, and the comparison shifts to features and payroll depth rather than raw price." },
+      { type: "h2", text: "Where Keka is genuinely strong" },
+      {
+        type: "ul",
+        items: [
+          "Payroll-first design — Indian statutory compliance (PF, ESI, PT, TDS) is native to the core product, not an add-on",
+          "Polished employee experience — its mobile app and self-service screens are a frequent reason teams shortlist it",
+          "Performance management depth on higher plans, including 360° reviews and OKR tracking",
+          "Strong fit for HR teams that want an all-in-one HR + payroll product and don't use other business software from the same vendor"
+        ]
+      },
+      { type: "h2", text: "Where Zoho People wins" },
+      {
+        type: "ul",
+        items: [
+          "Per-employee pricing that scales down — small teams pay small bills, and there's a free plan for up to 5 employees",
+          "Ecosystem leverage — native links to Zoho CRM, Books, Expense, and Recruit; HR data flows into the systems your business already runs on",
+          "Zoho Payroll adds Indian statutory compliance for roughly ₹33 per employee per month, keeping the combined cost well under Keka at SMB sizes",
+          "Deep customisation — custom forms, approval workflows, and Deluge scripting for HR processes that don't fit a template",
+          "Included in Zoho One and Zoho People Plus — if you already own the bundle, you may already be paying for it"
+        ]
+      },
+      { type: "h2", text: "The payroll question" },
+      { type: "p", text: "Keka's strongest argument is payroll: it's built in, mature, and handles Indian compliance without integration work. Zoho's answer is Zoho People + Zoho Payroll, two products from one vendor with a native sync. For standard salary structures, both handle PF, ESI, professional tax, and TDS filings competently. If your payroll has heavy complexity — multiple legal entities, unusual wage structures, large contractor workforces — evaluate both with your actual payroll register in the trial, not the demo data." },
+      { type: "h2", text: "How we'd decide" },
+      { type: "p", text: "Under 75 employees, the maths favours Zoho People strongly, and the free tier plus 30-day trial make it a low-risk start. Already on Zoho CRM or Books? The ecosystem case adds to it — one vendor, one login, HR data connected to finance and sales. Choose Keka when a polished standalone HR-plus-payroll experience is the priority, the block price fits your headcount, and you don't need HR connected to a wider business suite. As a certified Zoho partner we're transparent about the bias in our position — which is exactly why we recommend running both trials against your own leave policy, shift patterns, and payroll register before signing either contract." }
+    ],
+    faqs: [
+      {
+        q: "Which is cheaper for a small company — Zoho People or Keka?",
+        a: "For teams under about 75 employees, Zoho People is usually significantly cheaper because it charges per employee (from around ₹50/employee/month in 2026) while Keka bills a fixed block starting near ₹9,999/month regardless of whether you have 20 or 95 staff. Verify current pricing on both vendors' official pages."
+      },
+      {
+        q: "Does Zoho People include Indian payroll compliance?",
+        a: "Payroll is handled by Zoho Payroll, a companion product that syncs natively with Zoho People and covers PF, ESI, professional tax, and TDS for roughly ₹33 per employee per month as of 2026. Keka includes payroll in its core plans instead. Either route delivers compliant Indian payroll — the difference is packaging and price."
+      },
+      {
+        q: "Is Zoho People included in Zoho One?",
+        a: "Yes. Zoho People is part of the Zoho One bundle and also available in the Zoho People Plus HR suite. If your company already licenses Zoho One, check your subscription before buying separate HR software — you may already have it."
+      }
+    ],
+    relatedApp: { label: "Zoho People", href: "/zoho-people" }
   }
 ];
 
