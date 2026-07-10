@@ -972,6 +972,88 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho People", href: "/zoho-people" }
+  },
+  {
+    slug: "zoho-payroll-india-pricing-setup",
+    title: "Zoho Payroll in India: Pricing, Features & Setup Guide",
+    metaTitle: "Zoho Payroll India 2026 | Pricing, Features & Setup Guide",
+    description:
+      "A practical 2026 guide to Zoho Payroll in India — plan pricing, PF/ESI/PT/TDS compliance, what setup involves, and how it connects to Zoho Books and People.",
+    keywords: [
+      "Zoho Payroll India",
+      "Zoho Payroll pricing India",
+      "Zoho Payroll setup",
+      "payroll software India 2026",
+      "Zoho Payroll PF ESI TDS"
+    ],
+    category: "Zoho People",
+    date: "2026-07-10",
+    readMins: 8,
+    excerpt:
+      "Running payroll in India means juggling PF, ESI, PT, and TDS every month. Here's what Zoho Payroll costs in 2026, what it automates, and what a clean setup actually involves.",
+    relatedApp: { label: "Zoho People", href: "/zoho-people" },
+    content: [
+      { type: "p", text: "Indian payroll is deceptively hard. It isn't just paying salaries — it's computing PF and ESI correctly, deducting professional tax by state, running TDS under the right income-tax regime, generating payslips and Form 16, and filing on time, every month. Zoho Payroll is built specifically for that Indian compliance burden, and it plugs into the rest of the Zoho suite. Here's a clear look at what it costs in 2026, what it actually does, and how to set it up properly." },
+      { type: "h2", text: "What Zoho Payroll handles" },
+      { type: "p", text: "The point of dedicated payroll software is to turn a stressful monthly scramble into a repeatable, auditable process. Zoho Payroll covers the full run:" },
+      {
+        type: "ul",
+        items: [
+          "Automatic statutory calculations — PF, ESI, Professional Tax, and Labour Welfare Fund computed to current rules",
+          "TDS on salary under Section 192 — based on each employee's IT declarations, regime choice, and salary structure",
+          "Salary structures and payslips — flexible components, automated payslip generation and distribution",
+          "Employee self-service — a portal and mobile app where staff view payslips, submit IT declarations, and upload proofs",
+          "Compliance documents — Form 16 Part B, challans, and reports for PF/ESI/PT filing",
+          "Direct salary payments — bank transfers and integration with supported banks for one-click payouts"
+        ]
+      },
+      { type: "h2", text: "Zoho Payroll pricing in India (2026)" },
+      { type: "p", text: "Zoho Payroll uses a base-plus-per-employee model: each plan includes a block of employees for a fixed monthly fee, then charges a small per-head rate above that. There's a free tier for very small teams." },
+      {
+        type: "table",
+        head: ["Plan", "Indicative price (India, 2026)", "Best for"],
+        rows: [
+          ["Free", "₹0 (up to ~10 employees)", "Startups and micro teams"],
+          ["Standard", "≈ ₹1,000/mo incl. 25 employees, then ≈ ₹40/extra employee", "Small businesses running core payroll"],
+          ["Professional", "≈ ₹3,000/mo incl. 50 employees, then ≈ ₹60/extra employee", "Growing teams needing approvals & bonus runs"],
+          ["Premium", "≈ ₹4,000/mo incl. 50 employees, then ≈ ₹80/extra employee", "Larger teams with advanced payroll controls"]
+        ]
+      },
+      { type: "note", text: "Indicative India pricing for 2026, generally billed annually and before 18% GST; plan inclusions and per-employee rates vary and Zoho updates them periodically. Always confirm current pricing on Zoho's official Payroll India pricing page before budgeting." },
+      { type: "p", text: "The tiers differ by more than headcount. Higher plans add approval workflows, bonus and off-cycle processing, and more granular controls, so the right plan depends on how much oversight and flexibility your payroll process needs — not just how many people you employ." },
+      { type: "h2", text: "The compliance detail that matters" },
+      { type: "p", text: "This is where Indian payroll trips businesses up, and where the software earns its fee. PF is typically 12% of Basic + DA for both employee and employer. ESI applies to employees earning up to ₹21,000 gross — employee contribution around 0.75% and employer around 3.25% — and isn't applicable in a few states. Professional Tax varies by state entirely. TDS on salary must follow the employee's chosen tax regime. Zoho Payroll keeps these rules updated as budgets and thresholds change, so you're not manually tracking every statutory revision — but you should still verify current rates, since thresholds and slabs are revised periodically." },
+      { type: "h2", text: "How setup actually works" },
+      { type: "p", text: "A clean payroll setup is mostly about getting the foundations right before the first live run, because errors compound month over month. In practice the sequence is:" },
+      {
+        type: "ul",
+        items: [
+          "Organisation & statutory setup — enter PF, ESI, PT, and TAN details, and your pay schedule",
+          "Salary components — define earnings, deductions, and reimbursements, and build salary structures",
+          "Employee data — import employees with accurate Basic/DA splits, PAN, and bank details",
+          "Prior payroll — enter year-to-date figures if you're switching mid-year, so TDS and Form 16 stay accurate",
+          "A parallel test run — process one cycle alongside your old method and reconcile before going fully live"
+        ]
+      },
+      { type: "h2", text: "How it connects to the rest of Zoho" },
+      { type: "p", text: "Zoho Payroll's real advantage for existing Zoho users is integration. It syncs with Zoho People, so attendance, leave, and new-joiner data flow into payroll without re-keying, and it posts salary journals into Zoho Books, so payroll costs land in your accounts automatically. If you already run Zoho for HR or finance, that connection removes a whole layer of manual reconciliation each month." },
+      { type: "h2", text: "Where a partner helps" },
+      { type: "p", text: "Payroll is one of the least forgiving systems to get wrong — an incorrect PF split or a missed PT rule surfaces as a compliance problem, not just a bug. As a certified Zoho partner we handle the setup end to end: configuring statutory components correctly for your states, building salary structures, migrating prior payroll accurately, wiring Payroll into Books and People, and running a parallel cycle so your first live payroll is right the first time." }
+    ],
+    faqs: [
+      {
+        q: "How much does Zoho Payroll cost in India?",
+        a: "As of 2026, indicatively: a Free tier for very small teams, Standard around ₹1,000/month including 25 employees (then ~₹40 per extra employee), Professional around ₹3,000/month including 50 employees (~₹60 extra), and Premium around ₹4,000/month including 50 employees (~₹80 extra) — generally billed annually and before 18% GST. Plan inclusions change periodically, so confirm current pricing on Zoho's official Payroll India page."
+      },
+      {
+        q: "Does Zoho Payroll handle PF, ESI, PT and TDS automatically?",
+        a: "Yes. It auto-computes PF, ESI, and Professional Tax to current rules, and TDS on salary under Section 192 based on each employee's IT declarations and chosen regime. It also generates Form 16 Part B and filing reports. Zoho updates the rules as thresholds and slabs change, though it's wise to verify current rates."
+      },
+      {
+        q: "Does Zoho Payroll integrate with Zoho Books and Zoho People?",
+        a: "Yes. It syncs with Zoho People so attendance and leave flow into payroll, and posts salary journals into Zoho Books so payroll costs hit your accounts automatically. For existing Zoho users this removes most of the manual reconciliation payroll usually involves."
+      }
+    ]
   }
 ];
 
