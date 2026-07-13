@@ -1054,6 +1054,80 @@ export const blogPosts: BlogPost[] = [
         a: "Yes. It syncs with Zoho People so attendance and leave flow into payroll, and posts salary journals into Zoho Books so payroll costs hit your accounts automatically. For existing Zoho users this removes most of the manual reconciliation payroll usually involves."
       }
     ]
+  },
+  {
+    slug: "best-zoho-apps-ecommerce-business-india",
+    title: "Best Zoho Apps for E-commerce Businesses in India",
+    metaTitle: "Best Zoho Apps for E-commerce in India (2026) | Practical Guide",
+    description:
+      "Which Zoho apps actually matter for an online store in India? A practical 2026 guide to Commerce, Inventory, Books, CRM and Marketing — what each solves and how they connect Shopify, Amazon and your own site.",
+    keywords: [
+      "Zoho apps for ecommerce",
+      "Zoho for online store India",
+      "Zoho Inventory Shopify Amazon",
+      "Zoho Commerce India",
+      "best Zoho apps for ecommerce business"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-07-13",
+    readMins: 8,
+    excerpt:
+      "Running an online store means juggling a storefront, stock across channels, GST-clean books, and customer follow-up. Here's which Zoho apps actually move the needle for Indian e-commerce, and how they fit together.",
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" },
+    content: [
+      { type: "p", text: "E-commerce isn't one problem — it's four running at once: selling on a storefront, keeping stock accurate across every channel, staying GST-compliant, and turning one-time buyers into repeat customers. Zoho doesn't sell a single 'e-commerce box'; instead a handful of its apps combine into a capable, affordable online-retail stack. Here's what each app does for an Indian online seller in 2026, in the order most stores adopt them." },
+      { type: "h2", text: "1. Zoho Inventory — the multi-channel core" },
+      { type: "p", text: "For most online sellers this is the starting point, because the single biggest e-commerce headache is overselling — selling stock on Amazon that you already sold on your website. Zoho Inventory sits in the middle and keeps one source of truth: when an item sells on any channel, its stock-on-hand is pushed to every other channel automatically. It connects to Shopify, WooCommerce, Magento, BigCommerce and Wix, and to marketplaces like Amazon, eBay, Etsy and Flipkart, syncing orders and customers back into one place. Add multi-warehouse management, batch and serial tracking, and automated reorder points, and it becomes the operational backbone." },
+      {
+        type: "table",
+        head: ["Zoho Inventory plan", "Price (India, 2026)", "Best for"],
+        rows: [
+          ["Free", "₹0 (≈ 50 orders/mo)", "New stores testing one or two channels"],
+          ["Standard", "≈ ₹1,499/mo (2 warehouses)", "Small stores with basic multi-channel needs"],
+          ["Professional", "≈ ₹2,999/mo", "Growing sellers with higher order volume"],
+          ["Premium", "≈ ₹4,999/mo (up to 25,000 orders/mo)", "High-volume, multi-warehouse operations"]
+        ]
+      },
+      { type: "note", text: "Indicative India pricing for 2026, before 18% GST. Order limits and warehouse counts scale by plan. Verify current pricing on Zoho's official Inventory pricing page before budgeting — Zoho updates plans and limits periodically." },
+      { type: "h2", text: "2. Zoho Commerce — if you need your own storefront" },
+      { type: "p", text: "If you don't yet have a website — or want to move off a pricey platform — Zoho Commerce lets you build and host your own online store with a drag-and-drop builder, free themes, SSL, unlimited bandwidth, and no platform transaction fees. Its advantage inside this stack is that it's e-commerce and inventory in one: the storefront, orders, and stock share the same Zoho backend, so you're not paying for a separate sync tool. Sellers already happy on Shopify or Amazon can skip Commerce and let Inventory manage those channels instead — Commerce is for those who want the store itself to live in Zoho." },
+      { type: "note", text: "Zoho Commerce plans are commonly listed in USD (roughly $15/mo Standard, $49/mo Professional, $109/mo Premium, billed annually). India pricing and current rates should be confirmed on Zoho's official Commerce pricing page before budgeting." },
+      { type: "h2", text: "3. Zoho Books — GST, reconciliation and clean accounting" },
+      { type: "p", text: "Online selling generates a flood of small transactions, marketplace fees, and returns that get messy fast. Zoho Books gives you GST-compliant invoicing, e-invoicing and e-way bills, automated bank feeds, and financial reporting — and it shares customer, item, and order data with Zoho Inventory, so a sale doesn't have to be re-keyed to become an accounting entry. For Indian sellers reconciling payouts from multiple marketplaces against actual orders, that connection removes a whole layer of manual matching at GST-filing time." },
+      { type: "h2", text: "4. Zoho CRM — turning buyers into repeat customers" },
+      { type: "p", text: "Acquiring a customer costs far more than keeping one, so the sellers who win are the ones who follow up. Zoho CRM captures buyers and enquiries, segments them by behaviour and value, and drives repeat-purchase and win-back campaigns. Tie it to Inventory and Books and a customer's full history — what they bought, what they paid, what they returned — sits in one view, so support and marketing act on facts rather than guesswork. For higher-value or B2B/wholesale e-commerce, CRM also manages the longer, quote-driven sales that a storefront alone can't." },
+      { type: "h2", text: "5. Zoho Marketing Automation & Campaigns — demand and retention" },
+      { type: "p", text: "On the demand side, Zoho's marketing tools run the email and multi-channel campaigns that bring shoppers back — abandoned-cart nudges, post-purchase sequences, and segmented promotions built from the customer data already sitting in CRM and Inventory. Because the audience is the same records your orders live against, you target actual buying behaviour instead of a disconnected email list." },
+      { type: "h2", text: "How the stack fits together" },
+      { type: "p", text: "The reason to keep this within Zoho is that the apps are built to share data. A typical flow: a shopper buys on Shopify (or a Zoho Commerce store), the order and stock update in Inventory, the invoice and GST entry land in Books, the customer record enriches in CRM, and a post-purchase campaign fires from Marketing Automation — without re-keying at any step. Bought separately the apps add up; under Zoho One (around ₹1,500 per employee per month, billed annually, before GST) the whole suite is one per-person price, which often works out cheaper once a store uses three or more apps." },
+      {
+        type: "table",
+        head: ["Business need", "Zoho app"],
+        rows: [
+          ["Stock sync across channels", "Zoho Inventory"],
+          ["Your own online storefront", "Zoho Commerce"],
+          ["GST, e-invoicing, accounts", "Zoho Books"],
+          ["Repeat customers & B2B orders", "Zoho CRM"],
+          ["Email & retention campaigns", "Zoho Marketing Automation / Campaigns"]
+        ]
+      },
+      { type: "h2", text: "Where a partner helps" },
+      { type: "p", text: "The hard part isn't buying these apps — it's connecting your channels so stock never oversells, mapping marketplace fees and returns cleanly into Books, and setting up the automation that actually brings customers back. As a certified Zoho partner we scope an online seller's real operation, start with the app that solves the biggest pain first (usually Inventory), and expand the stack in phases so the rollout pays for itself as it goes rather than landing all at once." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho Inventory sync stock across Shopify and Amazon?",
+        a: "Yes. Zoho Inventory connects to channels like Shopify, WooCommerce, Magento, Wix and marketplaces like Amazon, eBay, Etsy and Flipkart. When an item sells on one channel, its updated stock-on-hand is pushed to the others automatically, which is what prevents overselling across platforms."
+      },
+      {
+        q: "Do I need Zoho Commerce if I already sell on Shopify?",
+        a: "Not necessarily. Zoho Commerce is for building and hosting your own storefront inside Zoho. If you're already happy on Shopify or Amazon, you can skip Commerce and let Zoho Inventory manage stock and orders across those existing channels instead."
+      },
+      {
+        q: "How much does a Zoho e-commerce setup cost in India?",
+        a: "It depends on which apps and how many users. Zoho Inventory starts free (about 50 orders/month) and around ₹1,499/month for Standard before GST. For a multi-app setup, Zoho One bundles the whole suite at around ₹1,500 per employee per month (billed annually, before GST), which is often cheaper once you use three or more apps. Confirm current pricing on Zoho's official site."
+      }
+    ]
   }
 ];
 
