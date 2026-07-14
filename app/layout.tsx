@@ -79,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://salesiq.zohopublic.com/widget?wc=siq3c88192900d878cab25700811cb721480e1817e6dc71acd4bec948b90b9a2fbf"
           strategy="afterInteractive"
         />
+        <Script id="zf-adv-lead" src="/zf-adv-lead.js" strategy="afterInteractive" />
       </body>
     </html>
   );
