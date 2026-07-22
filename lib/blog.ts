@@ -1207,6 +1207,156 @@ export const blogPosts: BlogPost[] = [
         a: "Yes. As a certified Zoho partner we handle QuickBooks-to-Zoho Books migration end to end — chart of accounts, customers, vendors, opening balances, historical transactions, and item masters — and set up GST, e-invoicing, and any CRM or Inventory connections so nothing is lost and you're compliant from day one."
       }
     ]
+  },
+  {
+    slug: "zoho-inventory-setup-guide-small-business",
+    title: "Zoho Inventory Setup Guide for Small Businesses (Step-by-Step, 2026)",
+    metaTitle: "Zoho Inventory Setup Guide 2026 | Step-by-Step for Small Businesses",
+    description:
+      "A practical step-by-step guide to setting up Zoho Inventory in 2026 — organisation setup, items and stock, warehouses, sales channels, shipping integrations, and the mistakes that cause wrong stock counts.",
+    keywords: [
+      "Zoho Inventory setup guide",
+      "how to set up Zoho Inventory",
+      "Zoho Inventory small business",
+      "Zoho Inventory step by step",
+      "Zoho Inventory configuration India"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-07-22",
+    readMins: 8,
+    excerpt:
+      "Zoho Inventory can run your stock, orders, and shipping from one place — but only if it's set up in the right order. Here's the step-by-step, plus the setup mistakes that lead to wrong stock counts.",
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" },
+    content: [
+      { type: "p", text: "Zoho Inventory manages your stock, sales and purchase orders, warehouses, and shipping in one place, and syncs with sales channels and Zoho Books. Getting started is straightforward, but the order you do things in matters: set up items and warehouses before you touch orders, and your stock stays accurate; do it backwards and you'll spend weeks reconciling counts. This guide walks through the setup in the right sequence for a small Indian business in 2026." },
+      { type: "h2", text: "Before you start: pick the right plan" },
+      { type: "p", text: "Zoho Inventory has a genuinely usable free tier and three paid plans, priced per organisation and scaled mainly by monthly order volume, users, and warehouses. Start on the plan that matches your current order volume — you can upgrade later without losing data." },
+      {
+        type: "table",
+        head: ["Plan", "Price (India, per month)", "Roughly who it's for"],
+        rows: [
+          ["Free", "₹0", "New/very small sellers — around 50 orders/mo, 1 user, 2 warehouses"],
+          ["Standard", "≈ ₹1,499", "Small businesses needing more orders and multi-warehouse"],
+          ["Professional", "≈ ₹2,999", "Growing businesses with higher order volumes and more users"],
+          ["Premium", "≈ ₹4,999", "High-volume sellers — up to ~25,000 orders/mo"]
+        ]
+      },
+      { type: "note", text: "Indicative India pricing for 2026, per organisation, before 18% GST; annual billing is cheaper than monthly. Order limits and inclusions change periodically — verify the current plans, order caps, and prices on Zoho's official Inventory pricing page before you commit." },
+      { type: "h2", text: "Step 1 — Set up your organisation" },
+      { type: "p", text: "Create your organisation and get the basics right first, because they flow into every document and tax calculation afterwards: business name and address, base currency (INR), time zone, financial year start, and your GSTIN and tax settings. Getting GST configured now means invoices and reports are compliant from the first order rather than needing a cleanup later." },
+      { type: "h2", text: "Step 2 — Add your items (and get the data model right)" },
+      { type: "p", text: "Items are the foundation — everything else references them, so accuracy here saves the most pain. For each product record the SKU, selling price, cost price, unit, HSN code, and tax rate. Two decisions matter early: use consistent, unique SKUs (this is what keeps counts correct across channels), and decide which products are simple items versus item groups (variants like size/colour) or composite/bundled items. If you sell variants, set up item groups now rather than as flat duplicates later." },
+      { type: "h2", text: "Step 3 — Set up warehouses and opening stock" },
+      { type: "p", text: "Add each physical location as a warehouse, then enter opening stock per item per warehouse. This is the single most important step for accuracy: your opening stock is the baseline every future count is calculated from, so do a real physical count before entering it. Entering rushed or estimated opening numbers is the number-one cause of 'Zoho says we have stock but the shelf is empty' problems down the line." },
+      { type: "h2", text: "Step 4 — Connect your sales channels" },
+      { type: "p", text: "Zoho Inventory's strength for Indian sellers is pulling online and offline orders into one stock pool. It integrates natively with marketplaces and storefronts so orders flow in and stock is decremented automatically:" },
+      {
+        type: "ul",
+        items: [
+          "Ecommerce & marketplaces — Shopify, Amazon (including Amazon India), Flipkart, and eBay for automatic order and inventory sync",
+          "Shipping carriers — Delhivery, Blue Dart, and Shiprocket, so you generate labels and track shipments without leaving Inventory",
+          "Accounting — a two-way link with Zoho Books so invoices, bills, and stock valuation stay in sync",
+          "CRM — connect Zoho CRM so sales orders and customer records line up with your pipeline"
+        ]
+      },
+      { type: "p", text: "Connect one channel first, confirm a few test orders sync and decrement stock correctly, then add the rest. Turning on every channel at once makes it hard to spot which mapping is off if counts drift." },
+      { type: "h2", text: "Step 5 — Configure workflows and roles" },
+      { type: "p", text: "With data in place, set up how orders move: sales order and invoice templates, reorder points and low-stock alerts so you restock before you run out, and user roles so your warehouse team sees fulfilment without touching pricing or accounts. Reorder points in particular turn Inventory from a record-keeper into an early-warning system." },
+      { type: "h2", text: "Step 6 — Test end to end, then go live" },
+      { type: "p", text: "Before you rely on it, run one full cycle on test data: create a purchase order, receive stock, raise a sales order, ship it, and generate the invoice — then check the stock count moved correctly at every step and matches Zoho Books. Only once a full loop reconciles cleanly should you switch off your old system. Run both in parallel for a couple of weeks if you're migrating from spreadsheets or another tool." },
+      { type: "h2", text: "Where a partner helps" },
+      { type: "p", text: "Most small businesses can get the basics of Zoho Inventory running themselves. Where it gets fiddly is multi-warehouse allocation, marketplace mappings that keep counts correct across Amazon, Flipkart and your own store, composite items and manufacturing, and a clean two-way sync with Books. As a certified Zoho partner we set Inventory up around how you actually sell and ship — accurate opening stock, channel mappings that don't drift, and automation so low stock and reorders manage themselves." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho Inventory free?",
+        a: "Zoho Inventory has a forever-free plan suited to new and very small sellers — typically around 50 orders per month with one user and two warehouses. Paid plans (Standard, Professional, Premium) scale up order volume, users, and warehouses. Confirm the current free-tier limits and paid prices on Zoho's official Inventory pricing page, as they change periodically."
+      },
+      {
+        q: "What's the most important step when setting up Zoho Inventory?",
+        a: "Entering accurate opening stock per item per warehouse, based on a real physical count. Your opening stock is the baseline every future count is calculated from, so rushed or estimated numbers are the main reason stock later shows wrong. Set up clean, unique SKUs and warehouses first, then enter counted opening stock."
+      },
+      {
+        q: "Does Zoho Inventory work with Amazon, Flipkart and Shopify in India?",
+        a: "Yes. Zoho Inventory integrates natively with Shopify, Amazon (including Amazon India), Flipkart, and eBay, plus Indian shipping partners like Delhivery, Blue Dart, and Shiprocket, so online orders sync in and stock decrements automatically. Connect one channel first and verify test orders before adding the rest."
+      }
+    ]
+  },
+  {
+    slug: "zoho-creator-pricing-india-2026",
+    title: "Zoho Creator Pricing in India (2026): Plans, Costs & What Drives the Bill",
+    metaTitle: "Zoho Creator Pricing India 2026 | Plans, Per-User Costs & Build Costs",
+    description:
+      "A clear breakdown of Zoho Creator pricing in India for 2026 — every plan, per-user costs, what each tier unlocks, and the app-development costs the pricing page doesn't show.",
+    keywords: [
+      "Zoho Creator pricing India",
+      "Zoho Creator cost per user",
+      "Zoho Creator plans 2026",
+      "Zoho Creator price",
+      "low-code platform pricing India"
+    ],
+    category: "Zoho Creator",
+    date: "2026-07-22",
+    readMins: 7,
+    excerpt:
+      "Zoho Creator is a low-code platform priced per user — but the licence is only half the story. Here's every plan for India in 2026, what each tier unlocks, and what building an app actually costs.",
+    relatedApp: { label: "Zoho Creator Development", href: "/zoho-creator" },
+    content: [
+      { type: "p", text: "Zoho Creator is a low-code platform for building custom business apps — inventory add-ons, field-service tools, approval systems, dashboards — without writing everything from scratch. The pricing looks simple at first: a per-user, per-month fee across three tiers. But two things trip up budgets — which tier you actually need, and the fact that the licence pays for the platform, not for the app being built. Here's the full picture for India in 2026." },
+      { type: "h2", text: "Zoho Creator plans (India, 2026)" },
+      { type: "p", text: "Creator is sold per user, per month, with meaningful savings on annual billing and a free trial to prototype before you commit." },
+      {
+        type: "table",
+        head: ["Plan", "Price (per user/month)", "What it unlocks"],
+        rows: [
+          ["Standard", "≈ ₹720", "Single-app building — forms, reports, pages, workflows, mobile"],
+          ["Professional", "≈ ₹1,800", "Unlimited apps, more data sources, AI models, connections"],
+          ["Enterprise", "≈ ₹2,220", "650+ app integrations, data prep, predictive analytics, scale"]
+        ]
+      },
+      { type: "note", text: "Indicative India pricing for 2026, per user per month, before 18% GST; annual billing is cheaper than monthly. Plan features and limits change periodically — always verify current pricing on Zoho's official Creator pricing page before budgeting." },
+      { type: "h2", text: "Which tier do you actually need?" },
+      { type: "p", text: "The honest answer for most small businesses is Standard. If you're building one focused app — a job-card system, a site-inspection tool, a simple approval workflow — Standard covers the forms, reports, workflows, and native mobile app you need. You move up when you hit a specific ceiling, not by default:" },
+      {
+        type: "ul",
+        items: [
+          "Choose Professional when you need to build more than one app, want richer AI features, or need more data sources and external connections",
+          "Choose Enterprise when you're integrating with many external business systems, doing serious data preparation, or need predictive analytics and higher scale",
+          "Stay on Standard if you have one well-defined app and a small user group — paying for higher tiers you don't use is the most common Creator overspend"
+        ]
+      },
+      { type: "h2", text: "The cost the pricing page doesn't show: building the app" },
+      { type: "p", text: "This is the part that surprises people. The subscription gives you the platform; it does not build your app. Someone still has to model the data correctly, design the forms and workflows, write the Deluge scripts for the tricky logic, and test it. You can do this in-house if you have the time and aptitude — Creator is designed to be learnable — or engage a partner to build it. Either way, the build is a separate, one-time investment from the ongoing licence, and it's where the real value (or the real waste) is created." },
+      { type: "h2", text: "Creator inside Zoho One" },
+      { type: "p", text: "If you already run Zoho One (around ₹1,500 per employee per month, billed annually, before GST), Zoho Creator is included in the bundle — so you may not need separate Creator licences at all. For businesses using several Zoho apps, this often makes building custom Creator apps effectively 'free' on top of a subscription they already hold. It's worth checking your existing licensing before buying Creator standalone." },
+      { type: "h2", text: "Keeping total cost sensible" },
+      {
+        type: "ul",
+        items: [
+          "Right-size the tier — start on Standard and upgrade only when you hit a real limit",
+          "Licence only the users who build or use the app, not the whole company",
+          "Bill annually once you've validated the app is worth keeping",
+          "Check whether Zoho One already includes Creator before buying it separately",
+          "Scope the build properly once, rather than paying twice to fix a rushed first version"
+        ]
+      },
+      { type: "h2", text: "Where a partner fits in" },
+      { type: "p", text: "The licence is the easy decision; getting the app right is the hard one. A poorly modelled Creator app becomes as messy as the spreadsheet it replaced, while a well-built one runs a core process for years. As a certified Zoho partner we help two ways: recommending the tier that matches your real needs (so you don't overpay), and designing and building the app itself — proper data model, clean workflows, and integrations that hold up. Because Zoho revises Creator's plans and limits periodically, we confirm current rates on Zoho's official site before quoting." }
+    ],
+    faqs: [
+      {
+        q: "How much does Zoho Creator cost in India?",
+        a: "As of 2026, indicative India pricing is around ₹720/user/month for Standard, ₹1,800 for Professional, and ₹2,220 for Enterprise, before 18% GST, with annual billing cheaper than monthly. Confirm current rates on Zoho's official Creator pricing page, as plans change periodically."
+      },
+      {
+        q: "Does the Zoho Creator subscription include building my app?",
+        a: "No. The subscription gives you access to the low-code platform; designing, building, scripting, and testing the actual app is separate. You can build it in-house or engage a partner — either way it's a one-time investment distinct from the ongoing per-user licence."
+      },
+      {
+        q: "Is Zoho Creator included in Zoho One?",
+        a: "Yes. Zoho Creator is part of the Zoho One bundle (around ₹1,500 per employee per month, billed annually, before GST). If you already have Zoho One, you may be able to build Creator apps without buying separate Creator licences — check your existing plan first."
+      }
+    ]
   }
 ];
 
