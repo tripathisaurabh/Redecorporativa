@@ -1437,6 +1437,72 @@ export const blogPosts: BlogPost[] = [
         a: "It's a strong fit if you'll genuinely use Dataverse and the wider Power Platform, since it integrates natively with Microsoft 365, Teams, and Azure. If you only need to build a few business apps and aren't committed to the Power Platform, Zoho Creator usually delivers the same result faster and at lower total cost — especially if you already run Zoho."
       }
     ]
+  },
+  {
+    slug: "zoho-inventory-warehouse-bin-location-setup",
+    title: "Zoho Inventory Warehouse and Bin Location Setup for Multi-Location Businesses",
+    metaTitle: "Zoho Inventory Warehouse & Bin Location Setup (2026) | Multi-Location Guide",
+    description:
+      "A practical 2026 guide to setting up Zoho Inventory warehouses and bin locations for multi-location and multi-warehouse businesses — enabling locations, bin tracking, and avoiding stock confusion.",
+    keywords: [
+      "Zoho Inventory warehouse setup",
+      "Zoho Inventory bin locations",
+      "multi-warehouse inventory management",
+      "Zoho Inventory multi-location",
+      "warehouse bin location tracking"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-07-27",
+    readMins: 8,
+    excerpt:
+      "One warehouse is simple. Two warehouses becomes complex fast — unless you structure the locations and bin tracking properly in Zoho Inventory. Here's how to set it up so stock counts stay accurate across sites.",
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" },
+    content: [
+      { type: "p", text: "For a business with one location and one warehouse, inventory is straightforward — you have 50 of item X and you sell one, now you have 49. But as soon as you add a second warehouse (a second factory, a distributor, a retail location), the same 50 units of item X are now scattered: 30 in Delhi, 20 in Bangalore. A salesperson has to know where the stock lives, and when someone in Delhi takes an order, the system has to know it's pulling from Delhi stock, not imaginary Bangalore stock. This is where Zoho Inventory's warehouse and bin location features move from nice-to-have to essential. This guide walks through setting up warehouses correctly so multi-location inventory doesn't fall apart." },
+      { type: "h2", text: "Two types of locations: Business Locations vs Warehouse-Only Locations" },
+      { type: "p", text: "Zoho Inventory distinguishes between two location types — and this distinction matters. A Business Location is where your business operates: an office, a shop, or a headquarters. It's where you can take sales, issue invoices, and manage operations. A Warehouse-Only Location is pure storage — a distribution centre or a stock yard that holds inventory but doesn't generate its own transactions. Most multi-warehouse setups use a mix: a Business Location at headquarters that handles orders, and Warehouse-Only Locations where stock sits." },
+      { type: "h2", text: "Step 1 — Enable Multi-Warehouse in Zoho Inventory" },
+      { type: "p", text: "By default Zoho Inventory runs with a single warehouse. To add more, go to Settings > Warehouses and click Enable Multi-Warehouse. Zoho creates your first warehouse automatically using your organisation's address and sets it as the Primary Warehouse — you can rename it or leave it as is, but there's always a primary location that handles default stock levels and the catch-all when no specific warehouse is mentioned." },
+      { type: "h2", text: "Step 2 — Add warehouses and decide Business vs Warehouse-Only" },
+      { type: "p", text: "For each additional location, click Add Warehouse and fill in the address. Then decide: is this location a Business Location (takes orders, ships locally, invoices in its own name) or Warehouse-Only (holds stock, ships on demand to other locations)? A typical multi-location setup looks like: HQ in Delhi (Business Location) + a distribution centre in Bangalore (Warehouse-Only) + a retail shop in Mumbai (Business Location). Once added, each warehouse becomes selectable when you create a sales order or receive a purchase order." },
+      { type: "h2", text: "Step 3 — Enabling bin locations for precise stock tracking" },
+      { type: "p", text: "This is optional but powerful — instead of 'Bangalore has 50 units of item X', you track 'Bangalore bin A3 has 15 units, bin B7 has 30 units, bin C2 has 5 units'. Bin locations let you answer 'where exactly is the item?' rather than just 'do we have it somewhere?' For manufacturing, retail, or anything with organised storage, this precision is worth the setup cost." },
+      { type: "p", text: "Bin locations are available on Zoho Inventory's Premium plan (up to 2,000 bins per warehouse) and Enterprise plan (up to 5,000 bins per warehouse). To enable, go to Settings > Warehouses, click the gear icon on the warehouse you want to track by bins, and click Enable Bin Locations. You can then create a bin naming system (like 'Aisle-Rack-Level': A1-1, A1-2, A2-1, etc.) that your team uses to organize and find stock." },
+      { type: "table", head: ["Plan", "Bins per warehouse", "Best for"], rows: [
+        ["Free", "1 warehouse only", "Testing the system"],
+        ["Standard", "2 warehouses, no bin tracking", "Small multi-location with simple geography"],
+        ["Premium", "2,000 bins per warehouse", "Organized storage, retail, or manufacturing"],
+        ["Plus / Enterprise", "5,000 bins per warehouse", "High-volume distribution or large warehouses"]
+      ]},
+      { type: "note", text: "Bin location limits and warehouse counts per plan are indicative 2026 figures — Zoho updates plans periodically. If you exceed your plan's bin limit, you can purchase the Advanced Warehouse Operations add-on. Always verify current plan limits on Zoho's official Inventory pricing page before budgeting." },
+      { type: "h2", text: "Step 4 — Stock counting and reconciliation across warehouses" },
+      { type: "p", text: "Once you're tracking across multiple locations, physical stock counts matter more than ever. Zoho Inventory's Stock Count feature lets you perform a periodic recount of each warehouse independently — flag discrepancies between system and physical, understand drift, and adjust. For multi-warehouse businesses, doing this quarterly or bi-annually per location keeps your system honest." },
+      { type: "h2", text: "Step 5 — Inter-warehouse transfers" },
+      { type: "p", text: "Once stock is in Bangalore but a customer in Delhi wants it, you need to move it. Zoho Inventory's Stock Transfer feature creates an internal document: 'move 10 units of X from Bangalore warehouse to Delhi warehouse'. Unlike a sale, a transfer doesn't invoke GST (it's internal movement); Zoho handles the accounting and the stock deduction/addition automatically across both warehouses. Transfers are the backbone of multi-warehouse efficiency — without them, you're stuck shipping from the wrong location or keeping duplicate safety stock everywhere." },
+      { type: "h2", text: "Common multi-warehouse setups" },
+      { type: "ul", items: [
+        "Hub-and-spoke — HQ holds master inventory; branch locations reorder from HQ as they sell locally",
+        "Distributed inventory — each location holds its own stock; transfers happen only when one location is out",
+        "Just-in-time — manufacturing plant holds raw materials; distribution centre holds finished goods; transfers happen on scheduled basis",
+        "Multi-channel retail — each retail shop is a warehouse; online orders pull from the nearest warehouse by geography"
+      ]},
+      { type: "h2", text: "Where a partner helps" },
+      { type: "p", text: "The mechanics of enabling warehouses and bins are straightforward. The harder part is designing a warehouse structure that fits how you actually operate — deciding which locations are Business vs Warehouse-Only, choosing the right bin naming convention, and wiring up inter-warehouse transfers so stock flows where it's needed instead of piling up in the wrong place. As a certified Zoho partner we map your real logistics, set the warehouse structure up right, and train your team so inventory accuracy sticks." }
+    ],
+    faqs: [
+      {
+        q: "What's the difference between a Business Location and a Warehouse-Only Location in Zoho Inventory?",
+        a: "A Business Location is where your business operates — it can create sales orders, invoices, and shipments in its own name. A Warehouse-Only Location is pure storage — it holds stock but doesn't generate its own transactions. Most multi-location setups mix both: HQ as a Business Location taking orders, distribution centres as Warehouse-Only Locations holding stock."
+      },
+      {
+        q: "How many warehouses can I have in Zoho Inventory?",
+        a: "There's no hard limit on the number of warehouses. Your subscription includes a primary warehouse by default; you can add as many additional locations as you need. The per-plan differences are mainly in order volume and user limits, not warehouse count — the architecture scales."
+      },
+      {
+        q: "Are bin locations included in all Zoho Inventory plans?",
+        a: "No. Bin location tracking (tracking items down to the individual shelf or bin within a warehouse) is available on Zoho Inventory's Premium plan (up to 2,000 bins per warehouse) and Enterprise plan (up to 5,000 bins). Standard and Free plans don't support bin tracking. If you exceed your plan's bin limit, you can purchase the Advanced Warehouse Operations add-on."
+      }
+    ]
   }
 ];
 
