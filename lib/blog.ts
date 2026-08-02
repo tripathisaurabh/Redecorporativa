@@ -1503,6 +1503,74 @@ export const blogPosts: BlogPost[] = [
         a: "No. Bin location tracking (tracking items down to the individual shelf or bin within a warehouse) is available on Zoho Inventory's Premium plan (up to 2,000 bins per warehouse) and Enterprise plan (up to 5,000 bins). Standard and Free plans don't support bin tracking. If you exceed your plan's bin limit, you can purchase the Advanced Warehouse Operations add-on."
       }
     ]
+  },
+  {
+    slug: "zoho-people-manufacturing-hr-setup-india",
+    title: "Zoho People: HR Setup for Indian Factories & Manufacturing Facilities",
+    metaTitle: "Zoho People HR for Manufacturing India (2026) | Setup & Payroll Guide",
+    description:
+      "How to set up Zoho People + Zoho Payroll for shift-based factory workers in India — attendance, shift scheduling, statutory compliance (EPF, ESI, TDS), and offline-first mobile access for the shop floor.",
+    keywords: [
+      "Zoho People manufacturing",
+      "Zoho People HR factory setup",
+      "Zoho Payroll India compliance",
+      "factory attendance tracking",
+      "manufacturing HR software India"
+    ],
+    category: "Zoho People",
+    date: "2026-08-02",
+    readMins: 8,
+    excerpt:
+      "Factories have unique HR needs — shifts, floor workers, statutory deductions. Here's how to configure Zoho People + Payroll for a manufacturing workforce in India.",
+    relatedApp: { label: "Zoho People Implementation", href: "/zoho-people" },
+    content: [
+      { type: "p", text: "Manufacturing HR is different. Your team isn't sitting at desks; they're on the shop floor across shifts, and your payroll has to wrestle with Indian statutory requirements (EPF, ESI, TDS, statutory deductions). A generic HRMS built for office workers falls short fast. Zoho People, paired with Zoho Payroll, is built to handle this — custom shift management, mobile attendance sync even offline, and automated statutory deductions. This guide walks through setting up Zoho People + Payroll for a manufacturing operation in India in 2026." },
+      { type: "h2", text: "Why Zoho People fits manufacturing better than generic HR" },
+      { type: "p", text: "Manufacturing needs are specific: your workforce clocks in and out by machine or mobile app, works rotating or split shifts, and statutory deductions are non-negotiable. A typical office HR tool assumes 9-to-5, desk-based work. Zoho People instead offers: shift scheduling so you can define 8-hour, 12-hour, or night shifts; mobile attendance with biometric or RFID integration (or simple swipe); offline sync so attendance records if the internet drops; and a separate Zoho Payroll subscription that knows Indian compliance — EPF contributions, ESI withholding, Professional Tax, TDS, and statutory reporting." },
+      { type: "h2", text: "Step 1 — Model your shift structure" },
+      { type: "p", text: "In Zoho People, navigate to Admin > Shifts and define every shift your factory runs. A typical manufacturing setup has: Morning Shift (7am–3pm), Afternoon Shift (3pm–11pm), Night Shift (11pm–7am). For each shift, set the working hours, overtime thresholds, break timings, and weekend pattern. You can also create hybrid shifts (some employees do 8-hour days, others 12-hour) if your facility has multiple production lines." },
+      { type: "table", head: ["Shift", "Hours", "Overtime threshold"], rows: [
+        ["Morning", "7am–3pm (8 hours)", "After 8 hours"],
+        ["Afternoon", "3pm–11pm (8 hours)", "After 8 hours"],
+        ["Night", "11pm–7am (8 hours)", "After 8 hours"],
+        ["Extended (production ramp-up)", "6am–4pm (10 hours)", "After 10 hours"]
+      ]},
+      { type: "note", text: "Zoho People pricing includes the HRMS platform; Zoho Payroll is a separate, mandatory add-on subscription starting around ₹85–180 per employee per month (PEPM) in India before GST. Verify current combined pricing on Zoho's official site." },
+      { type: "h2", text: "Step 2 — Set up attendance and shift assignment" },
+      { type: "p", text: "Assign each employee to their shift(s). For rotating shifts, use Zoho People's roster feature to schedule who's on Morning vs Afternoon for the next month or quarter, so employees know their rhythm in advance. Zoho People tracks attendance via its mobile app (mark Present/Absent), biometric integration if your factory has punch machines, or RFID if you have badge systems. The key for manufacturing is offline sync: if the factory floor loses internet during a shift, employees can still clock in and out; their attendance records sync once connectivity returns." },
+      { type: "h2", text: "Step 3 — Overtime and holiday rules" },
+      { type: "p", text: "Manufacturing often runs on an overtime-heavy model, especially during peak production. In Zoho People, configure: which shifts qualify for overtime pay (usually anything beyond the defined shift hours), overtime multipliers (1.5× or 2× pay), and which days are company holidays vs optional holidays vs days off. Once defined, the system can auto-calculate overtime so your payroll doesn't have to." },
+      { type: "h2", text: "Step 4 — Integrate Zoho Payroll for statutory compliance" },
+      { type: "p", text: "Zoho Payroll is a separate subscription that syncs with Zoho People. Payroll pulls attendance from People, calculates gross pay based on rates and overtime, and applies statutory deductions: EPF (Employees' Provident Fund, typically 12% employee contribution), ESI (Employment State Insurance, if applicable), Professional Tax (varies by state), and TDS (Tax Deducted at Source). For Indian manufacturers, this is non-negotiable — the payroll must handle monthly statutory remittances, quarterly returns, and annual compliance filings." },
+      { type: "table", head: ["Statutory deduction", "Who it applies to", "Rate (indicative)"], rows: [
+        ["EPF (Employee)", "All employees earning over ₹15,000/month", "≈12% of basic salary"],
+        ["EPF (Employer)", "Employer match", "≈12% of basic salary"],
+        ["ESI (Employee)", "Salary up to ₹21,000/month, high-risk industries", "≈0.75% of gross"],
+        ["Professional Tax", "State-dependent, usually ₹100–800/month", "Varies by state & salary"],
+        ["TDS (if applicable)", "High earners, certain bonuses", "10% (standard rate, varies)"]
+      ]},
+      { type: "h2", text: "Step 5 — Leave management for shift workers" },
+      { type: "p", text: "Shift workers accrue leave differently than office staff — a factory worker on a 5-day week gets leave accrual, but if they're on a 6-day or rotating pattern, the accrual method changes. In Zoho People, define leave policies per shift: Casual Leave, Earned Leave (annual), and Restricted Holidays. Once a policy is assigned to an employee, they can request leave through the mobile app, the manager approves, and Zoho automatically adjusts payroll (unpaid leave reduces gross pay, encashed leave adds). This keeps your attendance and payroll synchronized." },
+      { type: "h2", text: "Step 6 — Mobile-first experience for the shop floor" },
+      { type: "p", text: "Your floor workers will use the Zoho People mobile app far more than the web. The app should let them: clock in/out quickly (one tap to mark Present), view their shift and upcoming rostered days, request leave, and check their pay slip. For manufacturing, offline capability is critical — if the facility is on the edge of connectivity, attendance syncs when the app reconnects. Test the app on lower-end phones and slower connections, because a worker in a remote manufacturing zone will have neither gigabit internet nor a top-tier phone." },
+      { type: "h2", text: "Step 7 — Reporting and compliance for audits" },
+      { type: "p", text: "Manufacturing faces labour audits — the government checks EPF contributions, attendance records, leave policies, and wage compliance. Zoho People + Payroll logs every transaction: who worked when, what they were paid, what statutory deductions were applied. You can pull: attendance roll for the month, leave statement, wage register (required by law), and statutory remittance proof. Keep these reports accessible for audits; Zoho makes export straightforward." },
+      { type: "p", text: "As a certified Zoho partner we configure Zoho People around a factory's real shift patterns — not generic office schedules — and wire Payroll to handle your specific state's statutory mix. The result is a system your floor managers and office staff both trust: instant attendance, accurate payroll, and compliance that holds up under audit." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho People support shift-based attendance for manufacturing?",
+        a: "Yes. Zoho People lets you define custom shifts (8-hour, 12-hour, night, rotating), assign employees to shifts, and track attendance via mobile app, biometric, or RFID. Overtime is calculated automatically based on shift definitions. The mobile app syncs offline, so attendance records even if internet drops during a shift."
+      },
+      {
+        q: "What's the difference between Zoho People and Zoho Payroll, and do I need both?",
+        a: "Zoho People is the HRMS platform (attendance, shifts, leave). Zoho Payroll is a separate subscription that syncs with People to calculate payroll, apply statutory deductions (EPF, ESI, TDS), and generate payslips and compliance reports. For any manufacturing operation in India, you need both — Payroll alone doesn't do attendance, People alone doesn't do payroll."
+      },
+      {
+        q: "How much does Zoho People + Payroll cost for a factory in India?",
+        a: "As of 2026, Zoho People + Payroll together cost roughly ₹85–180 per employee per month (PEPM) in India, depending on the specific plans chosen, billed annually before 18% GST. Larger factories may get better pricing. Verify current rates on Zoho's official pricing pages before budgeting."
+      }
+    ]
   }
 ];
 
