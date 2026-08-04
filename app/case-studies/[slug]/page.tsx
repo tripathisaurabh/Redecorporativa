@@ -6,6 +6,7 @@ import Script from "next/script";
 import Container from "../../../components/ui/Container";
 import Button from "../../../components/ui/Button";
 import { caseStudies, getCaseStudyBySlug } from "../../../lib/caseStudies";
+import JoodFmCaseStudy from "../../../components/sections/JoodFmCaseStudy";
 import { buildCanonical, buildKeywords } from "../../../lib/seo";
 import { SITE_NAME, SITE_URL } from "../../../lib/constants";
 
@@ -121,6 +122,11 @@ export default function CaseStudyDetailPage({ params }: CaseStudyDetailPageProps
 
   if (!study) {
     notFound();
+  }
+
+  // Rich, bespoke layout for this featured case study
+  if (params.slug === "jood-fm-cafm-facility-management") {
+    return <JoodFmCaseStudy />;
   }
 
   const clientRows: InsightRow[] = [

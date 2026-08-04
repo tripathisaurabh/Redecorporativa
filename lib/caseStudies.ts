@@ -105,8 +105,28 @@ export const caseStudies: CaseStudy[] = [
     },
     publishDate: "2025-12-28"
   },
-
-  
+  {
+    slug: "jood-fm-cafm-facility-management",
+    title: "CAFM Platform for Jood FM",
+    platform: "zoho",
+    industry: "Facility Management",
+    summary:
+      "A computer-aided facility management (CAFM) platform built on Zoho Creator — asset register, self-scheduling preventive maintenance, work orders, a spare-parts ledger, and live management dashboards.",
+    clientProfile:
+      "Jood FM manages facilities where hundreds of assets — chillers, pumps, lifts, and fire systems — must be kept running and demonstrably maintained.",
+    challenge:
+      "The maintenance operation ran on memory and messages: no reliable record of what equipment existed, servicing done only when someone remembered, and no evidence a job was completed when an auditor asked.",
+    implementation:
+      "We designed and built a custom CAFM platform on Zoho Creator — with Desk for fault tickets and SLA timers, Analytics for dashboards, WorkDrive for manuals, and Flow plus Deluge for automation. Assets are registered once and located to the exact room, maintenance schedules generate their own work orders, faults become tracked tickets, and spare-parts stock moves the moment a part is used.",
+    outcomes: [
+      "100% of completed jobs closed with a checklist, timestamp, and technician sign-off",
+      "4-level location precision, from building down to the exact room",
+      "Daily automatic work-order generation — maintenance no longer depends on anyone remembering",
+      "17 custom Creator forms, 7 Deluge routines, and 4 role-based access profiles"
+    ],
+    coverImage: "/creator-solutions/00_solutions-main/00_solutions-main_asset-management.png",
+    publishDate: "2026-08-04"
+  }
 
 ];
 
