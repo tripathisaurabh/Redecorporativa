@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
@@ -30,12 +31,12 @@ const after = [
 ];
 
 const stack = [
-  { b: "Zoho Creator", s: "The CAFM system — custom built" },
-  { b: "Zoho Desk", s: "Fault tickets & SLA timers" },
-  { b: "Zoho Analytics", s: "Dashboards & weekly reports" },
-  { b: "Zoho WorkDrive", s: "O&M manuals & contracts" },
-  { b: "Zoho Flow", s: "Desk ↔ Creator, Outlook" },
-  { b: "Deluge", s: "The automation layer" }
+  { b: "Zoho Creator", s: "The CAFM system — custom built", icon: "/zoho-apps/creator.png" },
+  { b: "Zoho Desk", s: "Fault tickets & SLA timers", icon: "/zoho-apps/desk.png" },
+  { b: "Zoho Analytics", s: "Dashboards & weekly reports", icon: "/zoho-apps/analytics.png" },
+  { b: "Zoho WorkDrive", s: "O&M manuals & contracts", icon: "/zoho-apps/workdrive.png" },
+  { b: "Zoho Flow", s: "Desk ↔ Creator, Outlook", icon: "/zoho-apps/flow.png" },
+  { b: "Deluge", s: "The automation layer", icon: "/zoho-apps/deluge.png" }
 ];
 
 const features = [
@@ -95,6 +96,109 @@ function Kicker({ children }: { children: React.ReactNode }) {
   return <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#e33f3f]">{children}</p>;
 }
 
+function AppNode({ icon, title, sub, note }: { icon: string; title: string; sub: string; note?: string }) {
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+      <Image src={icon} alt={`${title} icon`} width={36} height={36} className="mx-auto h-9 w-9 object-contain" />
+      <p className="mt-2 text-sm font-semibold text-[#12161b]">{title}</p>
+      <p className="text-xs text-slate-500">{sub}</p>
+      {note ? <p className="mt-1 text-[11px] leading-snug text-slate-400">{note}</p> : null}
+    </div>
+  );
+}
+
+function FlowArrow({ label }: { label: string }) {
+  return (
+    <div className="flex flex-col items-center text-slate-400">
+      <span className="text-[11px] font-medium uppercase tracking-wide">{label}</span>
+      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden="true">
+        <path d="M12 4v16M6 14l6 6 6-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </div>
+  );
+}
+
+function ArchitectureDiagram() {
+  const modules = [
+    "Asset & Location Register (4-level)",
+    "Work Orders & Checklists",
+    "Spare Parts & Stock Ledger",
+    "PPM & Predictive Schedules"
+  ];
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 md:p-8">
+      <p className="text-center text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">System architecture</p>
+
+      {/* Inputs */}
+      <div className="mx-auto mt-6 grid max-w-2xl gap-4 sm:grid-cols-2">
+        <AppNode icon="/zoho-apps/desk.png" title="Zoho Desk" sub="Fault tickets & SLA timers" note="Requests raised by staff" />
+        <AppNode icon="/zoho-apps/deluge.png" title="Deluge routines" sub="7 automation routines" note="Daily self-scheduling PPM" />
+      </div>
+
+      <div className="my-3 flex items-start justify-center gap-16">
+        <FlowArrow label="via Zoho Flow" />
+        <FlowArrow label="generates jobs" />
+      </div>
+
+      {/* Core */}
+      <div className="mx-auto max-w-3xl rounded-2xl border-2 border-[#1d74bb]/30 bg-[#1d74bb]/[0.05] p-5">
+        <div className="flex items-center justify-center gap-3">
+          <Image src="/zoho-apps/creator.png" alt="Zoho Creator icon" width={34} height={34} className="h-8 w-8 object-contain" />
+          <p className="text-base font-semibold text-[#12161b]">
+            Zoho Creator <span className="font-normal text-slate-500">— the CAFM core</span>
+          </p>
+        </div>
+        <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          {modules.map((m) => (
+            <div key={m} className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-center text-xs font-medium text-slate-700">
+              {m}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="my-3 flex items-start justify-center gap-16">
+        <FlowArrow label="live data" />
+        <FlowArrow label="documents" />
+      </div>
+
+      {/* Outputs */}
+      <div className="mx-auto grid max-w-2xl gap-4 sm:grid-cols-2">
+        <AppNode icon="/zoho-apps/analytics.png" title="Zoho Analytics" sub="Dashboards & weekly reports" note="SLA, downtime, technician KPIs" />
+        <AppNode icon="/zoho-apps/workdrive.png" title="Zoho WorkDrive" sub="O&M manuals & contracts" note="Attached to assets & jobs" />
+      </div>
+
+      {/* Connective tissue */}
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-[11px] text-slate-500">
+        <Image src="/zoho-apps/flow.png" alt="Zoho Flow icon" width={16} height={16} className="h-4 w-4 object-contain" />
+        <span>
+          <strong className="font-semibold text-slate-700">Zoho Flow</strong> connects Desk ↔ Creator and pushes
+          notifications to Outlook · 4 roles (administrator, supervisor, technician, storekeeper) enforced at the data
+          layer
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function ShotPlaceholder({ label, hint, tall = false }: { label: string; hint: string; tall?: boolean }) {
+  return (
+    <div
+      className={`flex ${tall ? "min-h-[420px]" : "min-h-[320px]"} flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 p-8 text-center`}
+    >
+      <div className="mb-3 grid h-12 w-12 place-items-center rounded-full bg-[#1d74bb]/10 text-[#1d74bb]">
+        <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
+          <circle cx="8.5" cy="9" r="1.5" fill="currentColor" />
+          <path d="M4 16l4.5-4.5 3.5 3.5 3-3L20 15.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </div>
+      <p className="text-sm font-semibold text-slate-700">{label}</p>
+      <p className="mt-1 max-w-md text-xs text-slate-500">{hint}</p>
+    </div>
+  );
+}
+
 export default function JoodFmCaseStudy() {
   return (
     <>
@@ -131,6 +235,17 @@ export default function JoodFmCaseStudy() {
               </div>
             ))}
           </div>
+        </Container>
+      </section>
+
+      {/* Hero screenshot */}
+      <section className="border-b border-slate-200 bg-white py-10 md:py-12">
+        <Container>
+          <ShotPlaceholder
+            tall
+            label="Add: the main dashboard / home screen of the app"
+            hint="A clean, full-width screenshot of the CAFM home dashboard makes the strongest first impression. ~1600px wide."
+          />
         </Container>
       </section>
 
@@ -190,11 +305,18 @@ export default function JoodFmCaseStudy() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {stack.map((c) => (
-              <div key={c.b} className="min-w-[150px] rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
-                <p className="text-sm font-semibold text-[#12161b]">{c.b}</p>
-                <p className="text-xs text-slate-400">{c.s}</p>
+              <div key={c.b} className="flex min-w-[180px] items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+                <Image src={c.icon} alt={`${c.b} icon`} width={32} height={32} className="h-8 w-8 shrink-0 object-contain" />
+                <div>
+                  <p className="text-sm font-semibold text-[#12161b]">{c.b}</p>
+                  <p className="text-xs text-slate-400">{c.s}</p>
+                </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-10">
+            <ArchitectureDiagram />
           </div>
         </Container>
       </section>
@@ -212,6 +334,17 @@ export default function JoodFmCaseStudy() {
                 <p className="mt-2 text-sm text-slate-600">{f.p}</p>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Feature screenshots */}
+      <section className="border-b border-slate-200 bg-white py-14 md:py-20">
+        <Container>
+          <div className="grid gap-6 md:grid-cols-3">
+            <ShotPlaceholder label="Add: the Asset Register list view" hint="Assets grouped by building, with IDs, categories and status visible." />
+            <ShotPlaceholder label="Add: a Work Order with its checklist" hint="Shows checklist execution, parts used and technician sign-off — the evidence story." />
+            <ShotPlaceholder label="Add: the Analytics dashboard" hint="SLA compliance, downtime, PPM compliance and technician KPIs." />
           </div>
         </Container>
       </section>
