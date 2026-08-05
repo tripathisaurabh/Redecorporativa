@@ -241,11 +241,16 @@ export default function JoodFmCaseStudy() {
       {/* Hero screenshot */}
       <section className="border-b border-slate-200 bg-white py-10 md:py-12">
         <Container>
-          <ShotPlaceholder
-            tall
-            label="Add: the main dashboard / home screen of the app"
-            hint="A clean, full-width screenshot of the CAFM home dashboard makes the strongest first impression. ~1600px wide."
-          />
+          <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+            <Image
+              src="/CaseStudy/jood-dashboard.png"
+              alt="Jood FM CAFM operations dashboard — work order health, PPM compliance, assets and reports"
+              width={1800}
+              height={999}
+              className="h-auto w-full"
+              unoptimized
+            />
+          </div>
         </Container>
       </section>
 
