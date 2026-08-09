@@ -61,12 +61,13 @@ ZFAdvLead.prototype.zfautm_bscPCap = function () {
 }
 ZFAdvLead.prototype.zfautm_calcTrafSrc = function() {
   var u1='', u2='', u3='', u4='', u5='';
-  var search_engines = [['bing', 'q'], ['google', 'q'], ['yahoo', 'q'], ['baidu', 'q'], ['yandex', 'q'], ['ask', 'q']];
+  var search_engines = [['bing', 'q'], ['google', 'q'], ['yahoo', 'q'], ['baidu', 'q'], ['yandex', 'q'], ['ask', 'q']]; //List of search engines
   var ref = document.referrer;
   ref = ref.substr(ref.indexOf('//')+2);
   ref_domain = ref;
   ref_path = '/';
   ref_search = '';
+  // Checks for campaign parameters
   var url_search = document.location.search;
   if(url_search.indexOf('utm_source') > -1 || url_search.indexOf('utm_medium') > -1 || url_search.indexOf('utm_campaign') > -1 || url_search.indexOf('utm_term') > -1 || url_search.indexOf('utm_content') > -1) {
     u1 = this.zfautm_gP(url_search, 'utm_source');
@@ -88,6 +89,7 @@ ZFAdvLead.prototype.zfautm_calcTrafSrc = function() {
     var r_u4 = this.zfautm_gC('utm_term');
     var r_u5 = this.zfautm_gC('utm_content');
     if ( typeof r_u1 === "undefined" && typeof r_u2 === "undefined" && typeof r_u3 === "undefined" && typeof r_u4 === "undefined" && typeof r_u5 === "undefined") {
+      // separate domain, path and query parameters
       if (ref.indexOf('/') > -1) {
         ref_domain = ref.substr(0,ref.indexOf('/'));
         ref_path = ref.substr(ref.indexOf('/'));
@@ -98,6 +100,7 @@ ZFAdvLead.prototype.zfautm_calcTrafSrc = function() {
       }
       u2 = 'referral';
       u1 = ref_domain;
+    // Extract term for organic source
       for (var i=0; i<search_engines.length; i++){
         if(ref_domain.indexOf(search_engines[i][0]) > -1){
           u2 = 'organic';

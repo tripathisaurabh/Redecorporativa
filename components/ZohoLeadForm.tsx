@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 const FORM_SRC =
-  "https://forms.zohopublic.com/demo1redecorporativa21/form/ZohoPartnerLeadForm/formperma/x0pY-qFcDbBH-2PwLKZH83r7H7qGjqMVxkS4zLJ2gio?embeded=redecorp";
+  "https://forms.zohopublic.in/demo1inredecorporativa1/form/ContactUs/formperma/7ar_VaSkeFzm5ll3vIPtKLksTzAxHG_IT15DcHP4QGk?website=Redecorp";
 
 export default function ZohoLeadForm() {
   useEffect(() => {
