@@ -1656,6 +1656,172 @@ export const blogPosts: BlogPost[] = [
         a: "Further function executions are rejected for the rest of the day, which means the automation simply doesn't run — usually without an obvious error to the end user. This most often happens during bulk imports or mass updates that trigger a per-record function. Test any function against a realistic bulk operation before enabling it, and check your edition's current quota in Zoho CRM's limits page."
       }
     ]
+  },
+  {
+    slug: "zoho-books-gst-filing-india-guide",
+    title: "GST Filing in Zoho Books: GSTR-1, GSTR-3B and e-Invoicing, Explained",
+    metaTitle: "Zoho Books GST Filing Guide India 2026 | GSTR-1, GSTR-3B, e-Invoicing",
+    description:
+      "How GST filing actually works in Zoho Books — GSTR-1 and GSTR-3B preparation, e-invoicing and IRN generation, GSTR-2B reconciliation, GSTIN limits by plan, and the mistakes that make returns painful at month end.",
+    keywords: [
+      "Zoho Books GST filing",
+      "GSTR-1 Zoho Books",
+      "GSTR-3B filing software",
+      "Zoho Books e-invoicing India",
+      "GST software India 2026"
+    ],
+    category: "Zoho Books",
+    date: "2026-08-10",
+    readMins: 9,
+    excerpt:
+      "Zoho Books is a GST Suvidha Provider, which means returns can be prepared and pushed from inside your books rather than exported to a separate tool. The catch is that the return is only as good as how the invoices were entered.",
+    relatedApp: { label: "Zoho Books", href: "/zoho-books" },
+    content: [
+      { type: "p", text: "For Indian businesses, the GST question usually decides the accounting software question. Everything else — invoicing, bank feeds, reporting — is comparable across products. What differs is how much manual work sits between your books and a filed return, and whether the month-end close involves a spreadsheet, an accountant, and a lot of apologising." },
+      { type: "p", text: "Zoho Books is a registered GST Suvidha Provider with direct API access to the GSTN, which is the structural fact worth understanding first. It means returns are prepared and pushed from inside the same system that holds the invoices, rather than exported to a third-party utility and re-uploaded. That removes an entire class of reconciliation error, but it does not remove the underlying discipline: the return is a mirror of your data entry, and a clean filing starts on the day the invoice was raised, not on the 10th of the following month." },
+      { type: "h2", text: "The monthly rhythm and what the software handles" },
+      { type: "p", text: "GST compliance is less a single task than a recurring sequence, and it is worth being precise about which parts are automated and which still need a human decision." },
+      {
+        type: "table",
+        head: ["Return / task", "What it covers", "How Zoho Books handles it"],
+        rows: [
+          ["e-Invoice (IRN)", "B2B invoices above the turnover threshold", "Generates IRN and QR code at invoice creation via the IRP"],
+          ["e-Way bill", "Goods movement above the state threshold", "Generated from the invoice; can be pushed to the portal"],
+          ["GSTR-1", "Outward supplies", "Auto-compiled from sales invoices; review, then file or export"],
+          ["GSTR-2B reconciliation", "Purchase data as reported by suppliers", "Pull GSTR-2B and match against recorded bills to flag mismatches"],
+          ["GSTR-3B", "Summary return with tax payable and ITC", "Prepared from sales and purchase data after reconciliation"],
+          ["GSTR-9", "Annual return", "Supporting reports; the annual consolidation still needs review"]
+        ]
+      },
+      { type: "p", text: "The step in this sequence that most businesses underweight is the GSTR-2B reconciliation. GSTR-1 largely takes care of itself because you control the sales data. Input tax credit does not — it depends on your suppliers having filed correctly and on time. If a supplier misses a return, the credit is not in your GSTR-2B, and claiming it anyway is how notices arrive. Doing the match monthly rather than at year end is the single highest-value habit here." },
+      { type: "h2", text: "e-Invoicing: who it applies to, and the 30-day trap" },
+      { type: "p", text: "The e-invoicing threshold has come down in stages and now catches a large number of mid-sized businesses. As of 2026 the requirement applies to businesses whose aggregate annual turnover exceeded ₹5 crore in any financial year from 2017–18 onwards — note the wording carefully, because it is any year, not just the most recent one. A business that crossed the threshold once remains covered even if turnover has since fallen." },
+      { type: "p", text: "The second rule catches people out more often. Taxpayers at ₹10 crore turnover and above face a 30-day reporting window: an invoice, credit note, or debit note older than 30 days cannot be reported to the Invoice Registration Portal for IRN generation. There is no retrospective fix once the window closes. If your process involves raising invoices in one system and reporting them in a batch later, that gap is now a compliance risk rather than an inconvenience." },
+      { type: "note", text: "GST thresholds, reporting windows, and Zoho Books plan pricing all change, sometimes mid-year. Treat the figures in this article as orientation rather than authority — verify current pricing on Zoho's official site and confirm applicable thresholds against the GST portal or your CA before making a filing or purchasing decision." },
+      { type: "h2", text: "Plans, and the GSTIN limit that catches multi-state businesses" },
+      { type: "p", text: "Zoho Books sells a ladder of plans in India, from a free tier for very small businesses up to enterprise editions. GST compliance features — GSTR preparation, e-invoicing — are present across the paid range rather than reserved for the top, which is unusual and genuinely useful. What varies is scale: users, transaction volume, workflow automation, and, critically, the number of GSTINs supported per organisation." },
+      {
+        type: "table",
+        head: ["Plan", "Indicative monthly price (INR, excl. GST)", "Typical fit"],
+        rows: [
+          ["Free", "₹0", "Turnover under ₹25 lakh, one user, low transaction volume"],
+          ["Standard", "~₹899", "Small business, single GSTIN"],
+          ["Professional", "~₹1,499", "Growing business, multiple GSTINs, purchase orders"],
+          ["Premium", "~₹2,999", "Multi-state operations, deeper automation and roles"],
+          ["Elite / Ultimate", "~₹5,999 / ~₹9,999", "Larger operations with advanced analytics and inventory needs"]
+        ]
+      },
+      { type: "p", text: "Prices are per organisation per month rather than per user, and annual billing carries a meaningful discount over monthly. The trap is the GSTIN count: the entry paid plan generally supports a single GSTIN, and businesses registered in several states need to size the plan on that basis rather than on user count. It is a common reason a business outgrows a plan within months of subscribing." },
+      { type: "h2", text: "Where filings actually go wrong" },
+      { type: "p", text: "In our experience the software is rarely the problem. Returns get painful because of upstream habits that are easy to fix and easy to ignore." },
+      {
+        type: "ul",
+        items: [
+          "Wrong or missing HSN and SAC codes on items — fix at the item master, not at filing time",
+          "Place of supply left at the default, which silently produces IGST instead of CGST and SGST",
+          "Customer GSTINs not validated at creation, so B2B invoices land in the wrong return section",
+          "Credit notes recorded as discounts or negative invoices, which distorts outward supply figures",
+          "Reverse charge purchases not flagged, understating liability in GSTR-3B",
+          "Reconciliation deferred to year end, by which point missing supplier credits are unrecoverable",
+          "Multiple GSTINs run inside one organisation record instead of separate branch setups"
+        ]
+      },
+      { type: "p", text: "Each of these takes minutes to prevent and hours to unwind. If you are migrating to Zoho Books mid-year, the highest-return work is not the migration itself — it is cleaning the item master, validating customer GSTINs, and setting place-of-supply defaults correctly before the first invoice is raised in the new system." },
+      { type: "h2", text: "Is it enough on its own?" },
+      { type: "p", text: "For most GST-registered SMBs, yes — the returns can be prepared and filed from within Zoho Books without a separate compliance tool, and the direct GSTN connection means you are not shuttling files between systems. Businesses with complex group structures, heavy import and export activity, or unusual sector-specific treatments will still want their CA in the loop on GSTR-3B and the annual return, but the day-to-day mechanics stop being manual." },
+      { type: "p", text: "As a certified Zoho partner we generally treat GST setup as its own workstream during implementation rather than a configuration checkbox: tax rates, HSN and SAC mapping, place-of-supply logic, e-invoicing credentials, and the reconciliation routine get set up and tested against a live filing cycle before the business relies on them." }
+    ],
+    faqs: [
+      {
+        q: "Can I file GST returns directly from Zoho Books, or do I still need a separate portal?",
+        a: "Zoho Books is a registered GST Suvidha Provider with direct GSTN API access, so GSTR-1 and GSTR-3B can be prepared and pushed from within the software rather than exported to a third-party utility. Many businesses still have their CA review the summary before submission, which is sensible — but the data movement between systems is eliminated."
+      },
+      {
+        q: "Does e-invoicing apply to my business?",
+        a: "As of 2026 the threshold is aggregate annual turnover above ₹5 crore in any financial year from 2017–18 onwards, so crossing it once keeps you covered even if turnover later falls. Businesses at ₹10 crore and above additionally face a 30-day window to report invoices to the IRP. Confirm your position against the GST portal or your CA, since thresholds have changed repeatedly."
+      },
+      {
+        q: "Which Zoho Books plan do I need if I have GSTINs in multiple states?",
+        a: "Size the plan on GSTIN count rather than user count — the entry paid plan typically supports one GSTIN, with higher tiers supporting more. This is the most common reason multi-state businesses outgrow a plan shortly after subscribing. Check the current per-plan GSTIN allowance on Zoho's official India pricing page before you commit, as plan contents change."
+      }
+    ]
+  },
+  {
+    slug: "zoho-inventory-vs-tallyprime-stock-management",
+    title: "Zoho Inventory vs TallyPrime for Stock Management in India",
+    metaTitle: "Zoho Inventory vs TallyPrime (2026): Stock Management Compared",
+    description:
+      "Tally already tracks your stock, so why would you add Zoho Inventory? A practical look at what each system does well for Indian businesses, how the licence models differ, and when running both together is the right answer.",
+    keywords: [
+      "Zoho Inventory vs Tally",
+      "TallyPrime stock management",
+      "inventory software India 2026",
+      "Zoho Inventory India",
+      "warehouse management software India"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-08-12",
+    readMins: 8,
+    excerpt:
+      "Tally handles stock as an extension of accounting. Zoho Inventory handles stock as an operations problem. That difference explains almost every disagreement about which one a business should use.",
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" },
+    content: [
+      { type: "p", text: "Almost every Indian trading, distribution, or manufacturing business we speak to already has Tally, and Tally already has an inventory module. So the question is rarely which product to buy from scratch. It is whether the stock features you already own are enough, and if not, what the alternative genuinely changes." },
+      { type: "p", text: "The honest answer starts with what each product was designed to be. TallyPrime is an accounting system that tracks stock because stock affects the books — valuation, cost of goods sold, GST on movement. Zoho Inventory is an operations system that produces accounting data as a by-product. Both track quantities. They are optimised for different people." },
+      { type: "h2", text: "Where TallyPrime is hard to beat" },
+      { type: "p", text: "Tally's strength is that it is the system your accountant, your auditor, and quite possibly your GST practitioner already know. Stock groups, batches with expiry, godowns, multiple units of measure, and reorder levels are all there, and stock movement flows into valuation and returns without any integration to maintain. For a single-location business selling offline, that is a complete answer, and adding a second system would create reconciliation work for no operational gain." },
+      { type: "p", text: "The licence model also suits certain businesses well. Tally is sold as a perpetual licence — a one-time cost for single-user or multi-user editions, with an annual Tally Software Services subscription for statutory updates, upgrades, and remote access. Over five or six years the total is often lower than a per-user cloud subscription, particularly for a stable team size." },
+      { type: "h2", text: "Where TallyPrime starts to strain" },
+      { type: "p", text: "The pressure points are consistent and easy to recognise. Multi-channel selling is the biggest one: if orders arrive from Amazon, Flipkart, a Shopify store, and a sales team, somebody is manually keying orders into Tally and manually updating stock counts back out. That process is slow, and every hour of lag is an oversell waiting to happen." },
+      { type: "p", text: "The second is the warehouse floor. Tally is a desk product. Picking, packing, bin locations, barcode scanning during dispatch, and courier label generation are not what it was built for, and businesses that grow into a proper warehouse tend to bolt on spreadsheets around it. The third is visibility for non-accounting staff — sales people asking accounts what is in stock, because the only place that number lives is a system they do not have a licence for." },
+      {
+        type: "table",
+        head: ["Requirement", "TallyPrime", "Zoho Inventory"],
+        rows: [
+          ["Stock valuation & GST impact", "Native and comprehensive", "Handled via Zoho Books integration"],
+          ["Marketplace / e-commerce sync", "Manual or third-party connector", "Built-in Amazon, Flipkart, Shopify and similar"],
+          ["Shipping & courier integration", "Not a core capability", "Integrations with Indian carriers and rate comparison"],
+          ["Warehouse operations (bins, picking, barcodes)", "Limited; godown-level", "Designed for it, with multi-warehouse support"],
+          ["Access model", "Installed; LAN multi-user, remote via TSS", "Cloud and mobile, role-based access for any team"],
+          ["Cost structure", "One-time licence plus annual TSS renewal", "Monthly or annual subscription, tiered by order volume"],
+          ["Accountant familiarity", "Universal in India", "Growing, but often needs a handover conversation"],
+          ["Best fit", "Single location, offline sales, accounting-led stock", "Multi-channel, multi-warehouse, operations-led stock"]
+        ]
+      },
+      { type: "h2", text: "The cost comparison people get wrong" },
+      { type: "p", text: "Comparing a perpetual licence to a monthly subscription by looking only at year one always favours the subscription; looking only at year five always favours the licence. Neither is a fair test on its own. Zoho Inventory is tiered by monthly order volume rather than users, with a free tier for very low volumes and paid plans stepping up as orders grow — which means the bill scales with the business rather than with headcount. Tally's cost is largely fixed once bought, plus annual TSS renewal." },
+      { type: "note", text: "Zoho revises plan structures and order limits periodically, and Tally pricing varies by edition and reseller, with GST charged additionally. Verify current pricing on Zoho's official site and with an authorised Tally partner before committing — do not budget from figures quoted in any article, including this one." },
+      { type: "p", text: "The number that usually decides it is neither licence fee. It is the cost of the manual work sitting between your sales channels and your stock ledger. Two people spending half their day rekeying orders and reconciling counts is a larger annual cost than either software line item, and it is the cost that grows fastest as order volume rises." },
+      { type: "h2", text: "Running both is a legitimate answer" },
+      { type: "p", text: "This is not a fight to the death, and a meaningful share of the implementations we do end with both systems in place. Zoho Inventory handles order capture, allocation, picking, dispatch, and channel sync. Accounting entries flow to Zoho Books or are handed to Tally on a periodic basis, and the accountant keeps working the way they always have." },
+      { type: "p", text: "That said, do not drift into it accidentally. Two systems holding stock quantities need one clear owner of truth, an agreed sync frequency, and a monthly reconciliation that somebody is actually accountable for. Where businesses get into trouble is running both informally, with quantities differing by a few units in each and nobody quite sure which figure to trust." },
+      {
+        type: "ul",
+        items: [
+          "Selling on one or more marketplaces or an online store — the sync case for Zoho Inventory is strong",
+          "One godown, offline sales, stable volumes — Tally alone is very likely sufficient",
+          "Sales staff repeatedly asking accounts for stock availability — a cloud system pays for itself in interruptions saved",
+          "Batch, expiry, or serial tracking needed — both can do it; check your specific workflow against each",
+          "Frequent stock discrepancies at month end — the fix is process and cycle counting, not new software",
+          "Planning to add warehouses in the next 18 months — decide now, migrating stock data mid-growth is painful"
+        ]
+      },
+      { type: "p", text: "The most useful test we know is to trace one order end to end, on paper, from the moment it arrives to the moment the customer has it and the entry is in the books. Count the manual steps and the places a human types a number that already exists somewhere else. If that count is low, keep what you have. If it is high, you have found the case for change — and, more usefully, you already know exactly which steps a new system has to remove to be worth the disruption." }
+    ],
+    faqs: [
+      {
+        q: "Can Zoho Inventory and Tally work together?",
+        a: "Yes, and it is a common arrangement in India. Zoho Inventory runs operations while accounting entries are exported or synced to Tally, either through a connector or a periodic upload. It works well provided you decide which system is authoritative for stock quantities and reconcile on a fixed schedule. Where it goes wrong is when both are updated independently and neither figure can be trusted."
+      },
+      {
+        q: "Do I need Zoho Books to use Zoho Inventory?",
+        a: "Not strictly — Zoho Inventory can run on its own and handle sales orders, purchase orders, and stock. But invoicing and GST-compliant accounting sit in Zoho Books, and the two are designed to be used together, so most Indian businesses end up on both. If you intend to keep accounting in Tally, plan the handover process before you go live rather than after."
+      },
+      {
+        q: "Is Zoho Inventory GST compliant for Indian businesses?",
+        a: "The India edition supports GST requirements, and the compliance work — GST-rated invoices, returns data, e-invoicing and e-way bill flows — is handled in conjunction with Zoho Books rather than in Inventory alone. Because Indian statutory requirements change frequently, confirm current compliance coverage and any e-invoicing thresholds that apply to your turnover with Zoho or an authorised partner before you switch."
+      }
+    ]
   }
 ];
 
