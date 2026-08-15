@@ -61,6 +61,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `
           }}
         />
+        <Script
+          id="zoho-pagesense"
+          src="https://cdn-in.pagesense.io/js/zonictech545/833c81fe85be4f28926e4fae70a511ec.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body className={inter.className}>
         <Navbar />
