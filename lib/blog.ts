@@ -1822,6 +1822,241 @@ export const blogPosts: BlogPost[] = [
         a: "The India edition supports GST requirements, and the compliance work — GST-rated invoices, returns data, e-invoicing and e-way bill flows — is handled in conjunction with Zoho Books rather than in Inventory alone. Because Indian statutory requirements change frequently, confirm current compliance coverage and any e-invoicing thresholds that apply to your turnover with Zoho or an authorised partner before you switch."
       }
     ]
+  },
+  {
+    slug: "zoho-crm-books-integration-quote-to-cash",
+    title: "Connecting Zoho CRM to Zoho Books: How Quote-to-Cash Actually Works",
+    metaTitle: "Zoho CRM + Zoho Books Integration | Quote-to-Cash Setup Guide",
+    description:
+      "How the native Zoho CRM–Zoho Books integration works in practice: what syncs, the two sets of Quotes and Invoices modules, sync timing, and the limitations to plan around.",
+    keywords: [
+      "Zoho CRM Zoho Books integration",
+      "Zoho Finance Suite CRM",
+      "sync invoices Zoho CRM Books",
+      "Zoho CRM quotes to invoices",
+      "quote to cash Zoho"
+    ],
+    category: "Zoho Books",
+    date: "2026-08-17",
+    readMins: 8,
+    excerpt:
+      "The CRM–Books integration is genuinely good, but it has one confusing quirk that catches almost every new team. Here's how to set it up so quotes become invoices cleanly.",
+    content: [
+      { type: "p", text: "The pitch is simple: your sales team closes a deal in CRM, finance raises the invoice in Books, and nobody retypes anything. The native integration delivers that — but there is a structural quirk in how Zoho exposes finance records inside CRM that trips up most teams in week one. Understanding it before you configure anything saves a painful cleanup later." },
+      { type: "h2", text: "The quirk: there are two sets of Quotes and Invoices" },
+      { type: "p", text: "Zoho CRM ships with its own native Quotes, Sales Orders, Invoices, and Purchase Orders modules. Separately, the Books integration adds a Zoho Finance section inside CRM that surfaces the equivalent records living in Books. They look almost identical in the interface. They are not the same records, and they do not talk to each other." },
+      { type: "p", text: "A quote raised in CRM's own Quotes module will never appear in Books. A quote raised through the Zoho Finance section syncs to Books immediately. Teams that discover this three months in end up with two parallel sets of documents and a reconciliation problem. Decide up front which set you are using, then hide the other from your layouts so nobody can pick wrong." },
+      { type: "note", text: "Our default recommendation: if Books is your system of record for finance, use the Zoho Finance modules for everything customer-facing and remove CRM's native Quotes/Invoices modules from the sales layout entirely." },
+      { type: "h2", text: "What syncs, and in which direction" },
+      {
+        type: "table",
+        head: ["Record", "Direction", "Notes"],
+        rows: [
+          ["Accounts → Customers", "Two-way", "CRM accounts land in Books as business-type customers"],
+          ["Contacts → Contact persons", "Two-way", "Filtered by the CRM view you nominate during setup"],
+          ["Products / Items", "Two-way", "Match your item naming before enabling, not after"],
+          ["Quotes, Sales Orders, Invoices, POs", "CRM (Finance modules) ↔ Books", "Transactions post effectively instantly"],
+          ["Vendors", "Two-way", "Only relevant if you raise POs from CRM"]
+        ]
+      },
+      { type: "p", text: "Standard master data — accounts, contacts, items — reconciles on a periodic cycle rather than the instant a record is saved, so allow a couple of hours before assuming something has failed to sync. Transactions themselves post far faster." },
+      { type: "h2", text: "Setting it up without creating a mess" },
+      {
+        type: "ul",
+        items: [
+          "Clean CRM first. Deduplicate accounts and standardise company names. Every duplicate in CRM becomes a duplicate customer in Books, and merging customers with transactions attached is unpleasant.",
+          "Choose a restrictive contacts view. During setup you nominate which CRM view Books pulls from. Pointing it at 'All Contacts' pushes every lead-adjacent record into your accounting system. Build a view of contacts that genuinely belong to paying or prospective customers.",
+          "Align your item list. Products in CRM and items in Books must reconcile on name and tax treatment, or every transaction throws a mapping error.",
+          "Enable transaction module sync deliberately. Turn on only the document types you actually raise — enabling Purchase Orders when you never issue them just adds clutter.",
+          "Test with three real deals before opening it to the sales team."
+        ]
+      },
+      { type: "h2", text: "Limitations worth knowing before you commit" },
+      {
+        type: "ul",
+        items: [
+          "Custom currency fields in CRM do not map cleanly to Books. If you have custom fields holding money values, rebuild them as decimal fields before enabling sync, or expect errors on every transaction.",
+          "Field-level permissions do not carry across. Custom fields exposed through the Finance modules are visible to everyone with module access, so do not put margin or cost data in fields that sales can see.",
+          "Sync rules are largely pre-defined. This is a packaged integration, not a mapping tool — if you need conditional logic or unusual field routing, that is a job for Zoho Flow or a custom function on top.",
+          "High transaction volumes can introduce lag, which shows up as brief discrepancies between the two systems rather than lost data."
+        ]
+      },
+      { type: "h2", text: "What good looks like once it's running" },
+      { type: "p", text: "A deal reaches the negotiation stage, the rep raises a quote from the Finance section without leaving CRM, and it exists in Books the moment it is saved. The customer accepts, it converts to a sales order and then an invoice on the same record chain. Finance never re-keys a line item. The rep can see, from the deal, whether the invoice has been paid — which quietly removes most of the 'has this client paid yet?' traffic between sales and accounts." },
+      { type: "p", text: "The configuration itself is not difficult. The judgement calls — which module set to standardise on, which contacts view to expose, how to handle custom fields — are what determine whether this is a clean system in six months or a reconciliation headache. As a certified Zoho partner we typically scope this as a short focused engagement rather than a full project." }
+    ],
+    faqs: [
+      {
+        q: "Why don't my CRM quotes show up in Zoho Books?",
+        a: "Almost certainly because they were raised in CRM's own native Quotes module rather than through the Zoho Finance section that the Books integration adds. The two module sets look similar but are entirely separate. Standardise on one — usually the Finance modules — and remove the other from your layouts so the mistake cannot recur."
+      },
+      {
+        q: "How quickly does data sync between Zoho CRM and Zoho Books?",
+        a: "Transactions raised through the Finance modules post effectively instantly. Master data such as accounts, contacts, and items reconciles on a periodic cycle, so allow a couple of hours before treating a missing record as a failure. Very high volumes can add further lag."
+      },
+      {
+        q: "Do we need Zoho One for this integration?",
+        a: "No. The CRM–Books integration is native to both products and works on standalone subscriptions. Zoho One simply bundles them, which often works out cheaper if you are running several apps — worth modelling both ways, and confirming current pricing on Zoho's official site since it changes periodically."
+      }
+    ],
+    relatedApp: { label: "Zoho Books", href: "/zoho-books" }
+  },
+  {
+    slug: "zoho-crm-free-plan-limits-when-to-upgrade",
+    title: "Zoho CRM's Free Plan: What You Actually Get, and When It Starts Costing You",
+    metaTitle: "Zoho CRM Free Plan 2026 | Real Limits & When to Upgrade",
+    description:
+      "Zoho CRM's free edition covers three users permanently. Here's exactly what's included, the four limits that force an upgrade, and how to tell when staying free is costing more than a paid plan.",
+    keywords: [
+      "Zoho CRM free plan",
+      "Zoho CRM free edition limits",
+      "is Zoho CRM free",
+      "when to upgrade Zoho CRM",
+      "Zoho CRM Standard vs free"
+    ],
+    category: "Zoho CRM",
+    date: "2026-08-17",
+    readMins: 7,
+    excerpt:
+      "The free edition is a real product, not a trial. It's also deliberately shaped to break at a specific point — and knowing where that point is saves you a lot of wasted rebuilding.",
+    content: [
+      { type: "p", text: "Zoho CRM's free edition is genuinely free, permanently, for up to three users. No card, no countdown. That makes it one of the few honest free tiers in business software, and a perfectly sensible place for a small team to start." },
+      { type: "p", text: "It is also shaped, quite deliberately, so that it stops working at a predictable moment. The useful thing to know is not whether the free plan is 'good' — it's where the wall is, so you can decide whether to build against it or plan around it." },
+      { type: "h2", text: "What's actually included" },
+      { type: "p", text: "The free edition is a working CRM, not a demo. You get the core object model and enough tooling to run a real sales process for a very small team." },
+      {
+        type: "ul",
+        items: [
+          "Leads, contacts, accounts, and deals with a single sales pipeline",
+          "Tasks, events, and call logging against records",
+          "Basic email integration so correspondence attaches to the right record",
+          "Standard reports and dashboards",
+          "Full mobile apps for iOS and Android",
+          "Document storage and basic import/export"
+        ]
+      },
+      { type: "p", text: "For a two-person founding team tracking a few hundred opportunities, that is enough. Plenty of businesses run on it for a year or more without pain." },
+      { type: "h2", text: "The four limits that actually force an upgrade" },
+      { type: "p", text: "In practice one of four things breaks first. It's worth knowing which one applies to you, because they arrive at very different times." },
+      {
+        type: "table",
+        head: ["Limit", "Free edition", "What it means in practice"],
+        rows: [
+          ["Users", "3, hard cap", "The fourth hire — sales, support, or an admin who needs visibility — triggers a paid plan immediately"],
+          ["Workflow rules", "1", "You can automate one thing. Lead assignment or follow-up reminders, not both"],
+          ["Custom fields & layouts", "Very limited", "You bend your process to fit Zoho's default fields rather than the other way round"],
+          ["API & integrations", "Not available", "No connecting your website forms, accounting, or WhatsApp through the API"]
+        ]
+      },
+      { type: "note", text: "Free-edition entitlements are set by Zoho and change from time to time. Check the current free-plan specification and paid pricing on Zoho's official site before you plan around any specific number." },
+      { type: "p", text: "The user cap is the one people expect. The workflow limit is the one that actually hurts, because a single rule means every lead assignment, every follow-up nudge, and every stage-change notification competes for the same slot. Teams end up doing manually what the software exists to do automatically, which quietly costs more than the licence would." },
+      { type: "h2", text: "What upgrading costs" },
+      { type: "p", text: "The first paid tier is Standard, and it's a modest step up in price for a large step up in capability — multiple pipelines, real workflow automation, custom fields, and API access." },
+      {
+        type: "table",
+        head: ["Plan", "India (annual billing)", "Unlocks"],
+        rows: [
+          ["Free", "₹0 — 3 users", "Core CRM, 1 workflow rule"],
+          ["Standard", "≈ ₹800 / user / mo", "Multiple pipelines, workflows, custom fields, API"],
+          ["Professional", "≈ ₹1,400 / user / mo", "Blueprint process automation, inventory modules, validation rules"],
+          ["Enterprise", "≈ ₹2,400 / user / mo", "Zia AI, advanced customisation, multi-user portals"]
+        ]
+      },
+      { type: "note", text: "Indicative 2026 India pricing, billed annually and before 18% GST; monthly billing runs roughly 20% higher. Zoho revises pricing periodically — always confirm current rates on Zoho's official pricing page." },
+      { type: "h2", text: "The mistake worth avoiding" },
+      { type: "p", text: "The expensive error isn't starting free — it's building a workaround empire on top of the free plan. Spreadsheets shadowing the pipeline, a shared inbox doing the job of workflow rules, one login shared between four people. Every one of those has to be unpicked when you upgrade, and the unpicking usually costs more in time than the licence would have cost in money." },
+      { type: "p", text: "A rough test: if two people are spending more than a couple of hours a week on manual CRM admin that a workflow rule would handle, the free plan is now the more expensive option." },
+      { type: "h2", text: "A sensible upgrade path" },
+      { type: "p", text: "Start free while you're validating what your sales process even is — that's exactly what it's for. Keep your data clean and your field names sane so migration is trivial later. When any one of the four limits above starts shaping your behaviour rather than merely annoying you, move to Standard and set the automation up properly. Skip to Professional only if you know you need Blueprint or the inventory modules; there's no prize for buying capability early." },
+      { type: "p", text: "As a certified Zoho partner, we're happy to look at a free-edition setup and tell you plainly whether upgrading is warranted yet. Often the answer is not yet, and that's a useful answer too." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho CRM's free plan a trial that expires?",
+        a: "No. It's a permanently free edition for up to three users, with no time limit and no card required. It is limited in features rather than in duration."
+      },
+      {
+        q: "What happens to our data if we upgrade from free to a paid plan?",
+        a: "Everything carries over — records, notes, attachments, and history stay in place, and the new features simply become available. There is no migration or re-import involved, which is why starting free is low-risk."
+      },
+      {
+        q: "Can we add a fourth user without upgrading everyone to a paid plan?",
+        a: "No. Zoho CRM licences the whole organisation at one edition, so a fourth user means all users move onto the paid tier. Budget for the full seat count rather than a single extra licence."
+      }
+    ],
+    relatedApp: { label: "Zoho CRM", href: "/zoho-crm" }
+  },
+  {
+    slug: "zoho-expense-india-pricing-setup",
+    title: "Zoho Expense in India: Pricing, Plans and Whether You Need It Alongside Zoho Books",
+    metaTitle: "Zoho Expense Pricing India 2026 | Plans, Setup & Zoho Books Fit",
+    description:
+      "Zoho Expense pricing in India for 2026, what the Free, Standard and Premium plans include, and an honest answer to the question every Zoho Books user asks: do we actually need a second app?",
+    keywords: [
+      "Zoho Expense pricing India",
+      "Zoho Expense plans 2026",
+      "Zoho Expense vs Zoho Books",
+      "employee reimbursement software India",
+      "Zoho Expense setup"
+    ],
+    category: "Zoho Books",
+    date: "2026-08-19",
+    readMins: 8,
+    excerpt:
+      "Zoho Books already records expenses, so why pay for Zoho Expense? The answer comes down to who submits the claim. Here's the pricing, the plan differences, and the point at which the second app pays for itself.",
+    content: [
+      { type: "p", text: "The question we get asked most often about Zoho Expense isn't what it costs — it's why a business already paying for Zoho Books would need it at all. Books records expenses perfectly well. The honest answer has less to do with features and more to do with who is doing the typing, and it's worth working through properly before you add another per-user line to your bill." },
+      { type: "h2", text: "The distinction that decides it" },
+      { type: "p", text: "Zoho Books handles expenses from the accountant's side of the desk: vendor bills, purchase entries, ledger accuracy, financial reporting. Zoho Expense handles them from the employee's side: someone photographs a fuel receipt in a car park, submits a claim, a manager approves it, finance reimburses it. The two apps meet at the point where an approved claim becomes an accounting entry." },
+      { type: "p", text: "So the test is simple. If your expenses arrive as vendor invoices that your accounts team enters directly, Books alone is fine. If your expenses arrive as receipts in other people's pockets, Books alone means your accounts team is doing data entry for the whole company — and that's the cost Zoho Expense removes." },
+      { type: "h2", text: "India pricing, 2026" },
+      {
+        type: "table",
+        head: ["Plan", "Monthly billing", "Annual billing", "Suited to"],
+        rows: [
+          ["Free", "₹0", "₹0", "Up to 3 users, basic claim tracking"],
+          ["Standard", "≈ ₹99 / user / month", "≈ ₹79 / user / month", "Approval workflows and reimbursements"],
+          ["Premium", "≈ ₹199 / user / month", "≈ ₹149 / user / month", "Travel, budgets and advanced controls"]
+        ]
+      },
+      { type: "note", text: "Indicative India pricing for 2026, exclusive of 18% GST. Paid plans carry a minimum user count — commonly five — so the smallest paid subscription is more than one seat's worth. Zoho revises pricing periodically; confirm current rates on Zoho's official India pricing page before budgeting." },
+      { type: "p", text: "The free tier is a genuine free tier, not a trial: three users, a monthly allowance of receipt autoscans, and a modest storage limit. It's a reasonable way to test whether your team will actually submit claims through an app before you pay for anything. It is not a long-term answer for anyone with an approval hierarchy." },
+      { type: "h2", text: "Standard vs Premium — where the line falls" },
+      { type: "p", text: "Standard covers what most Indian SMBs mean when they say expense management: multi-level approvals, expense policies and categories, reimbursement handling, corporate card reconciliation, custom roles, and reporting. For a company with a field sales team and a two-step approval chain, Standard is usually enough." },
+      { type: "p", text: "Premium earns its premium in three situations specifically — organisations with real travel management needs (trip requests, itineraries, pre-approvals), organisations that need budget monitoring against departmental limits, and organisations with approval structures complex enough that the standard workflow builder starts creaking. If none of those describe you, Standard is not a compromise." },
+      { type: "h2", text: "What works well in the Indian context" },
+      {
+        type: "ul",
+        items: [
+          "Receipt autoscan reads Indian receipt formats reasonably well, pulling merchant, date, GSTIN and amount off the image — fuel receipts from the major oil marketing companies and hotel bills are the common cases.",
+          "GSTIN capture at the claim level means the input tax credit question gets answered when the expense is submitted, not three weeks later during reconciliation.",
+          "Mileage tracking suits field sales teams who currently submit distances on a spreadsheet that nobody can verify.",
+          "The Books integration pushes approved, coded claims through as accounting entries, so the finance team reviews rather than retypes."
+        ]
+      },
+      { type: "h2", text: "Costs beyond the subscription" },
+      { type: "p", text: "The licence is the predictable part. The parts that need budgeting are configuration and adoption. Configuration means encoding your actual expense policy — per-diem limits, category rules, receipt thresholds, who approves what above which amount — into the system rather than leaving it in a PDF nobody reads. Adoption means getting employees to submit through the app instead of over WhatsApp, which is a change-management problem more than a software one." },
+      { type: "p", text: "Where implementations disappoint, it's almost always because the policy was never encoded and the tool became a receipt inbox. Budget a day or two of proper configuration and the software does what it promised; skip it and you've bought a filing cabinet." },
+      { type: "h2", text: "A rough break-even" },
+      { type: "p", text: "Take the hours your finance team currently spends chasing receipts, keying claims, and reconciling card statements each month. In most SMBs we work with, that number is somewhere between fifteen and forty hours. Price that against a Standard subscription for the same headcount and the arithmetic usually resolves quickly — often at around ten to fifteen claim-submitting employees. Below that, spreadsheets and Books are defensible. Above it, the manual process is quietly more expensive than the software." },
+      { type: "h2", text: "If you want a specific answer" },
+      { type: "p", text: "As a certified Zoho partner we scope Expense rollouts around your policy document first and the software second, because the configuration is where the value sits. A short call covering headcount, claim volume, approval structure and whether travel is in scope is enough to tell you which plan fits and whether you need it at all — including if the answer is that Zoho Books already covers you." }
+    ],
+    faqs: [
+      {
+        q: "Can we use Zoho Expense without Zoho Books?",
+        a: "Yes. Zoho Expense works as a standalone reimbursement system and can export to other accounting packages, including through its integrations with common ERP and accounting systems. That said, the tightest fit by a wide margin is with Zoho Books, where approved claims flow through as coded entries without a manual step in between."
+      },
+      {
+        q: "Is the free plan enough for a small business?",
+        a: "For up to three users with straightforward claims and no formal approval chain, it can be. The constraints that push businesses off it are the user cap, the monthly receipt autoscan allowance, and the absence of the approval and policy controls that make the tool worth using. Treat it as a genuine pilot rather than a permanent plan."
+      },
+      {
+        q: "Does Zoho Expense handle GST input tax credit on employee expenses?",
+        a: "It captures GSTIN and tax details at the point of claim submission, which is what makes input tax credit traceable rather than reconstructed later. It is a data-capture aid, not a tax filing tool — your GST treatment and filing still happen in your accounting system and remain your responsibility to get right."
+      }
+    ],
+    relatedApp: { label: "Zoho Books", href: "/zoho-books" }
   }
 ];
 
