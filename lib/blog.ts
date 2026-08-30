@@ -2144,6 +2144,86 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-books-pricing-india-2026",
+    title: "Zoho Books Pricing in India (2026): Every Plan Explained",
+    metaTitle: "Zoho Books Pricing India 2026 | All Plans, Limits & Which to Pick",
+    description:
+      "Zoho Books pricing in India for 2026: Free, Standard, Professional, Premium, Elite and Ultimate plans compared — per-organisation costs, user and invoice limits, add-ons, and how to pick the right plan.",
+    keywords: [
+      "Zoho Books pricing India",
+      "Zoho Books plans 2026",
+      "Zoho Books cost",
+      "Zoho Books free plan",
+      "Zoho Books Standard vs Professional"
+    ],
+    category: "Zoho Books",
+    date: "2026-08-28",
+    readMins: 7,
+    excerpt:
+      "Zoho Books is priced per organisation, not per user — which changes the maths completely. Here's what each of the six India plans costs in 2026, what the jumps buy you, and the limits that actually decide.",
+    content: [
+      { type: "p", text: "The first thing to understand about Zoho Books pricing is that it's per organisation, not per user. A plan covers your whole entity with a bundled user count, so a five-person accounts team on the Professional plan pays one subscription — not five. That single fact is why Zoho Books usually undercuts per-seat accounting tools as teams grow. Here's the full 2026 India picture." },
+      { type: "h2", text: "The six plans at a glance" },
+      {
+        type: "table",
+        head: ["Plan", "Price / org / month (annual billing)", "Users included", "Invoices / year"],
+        rows: [
+          ["Free", "₹0 (turnover under ₹25 lakh)", "1 + 1 accountant", "1,000"],
+          ["Standard", "₹749 (₹899 if billed monthly)", "3", "5,000"],
+          ["Professional", "₹1,499 (₹1,799 monthly)", "5", "10,000"],
+          ["Premium", "₹2,999 (₹3,599 monthly)", "10", "25,000"],
+          ["Elite", "₹4,999 (₹5,999 monthly)", "15", "1,00,000"],
+          ["Ultimate", "₹7,999 (₹9,599 monthly)", "25", "1,00,000"]
+        ]
+      },
+      { type: "note", text: "Rates are from Zoho's official India pricing page as of August 2026, exclusive of 18% GST. Annual billing saves roughly 17% versus monthly. Zoho revises pricing periodically — verify current rates on Zoho's official site before you commit." },
+      { type: "h2", text: "What each step up actually buys" },
+      {
+        type: "ul",
+        items: [
+          "Free → Standard: e-invoicing, bulk features, payment reminders, customer portal, transaction locking — the compliance basics every registered business ends up needing",
+          "Standard → Professional: multi-currency transactions, projects and timesheets, price lists, sales/purchase approvals, custom roles and workflow automation",
+          "Professional → Premium: payroll, fixed asset management, budgets and cashflow forecasting, vendor portal, custom modules and functions — the 'finance department in software' tier",
+          "Premium → Elite: advanced inventory — multiple warehouses, batch and serial tracking, bin locations, shipping labels, and direct Shopify (up to 2 stores) and Amazon/Etsy connections",
+          "Elite → Ultimate: advanced analytics with 50+ prebuilt visualisations, KPI tracking and 3 million records — essentially Zoho Analytics embedded in your accounting"
+        ]
+      },
+      { type: "h2", text: "The limits that decide, beyond price" },
+      { type: "p", text: "Most businesses outgrow a plan through limits, not features. The ones to check against your real volumes: annual invoice and bill counts (5,000 on Standard sounds generous until you invoice daily), included users (extra seats cost ₹150 per user per month on annual billing), and receipt autoscans (200 per month on Standard and Professional, 1,000 from Premium). Payroll on Premium and above covers a bundled employee count, with additional employees at around ₹60 per employee per month. If any one of these is chronically over the line, the next tier is usually cheaper than stacking add-ons." },
+      { type: "h2", text: "Who each plan fits" },
+      {
+        type: "ul",
+        items: [
+          "Free — solopreneurs and very early businesses under the ₹25 lakh turnover threshold who still want GST filing and clean books",
+          "Standard — typical GST-registered small businesses with a founder plus an accountant doing invoicing, expenses and filing",
+          "Professional — services firms billing in multiple currencies or running project-based work with approvals",
+          "Premium — SMBs consolidating payroll, budgeting and fixed assets into one system",
+          "Elite — product and trading businesses that need real inventory control with online sales channels",
+          "Ultimate — established companies that want management reporting and BI without exporting to spreadsheets"
+        ]
+      },
+      { type: "h2", text: "Elite's inventory vs a separate Zoho Inventory subscription" },
+      { type: "p", text: "If stock management is the driver, you have two routes: Books Elite (accounting with advanced inventory built in) or a lower Books plan paired with a separate Zoho Inventory subscription. Elite keeps everything in one application and one bill, which suits businesses where accounting and stock are handled by the same small team. A separate Zoho Inventory makes sense when operations and finance are different teams, or when you need Inventory-specific capabilities and integrations at higher volumes. We help clients run this comparison against their order volumes before choosing — the answer flips depending on scale." },
+      { type: "h2", text: "Budgeting realistically" },
+      { type: "p", text: "For most SMBs the licence is the small line: a Professional plan is under ₹18,000 a year before GST. The real project cost is setup done properly — chart of accounts, GST configuration, opening balances, bank feeds, and migration from Tally or spreadsheets. Done once and done right, the system pays for itself in filing time alone. As a certified Zoho partner we scope that setup as a fixed, itemised engagement so the total cost is known before you start." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho Books really free, and for how long?",
+        a: "The Free plan has no time limit — it remains free as long as your business revenue stays under ₹25 lakh for the financial year. It includes GST filing, invoicing (up to 1,000 a year), bank reconciliation and one user plus one accountant seat. Cross the threshold and you move to a paid plan."
+      },
+      {
+        q: "Is Zoho Books priced per user or per organisation?",
+        a: "Per organisation. Each plan bundles a user count — 3 on Standard, 5 on Professional, 10 on Premium, 15 on Elite, 25 on Ultimate — and additional users can be added for about ₹150 per user per month on annual billing. This makes it significantly cheaper than per-seat tools for teams."
+      },
+      {
+        q: "Can I change plans later without losing data?",
+        a: "Yes. Upgrades and downgrades keep your data intact, and billing adjusts pro-rata. The practical caution is downgrading below a limit you already exceed — for example more users or active features than the lower plan allows — which you'll need to trim first. Most businesses start on Standard or Professional and move up as volumes grow."
+      }
+    ],
+    relatedApp: { label: "Zoho Books", href: "/zoho-books" }
   }
 ];
 
