@@ -2224,6 +2224,84 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Books", href: "/zoho-books" }
+  },
+  {
+    slug: "zoho-invoice-vs-zoho-books-which-one",
+    title: "Zoho Invoice vs Zoho Books: Which One Does Your Business Actually Need?",
+    metaTitle: "Zoho Invoice vs Zoho Books (2026) | Free Invoicing or Full Accounting?",
+    description:
+      "Zoho Invoice is free forever; Zoho Books is paid accounting. This guide explains what each one covers, the exact moments you outgrow Invoice, and how to move across without losing data.",
+    keywords: [
+      "Zoho Invoice vs Zoho Books",
+      "is Zoho Invoice free",
+      "Zoho Invoice limits",
+      "Zoho Books free plan India",
+      "invoicing vs accounting software"
+    ],
+    category: "Zoho Books",
+    date: "2026-09-04",
+    readMins: 7,
+    excerpt:
+      "One is free forever, the other is proper accounting. Here's how to tell which you need today, the specific triggers that mean you've outgrown Zoho Invoice, and what migration involves.",
+    content: [
+      { type: "p", text: "Zoho publishes two products that both create invoices, and the naming does not make the difference obvious. Zoho Invoice is a free-forever billing tool. Zoho Books is a full double-entry accounting system you pay for. Picking the wrong one costs you either money you didn't need to spend or a migration you didn't plan for. This guide draws the line clearly." },
+      { type: "h2", text: "The one-sentence difference" },
+      { type: "p", text: "Zoho Invoice answers 'what have I billed and who owes me?'. Zoho Books answers 'what is my financial position, and are my statutory filings correct?'. Invoicing is a slice of accounting, not a smaller version of it." },
+      { type: "h2", text: "Feature comparison" },
+      {
+        type: "table",
+        head: ["Capability", "Zoho Invoice", "Zoho Books"],
+        rows: [
+          ["Price", "Free, no time limit", "Free tier under ₹25 lakh turnover; paid plans from ≈ ₹899/month"],
+          ["Sales invoices & payment reminders", "Yes", "Yes"],
+          ["Estimates, time tracking, customer portal", "Yes", "Yes"],
+          ["Expense recording", "Basic", "Full, with vendor bills and ageing"],
+          ["Purchases, vendor bills, purchase orders", "No", "Yes"],
+          ["Bank feeds and reconciliation", "No", "Yes"],
+          ["Chart of accounts, journals, double-entry ledger", "No", "Yes"],
+          ["P&L, balance sheet, cash flow statements", "No", "Yes"],
+          ["GST returns and e-invoicing (India)", "Limited", "Yes"],
+          ["Inventory / stock tracking", "No", "Yes, from higher plans"],
+          ["Users", "2", "Bundled per plan, additional seats purchasable"]
+        ]
+      },
+      { type: "note", text: "Figures are indicative for 2026 and exclude 18% GST. Zoho changes plan limits and pricing periodically — confirm the current numbers on Zoho's official site before deciding." },
+      { type: "h2", text: "When Zoho Invoice is genuinely enough" },
+      { type: "p", text: "It is a serious product, not a trial. Freelancers, consultants, small agencies and early-stage service businesses often run on it for years quite happily. Zoho Invoice fits if you bill clients for services, collect payments online, and hand a folder of documents to a chartered accountant who maintains your books elsewhere. If that describes you, paying for accounting software you don't operate yourself is spending for nothing." },
+      { type: "h2", text: "The five triggers that mean you've outgrown it" },
+      {
+        type: "ul",
+        items: [
+          "You buy as well as sell — vendor bills and purchase orders need tracking, not just customer invoices",
+          "You want your bank statement reconciled inside the software instead of in a spreadsheet",
+          "Someone asks for a balance sheet or a real P&L, and you cannot produce one",
+          "GST filing and e-invoicing have become monthly pain rather than a quarterly annoyance",
+          "You hold stock, or a second user beyond the two-seat cap needs access"
+        ]
+      },
+      { type: "p", text: "Hit two of these and the paid Books plan already costs less than the hours you're losing. The India-specific trigger is usually GST: once returns are being prepared by hand from exported data, Books pays for itself in filing time alone." },
+      { type: "h2", text: "The free Zoho Books plan complicates the choice" },
+      { type: "p", text: "Worth knowing before you settle on Invoice: Zoho Books has its own free plan for Indian businesses under ₹25 lakh annual turnover, covering one user plus an accountant seat and up to around 1,000 transactions a year — with GST filing and bank reconciliation included. For a small Indian business under that threshold, free Books is usually the better starting point than free Invoice, because you get accounting fundamentals at the same price and avoid a migration later. Zoho Invoice makes more sense for businesses outside India, for teams needing two operational users, or for pure billing use where accounts are handled entirely elsewhere." },
+      { type: "h2", text: "What migration actually involves" },
+      { type: "p", text: "Moving from Invoice to Books is well-trodden — Zoho provides a migration path, and customers, items, invoices and payment history carry across. The part that trips businesses up is not the data transfer but the accounting setup that follows: chart of accounts, opening balances as of your cutover date, GST configuration, tax rates and bank feeds. Get that wrong and you have clean-looking books that don't reconcile. We usually recommend cutting over at the start of a financial quarter or year, so opening balances are a clean line rather than a mid-period reconstruction." },
+      { type: "h2", text: "Our recommendation" },
+      { type: "p", text: "Start on Zoho Invoice if you only ever send invoices and someone else keeps your books. Start on Zoho Books — free tier if you qualify, Standard if you don't — the moment purchases, banking or GST filing are yours to manage. As a certified Zoho partner, the projects that go smoothest are the ones where the business moved early and deliberately rather than after a filing deadline forced it." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho Invoice really free forever, or is it a trial?",
+        a: "It is genuinely free with no time limit, subject to plan caps — around two users and a few hundred invoices a year. Invoices carry Zoho branding unless you hold a paid Zoho subscription. Verify current limits on Zoho's official site, as they are periodically revised."
+      },
+      {
+        q: "Can I use Zoho Invoice for GST invoicing in India?",
+        a: "You can raise GST-compliant invoices, but Invoice does not file returns or handle e-invoicing end to end. If GST compliance is your responsibility rather than your accountant's, Zoho Books is the appropriate product."
+      },
+      {
+        q: "Will I lose my invoice history if I move to Zoho Books?",
+        a: "No. Customers, items, invoices and payments migrate across. The work sits in the accounting setup afterwards — chart of accounts, opening balances and tax configuration — which is why most businesses cut over at the start of a quarter or financial year."
+      }
+    ],
+    relatedApp: { label: "Zoho Books", href: "/zoho-books" }
   }
 ];
 
