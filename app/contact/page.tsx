@@ -77,10 +77,14 @@ export default function ContactPage() {
         <div className="mx-auto mt-8 grid max-w-5xl gap-4 sm:grid-cols-3">
           <ContactLinks options={contactOptions} />
         </div>
+      </Container>
 
-        {/* Two columns on desktop; tap-to-open accordion on mobile */}
+      {/* Two columns on desktop; tap-to-open accordion on mobile — near full width, split 50/50 */}
+      <div className="mx-auto mt-6 w-full max-w-[1400px] px-4 sm:px-6 lg:px-8">
         <ContactPanels booking={<BookingEmbed />} form={<ZohoLeadForm />} />
+      </div>
 
+      <Container>
         <p className="mx-auto mt-5 max-w-5xl text-center text-sm text-slate-500">
           We reply within one business day. Serving India, US, UK, UAE &amp; Australia.
         </p>

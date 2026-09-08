@@ -21,7 +21,7 @@ export default function ContactPanels({ booking, form }: Props) {
   );
 
   return (
-    <div className="mx-auto mt-6 grid max-w-6xl items-start gap-4 lg:grid-cols-2 lg:gap-6">
+    <div className="grid w-full items-start gap-5 lg:grid-cols-2 lg:gap-8">
       {/* Book a call */}
       <div className="card p-2 md:p-3">
         <button
