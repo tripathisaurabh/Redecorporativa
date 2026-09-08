@@ -106,7 +106,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button href="/book-us">Book a Consultation</Button>
+          <Button href="/contact">Book a Consultation</Button>
         </div>
 
         <button
@@ -184,7 +184,7 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <Button href="/book-us" className="mt-2 w-full active:scale-[0.98]" onClick={closeMenu}>
+          <Button href="/contact" className="mt-2 w-full active:scale-[0.98]" onClick={closeMenu}>
             Book a Consultation
           </Button>
         </div>
