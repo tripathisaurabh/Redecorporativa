@@ -2302,6 +2302,91 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Books", href: "/zoho-books" }
+  },
+  {
+    slug: "zoho-creator-vs-crm-custom-modules",
+    title: "Zoho Creator or a Custom Module in Zoho CRM? How to Decide",
+    metaTitle: "Zoho Creator vs Zoho CRM Custom Modules (2026) | Which to Build",
+    description:
+      "You need something Zoho CRM doesn't do out of the box. Should it be a custom module inside CRM or a separate Zoho Creator app? A decision framework, with cost and limits.",
+    keywords: [
+      "Zoho Creator vs Zoho CRM custom module",
+      "Zoho CRM custom module limits",
+      "when to use Zoho Creator",
+      "Zoho custom app development",
+      "Zoho CRM customisation options"
+    ],
+    category: "Zoho Creator",
+    date: "2026-09-07",
+    readMins: 8,
+    excerpt:
+      "The same requirement can be built two ways in Zoho — as a custom module inside CRM, or as a standalone Creator app. Picking wrong costs you either flexibility or years of unnecessary complexity.",
+    content: [
+      { type: "p", text: "Every Zoho project reaches the same fork. Someone describes a process — site inspections, warranty claims, sample dispatch, dealer onboarding — that CRM does not handle natively, and there are two credible ways to build it. One is a custom module inside Zoho CRM. The other is a separate app in Zoho Creator. Both work. Choosing badly is expensive in opposite directions, so it's worth understanding what actually separates them." },
+      { type: "h2", text: "The structural difference" },
+      { type: "p", text: "A custom module is a new record type inside Zoho CRM. It inherits everything CRM already gives you: the same interface, the same users and licences, the same permission and sharing model, the same workflow engine, the same reports, and native relationships to Leads, Contacts, Accounts and Deals. You are extending a product." },
+      { type: "p", text: "A Creator app is a separate application with its own forms, its own screens, its own logic in Deluge, and its own user access. It talks to CRM through integration rather than living inside it. You are building software — with far more freedom and correspondingly more responsibility." },
+      {
+        type: "table",
+        head: ["Consideration", "Custom module in Zoho CRM", "Zoho Creator app"],
+        rows: [
+          ["Who uses it", "Existing CRM users, no new licence", "Anyone you give a Creator licence or portal access to"],
+          ["Interface control", "CRM's layout — limited", "Fully designed screens, dashboards, portals"],
+          ["Relationship to CRM data", "Native lookups and related lists", "Via integration or API sync"],
+          ["Build effort", "Hours to days", "Weeks — roughly 1–2 for simple apps, 3–6 for multi-role or calculation-heavy ones"],
+          ["Typical cost driver", "Configuration time", "Development time plus separate licences"],
+          ["Best for", "Sales-adjacent records people manage alongside deals", "Operational processes with their own users, logic and screens"]
+        ]
+      },
+      { type: "h2", text: "Choose a custom module when…" },
+      {
+        type: "ul",
+        items: [
+          "The people using it already have CRM licences and already live in CRM all day",
+          "The records relate directly to a Lead, Contact, Account or Deal and you want them visible on that record",
+          "Your reporting needs the new data alongside pipeline data in the same CRM reports",
+          "The process is essentially data capture plus approvals, not calculation or complex screens",
+          "You want it live this week rather than this quarter"
+        ]
+      },
+      { type: "p", text: "Custom modules are also available further down the plan range than most people assume — they are no longer an Enterprise-only feature, though the number of modules you can create still varies significantly by edition, with lower tiers permitting roughly ten and higher tiers permitting substantially more. In practice the technical ceiling is rarely the constraint; a well-designed Zoho CRM implementation almost never needs more than a dozen custom modules, and needing far more is usually a sign the design has gone wrong. Confirm your edition's current limits in Zoho's documentation, as these have been revised more than once." },
+      { type: "h2", text: "Choose Zoho Creator when…" },
+      {
+        type: "ul",
+        items: [
+          "The users are not CRM users — factory supervisors, field technicians, dealers, contractors, warehouse staff — and paying for CRM licences for them makes no sense",
+          "You need a purpose-built interface: a mobile form with photo capture, a multi-step wizard, a role-specific dashboard, or an external portal",
+          "The logic is genuinely computational — pricing engines, material calculations, scheduling, scoring models — rather than field updates",
+          "The process has its own lifecycle that would clutter CRM if it lived there",
+          "You need data from several systems in one place, not just CRM"
+        ]
+      },
+      { type: "p", text: "Creator's licence cost is real and worth modelling: indicative 2026 India pricing runs around ₹720 per user per month for Standard, ₹1,800 for Professional and ₹2,220 for Enterprise, billed annually and before 18% GST — verify current rates on Zoho's official Creator pricing page. If you already hold Zoho One (roughly ₹1,500 per employee per month, annual, before GST), Creator is bundled and this calculation changes entirely." },
+      { type: "h2", text: "Three real examples" },
+      { type: "p", text: "A distributor wanted to track warranty claims raised against products sold. Every claim tied back to an Account and a Deal, the handlers were existing CRM users, and the process was capture plus approval. Custom module — built and live in three days." },
+      { type: "p", text: "A manufacturer wanted plant supervisors to log daily production output against work orders, on a phone, on the shop floor, with photo evidence. None of the supervisors were CRM users and none should be. Creator app — three weeks, with a nightly summary pushed into CRM for the sales team's visibility." },
+      { type: "p", text: "A services firm wanted a quotation tool with tiered material pricing, margin rules and PDF output. The users were CRM users, but the calculation logic was far beyond what layout rules could carry. Creator app for the calculator, writing the approved quote back into the CRM Deal — the hybrid answer, and often the right one." },
+      { type: "h2", text: "The failure modes to avoid" },
+      { type: "p", text: "Two mistakes recur. The first is forcing a genuine operational application into CRM as a chain of custom modules, then trying to bend CRM's interface into something it isn't. You end up with fifteen thinly-populated modules, an unusable navigation bar and users who avoid the system." },
+      { type: "p", text: "The second is the opposite: building a Creator app for something that was always CRM data, then spending the next two years maintaining a sync between two copies of the same records. Every integration you build is a thing that can break at 2am. If the data belongs in CRM, keep it in CRM." },
+      { type: "h2", text: "Our take" },
+      { type: "p", text: "Start with the users, not the requirement. If the people who will use it already have CRM licences and the records relate to a customer, build a custom module — it is faster, cheaper and inherits everything. If the users sit outside CRM, or the screens and logic are the point, build in Creator and integrate deliberately. As a certified Zoho partner, the decision we most often help clients reverse is the sprawling custom-module build that should have been one small Creator app — and we would rather have that conversation before the build than after it." }
+    ],
+    faqs: [
+      {
+        q: "Do I need a Zoho Creator licence if I already pay for Zoho CRM?",
+        a: "Yes — they are separate products with separate licences, unless you hold Zoho One, which bundles both. Custom modules, by contrast, are included in your existing Zoho CRM subscription and need no additional licence, which is a large part of why they are often the cheaper answer."
+      },
+      {
+        q: "How many custom modules can I create in Zoho CRM?",
+        a: "It depends on your edition. Custom modules are available across the plan range rather than being Enterprise-only, with lower tiers allowing roughly ten and higher tiers allowing considerably more. Most businesses never approach the limit — needing dozens is usually a design problem rather than a licensing one. Check Zoho's current documentation for your edition."
+      },
+      {
+        q: "Can a Zoho Creator app read and write Zoho CRM data?",
+        a: "Yes. Creator connects to Zoho CRM natively, so an app can pull customer records, write results back to Deals or custom modules, and trigger CRM workflows. Design the direction of truth deliberately — decide which system owns each field, so you are not maintaining two copies that drift apart."
+      }
+    ],
+    relatedApp: { label: "Zoho Creator", href: "/zoho-creator" }
   }
 ];
 
