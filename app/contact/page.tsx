@@ -3,6 +3,7 @@ import Script from "next/script";
 import Container from "../../components/ui/Container";
 import Card from "../../components/ui/Card";
 import ZohoLeadForm from "../../components/ZohoLeadForm";
+import BookingEmbed from "../../components/BookingEmbed";
 import ContactLinks from "../../components/ContactLinks";
 import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_LINK, SITE_URL } from "../../lib/constants";
@@ -92,6 +93,24 @@ export default function ContactPage() {
             </div>
           </Card>
         </div>
+
+        <div className="mx-auto mt-8 max-w-5xl">
+          <Card className="border-slate-200 bg-white">
+            <div className="text-center">
+              <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Or book a call</p>
+              <h2 className="mt-2 text-xl font-semibold tracking-tight text-slate-900">
+                Pick a time that works for you
+              </h2>
+              <p className="mx-auto mt-1 max-w-xl text-sm text-slate-600">
+                Grab a slot on our calendar and meet a certified Zoho expert — no back-and-forth emails.
+              </p>
+            </div>
+            <div className="mt-5">
+              <BookingEmbed />
+            </div>
+          </Card>
+        </div>
+
         <Script
           id="google-ads-conversion"
           strategy="afterInteractive"

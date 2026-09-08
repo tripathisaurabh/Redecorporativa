@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 // Zoho Bookings inline embed (shared meeting scheduler).
 const BOOKING_URL =
-  "https://user1-demo1438.zohobookings.in/portal-embed#/476979000000060030";
+  "https://intro.zohobookings.in/portal-embed#/redecorp";
 const EMBED_SCRIPT = "https://bookings.nimbuspop.com/assets/embed.js";
 
 type BookingsApi = { inlineEmbed: (opts: { url: string; parent: string; height: string }) => void };
