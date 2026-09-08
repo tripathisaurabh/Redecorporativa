@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Container from "../../components/ui/Container";
-import Card from "../../components/ui/Card";
 import ZohoLeadForm from "../../components/ZohoLeadForm";
 import BookingEmbed from "../../components/BookingEmbed";
+import ContactPanels from "../../components/ContactPanels";
 import ContactLinks from "../../components/ContactLinks";
 import { buildCanonical, buildKeywords } from "../../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_LINK, SITE_URL } from "../../lib/constants";
@@ -78,30 +78,8 @@ export default function ContactPage() {
           <ContactLinks options={contactOptions} />
         </div>
 
-        {/* Left: book a call · Right: send a message */}
-        <div className="mx-auto mt-6 grid max-w-6xl items-start gap-6 lg:grid-cols-2">
-          <div className="card p-2 md:p-3">
-            <div className="px-2 pt-1">
-              <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Book a call</p>
-              <h2 className="mt-1 text-lg font-semibold tracking-tight text-slate-900">
-                Pick a time that works for you
-              </h2>
-            </div>
-            <div className="mt-2">
-              <BookingEmbed />
-            </div>
-          </div>
-
-          <Card className="border-slate-200 bg-white">
-            <h2 className="text-xl font-semibold tracking-tight text-slate-900">Send a message</h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Share your challenge and we'll get back within one business day.
-            </p>
-            <div className="mt-5 overflow-hidden rounded-xl bg-white">
-              <ZohoLeadForm />
-            </div>
-          </Card>
-        </div>
+        {/* Two columns on desktop; tap-to-open accordion on mobile */}
+        <ContactPanels booking={<BookingEmbed />} form={<ZohoLeadForm />} />
 
         <p className="mx-auto mt-5 max-w-5xl text-center text-sm text-slate-500">
           We reply within one business day. Serving India, US, UK, UAE &amp; Australia.
