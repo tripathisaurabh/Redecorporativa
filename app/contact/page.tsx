@@ -73,16 +73,25 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-5xl items-start gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-          <div className="space-y-4">
-            <ContactLinks options={contactOptions} />
-            <div className="rounded-2xl border border-slate-200 bg-white/70 p-5">
-              <p className="text-sm font-semibold text-slate-900">Quick response</p>
-              <p className="mt-1 text-sm text-slate-600">
-                We reply within one business day. Serving India, US, UK, UAE &amp; Australia.
-              </p>
+        {/* Contact details — compact strip on top */}
+        <div className="mx-auto mt-8 grid max-w-5xl gap-4 sm:grid-cols-3">
+          <ContactLinks options={contactOptions} />
+        </div>
+
+        {/* Left: book a call · Right: send a message */}
+        <div className="mx-auto mt-6 grid max-w-6xl items-start gap-6 lg:grid-cols-2">
+          <div className="card p-2 md:p-3">
+            <div className="px-2 pt-1">
+              <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Book a call</p>
+              <h2 className="mt-1 text-lg font-semibold tracking-tight text-slate-900">
+                Pick a time that works for you
+              </h2>
+            </div>
+            <div className="mt-2">
+              <BookingEmbed />
             </div>
           </div>
+
           <Card className="border-slate-200 bg-white">
             <h2 className="text-xl font-semibold tracking-tight text-slate-900">Send a message</h2>
             <p className="mt-1 text-sm text-slate-600">
@@ -94,22 +103,9 @@ export default function ContactPage() {
           </Card>
         </div>
 
-        <div className="mx-auto mt-8 max-w-5xl">
-          <Card className="border-slate-200 bg-white">
-            <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">Or book a call</p>
-              <h2 className="mt-2 text-xl font-semibold tracking-tight text-slate-900">
-                Pick a time that works for you
-              </h2>
-              <p className="mx-auto mt-1 max-w-xl text-sm text-slate-600">
-                Grab a slot on our calendar and meet a certified Zoho expert — no back-and-forth emails.
-              </p>
-            </div>
-            <div className="mt-5">
-              <BookingEmbed />
-            </div>
-          </Card>
-        </div>
+        <p className="mx-auto mt-5 max-w-5xl text-center text-sm text-slate-500">
+          We reply within one business day. Serving India, US, UK, UAE &amp; Australia.
+        </p>
 
         <Script
           id="google-ads-conversion"
