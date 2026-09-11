@@ -2460,6 +2460,80 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Books Implementation", href: "/zoho-books" }
+  },
+  {
+    slug: "zoho-billing-vs-zoho-books-recurring-revenue",
+    title: "Zoho Billing vs Zoho Books: Who Actually Needs a Separate Billing App?",
+    metaTitle: "Zoho Billing vs Zoho Books (2026) | Recurring Revenue Comparison",
+    description:
+      "Zoho Books already does recurring invoices, so when do you need Zoho Billing? A practical look at where recurring invoicing stops working and dedicated subscription billing starts paying for itself.",
+    keywords: [
+      "Zoho Billing vs Zoho Books",
+      "Zoho Billing pricing",
+      "Zoho Books recurring invoices",
+      "Zoho subscription billing",
+      "Zoho Billing 2026"
+    ],
+    category: "Zoho Books",
+    date: "2026-09-11",
+    readMins: 8,
+    excerpt:
+      "Zoho Books can raise an invoice every month automatically. That is not the same thing as running a subscription business — and knowing the difference saves a lot of money in both directions.",
+    content: [
+      { type: "p", text: "If you already run Zoho Books, the sales pitch for Zoho Billing can be confusing. Books raises recurring invoices. It sends payment reminders. It handles multi-currency. So what exactly is the separate product for? The honest answer: for most businesses with a handful of retainer clients, nothing — and paying for Billing would be waste. For businesses whose revenue is genuinely subscription-shaped, Books will hold together for a while and then start failing in ways that are expensive to unpick." },
+      { type: "h2", text: "What Zoho Books already does" },
+      { type: "p", text: "Recurring invoicing in Zoho Books is more capable than people assume. You set a profile against a customer, pick a frequency, and Books generates and optionally emails the invoice on schedule. Auto-charge works against saved cards or mandates where your payment gateway supports it. Reminders chase overdue invoices. Reports tell you what's outstanding." },
+      { type: "p", text: "For an agency billing 30 clients a fixed monthly retainer, or a services firm on annual maintenance contracts, that is the entire requirement. Adding Zoho Billing on top would add a second system, a sync to maintain, and a bill to pay, for capability you would not use." },
+      { type: "h2", text: "Where recurring invoicing runs out of road" },
+      { type: "p", text: "The failure points are consistent, and they all come from the same root cause: a recurring invoice is a scheduled document, whereas a subscription is a stateful relationship with a plan, a lifecycle and a billing history. Books models the first, Billing models the second." },
+      {
+        type: "table",
+        head: ["Requirement", "Zoho Books recurring invoices", "Zoho Billing"],
+        rows: [
+          ["Fixed amount on a schedule", "Handles it well", "Handles it well"],
+          ["Mid-cycle upgrades and downgrades with proration", "Manual credit notes and adjustments", "Calculated automatically"],
+          ["Usage-based or metered charges", "Not modelled — you compute and enter the amount", "Native usage records rolled into the invoice"],
+          ["Failed payment retries and dunning sequences", "Reminders only; no retry ladder", "Configurable retry schedule with automated cancellation"],
+          ["Self-serve plan changes, pauses and cancellations", "Not available", "Customer portal handles it"],
+          ["MRR, churn and subscription cohort reporting", "Not available", "Built in"],
+          ["Free trials and coupon logic", "Handled manually", "Part of the plan definition"]
+        ]
+      },
+      { type: "note", text: "Dunning is usually the tipping point. If nobody on your team can say what happens on day three after a card declines, you have a revenue leak that recurring invoicing will not close." },
+      { type: "h2", text: "What Zoho Billing costs" },
+      { type: "p", text: "Billing is priced per organisation rather than per user, which is unusual within the Zoho finance range and matters if you have a small finance team. Published international pricing in 2026 runs roughly $25 per organisation per month on the Standard tier billed annually, and around $59 on Premium, with a free tier for very low customer counts and an enterprise option above that. Standard covers core recurring billing; subscription-specific machinery like hosted payment pages, usage-based pricing and dunning management sits on the higher tier." },
+      { type: "note", text: "Zoho revises pricing regularly and Indian rupee pricing differs from the international list. Verify current pricing on Zoho's official site — and check tier-by-tier which features you need, because the feature you're buying Billing for may sit above the entry plan." },
+      { type: "p", text: "The comparison people forget to make: Billing is billed per organisation, so if the alternative is two finance staff spending six hours a month on manual proration and chasing declined cards, the subscription usually pays for itself on labour alone." },
+      { type: "h2", text: "How the two work together" },
+      { type: "p", text: "This is not an either/or decision in practice. Zoho Billing integrates with Zoho Books, so Billing owns the subscription lifecycle and pushes invoices, payments and credit notes into Books, which stays your accounting system of record for GST, reconciliation and financial statements." },
+      {
+        type: "ul",
+        items: [
+          "Billing handles plans, trials, proration, usage, retries and the customer portal",
+          "Books handles the ledger, tax treatment, bank reconciliation and statutory reporting",
+          "Your chart of accounts and tax rates need to be mapped consistently across both before go-live",
+          "Revenue recognition on annual plans deserves a decision upfront rather than a cleanup at year end"
+        ]
+      },
+      { type: "h2", text: "A decision test that takes thirty seconds" },
+      { type: "p", text: "Ask three questions. Do customers change plans mid-cycle? Does any part of the bill vary with usage? Does a declined card need an automated retry sequence rather than a person noticing? One yes makes Billing worth costing. Two or three and you are already paying for it in manual work — you just aren't seeing the line item." },
+      { type: "p", text: "If all three are no, stay on Books recurring invoices. As a certified Zoho partner we've seen more money wasted on subscription tooling bought too early than on Books being kept too long — but we've also seen the cleanup from a year of manual proration, and that one is genuinely painful." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho Billing the same as the old Zoho Subscriptions?",
+        a: "Yes. Zoho Subscriptions was renamed Zoho Billing and expanded to cover one-time billing, quotes and more complex pricing models alongside the original subscription management. Existing Subscriptions customers were moved onto the new product, so older documentation referring to Zoho Subscriptions generally still applies."
+      },
+      {
+        q: "Do I need Zoho Books if I buy Zoho Billing?",
+        a: "For anything beyond very simple books, yes. Billing manages the subscription lifecycle and generates invoices; Books is where accounting, GST compliance, bank reconciliation and financial reporting live. The two integrate, with Billing pushing transactions into Books as the system of record."
+      },
+      {
+        q: "Can I migrate existing recurring invoices from Zoho Books into Zoho Billing?",
+        a: "Existing customers, items and open balances can be brought across, but recurring invoice profiles have to be rebuilt as subscription plans because the underlying data models differ. Plan the cutover at a month boundary, run both in parallel for one cycle, and reconcile before switching off the Books profiles."
+      }
+    ],
+    relatedApp: { label: "Zoho Books Implementation", href: "/zoho-books" }
   }
 ];
 
