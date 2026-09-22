@@ -2534,6 +2534,338 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Books Implementation", href: "/zoho-books" }
+  },
+  {
+    slug: "zoho-crm-distributors-wholesale-setup",
+    title: "Zoho CRM for Distributors and Wholesalers: How to Set It Up Properly",
+    metaTitle: "Zoho CRM for Distributors & Wholesale Businesses | Setup Guide 2026",
+    description:
+      "Distribution breaks most standard CRM setups. How to configure Zoho CRM for wholesale — dealer accounts, price books, repeat orders and live stock visibility from Zoho Inventory.",
+    keywords: [
+      "Zoho CRM for distributors",
+      "Zoho CRM wholesale distribution",
+      "Zoho CRM price books",
+      "Zoho CRM Inventory integration",
+      "distribution CRM setup India"
+    ],
+    category: "Zoho CRM",
+    date: "2026-09-14",
+    readMins: 8,
+    excerpt:
+      "A distributor's CRM has to handle repeat orders, tiered pricing and live stock — none of which the default sales pipeline is built for. Here's how to configure it.",
+    content: [
+      { type: "p", text: "Standard CRM advice assumes you are chasing new logos through a pipeline of a few stages, closing a deal, and moving on. Distribution does not work like that. Your customers are dealers and retailers who buy from you every month, at prices that differ by account, for stock that may or may not be sitting in the right warehouse. Set Zoho CRM up the default way and within a quarter you have a Deals module full of ₹40,000 repeat orders that nobody is forecasting from and nobody trusts." },
+      { type: "h2", text: "The structural decision: deals or sales orders?" },
+      { type: "p", text: "This is the fork in the road and it is worth thinking about before you touch a setting. Distributors have two different things happening at once, and they belong in different places." },
+      {
+        type: "ul",
+        items: [
+          "Winning the account — getting a new dealer signed, agreeing terms and credit, opening a territory. This is a genuine sales cycle and belongs in Deals.",
+          "Servicing the account — the monthly reorder, the top-up, the seasonal push. This is transactional and belongs in Sales Orders, not in your pipeline."
+        ]
+      },
+      { type: "p", text: "Keeping reorders out of Deals is what makes your pipeline mean something again. Your forecast should answer 'how much new business are we winning', while your order volume answers 'how is the base performing'. Conflate them and neither number is usable." },
+      { type: "h2", text: "Getting the account structure right" },
+      { type: "p", text: "Most distributors need more hierarchy than a flat Accounts list gives them. A retail chain with twelve stores is one commercial relationship with twelve delivery points; a dealer operating under a regional distributor is a customer of a customer. Zoho CRM supports parent-child account relationships, and using them properly means you can roll revenue up to the group while still tracking which individual store is ordering." },
+      { type: "p", text: "Territory management is the other piece worth enabling early if you have field sales. It lets ownership follow geography rather than being hard-coded per record, which matters when a rep leaves and you would otherwise be reassigning four hundred accounts by hand." },
+      { type: "h2", text: "Price books, and why they are not optional" },
+      { type: "p", text: "Tiered pricing is the defining feature of wholesale, and it is also where hand-managed CRMs fall apart. Price Books in Zoho CRM let you attach a specific price list to an account, so when a rep raises a quote the right numbers appear without anyone remembering that this particular dealer is on distributor pricing minus a volume rebate." },
+      {
+        type: "table",
+        head: ["Customer type", "Typical setup", "Why"],
+        rows: [
+          ["Distributor / Tier 1", "Dedicated price book, largest discount", "Volume commitment, buys in full cases or pallets"],
+          ["Retailer / Tier 2", "Standard trade price book", "Moderate volume, standard terms"],
+          ["Key account", "Negotiated price book per contract", "Bespoke terms, needs an audit trail"],
+          ["Direct / one-off", "List price, no book", "Rare, should not distort trade pricing"]
+        ]
+      },
+      { type: "note", text: "The inventory modules — Products, Price Books, Quotes, Sales Orders, Invoices and Vendors — and the Zoho Inventory integration generally require Professional edition or above. Confirm current edition requirements and pricing on Zoho's official site before you plan around them." },
+      { type: "h2", text: "Connecting stock so reps stop overselling" },
+      { type: "p", text: "The single highest-value integration for a distributor is Zoho Inventory into CRM. Once it is connected, a rep looking at an account can see what is actually available before promising a delivery date, and stock commits when an order is confirmed rather than when someone remembers to tell the warehouse." },
+      { type: "p", text: "Two things to decide during setup. First, whether CRM or Inventory is the master for the item catalogue — it should be Inventory, and items should flow one way, because two editable catalogues will diverge within weeks. Second, what your reps should see: available-to-promise is far more useful than raw stock on hand, because it accounts for what is already committed to other orders." },
+      { type: "h2", text: "Automation that actually earns its keep" },
+      { type: "p", text: "Distribution has a small number of automations that pay for themselves quickly, and a lot that look impressive and get switched off. The ones worth building first:" },
+      {
+        type: "ul",
+        items: [
+          "Reorder prompts — flag accounts whose ordering interval has lapsed, so a quiet dealer surfaces before they have quietly moved to a competitor",
+          "Credit and approval gates — block or route an order for approval when an account is over its credit limit or has an overdue invoice",
+          "Order confirmations — automatic acknowledgement to the dealer with expected dispatch, which removes a surprising volume of phone calls",
+          "Stock-out alerts — notify the reps who have open quotes containing an item that has just gone short, before the customer finds out"
+        ]
+      },
+      { type: "p", text: "Resist the urge to automate price approvals on day one. Discount approval chains are the workflows most likely to be badly specified early, and a rule that blocks legitimate orders will get worked around rather than fixed." },
+      { type: "h2", text: "A sensible rollout order" },
+      { type: "p", text: "Start with the account structure and a clean product catalogue — everything downstream depends on both and neither is interesting enough to enjoy fixing later. Then price books, then the Inventory connection, then automation. Reporting comes last, because you cannot build a meaningful dealer performance report until orders have been flowing through the right objects for a month or two." },
+      { type: "p", text: "As a certified Zoho partner we implement this stack for distribution businesses across India and the Gulf, and the pattern is consistent: the technical work is straightforward, the modelling decisions are where projects are won or lost. If you want a second opinion on how to structure yours before you start loading data, that is a conversation worth having early." }
+    ],
+    faqs: [
+      {
+        q: "Do I need Zoho Inventory, or are the CRM inventory modules enough?",
+        a: "CRM's built-in modules handle the commercial documents — quotes, sales orders, invoices — but they do not manage physical stock across warehouses, batches, or shipments. If you hold inventory in more than one location or need real stock accounting, you want Zoho Inventory as the system of record with CRM integrated to it, not CRM alone."
+      },
+      {
+        q: "How should we handle dealers who order by phone or WhatsApp rather than through a portal?",
+        a: "Keep the order in CRM regardless of how it arrives — a rep raising the sales order takes under a minute and preserves the data. Portals suit dealers who order frequently and predictably; for everyone else, chasing portal adoption usually costs more than it saves. Many distributors run both and let volume decide who moves."
+      },
+      {
+        q: "Can Zoho CRM handle schemes, rebates and volume discounts?",
+        a: "Price books cover tiered pricing well. Retrospective schemes — quarterly volume rebates, target-linked incentives — are not native and are usually built as a custom module plus scheduled functions, or handled in Zoho Analytics against order data. Scope this explicitly, because it is the most commonly underestimated piece of a distribution implementation."
+      }
+    ],
+    relatedApp: { label: "Zoho CRM Implementation", href: "/zoho-crm" }
+  },
+  {
+    slug: "zoho-inventory-batch-serial-number-tracking",
+    title: "Batch and Serial Number Tracking in Zoho Inventory: What to Turn On, and When",
+    metaTitle: "Zoho Inventory Batch & Serial Number Tracking Setup (2026)",
+    description:
+      "How batch and serial tracking work in Zoho Inventory, which plan you need, why the choice is permanent per item, and how to set it up for expiry, warranty and recall traceability.",
+    keywords: [
+      "Zoho Inventory batch tracking",
+      "Zoho Inventory serial number tracking",
+      "batch expiry tracking software",
+      "Zoho Inventory advanced inventory tracking",
+      "product recall traceability India"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-09-16",
+    readMins: 8,
+    excerpt:
+      "Batch and serial tracking are the two settings people enable last and regret configuring in a hurry. The decision is per item, it is effectively one-way, and it changes how every transaction is entered.",
+    content: [
+      { type: "p", text: "There is a moment in most inventory implementations where someone asks whether the system can tell them which customers received a specific production lot. If you sell food, pharmaceuticals, cosmetics, chemicals, electronics or anything under warranty, that question is not hypothetical — it arrives with a supplier complaint or a regulator. Zoho Inventory answers it through advanced inventory tracking: batch numbers or serial numbers. Both work well. Both are far easier to set up correctly at the start than to retrofit." },
+      { type: "h2", text: "Batch versus serial: pick by how the goods move" },
+      { type: "p", text: "The distinction is about granularity, not industry." },
+      {
+        type: "table",
+        head: ["", "Batch tracking", "Serial number tracking"],
+        rows: [
+          ["Tracks", "A group of units produced or received together", "Every individual unit"],
+          ["Typical use", "Food, pharma, chemicals, cosmetics, textiles", "Electronics, machinery, IT hardware, warranty goods"],
+          ["Key fields", "Batch number, manufactured date, expiry date", "One unique number per unit"],
+          ["Picking logic", "Oldest-expiring batch surfaces first", "Operator selects the exact unit"],
+          ["Data entry load", "One entry per batch received", "One entry per unit — heavy at volume"]
+        ]
+      },
+      { type: "p", text: "The rule of thumb: if a customer complaint about one unit would require you to identify every other unit made at the same time, you want batch tracking. If the individual unit has a warranty, a service history or a registration attached to it, you want serial tracking." },
+      { type: "note", text: "An item in Zoho Inventory can be batch tracked or serial tracked, but not both. Choose deliberately — switching an item's tracking type after it has transaction history is disruptive and usually means creating a fresh item and closing out the old one." },
+      { type: "h2", text: "Which plan you need" },
+      { type: "p", text: "Advanced inventory tracking is not available on the entry tiers. In Zoho Inventory it sits on the Premium plan and above, which as of 2026 is around ₹4,999 per organisation per month in India before GST — a per-organisation charge, not per user, which is why it is often cheaper than businesses assume once they compare it to a per-seat ERP module." },
+      { type: "note", text: "Plan names, prices and the exact tier that unlocks advanced tracking change periodically, and equivalent functionality is also packaged differently inside Zoho Books. Confirm current pricing and plan inclusions on Zoho's official pricing page before committing." },
+      { type: "h2", text: "Setting it up without creating a mess" },
+      {
+        type: "ul",
+        items: [
+          "Enable advanced inventory tracking at the organisation level first, then enable it item by item — it is not a blanket switch",
+          "Do it for items with zero stock on hand where possible; opening balances for tracked items need batch or serial detail, and reconstructing that from memory is painful",
+          "Agree a batch numbering convention before anyone creates the first one. Supplier lot number, or your own date-based scheme, but pick one and document it",
+          "Record manufactured and expiry dates at the point of receipt, not later. A batch without an expiry date defeats the purpose",
+          "Train the warehouse on the new transaction flow — receipts, invoices and adjustments all now demand batch or serial selection before they will save",
+          "Decide who is allowed to make inventory adjustments on tracked items, because an adjustment that skips batch detail breaks the audit trail"
+        ]
+      },
+      { type: "h2", text: "What changes day to day" },
+      { type: "p", text: "Every stock-touching transaction gains a step. When raising an invoice for a batch-tracked item, the operator picks which batch is going out; Zoho sorts the available batches with the first-expiring one at the top, which nudges the team toward FEFO without you having to enforce it manually. Purchase receipts require batch or serial entry before they post. Inventory adjustments have their own tracked-item flow so that write-offs stay attributable to a specific lot." },
+      { type: "p", text: "This is the part teams underestimate. Tracking adds perhaps fifteen seconds per line item, which sounds trivial until you are picking a hundred orders before the courier cut-off. Plan for it: barcode scanning on receipt and dispatch turns those fifteen seconds into two, and is worth setting up at the same time rather than as a later project." },
+      { type: "h2", text: "The payoff" },
+      { type: "p", text: "Traceability is the obvious one — you can work forward from a batch to every customer who received it, or backward from a complaint to the lot and the supplier. That turns a recall from a week of spreadsheet archaeology into a report. Expiry visibility is the quieter win: knowing which stock expires in sixty days lets you discount it deliberately instead of writing it off. And for warranty businesses, serial history means a service request resolves in one call instead of three." },
+      { type: "p", text: "Composite items and item groups can be batch tracked too, which matters if you assemble kits or bundles and need the finished goods to carry their own lot identity separate from the components." },
+      { type: "h2", text: "Before you switch it on" },
+      { type: "p", text: "Map which SKUs genuinely need tracking. Enabling it across an entire catalogue because it sounds thorough creates data-entry burden on items nobody will ever trace. Most distributors end up tracking somewhere between 10% and 40% of their catalogue. As a certified Zoho partner we usually run this as a short scoping exercise — item classification, numbering convention, opening balances, scanning hardware — before anyone touches a setting, because the cost of getting it wrong is measured in reconciliations, not in licence fees." }
+    ],
+    faqs: [
+      {
+        q: "Can I enable batch tracking on items that already have stock and history?",
+        a: "Technically yes, but it is the hardest path. Existing quantity has to be assigned to batches, and past transactions will not retroactively carry batch detail, so your traceability starts from the switchover date. Where possible, enable it on new items, or wait for a stock count so opening balances can be entered accurately."
+      },
+      {
+        q: "Does Zoho Inventory enforce FEFO or FIFO automatically?",
+        a: "It assists rather than enforces. When selecting batches during a sale, available batches are presented ordered by earliest expiry, so the correct choice is the default one in front of the operator. It will not block someone from picking a later batch, so if strict rotation matters you need a process rule and periodic review, not just the software."
+      },
+      {
+        q: "What if I need both batch and serial numbers on the same product?",
+        a: "Zoho Inventory does not support both on a single item, so you choose the level that carries your legal or commercial obligation — usually serial where there is a warranty, batch where there is an expiry. If you genuinely need dual identity, that is normally handled with a custom field for the secondary number or by extending the process in Zoho Creator, which is worth scoping properly."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-fsm-field-service-pricing-setup",
+    title: "Zoho FSM: What It Costs, What It Replaces, and How the Job Flow Works",
+    metaTitle: "Zoho FSM Pricing & Setup Guide (2026) | Field Service Management",
+    description:
+      "A practical look at Zoho FSM in 2026 — appointment and per-user pricing, how work orders flow into Books and Inventory, and when a service team genuinely needs it.",
+    keywords: [
+      "Zoho FSM pricing",
+      "Zoho field service management",
+      "Zoho FSM setup",
+      "work order management Zoho",
+      "Zoho FSM vs Zoho CRM"
+    ],
+    category: "Business Process Automation",
+    date: "2026-09-18",
+    readMins: 8,
+    excerpt:
+      "If your engineers are running on WhatsApp groups and a shared spreadsheet, FSM is the app that closes the gap between a signed job and a raised invoice. Here is what it costs and where it fits.",
+    content: [
+      { type: "p", text: "Field service is the part of the business that most often falls outside the system. The deal closes in CRM, the invoice eventually appears in Books, and everything in between — scheduling the engineer, telling them what parts to carry, recording what they actually did on site — happens in WhatsApp groups and a shared sheet. Zoho FSM exists to fill that middle, and whether it is worth buying depends almost entirely on how expensive that gap has become for you." },
+      { type: "h2", text: "What FSM actually does" },
+      { type: "p", text: "At its core it manages the job lifecycle: a request comes in, becomes an estimate or a work order, gets broken into one or more service appointments, is dispatched to a technician, and comes back with notes, parts used and time spent — which then becomes an invoice. Around that spine sit dispatch and scheduling views, technician and crew management, a mobile app the field team actually uses, customisable service forms, asset and service history, and parts consumption against stock." },
+      { type: "p", text: "The mobile app matters more than the feature list suggests. If your engineers will not use it — because the site has no signal, or because the form takes eleven taps — the whole system degrades back into phone calls. Test that on a real job before rolling anything out." },
+      { type: "h2", text: "Pricing in 2026" },
+      { type: "p", text: "Zoho FSM has an unusual structure: a free entry point metered on appointments rather than users, then per-user paid tiers." },
+      {
+        type: "table",
+        head: ["Tier", "Indicative 2026 price", "Roughly suits"],
+        rows: [
+          ["Free", "₹0 — around 30 appointments per month", "Testing the flow, or a very low-volume service arm"],
+          ["Standard", "About $25 per user/month, billed annually", "Established service teams needing trip management, multi-currency and reporting"],
+          ["Professional", "About $35 per user/month, billed annually", "Complex work — multi-day appointments, asset maintenance, custom dashboards"]
+        ]
+      },
+      { type: "note", text: "Prices are indicative for 2026 and converted from Zoho's published rates; India pricing, user caps and edition contents change periodically, and 18% GST applies to Indian invoices. Verify current pricing on Zoho's official FSM pricing page before budgeting." },
+      { type: "p", text: "The appointment-metered free tier is genuinely useful for a pilot, which is rarer than it sounds. Thirty appointments is enough to run one crew for a couple of weeks and find out whether your engineers will fill in the forms. Do that before you count seats." },
+      { type: "h2", text: "How it connects to the rest of Zoho" },
+      { type: "p", text: "FSM is not designed to stand alone, and buying it in isolation wastes most of its value. The connections that carry real weight:" },
+      {
+        type: "ul",
+        items: [
+          "Zoho CRM — the handover point from sales to service, so a won deal becomes a scheduled job rather than an email to the operations manager",
+          "Zoho Books and Zoho Inventory — a work order can automatically raise a sales order, and parts consumed on site draw down against stock rather than being reconciled later",
+          "Zoho Inventory locations — van and warehouse stock can be tracked separately, so you can see what is actually on a truck before dispatching a job that needs it",
+          "Zoho Desk — for teams where service requests arrive as support tickets before they become site visits",
+          "WhatsApp and Zoho Flow — customer notifications and wider orchestration; Zapier covers non-Zoho systems"
+        ]
+      },
+      { type: "p", text: "The Books and Inventory link is where the money is. Un-invoiced site work and unrecorded parts consumption are the two leaks that quietly cost service businesses the most, and they are both reconciliation problems rather than effort problems. Closing the loop automatically usually pays for the licences before anything else does." },
+      { type: "h2", text: "Do you need FSM, or just better CRM configuration?" },
+      { type: "p", text: "Not every service team needs a separate app. A reasonable rule: if your jobs are one-visit, low-parts and easily handled by a custom module and a calendar, extending Zoho CRM is cheaper and simpler. Move to FSM when several of these are true:" },
+      {
+        type: "ul",
+        items: [
+          "Jobs routinely need more than one appointment, or span multiple days",
+          "Engineers consume stock on site and someone is reconciling it manually afterwards",
+          "You schedule by geography or skill and dispatch decisions are genuinely non-trivial",
+          "You maintain customer assets over time and need history per asset, not per customer",
+          "Invoicing lags the work by days because nobody knows what was done until the paperwork arrives"
+        ]
+      },
+      { type: "h2", text: "A sensible rollout order" },
+      { type: "p", text: "The implementations that go badly are the ones that start with dispatch optimisation. Start at the boring end instead: get your service catalogue, parts list and customer assets clean; define one work order type end to end; run it live with one crew on the free tier; then add the Books and Inventory automation once the field data is trustworthy. Scheduling logic comes last, because it is only as good as the job durations your team has actually been recording." },
+      { type: "p", text: "As a certified Zoho partner we scope FSM alongside whatever is already running — usually CRM and Books — and the integration design is where most of the work sits. If you want the flow mapped against your own job types before you commit to seats, a short discovery call is normally enough to produce a realistic plan." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho FSM part of Zoho One?",
+        a: "FSM has historically been licensed separately rather than being a standard inclusion in the Zoho One bundle, and Zoho has changed bundle contents before. Confirm the current position on Zoho's official site before assuming your Zoho One subscription covers it — this is a common budgeting surprise."
+      },
+      {
+        q: "Can we use Zoho FSM without Zoho Books?",
+        a: "You can, but you lose most of the reason to buy it. The strongest argument for FSM is that work performed on site turns into a sales order and an invoice without manual re-entry, and that parts used draw down against real stock. Without Books or Inventory behind it, FSM is essentially a scheduling and job-tracking tool."
+      },
+      {
+        q: "How long does a Zoho FSM implementation take?",
+        a: "A single-crew rollout with one work order type and basic Books integration is typically a few weeks. Multi-crew deployments with asset maintenance histories, van stock tracking and territory-based dispatch take longer, mostly because cleaning the asset and parts data takes longer than configuring the app."
+      }
+    ],
+    relatedApp: { label: "Business Process Automation", href: "/business-process-automation" }
+  },
+  {
+    slug: "zoho-books-multi-branch-accounting-india",
+    title: "Zoho Books Multi-Branch Accounting in India: Branches or Separate Organisations?",
+    metaTitle: "Zoho Books Branches vs Separate Organisations (2026) | India Guide",
+    description:
+      "Multiple locations or multiple GSTINs? Zoho Books branches keep them under one subscription. Multiple PANs need separate organisations. How to tell which you need, and what each costs.",
+    keywords: [
+      "Zoho Books branches",
+      "Zoho Books multiple GSTIN",
+      "multi branch accounting software India",
+      "Zoho Books multiple organisations",
+      "Zoho Books Premium plan branches"
+    ],
+    category: "Zoho Books",
+    date: "2026-09-21",
+    readMins: 9,
+    excerpt:
+      "Getting this wrong is expensive in both directions — either you pay for subscriptions you did not need, or you spend a year untangling two legal entities that were never meant to share a ledger.",
+    content: [
+      { type: "p", text: "A business opens a second location and someone asks the obvious question: do we set this up as a branch, or as a whole new Zoho Books organisation? It sounds like a preference. It is not. The answer follows from company law and your GST registrations, and choosing the wrong structure is genuinely painful to unwind six months later — migrating transactions between organisations is a manual job, and your audit trail does not come with you cleanly." },
+      { type: "p", text: "Here is the rule, and then the detail behind it." },
+      { type: "h2", text: "The deciding question is PAN, not geography" },
+      { type: "p", text: "If the new location belongs to the same legal entity — same PAN, one set of statutory financials, one income tax return — it is a branch. It can have its own GSTIN, its own address, its own invoice numbering, and still sit inside one Zoho Books organisation on one subscription." },
+      { type: "p", text: "If it is a separate legal entity — different PAN, its own board, its own filings, its own balance sheet — it needs its own organisation in Zoho Books, and its own subscription. There is no way around this, and you should not want one. Two legal entities sharing a ledger is a problem you will meet again at audit." },
+      { type: "note", text: "This is general guidance rather than statutory or tax advice. Your CA should confirm the entity structure before you configure anything — we are describing how the software maps to a structure, not recommending a structure." },
+      { type: "h2", text: "What a branch actually gives you" },
+      { type: "p", text: "Branches in Zoho Books are more than a label on a transaction. Once enabled, each branch can carry:" },
+      {
+        type: "ul",
+        items: [
+          "Its own GSTIN — you can associate one GSTIN per branch, which is how a single organisation handles multiple state registrations under one PAN",
+          "Its own transaction series, so invoices from the Pune branch do not share a running number with Chennai",
+          "Its own address and contact details on the documents it issues",
+          "User permissions scoped to the branch, so a branch accountant sees their own transactions rather than the whole group",
+          "A branch-level dashboard and branch-wise reporting, so you can see which location is actually profitable"
+        ]
+      },
+      { type: "p", text: "The GST angle is the one that sells it. Filing for several GSTINs from a single organisation, with the underlying transactions already segregated by branch, is materially less work than maintaining separate books per state and reconciling them at the end of every month." },
+      { type: "p", text: "One limitation worth knowing before you design around it: you associate one GSTIN with a branch, not several. If a single location somehow needs multiple registrations, that is a conversation to have before you start creating branches." },
+      { type: "h2", text: "Branch limits by plan" },
+      {
+        type: "table",
+        head: ["Plan", "Branches included", "India list price per month (excl. GST)"],
+        rows: [
+          ["Standard", "Not available", "₹899"],
+          ["Professional", "2", "₹1,499"],
+          ["Premium", "3", "₹2,999"],
+          ["Elite", "8", "₹5,999"],
+          ["Ultimate", "8", "₹9,999"]
+        ]
+      },
+      { type: "note", text: "Plan prices and branch limits change — verify current pricing and limits on Zoho's official India pricing page before committing. All prices exclude 18% GST, annual billing is typically around 17% cheaper than monthly, and additional branches can be bought as an add-on beyond the included count." },
+      { type: "p", text: "Read that table alongside your five-year plan rather than your current footprint. The jump from Professional to Premium is roughly double the monthly cost, and businesses that open a third location tend to open a fourth. It is usually cheaper to size the plan for where you are heading than to migrate configuration mid-year." },
+      { type: "h2", text: "The hidden cost of the separate-organisation route" },
+      { type: "p", text: "If you genuinely have multiple PANs, separate organisations are correct — but price the full picture before you are surprised by it:" },
+      {
+        type: "ul",
+        items: [
+          "Each organisation carries its own subscription; there is no group discount for running three of them",
+          "Users are licensed per organisation, so a group accountant working across all three is paid for three times unless you restructure who touches what",
+          "Chart of accounts, tax rates, templates and workflow rules are configured per organisation — plan to build once and replicate carefully, because drift between entities makes consolidated reporting harder every month",
+          "Consolidation is not automatic. Group-level reporting across organisations generally means exporting into Zoho Analytics or a spreadsheet and combining there"
+        ]
+      },
+      { type: "p", text: "That last point is the one that catches groups out. People assume multiple organisations will roll up into a consolidated P&L inside Zoho Books. They do not. If group-level reporting is a board requirement, budget for the analytics layer at the same time, not a year later when someone asks for a consolidated view." },
+      { type: "h2", text: "A structure that works for most Indian SMEs" },
+      { type: "p", text: "The common shape we implement is one organisation per legal entity, branches inside each for state registrations and locations, and reporting tags layered on top for the dimensions that cut across branches — product line, cost centre, project. Tags do the analytical slicing; branches do the statutory and operational separation. Mixing those two jobs up, and trying to make branches carry cost-centre reporting, is how people run out of branch allowance for no good reason." },
+      { type: "h2", text: "Before you enable branches" },
+      {
+        type: "ul",
+        items: [
+          "Confirm the entity structure with your CA — PANs and GST registrations, written down",
+          "Decide the invoice numbering convention per branch before the first invoice goes out, because changing series later creates gaps auditors will ask about",
+          "Map which users should see which branch, and configure permissions at setup rather than after someone has seen a number they should not have",
+          "Check the branch count your plan allows against the number of locations you expect within two years"
+        ]
+      },
+      { type: "p", text: "As a certified Zoho partner we set this up regularly for businesses moving off Tally or off spreadsheets, and the configuration itself is rarely the hard part — the hard part is the half-hour conversation that establishes whether you are looking at one entity or three. If you want that scoped before you buy licences, a short call generally settles it." }
+    ],
+    faqs: [
+      {
+        q: "Can one Zoho Books organisation handle multiple GSTINs?",
+        a: "Yes. That is exactly what branches are for. You can add multiple GSTINs to one organisation and associate one with each branch, then file GST for all of them from the same place. What you cannot do is attach several GSTINs to a single branch."
+      },
+      {
+        q: "Do I need a separate Zoho Books subscription for each organisation?",
+        a: "Yes. A new organisation starts with a short trial and then needs its own plan. A subscription covers one organisation, not an account. This is the main financial reason to check whether your second location is really a separate entity or just a branch of the first."
+      },
+      {
+        q: "Can I move transactions from one organisation into another later?",
+        a: "Not cleanly. There is no supported one-click merge — you would be exporting and re-importing, with opening balances and history to reconstruct by hand. This is why the structure decision is worth twenty minutes with your CA at the start rather than a migration project later."
+      }
+    ],
+    relatedApp: { label: "Zoho Books", href: "/zoho-books" }
   }
 ];
 
