@@ -2866,7 +2866,247 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Books", href: "/zoho-books" }
-  }
+  },
+  {
+    slug: "zoho-inventory-vs-vyapar-comparison",
+    title: "Zoho Inventory vs Vyapar: Which Is Better for Indian Retailers and Distributors?",
+    metaTitle: "Zoho Inventory vs Vyapar (2026) | Which Fits Indian SMBs",
+    description:
+      "Zoho Inventory and Vyapar both serve Indian small businesses, but for different jobs — GST billing versus multi-channel stock management. A practical comparison with 2026 pricing.",
+    keywords: [
+      "Zoho Inventory vs Vyapar",
+      "Vyapar alternative",
+      "Zoho Inventory pricing India",
+      "GST billing software India",
+      "inventory management software India"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-09-23",
+    readMins: 8,
+    excerpt:
+      "Vyapar is the GST billing app most small Indian shops start with. Zoho Inventory is usually what they need once they sell on more than one channel. Here's how to tell which stage you're at.",
+    content: [
+      { type: "p", text: "Vyapar became the default first billing app for millions of small Indian retailers by doing one thing extremely well and cheaply: fast, GST-compliant invoices from a phone, working offline, with no learning curve. Zoho Inventory solves a different problem — running stock, purchase orders and fulfilment across multiple sales channels, warehouses and users. Businesses usually outgrow one and move toward the other; very few genuinely need both from day one." },
+      { type: "h2", text: "What Vyapar is built for" },
+      { type: "p", text: "Vyapar is mobile-first and India-specific: GST-ready invoicing, GSTR-1 and GSTR-3B-ready reports, basic stock tracking, payment reminders, and a desktop app for Windows for shops that bill from a counter. It works offline, which matters for smaller towns and shops without reliable connectivity, and it's priced to be affordable for a single-location trader or retailer. What it isn't built for is complexity — multiple warehouses, multiple sales channels, or detailed order orchestration sit outside its core design." },
+      { type: "h2", text: "What Zoho Inventory is built for" },
+      { type: "p", text: "Zoho Inventory is a cloud order and stock management platform: multi-warehouse stock with bin-level tracking, composite items and kitting, backordering and dropshipment, serial and batch tracking, and vendor and customer portals. It connects natively to e-commerce channels like Shopify and Amazon and to Zoho's own Commerce storefront, and it pairs with Zoho Books for accounting and Zoho CRM for order-to-cash. It's built for a business managing stock across more than one location or selling through more than one channel — not for replacing a simple counter-billing app." },
+      { type: "h2", text: "Feature comparison" },
+      {
+        type: "table",
+        head: ["Capability", "Vyapar", "Zoho Inventory"],
+        rows: [
+          ["GST billing & returns", "Strong — built for Indian GST from day one", "Present, but usually paired with Zoho Books for full compliance"],
+          ["Multi-location / warehouse stock", "Basic, limited beyond one location", "Native — up to 10 locations with bin tracking on paid plans"],
+          ["E-commerce channel integration", "Not a focus", "Native Shopify and Amazon connectors, plus Zoho Commerce"],
+          ["Offline usage", "Yes — works without internet", "Cloud-based; needs connectivity"],
+          ["Composite items, kitting, serial & batch tracking", "Limited", "Full support from the Premium plan up"],
+          ["Accounting depth", "Built-in basic accounting", "Pairs with Zoho Books for full double-entry accounting"]
+        ]
+      },
+      { type: "h2", text: "Pricing in 2026" },
+      { type: "p", text: "The two are priced on completely different logic, which is itself a useful signal of who each one is for." },
+      {
+        type: "table",
+        head: ["Plan", "Vyapar (India)", "Zoho Inventory (billed annually)"],
+        rows: [
+          ["Free / entry", "Free mobile app, 1 device", "Free plan — 50 orders/month, 1 user, 1 location"],
+          ["Entry paid", "Silver Desktop — from about ₹3,399/year, 1 device", "Standard — $29/month, 500 orders/month, 3 users, 2 locations"],
+          ["Mid tier", "Silver Desktop + Mobile — from about ₹4,010/year", "Premium — $79/month, 3,000 orders/month, 5 users, 4 locations"],
+          ["Higher tier", "Gold editions — multi-user, manufacturing features, priced above Silver", "Plus — $129/month, 7,500 orders/month, online store tools; Enterprise — $249/month, 15,000 orders/month, multi-currency and Analytics"]
+        ]
+      },
+      { type: "note", text: "Prices are indicative for 2026. Vyapar's India prices exclude 18% GST, which is reclaimable for registered businesses. Zoho Inventory's list pricing is published in USD and localises at checkout; both vendors change plan contents and limits periodically, so verify current pricing on Vyapar's and Zoho's official sites before budgeting." },
+      { type: "p", text: "The price gap is the point, not a flaw. Vyapar is priced as a billing app for one shop; Zoho Inventory is priced as an order-management platform for a growing, multi-channel operation. Notice that Zoho Inventory's tiers are gated by order volume and locations, not just users — that's usually what actually forces an upgrade as a business grows." },
+      { type: "h2", text: "Signs you've outgrown Vyapar" },
+      {
+        type: "ul",
+        items: [
+          "You sell on Amazon, Flipkart or Shopify alongside your offline counter and are reconciling stock across channels by hand",
+          "You operate more than one warehouse or godown and can't see combined stock without calling around",
+          "You need serial or batch tracking for warranty, expiry, or compliance reasons",
+          "Your accountant wants proper double-entry books, not just GST-ready invoices",
+          "You're hiring beyond one or two people who need simultaneous, role-based access to the system"
+        ]
+      },
+      { type: "h2", text: "When Vyapar is still the right call" },
+      { type: "p", text: "If you run a single shop or godown, sell mainly offline or through one channel, and your main pain is fast, GST-correct billing on a phone with no monthly cloud dependency, Vyapar remains hard to beat on cost and simplicity. Moving to Zoho Inventory before you actually need multi-channel or multi-location stock control adds cost and complexity without a matching benefit." },
+      { type: "h2", text: "Running both together" },
+      { type: "p", text: "Some distributors keep Vyapar at the counter for walk-in billing while layering Zoho Inventory, paired with Zoho Books, for warehouse and online-channel stock — syncing the two manually or through a bridge. This duplicate-entry setup rarely lasts once volume grows, and most businesses on this path migrate fully to Zoho Books, Inventory and Zoho Commerce within a year. As a certified Zoho partner, we handle the data migration from Vyapar's exports — items, customers, opening stock — so the switch doesn't mean re-typing your master data from scratch." }
+    ],
+    faqs: [
+      {
+        q: "Can I migrate my Vyapar data to Zoho Inventory?",
+        a: "Yes — item lists, customers, vendors and opening stock can be exported from Vyapar and imported into Zoho Inventory and Zoho Books via CSV or Excel. Transaction history typically isn't migrated line-by-line; most businesses bring over opening balances and start fresh transactions on the new system from an agreed cutover date."
+      },
+      {
+        q: "Does Zoho Inventory handle GST as well as Vyapar?",
+        a: "Zoho Inventory handles GST-compliant invoicing, but full GST return filing — GSTR-1, GSTR-3B — and deeper accounting live in Zoho Books, which Inventory is designed to pair with. Used together, Books and Inventory cover what Vyapar does in one app, at a meaningfully higher price point."
+      },
+      {
+        q: "Is Zoho Inventory more expensive than Vyapar?",
+        a: "Yes, noticeably. Vyapar's desktop plans start under ₹500/month equivalent, while Zoho Inventory's entry paid plan is about $29/month billed annually. The comparison only makes sense once you weigh what Zoho Inventory adds on top — multi-location stock, e-commerce integrations and batch or serial tracking that Vyapar isn't built to do."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-vs-unicommerce",
+    title: "Zoho Inventory vs Unicommerce: Which Is Right for Indian Sellers?",
+    metaTitle: "Zoho Inventory vs Unicommerce (2026) | Comparison for Indian E-commerce Sellers",
+    description: "Zoho Inventory and Unicommerce both manage multichannel stock and orders for Indian sellers, but they're built for different scales. A practical comparison to help you choose.",
+    keywords: [
+      "Zoho Inventory vs Unicommerce",
+      "Unicommerce alternative",
+      "multichannel inventory software India",
+      "Zoho Inventory India",
+      "warehouse management software India"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-09-25",
+    readMins: 8,
+    excerpt: "Both names come up constantly for Indian sellers juggling stock across marketplaces. They're not really competing for the same customer — here's how to tell which one is built for your scale.",
+    content: [
+      { type: "p", text: "Any Indian seller running stock across Amazon, Flipkart, Myntra, and their own website eventually hits the same problem: keeping quantities accurate everywhere at once. Two names come up constantly when solving this — Zoho Inventory and Unicommerce. They look similar from a distance, but they're built for different scales of operation, and picking the wrong one means either paying for capability you don't need or outgrowing your system within a year." },
+      { type: "h2", text: "What each platform actually is" },
+      { type: "p", text: "Zoho Inventory is order and stock management built as part of the wider Zoho ecosystem, so it ties natively into Zoho Books, Zoho CRM, and Zoho Commerce. It's aimed at SMBs and growing direct-to-consumer brands that want inventory control without a separate integration project. Unicommerce is an India-built, India-focused e-commerce enablement platform, listed on Indian stock exchanges since its 2024 IPO, purpose-built for high-volume multichannel sellers with warehouse management needs beyond what a general inventory tool covers. Many of India's larger D2C and marketplace-first sellers run on it." },
+      { type: "h2", text: "Marketplace and channel coverage" },
+      { type: "p", text: "Both connect to the marketplaces and carts Indian sellers actually use, including Amazon, Flipkart, Myntra, Shopify, and WooCommerce. Unicommerce is generally the deeper option here: it's built specifically around the Indian marketplace and courier ecosystem, including RTO (return to origin) and reverse logistics handling that's genuinely difficult to get right at volume. Zoho Inventory covers the major channels well enough for most SMB sellers but isn't purpose-built for hyper-scale marketplace operations the way Unicommerce is." },
+      { type: "h2", text: "Where the two actually differ" },
+      {
+        type: "ul",
+        items: [
+          "Warehouse sophistication: Unicommerce offers deeper bin-level tracking and multi-warehouse allocation logic aimed at 3PL-style operations; Zoho Inventory covers multi-location stock but with a simpler allocation model",
+          "Returns and RTO: Unicommerce has more mature reverse-logistics tooling built for the volume and complexity of Indian marketplace returns",
+          "Accounting integration: Zoho Inventory syncs natively with Zoho Books; Unicommerce needs a separate integration or API connection to sync with Books, Tally, or other accounting software",
+          "B2B vs B2C: Zoho Inventory handles both reasonably; Unicommerce leans toward high-volume B2C marketplace fulfillment as its core strength",
+          "Pricing model: Zoho Inventory publishes fixed monthly tiers; Unicommerce is quote-based and typically priced for enterprise-scale sellers"
+        ]
+      },
+      { type: "h2", text: "Pricing: published tiers vs a custom quote" },
+      {
+        type: "table",
+        head: ["Zoho Inventory plan", "Price (2026)", "Orders / month", "Locations"],
+        rows: [
+          ["Standard", "$29/month", "500", "2"],
+          ["Premium", "$79/month", "3,000", "4"],
+          ["Plus", "$129/month", "7,500", "6"],
+          ["Enterprise", "$249/month", "15,000", "10"]
+        ]
+      },
+      { type: "note", text: "Zoho Inventory pricing shown is billed annually and indicative for 2026 — always verify current pricing on Zoho's official site. Unicommerce doesn't publish pricing; it's quoted directly based on order volume, warehouse count, and integration scope, and usually includes an onboarding or setup component." },
+      { type: "h2", text: "Who should pick which" },
+      { type: "p", text: "Zoho Inventory fits SMBs and growing D2C brands doing up to roughly 15,000 orders a month, especially those already using or planning to use Zoho Books or Zoho CRM, who want predictable per-month pricing and don't need a dedicated warehouse management system. Unicommerce fits sellers running tens of thousands of orders a month across multiple warehouses or 3PL partners, with complex reverse logistics and enterprise finance or ERP integration needs, who can absorb custom enterprise pricing and a longer onboarding process in exchange for purpose-built depth." },
+      { type: "h2", text: "Running both isn't unusual" },
+      { type: "p", text: "Some larger sellers don't treat this as an either-or choice. It's common to run Unicommerce for warehouse and fulfillment operations while keeping Zoho Books and Zoho CRM for accounting and customer relationships, connecting the two through an integration rather than trying to make one platform cover everything." },
+      { type: "h2", text: "Making the call" },
+      { type: "p", text: "If you're still checking your order volume and warehouse count against a published pricing table, you're almost certainly in Zoho Inventory's territory. Once fulfillment complexity, not price, becomes the constraint, it's worth getting a Unicommerce quote to compare against what a custom Zoho Inventory and Books setup would take to replicate the same warehouse logic." }
+    ],
+    faqs: [
+      {
+        q: "Is Unicommerce cheaper than Zoho Inventory?",
+        a: "It's hard to compare directly since Unicommerce doesn't publish pricing. It's quote-based and typically enterprise-oriented, often costing more than Zoho Inventory's published $29 to $249 a month tiers, but it's priced for order volumes and warehouse complexity Zoho Inventory isn't built to handle at scale."
+      },
+      {
+        q: "Can Zoho Inventory handle high order volumes like Unicommerce?",
+        a: "Zoho Inventory's top published Enterprise plan supports up to 15,000 orders a month across 10 locations, which covers most growing D2C brands. Sellers pushing well beyond that with sophisticated warehouse or 3PL operations tend to outgrow it and move to a platform purpose-built for that scale, like Unicommerce."
+      },
+      {
+        q: "Does Zoho Inventory integrate with Zoho Books automatically?",
+        a: "Yes, natively, since both are part of the same Zoho ecosystem, syncing stock and orders directly into accounting without middleware. Unicommerce requires a separate integration or API connection to sync with Zoho Books or other accounting software."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-vs-cin7-core-comparison",
+    title: "Zoho Inventory vs Cin7 Core: Which Inventory Platform Fits Growing Businesses?",
+    metaTitle: "Zoho Inventory vs Cin7 Core (2026) | Inventory Management Comparison",
+    description:
+      "Zoho Inventory and Cin7 Core both manage multi-channel stock, but they're priced and built for different scales of operation. A 2026 comparison of features, pricing, and who each one fits.",
+    keywords: [
+      "Zoho Inventory vs Cin7",
+      "Cin7 Core alternative",
+      "Zoho Inventory pricing",
+      "multi-channel inventory software",
+      "inventory management comparison"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-09-28",
+    readMins: 8,
+    excerpt:
+      "Cin7 Core and Zoho Inventory both promise multi-channel stock control, but they're built — and priced — for different stages of growth. Here's how to tell which one actually fits, with 2026 pricing.",
+    content: [
+      { type: "p", text: "Cin7 Core (formerly DEAR Systems) and Zoho Inventory both sync stock, orders, and purchasing across warehouses and sales channels, and both show up on shortlists for 'inventory management software.' But they're built for different scales and types of operation: Cin7 Core is priced and engineered for manufacturers and wholesalers who need production tracking built in, while Zoho Inventory is priced for retailers and distributors who want stock control tightly connected to accounting, CRM, and online storefronts." },
+      { type: "h2", text: "What Cin7 Core is built for" },
+      { type: "p", text: "Cin7 Core grew out of DEAR Systems and is aimed squarely at product businesses with manufacturing or assembly steps. It includes native bill-of-materials, production orders, and work-in-progress tracking, so a business that assembles finished goods from components doesn't need a bolt-on module. Every plan includes unlimited inventory locations, which matters for wholesalers running several warehouses or 3PL relationships, and it integrates natively with Xero and QuickBooks Online for accounting rather than bundling its own." },
+      { type: "h2", text: "What Zoho Inventory is built for" },
+      { type: "p", text: "Zoho Inventory is a cloud order and stock platform built to plug directly into the rest of the Zoho ecosystem: Zoho Books for accounting and GST-compliant invoicing, Zoho CRM for order-to-cash, and Zoho Commerce for an online storefront, alongside native Shopify and Amazon connectors. It supports composite items, kitting, and serial or batch tracking from the Premium plan up, and its location cap scales from 2 on the entry plan to 10 on Enterprise. It isn't built with manufacturing-style production orders in mind — for that, businesses typically pair it with Zoho Creator or a manufacturing-specific tool." },
+      { type: "h2", text: "Feature comparison" },
+      {
+        type: "table",
+        head: ["Capability", "Cin7 Core", "Zoho Inventory"],
+        rows: [
+          ["Manufacturing / MRP (bill of materials, production orders)", "Native from the entry plan", "Not native — composite items/kitting only; needs Zoho Creator or a third-party app for true MRP"],
+          ["Inventory locations", "Unlimited on every plan", "2 to 10 locations depending on plan"],
+          ["Users included", "5 (Standard) to 15 (Advanced)", "3 (Standard) to 10 (Plus/Enterprise)"],
+          ["Native accounting", "Xero, QuickBooks Online (external)", "Zoho Books, in the same ecosystem"],
+          ["E-commerce channels", "Amazon, Shopify and more via connectors, 2–6 depending on plan", "Native Shopify and Amazon connectors, plus Zoho Commerce"],
+          ["Entry price", "$349/month", "$29/month (billed annually)"]
+        ]
+      },
+      { type: "h2", text: "Pricing in 2026" },
+      {
+        type: "table",
+        head: ["Plan", "Cin7 Core", "Zoho Inventory"],
+        rows: [
+          ["Entry", "Standard — $349/month, 5 users, ~6,000 orders/year, 2 e-commerce integrations", "Standard — $29/month, 3 users, 500 orders/month, 2 locations"],
+          ["Mid", "Pro — $599/month, 10 users, ~24,000 orders/year, adds MRP", "Premium — $79/month, 5 users, 3,000 orders/month, 4 locations"],
+          ["Higher", "Advanced — $999/month, 15 users, ~120,000 orders/year, advanced warehouse management", "Plus — $129/month, 10 users, 7,500 orders/month, 6 locations"],
+          ["Top tier", "—", "Enterprise — $249/month, 10 users, 15,000 orders/month, 10 locations"]
+        ]
+      },
+      { type: "note", text: "Prices are indicative for 2026 and billed annually unless noted. Both vendors adjust plan contents, order limits, and pricing periodically, so verify current numbers on Cin7's and Zoho's official pricing pages before budgeting. Indian invoices may attract 18% GST." },
+      { type: "p", text: "Cin7 Core's entry plan costs roughly ten times Zoho Inventory's, and that gap is the point, not a flaw — it reflects manufacturing capability, unlimited locations, and higher included user counts baked into the price from day one. Zoho Inventory is priced for a retailer or distributor scaling multi-channel sales without manufacturing complexity, and it gates cost by order volume and locations rather than charging a manufacturing premium nobody outside that use case needs." },
+      { type: "h2", text: "Signs Cin7 Core is the better fit" },
+      {
+        type: "ul",
+        items: [
+          "You manufacture or assemble products and need bill-of-materials, production orders, and work-in-progress tracking built in",
+          "You run high transaction volumes across many warehouses or 3PL relationships without wanting to juggle location caps",
+          "You already use Xero or QuickBooks and don't need a bundled accounting suite",
+          "Your team is 10 or more users who all need simultaneous access from day one"
+        ]
+      },
+      { type: "h2", text: "Signs Zoho Inventory is the better fit" },
+      {
+        type: "ul",
+        items: [
+          "You're a retailer or distributor selling on Shopify, Amazon, or your own storefront without manufacturing steps",
+          "You want inventory, accounting, CRM, and invoicing in one connected ecosystem rather than stitching tools together",
+          "Your order volume is under a few thousand a month and budget matters — Zoho's entry plan is a fraction of Cin7 Core's",
+          "You're in India and need GST-compliant invoicing alongside stock control, which Zoho Books handles natively"
+        ]
+      },
+      { type: "h2", text: "Our recommendation" },
+      { type: "p", text: "If production is part of your business — you turn raw materials or components into finished goods — Cin7 Core's built-in MRP will save you from bolting on a separate manufacturing system. If you're buying and reselling finished goods across a few channels and want stock, accounting, and customer data in one place, Zoho Inventory is both cheaper to start with and easier to keep connected to the rest of your operations. As a certified Zoho partner, we help growing businesses map their order and stock workflows before committing to either platform, and handle the data migration when it's time to switch." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho Inventory support manufacturing or bill-of-materials?",
+        a: "Zoho Inventory supports composite items and kitting, which covers simple bundling, but it doesn't have true MRP features like production orders or work-in-progress tracking. Businesses with real manufacturing steps typically pair Zoho Inventory with Zoho Creator for custom production tracking, or choose a platform like Cin7 Core that has MRP built in."
+      },
+      {
+        q: "Can I migrate from Cin7 Core to Zoho Inventory, or the other way around?",
+        a: "Item lists, customers, vendors, and opening stock can generally be exported and imported via CSV or Excel between the two platforms. Transaction history typically isn't migrated line-by-line; most businesses bring over opening balances and start fresh transactions on the new system from an agreed cutover date."
+      },
+      {
+        q: "Which is cheaper for a small business just getting started?",
+        a: "Zoho Inventory, by a wide margin at the entry level — its Standard plan starts at $29/month compared with Cin7 Core's $349/month Standard plan. The comparison only makes sense once you weigh what Cin7 Core adds for that price: unlimited locations and manufacturing features that a non-manufacturing small business usually doesn't need yet."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
 ];
 
 export const getBlogPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
