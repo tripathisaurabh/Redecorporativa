@@ -3107,6 +3107,81 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
   },
+  {
+    slug: "zoho-inventory-vs-odoo-inventory-comparison-india",
+    title: "Zoho Inventory vs Odoo Inventory: Which Fits Indian SMEs?",
+    metaTitle: "Zoho Inventory vs Odoo Inventory (2026) | India Comparison",
+    description:
+      "Zoho Inventory is a focused, fixed-tier stock app; Odoo is a modular ERP with an inventory module. A 2026 comparison for Indian SMEs covering cost model, GST, integrations and effort.",
+    keywords: [
+      "Zoho Inventory vs Odoo",
+      "Odoo inventory alternative India",
+      "inventory management software India",
+      "Zoho Inventory pricing",
+      "GST inventory software"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-09-30",
+    readMins: 6,
+    excerpt:
+      "Odoo and Zoho Inventory both handle multi-warehouse stock, but one is a modular ERP you assemble and the other a focused app that plugs into Zoho Books. Here's how to choose for an Indian SME.",
+    content: [
+      { type: "p", text: "Odoo and Zoho Inventory appear on the same shortlist for many Indian SMEs, but they are different kinds of product. Zoho Inventory is a purpose-built stock and order management app in the Zoho suite. Odoo is a modular ERP where Inventory is one of many apps you can switch on alongside Sales, Purchase, Manufacturing and Accounting. The right choice depends less on features than on how much system you want to own." },
+      { type: "h2", text: "How each one is priced" },
+      { type: "p", text: "Zoho Inventory uses fixed plan tiers with order, user and warehouse limits. Third-party 2026 listings for India show a free plan (about 50 orders a month, one user, one warehouse) and paid plans that start around ₹999 per month billed annually and rise through Premium, Plus and Enterprise tiers, with higher order volumes, more warehouses and features like batch tracking and barcode generation unlocking on the upper plans. Odoo is priced per user per month and by the apps you enable, with a free single-app option and paid plans above it; because the model depends on user count, apps and hosting choice, costs vary widely and implementation is usually a separate line item." },
+      { type: "note", text: "Prices are indicative and change often; plan limits and Indian rupee pricing differ by billing cycle, and GST at 18% may apply. Verify current pricing on Zoho's and Odoo's official pricing pages, and ask an Odoo partner for a written quote before budgeting." },
+      { type: "h2", text: "Side-by-side" },
+      {
+        type: "table",
+        head: ["Area", "Zoho Inventory", "Odoo Inventory"],
+        rows: [
+          ["Product type", "Focused inventory and order app", "Modular ERP; Inventory is one app"],
+          ["Cost model", "Fixed tiers with order/user/warehouse limits", "Per user, per app, plus hosting and implementation"],
+          ["Accounting / GST", "Connects natively to Zoho Books for GST invoicing", "Needs Odoo Accounting and India localisation setup"],
+          ["Manufacturing (BOM, work orders)", "Composite items and kitting; deeper MRP needs a companion tool", "Manufacturing app available in the same ERP"],
+          ["Marketplaces / shipping", "Shopify, Amazon India, Flipkart and Indian courier integrations listed by Zoho", "Connectors available, often via apps or custom work"],
+          ["Setup effort", "Days to a few weeks for a typical SME", "Weeks to months; more customisation possible"]
+        ]
+      },
+      { type: "h2", text: "When Zoho Inventory is the better fit" },
+      {
+        type: "ul",
+        items: [
+          "Traders, distributors and D2C sellers who mainly need stock, purchase orders, sales orders and marketplace sync",
+          "Businesses already on Zoho Books, Zoho CRM or Zoho One, where inventory data should flow with no middleware",
+          "Teams without an in-house IT or ERP consultant who want a predictable subscription",
+          "Companies that want to go live quickly and add modules later"
+        ]
+      },
+      { type: "h2", text: "When Odoo is the better fit" },
+      {
+        type: "ul",
+        items: [
+          "Manufacturers who want BOMs, work orders and planning inside the same system as stock",
+          "Businesses that want one ERP for sales, purchase, accounting, HR and manufacturing under a single database",
+          "Teams prepared to invest in a partner for customisation and ongoing administration",
+          "Companies with unusual workflows that a fixed-tier app cannot model"
+        ]
+      },
+      { type: "h2", text: "Our take" },
+      { type: "p", text: "For most Indian SMEs whose core need is accurate stock, clean GST invoices and marketplace or courier integrations, Zoho Inventory linked to Zoho Books is the lower-risk, faster route. Odoo makes sense when manufacturing depth or single-database ERP consolidation is the priority and you are willing to fund implementation. Whichever you shortlist, run a two-week pilot with real SKUs, a real GST invoice cycle and your marketplace feeds before you commit." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho Inventory or Odoo cheaper for a small business?",
+        a: "For a small team with modest order volumes, Zoho Inventory's fixed tiers (including a free plan) are usually easier to predict. Odoo's cost depends on users, apps, hosting and implementation, so get a written quote. Verify current pricing on both official sites."
+      },
+      {
+        q: "Does Zoho Inventory support GST in India?",
+        a: "GST invoicing is handled through its integration with Zoho Books, which is built for Indian GST. Confirm that your plan and Books edition cover your specific filing needs."
+      },
+      {
+        q: "Can I migrate from Odoo to Zoho Inventory later?",
+        a: "Yes, item, contact and opening stock data can be exported to CSV and imported into Zoho Inventory. Plan a clean cut-off date, reconcile stock counts and test with a sample of SKUs first."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
 ];
 
 export const getBlogPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
