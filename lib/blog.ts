@@ -3182,6 +3182,89 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
   },
+  {
+    slug: "zoho-inventory-composite-items-light-manufacturing",
+    title: "Zoho Inventory for Light Manufacturing: Composite Items, Assemblies and Where They Stop",
+    metaTitle: "Zoho Inventory Composite Items for Manufacturing (2026) | Assemblies & BOM Limits",
+    description:
+      "Can Zoho Inventory handle manufacturing? How composite items and bundling work for simple assemblies, what they cannot do compared with a real BOM, and when Zoho ERP's manufacturing orders make more sense.",
+    keywords: [
+      "Zoho Inventory composite items",
+      "Zoho Inventory manufacturing",
+      "Zoho Inventory bill of materials",
+      "Zoho Inventory assembly",
+      "Zoho ERP manufacturing order"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-02",
+    readMins: 7,
+    excerpt:
+      "Composite items let small manufacturers and kit sellers assemble finished goods from components in Zoho Inventory. Here's what that covers, where it falls short of a real bill of materials, and what to use instead.",
+    content: [
+      { type: "p", text: "A question we hear constantly from small manufacturers, assemblers and D2C brands: can Zoho Inventory run our production? The short answer is that it can handle simple, single-step assembly very well, but it is not a manufacturing system. Zoho itself states in its knowledge base that Zoho Inventory does not yet support dedicated manufacturing modules, and positions composite items and bundling as the way to handle basic assemblies that do not need a full bill of materials. Knowing exactly where that line sits saves a painful re-implementation later." },
+      { type: "h2", text: "How composite items and bundling work" },
+      { type: "p", text: "A composite item is a finished product defined as a list of component items and quantities — for example, a gift hamper made of five products, a control panel built from a cabinet, breakers and wiring, or a skincare kit. When you record a bundle, Zoho Inventory increases stock of the composite item and reduces the stock of each component in proportion. Recent enhancements also matter for small manufacturers:" },
+      {
+        type: "ul",
+        items: [
+          "Services and non-inventory items can be added as constituents, so labour or packing charges can be built into the assembled cost",
+          "Cost of goods sold is posted when the finished item is invoiced, not when it is assembled, so the assembled stock sits in your inventory asset account until sale",
+          "Serial number tracking is supported on composite items",
+          "You need sufficient stock of every component before a bundle can be recorded, which prevents negative component stock",
+          "Bundle contents can be edited when a recipe changes"
+        ]
+      },
+      { type: "p", text: "Composite items are listed on all Zoho Inventory plans, including the free plan, though volume limits such as orders, warehouses and users vary by plan." },
+      { type: "note", text: "Plan features and prices change; Zoho Inventory's India pricing is shown in INR on its pricing page and differs from USD pricing. Verify current plans, limits and pricing on Zoho's official site before deciding." },
+      { type: "h2", text: "Where composite items stop" },
+      {
+        type: "table",
+        head: ["Need", "Composite items in Zoho Inventory", "Proper manufacturing module"],
+        rows: [
+          ["Single-level assembly or kitting", "Yes", "Yes"],
+          ["Multi-level BOM (sub-assemblies)", "Workaround only — assemble sub-assemblies separately first", "Native"],
+          ["Scrap, wastage and yield", "Not modelled; adjust stock manually", "Tracked per order"],
+          ["Work orders, job cards, routing", "No", "Yes"],
+          ["Work-in-progress valuation", "No", "Yes"],
+          ["Machine or work-centre capacity", "No", "Yes"],
+          ["Subcontract / job-work production", "Manual tracking", "Supported in some systems"]
+        ]
+      },
+      { type: "p", text: "If your production is mostly assemble-and-ship — kitting, light assembly, packing variants — composite items are usually enough, and the simplicity is a feature. If you run multi-stage production, need to know what is sitting on the shop floor, or have meaningful wastage, you will be fighting the tool." },
+      { type: "h2", text: "When Zoho ERP is the better fit" },
+      { type: "p", text: "For Indian manufacturers that outgrow composite items, Zoho's newer Zoho ERP platform includes bills of materials, manufacturing orders, job cards, shop-floor production, work centres and cost templates alongside finance and inventory. Its India pricing page lists a Standard plan at about ₹999 per user per month and Premium at about ₹2,499 per user per month on annual billing, with manufacturing features on both paid tiers and a minimum user count on Standard. The other route is a custom production app on Zoho Creator connected to Zoho Inventory, which suits processes too specific for any packaged module." },
+      { type: "note", text: "Zoho ERP pricing quoted from Zoho's India pricing page at the time of writing, before GST. Check the current figures and minimum-user rules on Zoho's official site." },
+      { type: "h2", text: "A practical setup for small assemblers" },
+      {
+        type: "ul",
+        items: [
+          "Create components as purchasable inventory items with accurate purchase costs and reorder points",
+          "Add labour or packing as service constituents so the composite cost reflects reality",
+          "Record bundles in batches against a reference such as a production date, so you can trace output later",
+          "Use separate warehouses or locations for raw material and finished goods if you hold both",
+          "Count components regularly and post adjustments for scrap — composite items will not do it for you",
+          "Review margins per composite item monthly once COGS posts at invoice"
+        ]
+      },
+      { type: "h2", text: "Deciding now saves a migration later" },
+      { type: "p", text: "The costliest outcome is building an elaborate composite-item workaround for multi-level production and then migrating a year later. If you can describe your production in one step — components in, finished product out — start with Zoho Inventory. If you describe it in stages, plan for Zoho ERP or a Creator-based production layer from the outset, and keep Zoho Inventory focused on stock, orders and fulfilment." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho Inventory have a bill of materials?",
+        a: "Not in the full manufacturing sense. Composite items act as a single-level recipe for assemblies and kits, and Zoho describes them as suited to basic assemblies that do not need a bill of materials. Multi-level BOMs, work orders and WIP tracking need Zoho ERP, a Creator app or another manufacturing system."
+      },
+      {
+        q: "What is the difference between composite items and item groups?",
+        a: "Item groups bundle variants of the same product, such as sizes and colours, for easier catalogue management. Composite items are finished goods built from other items, and recording a bundle moves stock from components to the finished item."
+      },
+      {
+        q: "Can I move from Zoho Inventory to Zoho ERP later?",
+        a: "Yes, but it is a migration that needs planning around items, opening stock, open orders and accounting. If multi-stage manufacturing is already on your roadmap, it is usually cheaper to evaluate Zoho ERP up front. Confirm current migration options and pricing with Zoho or a certified partner."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  }
 ];
 
 export const getBlogPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
