@@ -3264,6 +3264,187 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-vs-marg-erp-comparison",
+    title: "Zoho Inventory vs Marg ERP: Which Suits Indian Traders and Distributors?",
+    metaTitle: "Zoho Inventory vs Marg ERP (2026) | Cost, Batch & Expiry, GST, Cloud vs Desktop",
+    description:
+      "Marg ERP is a desktop-first, one-time-licence system built for pharma and FMCG distribution. Zoho Inventory is a cloud subscription built for multichannel selling. Here's how they compare on cost, batch and expiry, GST and growth.",
+    keywords: [
+      "Zoho Inventory vs Marg ERP",
+      "Marg ERP alternative",
+      "Marg ERP pricing",
+      "inventory software for distributors India",
+      "Zoho Inventory India"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-07",
+    readMins: 7,
+    excerpt:
+      "Marg ERP dominates pharma and FMCG distribution on the desktop; Zoho Inventory is a cloud tool built for multichannel sellers. The right choice depends on your trade, your locations and how much you sell online.",
+    content: [
+      { type: "p", text: "Ask a pharma distributor or chemist in India what runs their billing and stock, and the answer is often Marg ERP. Ask a D2C brand or marketplace seller, and you are more likely to hear Zoho Inventory. Both manage stock, purchases and GST-compliant sales, but they come from different worlds: Marg is a desktop-first, perpetual-licence system shaped around distribution trade practice, while Zoho Inventory is a cloud subscription shaped around orders flowing in from many channels. Choosing well means being honest about which world your business is closer to." },
+      { type: "h2", text: "Cost: one-time licence vs subscription" },
+      { type: "p", text: "Marg ERP is sold through dealers as a one-time licence by edition, with an optional annual maintenance contract. Zoho Inventory is a monthly or annual subscription per organisation, with users, orders and locations included per plan." },
+      {
+        type: "table",
+        head: ["", "Marg ERP", "Zoho Inventory"],
+        rows: [
+          ["Pricing model", "One-time licence + optional AMC", "Subscription per organisation"],
+          ["Entry price", "Nano / Basic editions, roughly ₹5,500–₹10,300 one-time", "Free plan (50 orders/month); Standard around ₹999/month billed annually"],
+          ["Mid range", "Silver, roughly ₹12,600–₹13,900 one-time", "Premium and Plus tiers (batch/serial tracking from Premium)"],
+          ["Top tier", "Gold, roughly ₹25,000–₹26,000 one-time, unlimited users", "Enterprise, around ₹7,499/month billed annually (about $249 internationally)"],
+          ["Ongoing", "AMC roughly ₹2,000–₹5,000/year; dealer pricing varies", "Add-ons for extra users, orders and locations"],
+          ["Taxes", "18% GST extra", "18% GST extra"]
+        ]
+      },
+      { type: "note", text: "Marg pricing is dealer-quoted and varies by reseller and edition; figures above are commonly published ranges at the time of writing. Zoho Inventory INR prices for mid tiers differ between sources. Verify current pricing on Zoho's official site and get a written quote from an authorised Marg dealer." },
+      { type: "p", text: "On paper Marg is cheaper over three to five years for a single-location business with a few users. The comparison narrows once you add AMC, server or backup costs, remote-access tools for a second branch, and the time spent maintaining desktops. Zoho's subscription includes hosting, updates and backups, and its free and Standard plans are hard to beat for a small seller starting out." },
+      { type: "h2", text: "Feature comparison" },
+      {
+        type: "table",
+        head: ["Capability", "Marg ERP", "Zoho Inventory"],
+        rows: [
+          ["Deployment", "Desktop / on-premise first, works offline", "Cloud, browser and mobile apps; needs internet"],
+          ["Batch and expiry", "Deep: near-expiry alerts, batch-wise billing, expiry returns", "Batch and serial tracking with expiry dates on Premium and above"],
+          ["Trade schemes and discounts", "Built in (free quantity, scheme tracking)", "Price lists and discounts; complex schemes need customisation"],
+          ["Drug licence, salt/composition search", "Yes — built for pharma", "No native pharma fields; add custom fields"],
+          ["Marketplace and webstore sync", "Limited", "Native with Shopify, Amazon and others"],
+          ["Multi-warehouse", "Supported, often per-location installs", "2 to 10 locations by plan, real-time across all"],
+          ["GST, e-invoicing, e-way bills", "Supported, with batch generation", "Supported for India, usually with Zoho Books"],
+          ["Accounting", "Built-in accounting", "Via Zoho Books integration"],
+          ["CRM and automation", "Limited", "Connects to Zoho CRM, Creator, Flow and Analytics"]
+        ]
+      },
+      { type: "h2", text: "When Marg ERP is the better fit" },
+      {
+        type: "ul",
+        items: [
+          "Pharma distributors, chemists and stockists who rely on batch-wise billing, expiry management and drug-licence tracking",
+          "FMCG distributors running free-quantity schemes and sub-stockist credit",
+          "Locations with unreliable internet where an offline desktop is non-negotiable",
+          "Owners who prefer a one-time purchase and a local dealer for support"
+        ]
+      },
+      { type: "h2", text: "When Zoho Inventory is the better fit" },
+      {
+        type: "ul",
+        items: [
+          "D2C brands, marketplace sellers and wholesalers taking orders from several channels",
+          "Businesses with more than one warehouse or remote staff who need one live stock view",
+          "Teams that want inventory connected to CRM, a customer portal, automation and dashboards",
+          "Companies planning to grow into Zoho Books, Zoho CRM or Zoho One rather than adding separate tools"
+        ]
+      },
+      { type: "h2", text: "Migrating from Marg to Zoho Inventory" },
+      { type: "p", text: "If you are moving, plan around four things: clean item masters (HSN codes, units, reorder levels), opening stock by batch and expiry rather than as one lump figure, open sales and purchase orders at cutover, and party balances, which belong in Zoho Books. Run both systems in parallel for one GST return period before switching off Marg, and reconcile stock value at the end of it. Businesses that depend on pharma-specific features should prototype those workflows first — a Zoho Creator app or custom fields can fill gaps, but confirm that before committing." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho Inventory a good alternative to Marg ERP for pharma?",
+        a: "For pharma retail or distribution that depends on batch-wise billing, near-expiry handling, schemes and drug-licence tracking, Marg is purpose-built and usually the safer choice. Zoho Inventory tracks batches and expiry on Premium and above, but pharma-specific features need customisation, so test your workflows before switching."
+      },
+      {
+        q: "Does Zoho Inventory work offline like Marg?",
+        a: "No. Zoho Inventory is cloud software and needs an internet connection; mobile apps help with on-the-go access but are not a full offline system. If connectivity is unreliable, factor that in or keep a backup connection."
+      },
+      {
+        q: "Which is cheaper, Zoho Inventory or Marg ERP?",
+        a: "Marg's one-time licence is usually cheaper upfront and over a few years for a single location. Zoho Inventory can be cheaper for very small sellers (free and Standard plans) and for multi-location businesses once hosting, backups and remote access are counted. Get current quotes — Marg pricing varies by dealer, and you should verify Zoho's pricing on its official site."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-vs-busy-accounting-software",
+    title: "Zoho Inventory vs BUSY: Which Should an Indian SME Use for Stock and Billing?",
+    metaTitle: "Zoho Inventory vs BUSY Accounting Software (2026) | Cost, GST, Stock & Fit",
+    description:
+      "BUSY is a desktop accounting-and-inventory package popular with Indian traders and small manufacturers. Zoho Inventory is a cloud stock and order system that pairs with Zoho Books. We compare cost, GST, batch tracking, manufacturing and multichannel selling.",
+    keywords: [
+      "Zoho Inventory vs BUSY",
+      "BUSY accounting software alternative",
+      "BUSY software price",
+      "inventory software India",
+      "Zoho Inventory India pricing"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-09",
+    readMins: 7,
+    excerpt:
+      "BUSY bundles accounting, GST and inventory in one desktop package; Zoho Inventory is cloud-first and built around orders from many channels. The right pick depends on how you sell and how many places you work from.",
+    content: [
+      { type: "p", text: "BUSY has been a fixture in Indian trading and distribution businesses for years: one package that handles billing, accounts, GST returns and stock, installed on an office PC and run by the accountant. Zoho Inventory comes at the same problem from the other direction — a cloud app built around sales orders, purchase orders, warehouses and online channels, with accounting handled by Zoho Books alongside it. If you are choosing between them, the real question is not which has more features, but where your business is heading." },
+      { type: "h2", text: "How they are priced" },
+      { type: "p", text: "BUSY is sold by edition, with prices that depend mainly on the edition rather than on order volume. Zoho Inventory is a per-organisation subscription where the plan sets how many orders, users and locations you get each month." },
+      {
+        type: "table",
+        head: ["", "BUSY", "Zoho Inventory"],
+        rows: [
+          ["Free option", "Express edition (basic billing and accounting)", "Free plan: 50 orders/month, 1 user, 1 location"],
+          ["Entry paid", "Basic ≈ ₹11,000 (non-GST billing)", "Standard ≈ ₹999/month billed annually (500 orders, 3 users, 2 locations)"],
+          ["GST-ready", "Standard ≈ ₹16,500 (GST, e-invoice, e-way bill, batches, BOM)", "GST invoicing on all paid plans; returns usually filed via Zoho Books"],
+          ["Multi-branch", "Enterprise ≈ ₹22,000 (branch sync, approvals, payroll)", "Premium ≈ ₹2,299/month up to Enterprise ≈ ₹7,499/month (4–10 locations)"],
+          ["Subscription route", "BUSY Magic plans from ≈ ₹5,000 to ≈ ₹50,000 per year", "Monthly billing available at a higher rate"],
+          ["Taxes", "GST extra", "18% GST extra"]
+        ]
+      },
+      { type: "note", text: "Figures are published list prices at the time of writing and exclude GST; BUSY dealers may quote differently, and additional users or add-ons cost extra on both. Verify current pricing on Zoho's official site and on BUSY's pricing page before deciding." },
+      { type: "p", text: "For a single-location trader with one or two users, BUSY's edition price is usually lower over three years than a Zoho Inventory plus Zoho Books subscription. The maths changes when you add more users, a second branch, remote staff or online sales channels, because Zoho's subscription already covers hosting, backups, mobile access and updates." },
+      { type: "h2", text: "Feature comparison" },
+      {
+        type: "table",
+        head: ["Capability", "BUSY", "Zoho Inventory"],
+        rows: [
+          ["Deployment", "Desktop/server; remote access as an add-on route", "Cloud with web, Android and iOS apps"],
+          ["Accounting", "Built in — one package for books and stock", "Separate: pairs natively with Zoho Books"],
+          ["Batch and expiry", "Standard edition and above", "Premium plan and above (batch and serial tracking)"],
+          ["Manufacturing", "BOM, production planning, variance reports", "Composite items/assemblies for light manufacturing"],
+          ["Multi-godown / warehouse", "Godowns from Basic; full branch sync on Enterprise", "2 to 10 locations by plan, with bin locations on higher tiers"],
+          ["Marketplaces and webstores", "Limited", "Native sync with Shopify, Amazon and other channels"],
+          ["Approvals and controls", "Voucher and master approvals on Enterprise", "Transaction approvals, roles and audit trail"],
+          ["Integrations", "Mostly within BUSY", "Zoho CRM, Creator, Flow, Analytics and an open API"]
+        ]
+      },
+      { type: "h2", text: "BUSY is likely the better fit if" },
+      {
+        type: "ul",
+        items: [
+          "Your accountant already runs BUSY and you want accounts, GST and stock in one desktop tool",
+          "You do real production with BOMs and need production variance reporting out of the box",
+          "Internet at your site is unreliable and offline working is essential",
+          "You sell mainly through counter or dealer billing rather than online channels"
+        ]
+      },
+      { type: "h2", text: "Zoho Inventory is likely the better fit if" },
+      {
+        type: "ul",
+        items: [
+          "Orders arrive from a webstore, marketplaces and a sales team, and stock must stay in sync across all of them",
+          "Owners, sales staff or warehouse teams need live stock on their phones from anywhere",
+          "You run more than one warehouse and want one view of stock without merging branch data",
+          "You plan to add Zoho CRM, a customer portal, automation or dashboards, or move to Zoho One"
+        ]
+      },
+      { type: "h2", text: "If you are moving from BUSY" },
+      { type: "p", text: "Most migrations go smoothly when they follow a clear cutover. Export item masters with HSN codes, units and reorder levels; bring opening stock in by warehouse and by batch where you track batches; move ledgers and party balances into Zoho Books rather than Inventory; and carry open sales and purchase orders across at the cutover date. Run BUSY and Zoho in parallel for one GST return period and reconcile stock value and receivables before you stop using BUSY. If you rely on BUSY's BOM and production planning, prototype that in Zoho Inventory first — heavier manufacturing may need Zoho Creator or a dedicated MRP alongside it." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho Inventory replace BUSY completely?",
+        a: "Not on its own. BUSY combines accounting and inventory; with Zoho you normally use Zoho Inventory for stock and orders and Zoho Books for accounting and GST returns. The two sync natively, so together they cover what BUSY does, plus cloud access and online channel sync."
+      },
+      {
+        q: "Which is cheaper for a small business?",
+        a: "For one location and one or two users, BUSY's one-off edition price is usually lower over a few years. Zoho Inventory's free and Standard plans are cheaper to start with, and Zoho tends to be better value once you add users, branches and online channels. Verify current pricing on Zoho's official site and get a current BUSY quote."
+      },
+      {
+        q: "Can Zoho Inventory handle manufacturing like BUSY?",
+        a: "It handles light manufacturing through composite items and assemblies, which suits kitting and simple production. BUSY's Standard and Enterprise editions include BOM-based production planning and variance reports. If production is central to your business, test your process in Zoho first or plan for Zoho Creator or an MRP add-on."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
   }
 ];
 
