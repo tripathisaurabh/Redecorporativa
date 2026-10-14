@@ -3537,6 +3537,97 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-reorder-points-purchase-automation",
+    title: "Zoho Inventory Reorder Points: How to Set Them and Automate Purchasing",
+    metaTitle: "Zoho Inventory Reorder Level & Low-Stock Alerts Guide (2026) | Purchase Automation",
+    description:
+      "A practical guide to reorder levels in Zoho Inventory: how to calculate the right reorder point, switch on low-stock alerts, raise purchase orders through backorders, and automate replenishment with workflows and Deluge.",
+    keywords: [
+      "Zoho Inventory reorder point",
+      "Zoho Inventory reorder level",
+      "Zoho Inventory low stock alert",
+      "automate purchase orders Zoho Inventory",
+      "reorder point formula India"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-14",
+    readMins: 7,
+    excerpt:
+      "Stockouts and dead stock usually come from the same root cause: reorder decisions made from memory. Here is how to set reorder levels in Zoho Inventory, what the product automates natively, and where a little custom logic closes the gap.",
+    content: [
+      { type: "p", text: "For traders, distributors and small manufacturers, purchasing is where working capital is won or lost. Order too late and you lose sales or stop a production line; order too early and cash sits on shelves. Zoho Inventory gives you the building blocks to make replenishment systematic: a reorder level on every item, low-stock notifications, purchase orders raised directly from sales orders, and automation tools for the rest. This guide walks through each one in the order we usually set them up for clients." },
+      { type: "h2", text: "Step 1: Work out the right reorder point" },
+      { type: "p", text: "A reorder point is the stock level at which you should place a new purchase order so that goods arrive before you run out. The standard formula is: reorder point = (average daily usage × supplier lead time in days) + safety stock. Safety stock is the buffer for demand spikes and late deliveries. Zoho itself frames reorder points around historical average demand plus safety stock, and links to a free calculator from its help pages." },
+      {
+        type: "table",
+        head: ["Item", "Avg daily sales", "Lead time (days)", "Safety stock", "Reorder point"],
+        rows: [
+          ["Fast-moving SKU from a local supplier", "40 units", "3", "60", "40 × 3 + 60 = 180"],
+          ["Imported component", "8 units", "30", "80", "8 × 30 + 80 = 320"],
+          ["Seasonal item (off-season)", "2 units", "10", "10", "2 × 10 + 10 = 30"]
+        ]
+      },
+      { type: "p", text: "Use the last three to six months of sales from Zoho Inventory's reports for average usage, and revisit seasonal items before peak periods such as the festive season. A reorder point set once and never reviewed is almost as risky as having none." },
+      { type: "h2", text: "Step 2: Set reorder levels on items" },
+      {
+        type: "ul",
+        items: [
+          "Open an item and enter its reorder level in the Track Inventory section of the item edit page, or from the item's details page",
+          "For large catalogues, add reorder levels through item import or bulk update rather than editing one item at a time",
+          "Only inventory-tracked items use reorder levels, so check that Track Inventory is enabled on stock items",
+          "Composite items (kits and assemblies) need reorder levels on their components as well, since those are what you actually purchase"
+        ]
+      },
+      { type: "h2", text: "Step 3: Turn on low-stock notifications" },
+      { type: "p", text: "Under Preferences > Items, enable the option to be notified when an item's quantity drops below its reorder point and choose the email address that should receive alerts. Use a shared purchasing mailbox rather than one person's inbox so alerts are not missed during leave. Low-stock views and inventory reports can then serve as the daily purchasing checklist." },
+      { type: "h2", text: "Step 4: Raise purchase orders from demand with backorders" },
+      { type: "p", text: "When a confirmed sales order contains items that are out of stock or already committed, Zoho Inventory shows a Backorder Now option. Selecting it creates a purchase order pre-filled with those items; you add the vendor, issue it, and once goods are received and billed the sales order returns to Confirmed for packing and shipping. Several sales orders can be backordered together using Bulk Backorder, which is useful after a sales spike. Suppliers can also ship directly to the customer as a dropshipment." },
+      { type: "note", text: "While a sales order is on hold for a backorder, you cannot create packages or invoices from it, so create anything you need before backordering or after the backorder is fulfilled." },
+      { type: "h2", text: "What is native and what needs automation" },
+      {
+        type: "table",
+        head: ["Capability", "Native in Zoho Inventory?", "How to get it"],
+        rows: [
+          ["Reorder level per item", "Yes", "Item settings or bulk import"],
+          ["Email alert when stock falls below reorder level", "Yes", "Preferences > Items"],
+          ["PO created from out-of-stock sales orders", "Yes", "Backorder / Bulk Backorder"],
+          ["Draft PO automatically when stock crosses reorder level", "Not as a standard setting", "Workflow rules or scheduled Deluge functions, or a Zoho Marketplace extension"],
+          ["Suggested order quantity (min/max or economic order quantity)", "Not as a standard setting", "Custom fields plus a Deluge function or report"],
+          ["Multi-warehouse replenishment logic", "Partly (stock is tracked per warehouse)", "Custom logic per location, or Zoho Creator for complex rules"]
+        ]
+      },
+      { type: "h2", text: "Step 5: Automate the last mile" },
+      { type: "p", text: "Most of our clients want one more step: a draft purchase order waiting for approval each morning, grouped by supplier. This is typically built with a scheduled Deluge function that reads items below their reorder level, calculates an order quantity (for example, a maximum stock level minus current stock), groups items by preferred vendor stored in a custom field, and creates draft purchase orders for a buyer to review. Keep the human approval step: automated purchasing without review can amplify bad data. Zoho Marketplace also lists extensions for automated item reorders if you prefer an off-the-shelf option; evaluate them on a test organisation first. Custom functions and schedules depend on your Zoho Inventory plan, so check your edition's limits." },
+      { type: "h2", text: "Common mistakes to avoid" },
+      {
+        type: "ul",
+        items: [
+          "Setting the same reorder level for every item instead of calculating it per SKU",
+          "Ignoring supplier lead-time changes, especially for imported goods",
+          "Leaving opening stock or unrecorded transfers unreconciled, which makes every alert unreliable",
+          "Not reviewing reorder levels for slow movers, which quietly builds dead stock"
+        ]
+      },
+      { type: "h2", text: "Our take" },
+      { type: "p", text: "Zoho Inventory's native reorder levels, alerts and backorders already remove most of the guesswork from purchasing for a typical SME. The gains from going further, with automatic draft POs and calculated order quantities, are real but only if your stock data is accurate. Clean up item masters and opening balances first, set reorder points per SKU, then automate." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho Inventory automatically create purchase orders at the reorder level?",
+        a: "Not as a standard setting. It sends low-stock email notifications when items fall below their reorder level and lets you create purchase orders from out-of-stock sales orders through backorders. Fully automatic draft POs are usually built with workflows or scheduled Deluge functions, or added through a Zoho Marketplace extension."
+      },
+      {
+        q: "How do I calculate a reorder point?",
+        a: "Multiply average daily usage by supplier lead time in days, then add safety stock. For example, selling 40 units a day with a 3-day lead time and 60 units of safety stock gives a reorder point of 180."
+      },
+      {
+        q: "Are reorder alerts available on every Zoho Inventory plan?",
+        a: "Reorder levels and notifications are core inventory features, but plan limits on orders, warehouses, users and custom automation vary by edition. Verify current pricing and plan features on Zoho's official site before deciding."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
   }
 ];
 
