@@ -3628,6 +3628,93 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-landed-cost-freight-duty-tracking",
+    title: "Zoho Inventory Landed Cost: How to Track Freight, Customs Duty and Import Charges",
+    metaTitle: "Zoho Inventory Landed Cost Guide (2026) | Allocate Freight & Customs Duty to Item Cost",
+    description:
+      "How landed cost works in Zoho Inventory: enabling it, adding freight, customs duty and clearing charges to bills, choosing value or quantity allocation, applying a separate freight bill, and checking the effect on stock valuation and margins.",
+    keywords: [
+      "Zoho Inventory landed cost",
+      "landed cost allocation Zoho",
+      "track freight and customs duty in inventory",
+      "import cost tracking India",
+      "Zoho Inventory item cost valuation"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-16",
+    readMins: 7,
+    excerpt:
+      "If freight, customs duty and clearing charges sit in an expense account instead of your item cost, your margins are overstated. Here is how to allocate landed cost in Zoho Inventory and the mistakes we see most often.",
+    content: [
+      { type: "p", text: "An imported component that costs ₹200 on the supplier invoice rarely costs ₹200 by the time it reaches your shelf. Sea or air freight, customs duty, clearing agent fees, insurance and local transport all add to it. If those charges are booked as general expenses, every report that depends on item cost (gross margin by product, stock valuation, pricing decisions) is wrong. Landed cost tracking fixes this by spreading those charges across the items they relate to. Zoho Inventory supports it on bills, and it is one of the first things we switch on for importers and distributors." },
+      { type: "h2", text: "What counts as landed cost" },
+      {
+        type: "ul",
+        items: [
+          "Inbound freight, courier and local transport to your warehouse",
+          "Basic customs duty and other non-creditable import levies",
+          "Customs clearing and forwarding agent charges, port and handling fees",
+          "Transit insurance and packaging paid to bring goods in"
+        ]
+      },
+      { type: "note", text: "Taxes you can claim back as input credit, such as IGST paid on imports where eligible, are generally not added to item cost. Confirm the treatment of each charge with your chartered accountant before configuring it." },
+      { type: "h2", text: "Step 1: Switch the feature on" },
+      { type: "p", text: "Go to Settings, then Preferences, then Items, and tick the option to track landed cost on items. Landed cost can only be allocated to inventory-tracked items, so check that Track Inventory is enabled on the goods you import. Then create a service item for each type of charge, for example Freight Inward, Customs Duty and Clearing Charges, each linked to the right account. Separate service items make it easy to report on how much you spend on each type of charge." },
+      { type: "h2", text: "Step 2: Add landed cost to the supplier bill" },
+      { type: "p", text: "Raise the purchase order as usual and convert it to a bill once goods are received. On the bill, use Add Landed Cost to enter each charge against its service item. When saving, choose Save as Open and Apply Landed Costs to allocate straight away, or save first and allocate later from the bill details page using Allocate Landed Costs. Older bills can also be edited to add and allocate charges." },
+      { type: "h2", text: "Step 3: Choose an allocation method" },
+      { type: "p", text: "Zoho Inventory spreads each charge across the items on the bill in proportion to either their value or their quantity, and you can adjust the calculated split before confirming. The choice changes the result considerably. Take one bill with Item A (100 units at ₹200, ₹20,000) and Item B (50 units at ₹600, ₹30,000), plus ₹6,000 of freight:" },
+      {
+        type: "table",
+        head: ["Method", "Freight to Item A", "Freight to Item B", "Landed unit cost A", "Landed unit cost B"],
+        rows: [
+          ["By value", "₹2,400 (40%)", "₹3,600 (60%)", "₹224", "₹672"],
+          ["By quantity", "₹4,000 (100 of 150 units)", "₹2,000 (50 of 150 units)", "₹240", "₹640"]
+        ]
+      },
+      { type: "p", text: "As a rule of thumb, allocate customs duty and insurance by value, because they are charged on value. Allocate freight by quantity when items are similar in size and weight; if a cheap item is bulky, adjust the split manually so it carries its fair share. You can use different methods for different charges on the same bill." },
+      { type: "h2", text: "Step 4: Handle freight and duty billed separately" },
+      { type: "p", text: "In practice, the freight forwarder and the customs broker invoice you separately, often weeks after the supplier bill. Record each one as its own bill containing only the landed cost service items and leave it unallocated. Then open the original goods bill, choose More, then Add Landed Costs, pick the vendor and the source bill, and allocate. Any unused balance on that charges bill can be applied to other goods bills from the same shipment." },
+      { type: "h2", text: "Step 5: Check the result" },
+      {
+        type: "ul",
+        items: [
+          "Open the inventory valuation report and confirm the unit cost of the affected items has moved",
+          "Spot-check one shipment by hand: supplier value plus all charges should equal the total allocated stock value",
+          "Compare product margins before and after; importers often find their lowest-priced items were less profitable than they looked"
+        ]
+      },
+      { type: "h2", text: "Common mistakes" },
+      {
+        type: "ul",
+        items: [
+          "Booking freight and duty as direct expenses and never allocating them, so stock value stays understated",
+          "Selling goods before late charges are allocated, which leaves the cost of goods sold on those invoices understated",
+          "Using one service item for all charges, which hides how much duty versus freight you pay",
+          "Allocating all charges by quantity across very different items, which distorts the cost of high-value goods"
+        ]
+      },
+      { type: "note", text: "Feature availability and limits differ between Zoho Inventory editions and change over time. Verify current pricing and plan features on Zoho's official site, and test the workflow in a trial or sandbox organisation before going live." },
+      { type: "h2", text: "Our take" },
+      { type: "p", text: "For any business that imports or pays significant inbound freight, landed cost tracking is not optional; it is the difference between knowing your margins and guessing them. Zoho Inventory's bill-based approach is simple once a few habits are in place: dedicated service items per charge, a clear rule for value or quantity allocation, and a monthly check that every forwarder and broker bill has been allocated before closing the books." }
+    ],
+    faqs: [
+      {
+        q: "Can I add landed cost on a purchase order in Zoho Inventory?",
+        a: "No. Landed cost is added and allocated on bills, not purchase orders. Convert the purchase order to a bill after goods are received, then add the charges there, or allocate charges from a separate freight or customs bill."
+      },
+      {
+        q: "Which allocation methods does Zoho Inventory support for landed cost?",
+        a: "Charges are allocated across the items on a bill in proportion to their value or their quantity, and you can edit the calculated amounts before confirming. Many businesses allocate duty and insurance by value and freight by quantity."
+      },
+      {
+        q: "Should IGST on imports be added to landed cost?",
+        a: "Generally not, where it is claimable as input tax credit, because recoverable tax is not part of the cost of the goods. Non-creditable duties usually are. The correct treatment depends on your GST position, so confirm it with your accountant."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
   }
 ];
 
