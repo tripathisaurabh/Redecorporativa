@@ -3715,6 +3715,439 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-erp-vs-zoho-inventory-books-india",
+    title: "Zoho ERP vs Zoho Inventory + Zoho Books: Which Should Indian Businesses Choose?",
+    metaTitle: "Zoho ERP vs Zoho Inventory + Books (2026) | Pricing, Features & Fit for India",
+    description:
+      "Should you buy Zoho ERP or combine Zoho Inventory and Zoho Books? A practical comparison for Indian traders, distributors and manufacturers covering pricing models, manufacturing, GST, payroll and when each makes sense.",
+    keywords: [
+      "Zoho ERP vs Zoho Inventory",
+      "Zoho ERP India pricing",
+      "Zoho ERP vs Zoho Books",
+      "Zoho ERP for manufacturing",
+      "Zoho Inventory and Zoho Books integration"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-19",
+    readMins: 8,
+    excerpt:
+      "Zoho now sells a full ERP in India, but plenty of businesses still run Zoho Inventory and Zoho Books side by side. The right answer depends on your user count, whether you manufacture, and how many processes you want in one system.",
+    content: [
+      { type: "p", text: "For years the standard Zoho stack for an Indian trading or distribution business was Zoho Books for accounting and GST plus Zoho Inventory for stock, orders and warehouses, connected through Zoho's native sync. Zoho ERP changes the question. It brings finance, inventory, procurement, manufacturing, payroll, POS and distribution into one product on one database. That sounds like an obvious upgrade, but it is priced and scoped differently, and for many small businesses the two-app setup is still the better buy." },
+      { type: "h2", text: "What each option actually is" },
+      {
+        type: "ul",
+        items: [
+          "Zoho Books + Zoho Inventory: two separate apps that share items, contacts and transactions. Each is priced per organisation, with a set number of users included in the plan",
+          "Zoho ERP: a single suite built for Indian mid-sized businesses, covering finance and GST compliance, multi-location inventory and warehouses, procurement, manufacturing orders and shop-floor production, payroll with statutory compliance, retail POS and distribution tools. It is priced per user"
+        ]
+      },
+      { type: "h2", text: "Pricing models compared" },
+      {
+        type: "table",
+        head: ["", "Zoho Books + Zoho Inventory", "Zoho ERP"],
+        rows: [
+          ["Pricing basis", "Per organisation, per app, with bundled users", "Per user per month, with a separate per-employee rate for staff who only need self-service"],
+          ["Entry point", "Free tiers exist for very small businesses; paid plans scale by order volume, users and locations", "Standard: about ₹999 per user per month billed annually (₹1,399 monthly), minimum 5 users"],
+          ["Higher tier", "Move each app up a plan as limits are reached", "Premium: about ₹2,499 per user per month billed annually (₹2,999 monthly)"],
+          ["Transaction limits", "Order and invoice caps per plan in each app", "About 1 lakh transactions a year on Standard, up to 3 lakh on Premium"],
+          ["Locations", "Varies by Inventory plan", "10 locations included, extra locations as an add-on"]
+        ]
+      },
+      { type: "note", text: "Zoho ERP figures are from Zoho's India pricing page at the time of writing and exclude 18% GST; plan-level feature access and add-on prices should be confirmed with Zoho. Zoho Books and Zoho Inventory pricing is covered in our separate pricing guides. Always verify current pricing on Zoho's official site before budgeting." },
+      { type: "p", text: "The practical effect: a business with three or four people in the back office will usually pay less for Books plus Inventory, because the minimum ERP commitment is five users. As user counts grow and you would otherwise be stacking Payroll, POS and a manufacturing workaround on top, the per-user ERP price becomes easier to justify." },
+      { type: "h2", text: "Where Zoho ERP clearly wins" },
+      {
+        type: "ul",
+        items: [
+          "Manufacturing: manufacturing orders, work centres, shop-floor production, cost templates and quality inspections, which Zoho Inventory's composite items cannot replace for multi-stage production",
+          "One database: no sync between apps, so stock valuation, purchases and the ledger cannot drift apart",
+          "Payroll and people in the same system, including PF, ESI, professional tax and TDS",
+          "Retail and distribution: POS registers, cash sessions, beat management and scheme offers for FMCG-style distribution",
+          "Larger warehouse operations: unlimited bins per location on Premium and higher limits for custom reports"
+        ]
+      },
+      { type: "h2", text: "Where Zoho Inventory + Zoho Books is still the better buy" },
+      {
+        type: "ul",
+        items: [
+          "Small teams: two to five users where the ERP minimum would mean paying for unused seats",
+          "Pure trading and e-commerce: buying, stocking and selling without production, especially with marketplace and Shopify integrations",
+          "Phased adoption: start with Books for GST and accounting, add Inventory once stock control becomes painful",
+          "Zoho One customers: Books and Inventory are already part of the Zoho One bundle, so there may be no extra licence cost at all"
+        ]
+      },
+      { type: "h2", text: "A simple decision guide" },
+      {
+        type: "table",
+        head: ["Your business", "Recommended starting point"],
+        rows: [
+          ["Trader or distributor, under 5 back-office users", "Zoho Books + Zoho Inventory"],
+          ["E-commerce brand selling on marketplaces", "Zoho Books + Zoho Inventory"],
+          ["Manufacturer with BOMs, routing or job work", "Zoho ERP"],
+          ["Multi-branch retailer needing POS and payroll", "Zoho ERP"],
+          ["Already on Zoho One with light manufacturing", "Books + Inventory, with a Zoho Creator production app if needed"]
+        ]
+      },
+      { type: "h2", text: "Planning a later switch" },
+      { type: "p", text: "Moving from Books and Inventory to Zoho ERP is a migration, not a toggle. Items, opening stock, open sales and purchase orders, and accounting balances all need a clean cut-over date, ideally at the start of a financial year or quarter. If you expect to add production stages or payroll within the next twelve months, evaluate Zoho ERP now. Clean item codes, warehouses and chart of accounts make either path easier." },
+      { type: "h2", text: "Our take" },
+      { type: "p", text: "Zoho ERP is a strong option for Indian manufacturers and multi-location businesses that want one system instead of four. For smaller traders and online sellers, Zoho Books with Zoho Inventory remains the leaner, cheaper and quicker setup. As a certified Zoho partner, we map your order-to-cash and procure-to-pay flows first, then recommend the stack that fits your volumes rather than the biggest licence." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho ERP the same as Zoho One?",
+        a: "No. Zoho One is a bundle of 45+ separate Zoho apps, including Books and Inventory, under one licence. Zoho ERP is a single integrated product focused on finance, supply chain, manufacturing, payroll and retail operations for Indian businesses."
+      },
+      {
+        q: "How much does Zoho ERP cost in India?",
+        a: "At the time of writing, Zoho lists Standard at about ₹999 per user per month and Premium at about ₹2,499 per user per month on annual billing, excluding GST, with a five-user minimum on Standard. Verify current pricing and inclusions on Zoho's official site."
+      },
+      {
+        q: "Can Zoho Inventory handle manufacturing instead of Zoho ERP?",
+        a: "Only simple assembly. Composite items work as a single-level recipe for kits and basic assemblies. Multi-stage production, work centres and shop-floor tracking need Zoho ERP or a custom Zoho Creator app."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-dropshipping-setup-guide",
+    title: "Dropshipping in Zoho Inventory: How It Works and How to Set It Up",
+    metaTitle: "Zoho Inventory Dropshipping Guide (2026) | Setup, Workflow & Limits",
+    description:
+      "How dropshipment works in Zoho Inventory: creating partial, complete and bulk dropships from sales orders, how the vendor purchase order and customer invoice flow, fulfilment through bills, and the limits to plan around.",
+    keywords: [
+      "Zoho Inventory dropshipping",
+      "Zoho Inventory dropship setup",
+      "dropshipment purchase order Zoho",
+      "Zoho Inventory for ecommerce India",
+      "dropshipping inventory software India"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-21",
+    readMins: 7,
+    excerpt:
+      "Zoho Inventory can turn a confirmed sales order into a vendor purchase order that ships straight to your customer. Here is the full dropship workflow, when to use partial versus complete dropships, and the conditions that trip teams up.",
+    content: [
+      { type: "p", text: "Dropshipping means the goods never pass through your warehouse: you sell to the customer, your supplier ships directly to them, and you earn the margin between the two. Plenty of Indian traders, distributors and D2C brands run a hybrid model, stocking fast movers themselves and dropshipping bulky, slow-moving or made-to-order lines. Zoho Inventory supports this natively, but the workflow has a few rules that are worth understanding before you switch it on." },
+      { type: "h2", text: "The dropship workflow at a glance" },
+      {
+        type: "table",
+        head: ["Step", "What happens in Zoho Inventory"],
+        rows: [
+          ["1. Sales order", "Create and confirm a sales order for the customer as usual"],
+          ["2. Dropship", "From the sales order, choose More, then Dropship, and pick partial or complete"],
+          ["3. Purchase order", "A purchase order is created for the vendor with the customer's address as the Dropship To address"],
+          ["4. Vendor ships", "Email the purchase order to the vendor, who packs and delivers to your customer"],
+          ["5. Invoice", "Invoice the customer from the sales order; no package or shipment is needed on your side"],
+          ["6. Bill and fulfil", "Record the vendor's bill against the dropship purchase order, which moves the sales order to Fulfilled"]
+        ]
+      },
+      { type: "h2", text: "Partial, complete and bulk dropships" },
+      {
+        type: "ul",
+        items: [
+          "Complete dropship: the whole sales order goes to one vendor. Zoho opens a new purchase order with the items and delivery address prefilled; choose the vendor and save",
+          "Partial dropship: tick only the lines the vendor will ship, and fulfil the rest from your own stock. You can come back and dropship more lines later, which suits mixed orders",
+          "Bulk dropship: select several sales orders for the same customer and the same delivery address, and combine their lines into a single purchase order for one vendor"
+        ]
+      },
+      { type: "p", text: "Dropship purchase orders appear under the sales order's Dropshipments tab, and both the Sales Orders and Purchase Orders lists have filters to separate dropships from regular stock orders. That separation matters for reporting, because a buyer reviewing open purchase orders needs to know which ones will never arrive at the warehouse." },
+      { type: "h2", text: "Conditions that catch teams out" },
+      {
+        type: "ul",
+        items: [
+          "Only confirmed sales orders can be dropshipped, and only if they do not yet have invoices or packages. Decide on dropship before you invoice or pack",
+          "Complete dropship is unavailable once the sales order has backorders, invoices or packages. Use partial dropship for the remaining lines instead",
+          "Bulk dropship needs the same customer and the same delivery address across the selected orders",
+          "Fulfilment is driven by the vendor bill, so if your accounts team records bills late, sales orders will look open longer than they really are"
+        ]
+      },
+      { type: "h2", text: "Setting it up properly" },
+      { type: "p", text: "The feature works out of the box, but a few configuration choices make it reliable at scale:" },
+      {
+        type: "ul",
+        items: [
+          "Set a preferred vendor and purchase price on items you regularly dropship, so purchase orders are faster to raise and margins are visible",
+          "Use custom fields or tags to mark items as dropship-only, stock-only or either, and train the sales team on which applies",
+          "Agree a purchase order email template and expected ship-by date with each dropship vendor, and ask for tracking numbers by reply",
+          "Record vendor tracking details on the sales order or in a custom field so customer support can answer where-is-my-order queries without chasing the supplier",
+          "If you sell on marketplaces or Shopify through Zoho Inventory's integrations, confirm how orders sync before routing them to dropship"
+        ]
+      },
+      { type: "h2", text: "Which plan do you need?" },
+      { type: "p", text: "Dropshipment and backordering are included across Zoho Inventory's plans in India, including the Free plan, so the choice of plan comes down to order volume, users and locations rather than this feature." },
+      {
+        type: "table",
+        head: ["Plan (India)", "Approx. price per org per month, billed annually", "Orders per month", "Users", "Locations"],
+        rows: [
+          ["Free", "₹0", "50", "1", "1"],
+          ["Standard", "₹999", "500", "3", "2"],
+          ["Premium", "₹2,299", "3,000", "5", "4"],
+          ["Plus", "₹4,999", "7,500", "10", "6"],
+          ["Enterprise", "₹7,499", "15,000", "10", "10"]
+        ]
+      },
+      { type: "note", text: "Prices are from Zoho's India pricing page at the time of writing, exclude 18% GST and are subject to change. Monthly billing costs more. Always verify current pricing and plan limits on Zoho's official site before budgeting." },
+      { type: "h2", text: "When dropshipping in Zoho Inventory is not enough" },
+      { type: "p", text: "The native flow is built around one vendor per purchase order and manual vendor communication. If you route orders automatically to the cheapest or nearest supplier, need vendors to update shipment status in a portal, or run hundreds of dropship orders a day, you will want automation on top: Zoho Flow or Deluge custom functions to raise purchase orders, or a small Zoho Creator vendor portal for tracking updates." },
+      { type: "h2", text: "Our take" },
+      { type: "p", text: "For most SMEs running a mixed stock and dropship catalogue, Zoho Inventory's built-in dropshipment is enough: it keeps the sale, the vendor purchase order, the invoice and the bill linked, so margins and GST records stay clean. The gains come from setup discipline: preferred vendors, clear item flags and a habit of recording bills promptly. As a certified Zoho partner, we design that workflow and add automation only where order volume justifies it." }
+    ],
+    faqs: [
+      {
+        q: "Does dropshipping in Zoho Inventory affect my stock levels?",
+        a: "Dropshipped goods go from the vendor straight to the customer, so they are handled through the linked purchase order and bill rather than packed from your warehouse. Test the flow in a sandbox or trial organisation to confirm how your reports show it before going live."
+      },
+      {
+        q: "Can I dropship part of a sales order and ship the rest myself?",
+        a: "Yes. Use partial dropship to select only the lines the vendor will fulfil, then pack and ship the remaining lines from your own stock as usual."
+      },
+      {
+        q: "Is dropshipment available on the free plan?",
+        a: "Yes. At the time of writing, Zoho lists dropshipment and backordering on all Zoho Inventory plans in India, including Free, which allows 50 orders a month. Verify current plan features on Zoho's official site."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "zoho-inventory-barcode-scanning-label-printing-setup",
+    title: "Zoho Inventory Barcode Setup: Generating, Printing and Scanning Labels",
+    metaTitle: "Zoho Inventory Barcode Setup (2026) | Labels, Scanning & Printers",
+    description:
+      "A practical guide to barcodes in Zoho Inventory: choosing between SKU, EAN and UPC, enabling item barcodes, designing label templates, printing on label printers, scanning with phones or handheld scanners, and which plan you need.",
+    keywords: [
+      "Zoho Inventory barcode",
+      "Zoho Inventory barcode label printing",
+      "Zoho Inventory barcode scanner setup",
+      "barcode inventory software India",
+      "Zoho Inventory QR code"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-26",
+    readMins: 7,
+    excerpt:
+      "Barcodes are the single biggest speed-up for receiving, picking and stock counts in Zoho Inventory. Here is how to set them up properly, from choosing the field you encode to matching label templates with your printer.",
+    content: [
+      { type: "p", text: "Most businesses move to Zoho Inventory for order and stock control, then discover that typing item names into every sales order, purchase receive and stock count is where the time goes. Barcodes fix that. Zoho Inventory can generate barcode and QR labels for your items, print them in bulk, and use scans to pick items automatically in transactions. The setup is not difficult, but a few early decisions determine whether it works smoothly or has to be redone later." },
+      { type: "h2", text: "Step 1: Decide what the barcode encodes" },
+      { type: "p", text: "Zoho Inventory lets you generate barcodes from the item's SKU, EAN, UPC or ISBN, and for tracked items, from the batch or serial number. Separately, you choose a single scanning field under Settings, Items, Preferences; EAN is the default. The field you encode and the field you scan must match, or scans will not find the item." },
+      {
+        type: "table",
+        head: ["Encode", "Use it when", "Watch out for"],
+        rows: [
+          ["Manufacturer EAN/UPC", "You resell branded goods that already carry a retail barcode", "Some suppliers reuse codes across pack sizes; check before relying on them"],
+          ["Your own SKU", "You manufacture, repack or kit products, or stock unbranded items", "Keep SKUs short and free of spaces so they print and scan cleanly"],
+          ["Batch number", "Food, pharma, chemicals or anything with expiry dates", "Batch tracking must be switched on before you can generate these"],
+          ["Serial number", "Electronics, machinery or high-value goods tracked unit by unit", "One label per unit; plan the printing workload"]
+        ]
+      },
+      { type: "p", text: "For most Indian traders and distributors we work with, the cleanest approach is to scan by EAN where it exists, and to fill your own internal code into the EAN or SKU field for items that have none, so every item has exactly one scannable value." },
+      { type: "h2", text: "Step 2: Enable item barcodes" },
+      {
+        type: "ul",
+        items: [
+          "Go to Settings, then PDF Templates, open Item Barcodes and enable item barcodes. This adds a Generate Barcode option on item pages",
+          "Under Settings, Items, Preferences, set the scanning field to the same field you will encode",
+          "If you need batch or serial labels, enable batch and serial tracking in the same preferences area first",
+          "Clean the data before printing anything: duplicate or missing SKUs and EANs become duplicate or missing labels"
+        ]
+      },
+      { type: "h2", text: "Step 3: Design a label template that fits your printer" },
+      { type: "p", text: "Zoho ships a default linear barcode template and a QR template, both showing item name and price. In practice you will want a custom template. Templates let you set the barcode type (Code 128 is the usual choice for alphanumeric SKUs), paper size, margins, rows and columns of labels per sheet, font and barcode size, and which fields to print, such as item name, SKU, rate or organisation name." },
+      { type: "note", text: "The most common printing problem is a mismatch between the template's paper size and the label size set in the printer driver. For a thermal label printer, create a custom paper size matching your roll (for example 50 x 25 mm) in both places and print one test label before running a batch." },
+      { type: "p", text: "You can print from a single item with a chosen number of copies, or select many items from the Items list and print their labels together. Teams who need to print large runs on unusual label stock sometimes export items to a spreadsheet and use dedicated label software instead; that is a workaround worth knowing about, not a requirement." },
+      { type: "h2", text: "Step 4: Choose how you will scan" },
+      {
+        type: "table",
+        head: ["Option", "Good for", "Trade-off"],
+        rows: [
+          ["Phone camera in the Zoho Inventory app", "Small teams, stock lookups, occasional receiving", "Slower than a dedicated scanner for high-volume picking"],
+          ["USB or Bluetooth handheld scanner on a PC", "Billing counters, dispatch desks, purchase receives", "Tied to a workstation; acts as a keyboard, so the cursor must be in the right field"],
+          ["Rugged Android mobile computer", "Warehouses with picking, bin moves and cycle counts", "Higher hardware cost; test with the Zoho app before buying in bulk"]
+        ]
+      },
+      { type: "p", text: "Scans select items in transactions such as sales orders and purchase receives, and the mobile app lets you scan to locate an item and check its stock. Before buying hardware, run a pilot with one scanner and your actual labels across a full receive-pick-pack cycle." },
+      { type: "h2", text: "Which plan do you need?" },
+      { type: "p", text: "Barcode generation and the serial and batch tracking that feed batch and serial labels sit on Zoho Inventory's higher plans. At the time of writing, Premium is the entry point for these warehouse features in India, alongside bin locations and stock counting, with Plus and Enterprise adding order volume, users and warehouses. Indicative India pricing is roughly ₹2,299 per organisation per month for Premium, billed annually, before 18% GST." },
+      { type: "note", text: "Plan features and prices change. Verify current pricing and exactly which plan includes barcode generation on Zoho's official Zoho Inventory pricing page before you budget." },
+      { type: "h2", text: "Our take" },
+      { type: "p", text: "Barcoding is rarely a software problem; it is a data and process problem. Clean item masters, one agreed scanning field, a tested label template and a short training session for warehouse staff deliver most of the benefit. As a certified Zoho partner, we usually set up barcoding together with bin locations and batch tracking, because the three reinforce each other and are cheaper to configure once than in separate projects." }
+    ],
+    faqs: [
+      {
+        q: "Can I use my existing product barcodes in Zoho Inventory?",
+        a: "Yes. Enter the manufacturer's EAN or UPC in the item's barcode field and set that field as your scanning field. You only need to print new labels for items that do not already carry a barcode."
+      },
+      {
+        q: "Do I need a special barcode scanner?",
+        a: "No. You can start with your phone camera through the Zoho Inventory mobile app. Most USB or Bluetooth scanners that work as keyboard input also work at a PC; test one with your labels before buying several."
+      },
+      {
+        q: "Can Zoho Inventory print QR codes instead of barcodes?",
+        a: "Yes. A QR code template is available alongside the standard linear barcode, and custom templates let you choose the barcode type and the fields printed on the label."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    "slug": "zoho-inventory-sales-returns-rma-credit-notes-guide",
+    "title": "Zoho Inventory Sales Returns (RMA): Setup Guide for Returns, Restocking and Credit Notes",
+    "metaTitle": "Zoho Inventory Sales Returns & RMA Guide (2026) | Restock, Credit Notes, Refunds",
+    "description": "How to handle customer returns in Zoho Inventory: marking items returnable, creating a sales return against a sales order, receiving goods back, keeping damaged stock out of inventory, and issuing credit notes or refunds.",
+    "keywords": [
+      "Zoho Inventory sales return",
+      "Zoho Inventory RMA",
+      "Zoho Inventory credit note",
+      "return management Zoho",
+      "restock returned items Zoho Inventory"
+    ],
+    "category": "Zoho Inventory",
+    "date": "2026-10-28",
+    "readMins": 7,
+    "excerpt": "Returns are where stock counts and customer balances quietly drift apart. Here is how Zoho Inventory's sales return flow keeps the warehouse, the books and the customer in sync, and the settings to get right first.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Every business that ships physical goods deals with returns: a wrong size, a damaged carton, an order a distributor over-stocked. Handled in spreadsheets or email, returns cause two slow leaks. Stock that came back is never added to inventory, or worse, damaged units are added and later sold. And the customer's credit is tracked on the side, so accounts and sales argue about what is actually owed."
+      },
+      {
+        "type": "p",
+        "text": "Zoho Inventory has a built-in return merchandise authorisation (RMA) flow called Sales Returns. It links the return to the original sales order, separates receiving the goods from crediting the customer, and posts both to stock and accounts. Below is how it works and how we configure it for clients."
+      },
+      {
+        "type": "h2",
+        "text": "How the sales return flow works"
+      },
+      {
+        "type": "table",
+        "head": [
+          "Step",
+          "What happens in Zoho Inventory",
+          "Effect"
+        ],
+        "rows": [
+          [
+            "1. Mark items returnable",
+            "Set the returnable flag on each item (perishables can be excluded)",
+            "Only eligible items can be added to a return"
+          ],
+          [
+            "2. Create the sales return",
+            "Raise it from the original sales order, choosing items, quantities and reason",
+            "Documents the RMA; stock does not change yet"
+          ],
+          [
+            "3. Receive the goods",
+            "Record a receive when goods physically arrive, in one or several batches",
+            "Good units are added back to stock"
+          ],
+          [
+            "4. Separate damaged units",
+            "Mark damaged or expired quantities as credit-only",
+            "They are credited but never added to sellable stock"
+          ],
+          [
+            "5. Create the credit note",
+            "Generate it from the sales return",
+            "Customer balance is reduced in the books"
+          ],
+          [
+            "6. Refund or adjust",
+            "Refund cash, apply the credit to open or future invoices, or raise a new order for an exchange",
+            "Customer account is settled"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "The key design choice is that creating a sales return only records intent. Physical stock rises only when you record the receive, which mirrors reality: a customer saying they will send something back is not the same as the box arriving at your dock."
+      },
+      {
+        "type": "h2",
+        "text": "Settings to get right before your first return"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Decide which item categories are returnable and set the flag in bulk via import, rather than item by item",
+          "Turn on batch or serial tracking for return receipts if you sell tracked goods, so the exact unit that came back is recorded",
+          "Agree on return reasons (wrong item, damaged in transit, quality issue, excess stock) so the sales return history report is useful",
+          "Define who can create returns and who can issue credit notes; separating the two is a simple internal control",
+          "Write your refund policy into the process: credit for future purchases, cash refund, or exchange"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Restocking vs damaged goods"
+      },
+      {
+        "type": "p",
+        "text": "This is where most stock errors come from. If a pallet of ten comes back with three broken units, receive seven into stock and record three as credit-only. The customer is credited for all ten (if your policy allows), but your available quantity only rises by seven. If you need to track write-offs, follow up with an inventory adjustment against a damage or scrap reason so the loss is visible in reports rather than buried."
+      },
+      {
+        "type": "h2",
+        "text": "Marketplace and multi-channel returns"
+      },
+      {
+        "type": "p",
+        "text": "If you sell on Amazon, Shopify, eBay or Etsy through Zoho Inventory's integrations, record returns against the synced sales order so the restocked quantity flows back to every channel's available stock. This prevents the common problem of a returned unit sitting in the warehouse while the website still shows it as out of stock."
+      },
+      {
+        "type": "h2",
+        "text": "Limitations to plan around"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Returns are raised against sales orders, so drop-shipped or manually fulfilled orders follow a different path",
+          "Service items and purchase-only items cannot be returned",
+          "Composite items (kits and bundles) are returned as a whole, not component by component",
+          "An exchange is handled as a credit plus a new sales order, not a single swap document",
+          "Returns to your own suppliers are handled through purchase-side documents such as vendor credits, not the sales return module"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Feature availability and transaction limits vary by Zoho Inventory plan and region, and Zoho updates the module periodically. Verify current plan inclusions and pricing on Zoho's official Inventory pricing page, and test the full flow in a trial or sandbox organisation before going live."
+      },
+      {
+        "type": "h2",
+        "text": "GST and accounting notes for India"
+      },
+      {
+        "type": "p",
+        "text": "In India, a credit note issued against a GST invoice must carry the right tax details and be reported in your returns, and the original invoice reference matters. When Zoho Inventory is connected to Zoho Books, credit notes post to the same ledger your accountant files from, which removes the manual reconciliation step. Have your accountant review the credit note template and tax settings once before your first live return."
+      },
+      {
+        "type": "h2",
+        "text": "Getting it running"
+      },
+      {
+        "type": "p",
+        "text": "For most small and mid-sized businesses, configuring returns is a short project: item flags, tracking settings, roles, reasons, templates, and a test run with a real order. As a certified Zoho partner, we usually set it up together with reorder points and warehouse rules so returned stock is counted correctly in replenishment from day one."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does creating a sales return in Zoho Inventory add stock back immediately?",
+        "a": "No. The sales return records the RMA. Stock increases only when you record a receive for the returned goods, and you can receive in multiple batches for partial returns."
+      },
+      {
+        "q": "How do I stop damaged returns from going back into stock?",
+        "a": "Mark the damaged or expired quantity as credit-only on the sales return. The customer can still be credited, but those units are not received into sellable stock. Use an inventory adjustment if you want to record the write-off explicitly."
+      },
+      {
+        "q": "Can I refund a customer directly from a return?",
+        "a": "Yes. Create a credit note from the sales return, then either record a refund from the credit note or apply the credit to the same customer's open or future invoices."
+      }
+    ],
+    "relatedApp": {
+      "label": "Zoho Inventory",
+      "href": "/zoho-inventory"
+    }
   }
 ];
 
