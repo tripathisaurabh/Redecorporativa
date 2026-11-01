@@ -166,13 +166,13 @@ export const clientLogos: Record<string, string> = {
   "ravel-storage": "ravel.png",
   "jood-fm": "jood.jpeg",
   "r-star-global": "rstar.jpg",
-  "grunber": "grunber.svg",
+  "grunber": "grunber.png",
   "united-metals-laser": "united-metals-laser.png",
   "swastik-flanges": "swastik.png",
   "sbw-unity": "sbw.png",
   "metalegal": "metalegal.png",
   "international-currency-association": "ica.png",
-  "glydus": "glydus.svg"
+  "glydus": "glydus.png"
 };
 
 export const successStories: SuccessStory[] = [
