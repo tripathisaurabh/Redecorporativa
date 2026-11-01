@@ -25,6 +25,21 @@ export const zohoAppLabels: Record<string, string> = {
   catalyst: "Catalyst"
 };
 
+// Client logo filenames under /public/success/logos/. Clients with no logo
+// (e.g. ETRAM) fall back to initials in the UI.
+export const clientLogos: Record<string, string> = {
+  "jood-fm": "jood.jpeg",
+  "ravel-storage": "ravel.png",
+  "r-star-global": "rstar.jpg",
+  grunber: "grunber.svg",
+  "united-metals-laser": "united-metals-laser.png",
+  "swastik-flanges": "swastik.png",
+  "sbw-unity": "sbw.png",
+  metalegal: "metalegal.png",
+  "international-currency-association": "ica.png",
+  glydus: "glydus.svg"
+};
+
 export type Outcome = { value: string; label: string };
 
 export type SuccessStory = {
