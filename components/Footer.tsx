@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Products", href: "/products" },
   { label: "Solutions", href: "/#solutions" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Success Stories", href: "/success-stories" },
   { label: "Blog", href: "/blog" },
   { label: "Zoho vs Salesforce", href: "/zoho-vs-salesforce" },
   { label: "Zoho vs HubSpot", href: "/zoho-vs-hubspot" },
