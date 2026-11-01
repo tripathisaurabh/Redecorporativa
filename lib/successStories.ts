@@ -19,6 +19,7 @@ export const zohoAppLabels: Record<string, string> = {
   forms: "Forms",
   "zoho-one": "Zoho One",
   deluge: "Deluge",
+  books: "Books",
   inventory: "Inventory",
   flow: "Flow",
   catalyst: "Catalyst"
@@ -56,6 +57,24 @@ export const successStories: SuccessStory[] = [
       { value: "3,500+", label: "Records migrated" },
       { value: "24", label: "Forms in production" },
       { value: "7", label: "User guides delivered" }
+    ]
+  },
+  {
+    slug: "ravel-storage",
+    name: "Ravel Storage",
+    industry: "Self storage",
+    country: "UAE",
+    platform: "Zoho Creator + Books",
+    status: "Live",
+    headline: "One clear view of every storage unit, who is in it and who has paid",
+    summary:
+      "Brought units, tenants and rentals into one Zoho system across three Abu Dhabi branches — with a visual map of each warehouse and payment status flowing in automatically from Zoho Books.",
+    zoho: ["creator", "books", "deluge"],
+    outcomes: [
+      { value: "110+", label: "Storage units managed in one place" },
+      { value: "3", label: "Branches on one system" },
+      { value: "0", label: "Whiteboards needed to know what's free" },
+      { value: "Automatic", label: "Payment status from Zoho Books" }
     ]
   },
   {
