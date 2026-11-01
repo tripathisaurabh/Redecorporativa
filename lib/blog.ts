@@ -4148,6 +4148,96 @@ export const blogPosts: BlogPost[] = [
       "label": "Zoho Inventory",
       "href": "/zoho-inventory"
     }
+  },
+  {
+    slug: "zoho-inventory-vs-katana-mrp-manufacturers",
+    title: "Zoho Inventory vs Katana: Which Suits a Small Manufacturer?",
+    metaTitle: "Zoho Inventory vs Katana MRP (2026) | Features, Pricing & Fit for Manufacturers",
+    description:
+      "Katana is built for production planning; Zoho Inventory is built for stock and order management with light assembly. We compare manufacturing depth, accounting fit, GST readiness and 2026 pricing to help small manufacturers choose.",
+    keywords: [
+      "Zoho Inventory vs Katana",
+      "Katana MRP alternative",
+      "Katana MRP India",
+      "Zoho Inventory manufacturing",
+      "inventory software for small manufacturers"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-10-30",
+    readMins: 7,
+    excerpt:
+      "Katana plans production; Zoho Inventory controls stock and orders. Which one you need depends on how complex your shop floor is and where your accounting lives.",
+    content: [
+      { type: "p", text: "Small manufacturers often reach the same crossroads: spreadsheets can no longer keep up with raw materials, finished goods and customer orders, and two names keep appearing on the shortlist. Katana markets itself as cloud manufacturing and inventory software for makers and brands. Zoho Inventory is an order and stock management app that handles assembly through composite items and sits inside the wider Zoho suite. They overlap, but they start from opposite ends." },
+      { type: "p", text: "Katana starts from production: bills of materials, manufacturing operations, routings, and a shop floor app that operators use to start and finish tasks. Zoho Inventory starts from stock and sales: multi-warehouse inventory, purchase and sales orders, batch and serial tracking, and channel integrations, with assembly as one feature. So the first question is not which tool is better, but how much production planning you actually do." },
+      { type: "h2", text: "Feature comparison" },
+      {
+        type: "table",
+        head: ["Area", "Zoho Inventory", "Katana"],
+        rows: [
+          ["Bills of materials", "Composite items group components into a finished good; assemblies consume component stock", "Multi-level BOMs with operations and routings at the core of the product"],
+          ["Production planning", "No native production scheduling or shop floor control; usually extended with Zoho Creator", "Manufacturing orders, operation sequencing and a shop floor app"],
+          ["Batch and serial tracking", "Included on higher plans", "Batch and serial traceability included"],
+          ["Warehouses", "Multiple locations, with the count set by plan", "Unlimited inventory locations"],
+          ["Accounting", "Native, two-way with Zoho Books, including GST invoices, e-invoicing and e-way bills", "Integrates with QuickBooks Online and Xero"],
+          ["Sales channels", "Shopify, Amazon, Etsy and others, plus Zoho Commerce", "Shopify, WooCommerce and other channels; Free plan limited to Shopify for e-commerce"],
+          ["India readiness", "Indian edition priced in rupees with GST built in", "No India-specific edition; GST compliance depends on the accounting tool you connect"],
+          ["Wider suite", "Shares data with Zoho CRM, Books, Creator and People; included in Zoho One", "Standalone; connects to other systems via API and integrations"]
+        ]
+      },
+      { type: "h2", text: "When Katana makes more sense" },
+      {
+        type: "ul",
+        items: [
+          "Production is the main job: several operations per product, routings, and work centres you need to schedule",
+          "You want operators to log work on a tablet with a ready-made shop floor app rather than a custom build",
+          "Your accounting already runs on QuickBooks Online or Xero, which is common for brands selling into the US, UK or Australia",
+          "You make products to order and need material requirements calculated from open sales orders"
+        ]
+      },
+      { type: "h2", text: "When Zoho Inventory makes more sense" },
+      {
+        type: "ul",
+        items: [
+          "Assembly is simple: kits, bundles or single-level builds where the main challenge is stock accuracy, not scheduling",
+          "You are in India and need GST-compliant invoicing, e-invoicing and e-way bills without connecting a separate accounting product",
+          "You also need CRM for dealers, HR for factory staff, or custom apps, and want everything to share one data model",
+          "Order volume across channels and warehouses is a bigger headache than shop floor sequencing",
+          "You prefer a published per-organisation price you can budget for, rather than a sales-led quote"
+        ]
+      },
+      { type: "h2", text: "Pricing in 2026" },
+      {
+        type: "table",
+        head: ["", "Zoho Inventory (India)", "Katana"],
+        rows: [
+          ["Free tier", "Free plan: 50 orders a month, 1 user, 1 location", "Free plan: unlimited users, up to 30 SKUs after a 15-day unlimited period"],
+          ["Paid tiers", "Standard about ₹999, Premium about ₹2,299, Plus about ₹4,999, Enterprise about ₹7,499 per organisation per month, billed annually", "Advantage plan on a custom annual contract; third-party trackers reported paid tiers from around $299 a month during 2026"],
+          ["Pricing unit", "Per organisation, with included users, orders and locations; add-ons beyond limits", "Quote based on SKUs, modules and services such as implementation"],
+          ["Taxes", "18% GST extra", "Local taxes per region"]
+        ]
+      },
+      { type: "note", text: "Figures are taken from Zoho's Indian pricing page and from Katana's pricing page plus third-party price trackers, checked in October 2026. Katana restructured its plans during 2026 and now quotes its paid plan individually. Both vendors change plans and limits periodically, so always verify current pricing on Zoho's and Katana's official sites before budgeting." },
+      { type: "p", text: "For an Indian manufacturer the totals tend to diverge quickly. A Katana setup also needs an accounting system, a GST workaround and any CRM separately, while Zoho Inventory plus Zoho Books, or Zoho One for the whole company, covers stock, finance and sales under one vendor. For a US or UK brand already on QuickBooks with complex production, Katana's higher price can be justified by the planning features it saves you from building." },
+      { type: "h2", text: "A middle path many manufacturers take" },
+      { type: "p", text: "If your production is moderately complex but you want to stay on Zoho, the common pattern is Zoho Inventory for stock, purchasing and fulfilment, Zoho Books for GST and costing, and a Zoho Creator app for manufacturing orders, job cards and quality checks. Creator writes component consumption and finished-goods receipts back to Inventory, so stock stays accurate while the shop floor gets a screen built for its own process. It takes more setup than Katana's ready-made app, but the result fits the factory rather than the other way round." },
+      { type: "p", text: "As a certified Zoho partner, we start these projects by mapping one product's full route, from purchase of raw material to dispatch. That exercise usually makes the right tool obvious within a day, and it gives you a clean BOM structure whichever product you choose." }
+    ],
+    faqs: [
+      {
+        q: "Can Zoho Inventory be used for manufacturing?",
+        a: "For light manufacturing, yes. Composite items act as a bill of materials and assemblies consume component stock while adding finished goods. It does not include production scheduling or a shop floor app, which manufacturers typically add through a Zoho Creator app."
+      },
+      {
+        q: "Does Katana support GST in India?",
+        a: "Katana has no India-specific edition. GST invoicing, e-invoicing and e-way bills depend on the accounting software you connect, and its native accounting integrations are QuickBooks Online and Xero. Confirm current integrations with Katana before choosing it for Indian operations."
+      },
+      {
+        q: "Is Zoho Inventory included in Zoho One?",
+        a: "Zoho One editions have generally included Zoho Inventory alongside CRM, Books, Creator and many other apps. Bundle contents and limits change, so check the current Zoho One app list on Zoho's official site."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
   }
 ];
 
