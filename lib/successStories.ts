@@ -18,6 +18,9 @@ export type SuccessStory = {
   headline: string;
   summary: string;
   card: string;
+  screensTitle?: string;
+  screensNote?: string;
+  screens?: { src: string; caption: string }[];
   deliveredTitle: string;
   delivered: Delivered[];
   zoho: string[];
@@ -187,6 +190,13 @@ export const successStories: SuccessStory[] = [
     "headline": "One clear view of every storage unit, who is in it and who has paid",
     "summary": "Ravel Storage runs self-storage facilities across three branches in Abu Dhabi. Unit layouts lived on whiteboards and floor sketches, and invoices sat in Zoho Books with no link to the units, so nobody could see at a glance which units were free, who was renting what, or who was behind on payment. We brought it all into one Zoho system: units, tenants and rentals in one place, a visual map of each warehouse, and payment status flowing in from Zoho Books.",
     "card": "Whiteboards replaced by one Zoho system for units, tenants and rentals, with payment status pulled in from Zoho Books.",
+    "screensTitle": "The app in use",
+    "screensNote": "Screenshots from the live app. Tenant names are blurred.",
+    "screens": [
+      { "src": "/success/shots/ravel/layout-2d.jpg", "caption": "Floor view: every unit coloured by status, with unpaid units in red" },
+      { "src": "/success/shots/ravel/layout-3d.jpg", "caption": "The same floor in 3D" },
+      { "src": "/success/shots/ravel/dashboard.jpg", "caption": "Dashboard: occupancy by branch and what needs attention" }
+    ],
     "deliveredTitle": "From whiteboards to one live system",
     "delivered": [
       {

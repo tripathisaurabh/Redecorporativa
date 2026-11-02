@@ -182,6 +182,31 @@ export default function SuccessStoryDetail({ params }: { params: { slug: string 
         </Container>
       </section>
 
+      {/* Screenshots */}
+      {s.screens && s.screens.length > 0 && (
+        <section className="border-b border-slate-200 bg-white py-14 md:py-16">
+          <Container>
+            <p className="text-xs font-semibold uppercase tracking-[0.1em]" style={{ color: BLUE }}>Screenshots</p>
+            <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl" style={{ color: INK }}>
+              {s.screensTitle || "What we built"}
+            </h2>
+            {s.screensNote ? <p className="mt-3 max-w-[66ch] text-[17px] text-slate-600">{s.screensNote}</p> : null}
+            <div className="mt-9 grid gap-[22px] md:grid-cols-2">
+              {s.screens.map((sh, i) => (
+                <figure
+                  key={sh.src}
+                  className={`rounded-2xl border border-slate-200 bg-white p-2.5 shadow-sm ${i === 0 ? "md:col-span-2" : ""}`}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={sh.src} alt={sh.caption} loading="lazy" className="block w-full rounded-[10px] border border-slate-200" />
+                  <figcaption className="px-1.5 pb-1 pt-3 text-sm text-slate-600">{sh.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
+
       {/* Process flow */}
       <section className="border-b border-slate-200 bg-white py-14 md:py-16">
         <Container>
