@@ -4238,6 +4238,109 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Inventory", href: "/zoho-inventory" }
+  },
+  {
+    slug: "migrate-tally-to-zoho-books-india",
+    title: "How to Migrate from Tally to Zoho Books: A Cutover Guide for Indian Businesses",
+    metaTitle: "Migrate Tally to Zoho Books (2026) | Steps, Cutover Date & GST Checks",
+    description:
+      "How to move from Tally to Zoho Books without breaking your trial balance: choosing the cutover date, what to export, the correct import order, opening balances, GST checks, and what to keep in Tally.",
+    keywords: [
+      "migrate Tally to Zoho Books",
+      "Tally to Zoho Books migration",
+      "switch from Tally to Zoho Books",
+      "Zoho Books opening balances",
+      "Tally data import Zoho Books India"
+    ],
+    category: "Zoho Books",
+    date: "2026-11-02",
+    readMins: 7,
+    excerpt:
+      "A Tally migration succeeds or fails on one test: does the opening trial balance in Zoho Books match Tally, ledger by ledger? Here is the order of work that gets you there.",
+    content: [
+      { type: "p", text: "Moving from Tally to Zoho Books is an accounting exercise more than a software one. The files are the easy part. The real work is deciding your cutover date, cleaning ledgers before they travel, and proving afterwards that every balance landed in the right place. Zoho's India help documentation sets out the sequence, and it is worth following exactly, because later steps depend on earlier ones." },
+      { type: "h2", text: "Decide the cutover date first" },
+      { type: "p", text: "Every other choice follows from this one. There are two realistic options, and 1 April is usually the better of them, though you can move sooner if the reason is pressing." },
+      {
+        type: "table",
+        head: ["", "Start of financial year (1 April)", "Mid-year switch"],
+        rows: [
+          ["Opening balances", "Closing trial balance at 31 March, ideally after audit adjustments", "Trial balance at the chosen migration date"],
+          ["Transactions", "Optional: prior-year vouchers if you want history", "Vouchers from the start of the year, or two sets of records"],
+          ["GST and TDS work", "One system for the year", "Returns assembled from two systems for that year"],
+          ["Best for", "Most businesses", "Urgent moves, or a quarter-start compromise"]
+        ]
+      },
+      { type: "p", text: "If 1 April is a few months away, use that time to prepare well, including running Zoho Books alongside Tally for a month to train the team. Once the cut-off arrives, freeze data entry in Tally. Any voucher posted afterwards changes the numbers you are reconciling against." },
+      { type: "h2", text: "Clean up in Tally before you export" },
+      { type: "ul", items: [
+        "Merge duplicate ledgers, particularly customers and vendors entered twice",
+        "Clear or explain old suspense entries and any stale advances",
+        "Check GSTIN, state and registration type on every party ledger",
+        "Match outstanding receivables and payables against bill-wise details",
+        "Confirm stock quantities and valuation, ideally after a physical count"
+      ] },
+      { type: "h2", text: "Export four sets of data" },
+      { type: "p", text: "TallyPrime can export to Excel, XML and other formats. Press Alt+E for masters and transactions, or Ctrl+E on an open report. You need the stock summary, master data (chart of accounts, taxes, customers, vendors, items), voucher data, and the trial balance. Excel is usually the practical choice, because you will reshape columns to fit Zoho's import files anyway." },
+      { type: "h2", text: "Import in this order" },
+      { type: "p", text: "Order matters, because opening balances and transactions need accounts, contacts and items to exist first." },
+      { type: "ul", items: [
+        "Organisation profile, tax rates, and GST settings with your 15-digit GSTIN",
+        "Chart of accounts, confirming that bank accounts arrive correctly",
+        "Module preferences, plus custom fields for Tally data with no Zoho equivalent",
+        "Customers and vendors: Display Name, Contact Type, GST Treatment, GSTIN and Currency are mandatory",
+        "Items, with Inventory Start Date set to match your opening balance date if you track stock",
+        "Bank and credit card accounts not already created",
+        "Opening balances under Settings, using the trial balance at the migration date",
+        "Transactions if needed: projects, then purchases, then sales, then manual journals"
+      ] },
+      { type: "p", text: "After backdated transactions go in, open Settings, go to Opening Balances and run Sync. Zoho's documentation is clear that the trial balance only shows accurate values after this step. Try a five-row test file for each import before running the full one." },
+      { type: "h2", text: "How Tally terms translate" },
+      {
+        type: "table",
+        head: ["Tally", "Zoho Books"],
+        rows: [
+          ["Account Masters", "Chart of Accounts"],
+          ["Sundry Debtors", "Accounts Receivable"],
+          ["Sundry Creditors", "Accounts Payable"],
+          ["Quotation / Proforma Invoice", "Quote"],
+          ["Receipt Vouchers", "Payments Received"],
+          ["Payment Vouchers", "Payments Made"],
+          ["Debit Note", "Vendor Credits"]
+        ]
+      },
+      { type: "h2", text: "The checks that prove it worked" },
+      { type: "p", text: "Compare the Tally closing trial balance with the Zoho Books opening trial balance line by line. Total debits must equal total credits and the Opening Balance Adjustments account should be zero, but matching totals alone prove little, since two mapping errors can cancel out. A creditor ledger mapped to an income account can still leave a balanced trial balance." },
+      { type: "ul", items: [
+        "Receivable and payable ageing agrees with Tally, invoice by invoice, for open items",
+        "Stock quantity and value agree with the Tally stock summary",
+        "Bank balances agree with your statements at the cut-off date",
+        "Test invoices apply the right tax for intra-state and inter-state supply, since contact details drive this",
+        "Your first GSTR-2B reconciliation in Zoho Books ties out",
+        "Opening TDS payable and carried-forward items are correct"
+      ] },
+      { type: "h2", text: "What not to expect to carry over" },
+      { type: "p", text: "Returns already filed stay valid and do not need refiling from Zoho Books. Do not assume cost centres, batch and expiry stock details, or return history will migrate cleanly. Plan to recreate what you still need; batch tracking in particular may be better handled in Zoho Inventory. Above all, keep the Tally company intact. Companies must generally preserve books for at least eight financial years, so retain a readable copy and confirm the requirement with your CA." },
+      { type: "h2", text: "What it costs" },
+      { type: "p", text: "Zoho Books is priced per organisation, not per user. At the time of writing, annual-billing prices in India start at ₹749 a month for Standard (5,000 invoices a year, 3 users) and ₹1,499 for Professional (10,000 invoices, 5 users), before GST. Migration cost depends on ledger count, how many years of vouchers you bring over and whether stock is involved. Importing only opening balances and open items is far cheaper than moving years of vouchers, and for most businesses the old history is better kept in Tally." },
+      { type: "note", text: "Prices were checked on Zoho's India pricing page in November 2026 and can change. Verify current pricing on Zoho's official site before budgeting. Have your CA review the cutover plan and compliance points, as this guide is general information." },
+      { type: "p", text: "A straightforward single-entity move is manageable for a capable accounts team working with its CA. Multi-branch setups, heavy inventory and mid-year switches are where we more often see clients want a certified partner, mainly because mapping errors surface months later, usually at the worst time." }
+    ],
+    faqs: [
+      {
+        q: "Can I import Tally data directly into Zoho Books?",
+        a: "Zoho's migration guide works through exported reports and data imported module by module, rather than a one-click Tally connection. You export masters, vouchers, stock summary and trial balance from Tally, prepare them for each Zoho Books import, and set opening balances in Settings."
+      },
+      {
+        q: "What is the best time to move from Tally to Zoho Books?",
+        a: "The start of the financial year on 1 April is usually cleanest, because opening balances match your closing books and a single year's GST and TDS records stay in one system. A mid-year switch works but needs more reconciliation, so start preparing a few months ahead."
+      },
+      {
+        q: "Should I migrate all my old Tally vouchers?",
+        a: "Usually not. Many businesses move opening balances and open receivables and payables, then keep older history in a preserved Tally company for reference and statutory retention. Bring detailed vouchers across only if you truly need them in Zoho Books reports."
+      }
+    ],
+    relatedApp: { label: "Zoho Books", href: "/zoho-books" }
   }
 ];
 
