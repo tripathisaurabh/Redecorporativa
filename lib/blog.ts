@@ -4341,6 +4341,215 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     relatedApp: { label: "Zoho Books", href: "/zoho-books" }
+  },
+  {
+    slug: "zoho-books-uae-vat-corporate-tax-e-invoicing-guide",
+    title: "Zoho Books in the UAE: VAT, Corporate Tax and E-Invoicing Setup Guide",
+    metaTitle: "Zoho Books UAE 2026 | VAT, Corporate Tax, E-Invoicing Setup & Pricing",
+    description:
+      "How to set up Zoho Books for a UAE business: VAT and TRN configuration, corporate tax, the 2027 e-invoicing deadlines, appointing Zoho as your ASP, and which plan you actually need.",
+    keywords: [
+      "Zoho Books UAE",
+      "Zoho Books e-invoicing UAE",
+      "UAE e-invoicing ASP Zoho",
+      "Zoho Books VAT UAE",
+      "Zoho Books UAE pricing"
+    ],
+    category: "Zoho Books",
+    date: "2026-11-04",
+    readMins: 7,
+    excerpt:
+      "E-invoicing goes live for large UAE businesses on 1 January 2027, and the plan you are on decides whether Zoho Books can handle it. Here is what to configure, and in what order.",
+    content: [
+      { type: "p", text: "Zoho Books has a dedicated UAE edition with VAT and corporate tax support, and Zoho is now listed as an Accredited Service Provider (ASP) for the country's e-invoicing system. That changes the buying decision. Until recently, accounting software and e-invoicing were separate questions. In Zoho Books they can be one setup, provided you are on the right plan and your master data is clean." },
+      { type: "h2", text: "The e-invoicing dates that matter" },
+      { type: "p", text: "The UAE system uses a Peppol-based five-corner model. Invoices are exchanged as structured PINT-AE XML through ASPs and reported to the Federal Tax Authority (FTA). A PDF, even an emailed one, is not an e-invoice. The mandate covers B2B and B2G transactions by anyone doing business in the UAE, with narrow exclusions, and it applies whether or not you are VAT-registered." },
+      {
+        type: "table",
+        head: ["Group", "Appoint an ASP by", "Mandatory from"],
+        rows: [
+          ["Annual revenue of AED 50 million or more", "30 October 2026", "1 January 2027"],
+          ["Annual revenue below AED 50 million", "31 March 2027", "1 July 2027"],
+          ["Government entities", "31 March 2027", "1 October 2027"]
+        ]
+      },
+      { type: "p", text: "If you are in the first group and have not appointed an ASP, treat this as urgent, because the appointment deadline has already passed and go-live has not moved. Reported penalties include AED 5,000 per month for failing to appoint an ASP or implement the system, and AED 100 per document for e-invoicing failures, with a monthly cap." },
+      { type: "note", text: "Dates and penalties reflect Ministry of Finance and FTA publications as reported in November 2026, and the first deadline has already been changed once. Confirm your position on the Ministry of Finance site and with your tax adviser. This article is general guidance, not tax advice." },
+      { type: "h2", text: "Which Zoho Books plan do you need?" },
+      { type: "p", text: "This is where many UAE buyers misjudge the budget. VAT starts on Standard, but corporate tax and e-invoicing both start on Professional, so a VAT-registered company preparing for 2027 should treat Professional as the realistic floor." },
+      {
+        type: "table",
+        head: ["Plan", "AED per org/month (annual / monthly billing)", "Users", "VAT", "Corporate tax", "E-invoicing"],
+        rows: [
+          ["Free", "0", "1 + accountant", "No", "No", "No"],
+          ["Standard", "60 / 69", "3", "Yes", "No", "No"],
+          ["Professional", "90 / 129", "5", "Yes", "Yes", "Yes"],
+          ["Premium", "120 / 159", "10", "Yes", "Yes", "Yes"],
+          ["Elite", "280 / 349", "10", "Yes", "Yes", "Yes"],
+          ["Ultimate", "660 / 799", "15", "Yes", "Yes", "Yes"]
+        ]
+      },
+      { type: "p", text: "E-invoicing itself is metered. Zoho includes the first 100 transactions on Professional and higher, then sells non-recurring packs starting at AED 41 per 100 transactions. Larger packs cost less per transaction, so estimate your annual volume before buying. Also ask Zoho whether received vendor e-invoices draw down the same pack, because that can double your count." },
+      { type: "note", text: "Prices are from Zoho's UAE pricing page in November 2026 and exclude local taxes. Zoho updates pricing periodically, so verify current pricing on Zoho's official site before budgeting." },
+      { type: "h2", text: "Step 1: Get VAT foundations right" },
+      {
+        type: "ul",
+        items: [
+          "Check the organisation profile: legal name, address and emirate should match your trade licence and EmaraTax record",
+          "Enter your 15-digit TRN, and mark the business as located in a designated zone if that applies",
+          "Create separate tax rates for standard-rated (5%), zero-rated, exempt and out-of-scope supplies",
+          "Set the VAT treatment on every customer and vendor, and record the TRN of each B2B contact",
+          "Classify items as goods or services so that the VAT return and e-invoice fields populate correctly"
+        ]
+      },
+      { type: "h2", text: "Step 2: Set up corporate tax tracking" },
+      { type: "p", text: "UAE corporate tax applies at 9% on taxable income above AED 375,000, with different treatment for some free zone and small business cases. Software will not make those judgements for you. What Zoho Books gives you on Professional and above is one ledger for VAT and corporate tax work, which makes the year-end computation far easier when the chart of accounts separates non-deductible expenses and related-party transactions from day one. Agree that structure with your accountant before you import opening balances." },
+      { type: "h2", text: "Step 3: Turn on e-invoicing" },
+      {
+        type: "ul",
+        items: [
+          "In Zoho Books, enter your TRN and TIN in the e-invoicing settings",
+          "Log in to EmaraTax and select Zoho Software Trading LLC as your ASP",
+          "Return to Zoho Books and complete the setup that connects you to Peppol",
+          "Collect each customer's Peppol participant identifier and add it to the contact",
+          "Map item units to the required codes, then send test invoices before go-live",
+          "Decide who approves invoices before sending and who clears any that fail validation"
+        ]
+      },
+      { type: "p", text: "The last point is easy to skip and painful later. Zoho Books shows each e-invoice's status and validation errors, but someone must own that queue daily, or a rejected invoice can sit unnoticed. Note that you must use one ASP for both issuing and receiving, so if another system also raises invoices, plan that integration early." },
+      { type: "h2", text: "Common mistakes we see" },
+      {
+        type: "ul",
+        items: [
+          "Buying Standard for VAT, then needing to upgrade months later for e-invoicing",
+          "Leaving contact and item data until the go-live week, when it is the slowest part of the project",
+          "Assuming a sent PDF counts as compliance",
+          "Running an Indian parent and UAE subsidiary in one organisation, rather than a separate UAE edition organisation with its own tax setup"
+        ]
+      },
+      { type: "p", text: "As a certified Zoho partner, we usually start with a data review, because TRNs, Peppol IDs and item mapping take longer than the configuration itself. For businesses in the below-AED 50 million group, starting that work early in 2027 leaves room to test properly before the July deadline." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho an approved e-invoicing provider in the UAE?",
+        a: "Zoho states that it is an accredited eInvoicing Service Provider recognised by the UAE Ministry of Finance. Existing Zoho Books users can appoint Zoho through EmaraTax without a separate provider. Check the Ministry's current ASP list before you appoint anyone."
+      },
+      {
+        q: "Which Zoho Books plan includes UAE e-invoicing?",
+        a: "E-invoicing is available on Professional and higher paid plans, with the first 100 transactions included. After that you buy transaction packs, starting at AED 41 per 100. The Free and Standard plans do not include it. Verify current terms on Zoho's official site."
+      },
+      {
+        q: "Do small UAE businesses have to adopt e-invoicing?",
+        a: "Businesses with annual revenue below AED 50 million fall into the second phase: appoint an ASP by 31 March 2027 and go live by 1 July 2027. Coverage is not limited to VAT-registered businesses and exclusions are narrow, so confirm your position with a tax adviser."
+      }
+    ],
+    relatedApp: { label: "Zoho Books Implementation", href: "/zoho-books" }
+  },
+  {
+    slug: "zoho-books-uk-making-tax-digital-guide",
+    title: "Zoho Books for UK Businesses: Making Tax Digital, VAT and Which Plan You Need",
+    metaTitle: "Zoho Books UK & Making Tax Digital (2026) | MTD Income Tax, VAT, Plans",
+    description:
+      "How Zoho Books handles Making Tax Digital for UK sole traders, landlords and VAT-registered companies: who is in scope, quarterly deadlines, penalties, plan prices in GBP and setup steps.",
+    keywords: [
+      "Zoho Books UK",
+      "Zoho Books Making Tax Digital",
+      "MTD for Income Tax software",
+      "Zoho Books MTD VAT",
+      "Zoho Books UK pricing"
+    ],
+    category: "Zoho Books",
+    date: "2026-11-06",
+    readMins: 6,
+    excerpt:
+      "MTD for Income Tax is now live, and the threshold drops again in April 2027. Here is what it asks of UK sole traders and landlords, what Zoho Books covers, and which plan is enough.",
+    content: [
+      { type: "p", text: "Making Tax Digital is no longer something to plan for. MTD for Income Tax became mandatory on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, and HMRC reported in August that more than 436,000 people had already sent a first quarterly update. The next group joins in April 2027." },
+      { type: "p", text: "Zoho Books is one of the HMRC-recognised options, and it is unusual in offering MTD for Income Tax on a free plan. This guide sets out who needs what, then how to set it up without creating a clean-up job for your accountant. Recognition means a product appears on HMRC's list; it is not an endorsement of any software." },
+      { type: "h2", text: "Which MTD rules apply to you" },
+      {
+        type: "table",
+        head: ["You are", "What applies", "Software needed"],
+        rows: [
+          ["Sole trader or landlord over the threshold", "MTD for Income Tax: digital records, four quarterly updates, tax return by 31 January", "MTD for Income Tax software"],
+          ["VAT-registered business", "MTD for VAT: digital records and VAT returns filed through software", "MTD for VAT software or bridging"],
+          ["Limited company", "MTD for VAT if registered; no MTD for Corporation Tax", "Normal CT600 filing; MTD for VAT if registered"],
+          ["General partnership", "Not yet in MTD for Income Tax; expected later", "Check HMRC's latest guidance"]
+        ]
+      },
+      { type: "h2", text: "The threshold catches people out" },
+      { type: "p", text: "Qualifying income is gross self-employment income plus gross property income, before expenses, taken from an earlier tax return. It is turnover, not profit. A plumber turning over £35,000 who also collects £20,000 in rent has £55,000 of qualifying income, even if the taxable profit is far lower. Employment income does not count towards it." },
+      {
+        type: "table",
+        head: ["Mandatory from", "Qualifying income", "Measured on"],
+        rows: [
+          ["6 April 2026", "Over £50,000", "2024-25 return"],
+          ["6 April 2027", "Over £30,000", "2025-26 return"],
+          ["6 April 2028", "Over £20,000", "2026-27 return"]
+        ]
+      },
+      { type: "p", text: "A limited company director is not pulled in by the company's turnover, but a director who personally owns rental property can still be in scope in their own right." },
+      { type: "h2", text: "Quarterly deadlines and penalties" },
+      { type: "p", text: "Quarterly updates are due on 7 August, 7 November, 7 February and 7 May. You send category totals rather than individual invoices, and each update is cumulative, so a correction made later flows into the next one. An update is still required for a quarter with no income or expenses. The tax return follows by 31 January." },
+      { type: "p", text: "HMRC is not applying penalty points to late quarterly updates in the 2026-27 tax year, though late tax returns still count. From 6 April 2027, each missed deadline earns a point, and four points brings a £200 penalty. Late payment penalties are separate and depend on how much is owed and for how long." },
+      { type: "h2", text: "What Zoho Books covers" },
+      {
+        type: "ul",
+        items: [
+          "MTD for Income Tax: digital records, quarterly updates, adjustments and other income such as PAYE, interest and dividends, and the end-of-year submission",
+          "MTD for VAT: VAT returns filed directly to HMRC",
+          "Landlords: recording rental income and expenses",
+          "Self Assessment reports for those not yet in scope, including SA103F and SA103S",
+          "Automatic bank feeds, invoicing, expense tracking and a customer portal",
+          "CIS tracking for subcontractors, plus CT600 filing on paid plans",
+          "An accountant seat, so an adviser can submit returns on your behalf"
+        ]
+      },
+      { type: "h2", text: "Zoho Books UK plans" },
+      {
+        type: "table",
+        head: ["Plan", "Monthly billing", "Annual billing (per month)", "Users", "Invoices a year", "Corporation Tax (CT600)"],
+        rows: [
+          ["Free", "£0", "£0", "1 + accountant", "1,000", "£5 a year add-on"],
+          ["Standard", "£12", "£10", "3", "5,000", "Included"],
+          ["Professional", "£24", "£20", "5", "10,000", "Included"],
+          ["Premium", "£30", "£25", "10", "25,000", "Included"],
+          ["Elite", "£99", "£85", "10", "100,000", "Included"],
+          ["Ultimate", "£199", "£165", "15", "100,000", "Included"]
+        ]
+      },
+      { type: "note", text: "Prices checked on Zoho's UK pricing page in November 2026, per organisation and excluding local taxes. Plans, limits and add-ons change, and tax rules are updated, so verify current pricing on Zoho's official site and confirm your MTD position on GOV.UK or with your accountant. This guide is general information, not tax advice." },
+      { type: "p", text: "A sole trader or landlord with simple books can often stay on Free. Standard suits a small limited company that wants more users and Corporation Tax filing included. Professional is worth a look if you need purchase and sales orders, multi-currency or stock. Check the plan page for your specific features, because invoice volume is rarely the limit that forces an upgrade." },
+      { type: "h2", text: "Setting it up properly" },
+      {
+        type: "ul",
+        items: [
+          "Check your qualifying income on your latest return, adding self-employment and property together",
+          "Choose standard or calendar update periods before you send your first update",
+          "Sign up with HMRC and authorise Zoho Books through your Government Gateway login",
+          "Connect bank feeds and match your categories to your tax return headings, so totals land in the right place",
+          "Add your accountant and agree who sends each update",
+          "Run one quarter in parallel with your old records before relying on the new process"
+        ]
+      },
+      { type: "p", text: "If you keep records in spreadsheets, you do not necessarily have to abandon them. Bridging software can link a spreadsheet to HMRC, but it adds another step that can fail, and links between spreadsheets need to stay digital rather than retyped. Most small businesses end up better off with records in one system." },
+      { type: "p", text: "One honest caution: Xero and QuickBooks have larger UK accountant communities, so ask your accountant before switching. If they are unfamiliar with Zoho Books, factor in the time they will need. We set up Zoho Books as a certified Zoho partner, and we usually start with the chart of accounts and VAT codes, since mistakes there carry into every return." }
+    ],
+    faqs: [
+      {
+        q: "Is Zoho Books compatible with Making Tax Digital?",
+        a: "Yes. Zoho describes Zoho Books as HMRC-recognised for both MTD for VAT and MTD for Income Tax, including quarterly updates and the end-of-year submission. Check HMRC's current software list for your exact situation, particularly if you have several income sources or jointly owned property."
+      },
+      {
+        q: "Can I use the free Zoho Books plan for MTD for Income Tax?",
+        a: "Yes. Zoho's UK pages list MTD for Income Tax and MTD for VAT on the free plan, which covers one user plus an accountant and up to 1,000 invoices a year. It is aimed at sole traders and landlords; a growing business may need a paid plan."
+      },
+      {
+        q: "Do limited companies need MTD for Income Tax?",
+        a: "No. It applies to individuals with self-employment or property income. Companies still follow MTD for VAT if registered, and HMRC has dropped its plans for MTD for Corporation Tax. Directors with personal rental income should check their own position."
+      }
+    ],
+    relatedApp: { label: "Zoho Books", href: "/zoho-books" }
   }
 ];
 
