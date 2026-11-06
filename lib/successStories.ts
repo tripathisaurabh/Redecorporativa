@@ -20,7 +20,7 @@ export type SuccessStory = {
   card: string;
   screensTitle?: string;
   screensNote?: string;
-  screens?: { src: string; caption: string }[];
+  screens?: { src: string; width?: number; height?: number; caption: string }[];
   deliveredTitle: string;
   delivered: Delivered[];
   zoho: string[];
@@ -166,16 +166,16 @@ export const tools: Record<string, ToolInfo> = {
 
 // Client logo filenames under /public/success/logos/. Missing -> initials fallback.
 export const clientLogos: Record<string, string> = {
-  "ravel-storage": "ravel.png",
-  "jood-fm": "jood.jpeg",
-  "r-star-global": "rstar.jpg",
-  "grunber": "grunber.png",
-  "united-metals-laser": "united-metals-laser.png",
-  "swastik-flanges": "swastik.png",
-  "sbw-unity": "sbw.png",
-  "metalegal": "metalegal.png",
+  "ravel-storage": "ravel.webp",
+  "jood-fm": "jood.webp",
+  "r-star-global": "rstar.webp",
+  "grunber": "grunber.webp",
+  "united-metals-laser": "united-metals-laser.webp",
+  "swastik-flanges": "swastik.webp",
+  "sbw-unity": "sbw.webp",
+  "metalegal": "metalegal.webp",
   "international-currency-association": "ica.png",
-  "glydus": "glydus.png"
+  "glydus": "glydus.webp"
 };
 
 export const successStories: SuccessStory[] = [
@@ -193,9 +193,9 @@ export const successStories: SuccessStory[] = [
     "screensTitle": "The app in use",
     "screensNote": "Screenshots from the live app. Tenant names are blurred.",
     "screens": [
-      { "src": "/success/shots/ravel/layout-2d.jpg", "caption": "Floor view: every unit coloured by status, with unpaid units in red" },
-      { "src": "/success/shots/ravel/layout-3d.jpg", "caption": "The same floor in 3D" },
-      { "src": "/success/shots/ravel/dashboard.jpg", "caption": "Dashboard: occupancy by branch and what needs attention" }
+      { "src": "/success/shots/ravel/layout-2d.webp", "width": 1400, "height": 682, "caption": "Floor view: every unit coloured by status, with unpaid units in red" },
+      { "src": "/success/shots/ravel/layout-3d.webp", "width": 1400, "height": 745, "caption": "The same floor in 3D" },
+      { "src": "/success/shots/ravel/dashboard.webp", "width": 1400, "height": 682, "caption": "Dashboard: occupancy by branch and what needs attention" }
     ],
     "deliveredTitle": "From whiteboards to one live system",
     "delivered": [

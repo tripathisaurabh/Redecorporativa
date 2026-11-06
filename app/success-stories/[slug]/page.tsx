@@ -51,7 +51,7 @@ function Logo({ s }: { s: SuccessStory }) {
     return (
       <span className="inline-flex h-[76px] items-center rounded-[14px] border border-slate-200 bg-white px-4 shadow-sm">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`/success/logos/${file}`} alt={`${s.name} logo`} className="max-h-[56px] w-auto max-w-[220px] object-contain" />
+        <img src={`/success/logos/${file}`} alt={`${s.name} logo`} decoding="async" className="max-h-[56px] w-auto max-w-[220px] object-contain" />
       </span>
     );
   }
@@ -68,7 +68,7 @@ function Node({ keyName }: { keyName: string }) {
     return (
       <div className="flex min-w-0 items-center gap-3 font-semibold">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`/success/zoho/${keyName}.png`} alt="" className="h-[42px] w-[42px] flex-none object-contain" />
+        <img src={`/success/zoho/${keyName}.webp`} alt="" width={42} height={42} loading="lazy" decoding="async" className="h-[42px] w-[42px] flex-none object-contain" />
         <span className="break-words">Zoho {zohoAppLabels[keyName]}</span>
       </div>
     );
@@ -174,7 +174,7 @@ export default function SuccessStoryDetail({ params }: { params: { slug: string 
             {s.zoho.map((k) => (
               <span key={k} className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white py-[6px] pl-[6px] pr-[14px] text-sm font-semibold">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`/success/zoho/${k}.png`} alt="" className="h-[26px] w-[26px]" />
+                <img src={`/success/zoho/${k}.webp`} alt="" width={26} height={26} loading="lazy" decoding="async" className="h-[26px] w-[26px]" />
                 {zohoAppLabels[k] ?? k}
               </span>
             ))}
@@ -198,7 +198,7 @@ export default function SuccessStoryDetail({ params }: { params: { slug: string 
                   className={`rounded-2xl border border-slate-200 bg-white p-2.5 shadow-sm ${i === 0 ? "md:col-span-2" : ""}`}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={sh.src} alt={sh.caption} loading="lazy" className="block w-full rounded-[10px] border border-slate-200" />
+                  <img src={sh.src} alt={sh.caption} width={sh.width} height={sh.height} loading="lazy" decoding="async" className="block h-auto w-full rounded-[10px] border border-slate-200" />
                   <figcaption className="px-1.5 pb-1 pt-3 text-sm text-slate-600">{sh.caption}</figcaption>
                 </figure>
               ))}

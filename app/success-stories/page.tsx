@@ -126,7 +126,7 @@ export default function SuccessStoriesPage() {
                 clientLogos[s.slug] ? (
                   <span key={`${s.slug}-${i}`} className="grid h-[84px] min-w-[180px] place-items-center rounded-2xl border border-slate-200 bg-white px-6 shadow-sm">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/success/logos/${clientLogos[s.slug]}`} alt={s.name} className="max-h-12 w-auto max-w-[150px] object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
+                    <img src={`/success/logos/${clientLogos[s.slug]}`} alt={s.name} decoding="async" className="max-h-12 w-auto max-w-[150px] object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
                   </span>
                 ) : (
                   <span key={`${s.slug}-${i}`} className="grid h-[84px] min-w-[180px] place-items-center rounded-2xl border border-slate-200 bg-white px-6 text-lg font-bold shadow-sm" style={{ color: "#1F4E7A", fontFamily: ARCHIVO }}>
@@ -149,7 +149,7 @@ export default function SuccessStoriesPage() {
                   {clientLogos[s.slug] ? (
                     <span className="inline-flex h-[60px] items-center rounded-[10px] border border-slate-200 bg-white px-[10px]">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={`/success/logos/${clientLogos[s.slug]}`} alt={`${s.name} logo`} className="max-h-[48px] w-auto max-w-[170px] object-contain" />
+                      <img src={`/success/logos/${clientLogos[s.slug]}`} alt={`${s.name} logo`} decoding="async" className="max-h-[48px] w-auto max-w-[170px] object-contain" />
                     </span>
                   ) : (
                     <span className="grid h-[60px] w-[60px] place-items-center rounded-[10px] border border-slate-200 bg-white text-lg font-extrabold" style={{ color: "#1F4E7A", fontFamily: ARCHIVO }}>
@@ -169,7 +169,7 @@ export default function SuccessStoriesPage() {
                 <div className="my-[18px] flex flex-wrap gap-[6px]">
                   {s.zoho.map((k) => (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img key={k} src={`/success/zoho/${k}.png`} alt={zohoAppLabels[k] ?? k} title={`Zoho ${zohoAppLabels[k] ?? k}`} className="h-[30px] w-[30px]" />
+                    <img key={k} src={`/success/zoho/${k}.webp`} alt={zohoAppLabels[k] ?? k} title={`Zoho ${zohoAppLabels[k] ?? k}`} width={30} height={30} loading="lazy" decoding="async" className="h-[30px] w-[30px]" />
                   ))}
                 </div>
 

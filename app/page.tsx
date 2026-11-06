@@ -9,7 +9,6 @@ import Capabilities from "../components/sections/Capabilities";
 import Services from "../components/sections/Services";
 import SmartZohoSolutions from "../components/sections/SmartZohoSolutions";
 import HowItWorks from "../components/sections/HowItWorks";
-import CaseStudies from "../components/sections/CaseStudies";
 import FAQ from "../components/sections/FAQ";
 import FinalCTA from "../components/sections/FinalCTA";
 import { buildCanonical, buildKeywords } from "../lib/seo";
@@ -300,7 +299,6 @@ export default function HomePage() {
       <Services />
       <HowItWorks />
       <SmartZohoSolutions />
-      <CaseStudies />
       <FAQ />
       <FinalCTA />
     </>
