@@ -178,7 +178,7 @@ export const clientLogos: Record<string, string> = {
   "glydus": "glydus.webp"
 };
 
-export const successStories: SuccessStory[] = [
+const allSuccessStories: SuccessStory[] = [
   {
     "slug": "ravel-storage",
     "name": "Ravel Storage",
@@ -1448,6 +1448,13 @@ export const successStories: SuccessStory[] = [
     ]
   }
 ];
+
+// Clients temporarily hidden from the site. Remove a slug from this list to show it again.
+export const HIDDEN_SLUGS: string[] = ["glydus"];
+
+export const successStories: SuccessStory[] = allSuccessStories.filter(
+  (s) => !HIDDEN_SLUGS.includes(s.slug)
+);
 
 export const clientReviews: ClientReview[] = [
   {
