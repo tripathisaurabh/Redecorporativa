@@ -4742,6 +4742,171 @@ export const blogPosts: BlogPost[] = [
       "label": "Zoho Inventory Implementation",
       "href": "/zoho-inventory"
     }
+  },
+  {
+    slug: "zoho-books-australia-gst-bas-guide",
+    title: "Zoho Books for Australian Businesses: GST, BAS and Which Plan You Need",
+    metaTitle: "Zoho Books Australia (2026) | GST, BAS, eInvoicing & AUD Pricing",
+    description:
+      "How Zoho Books handles Australian GST and BAS, what it does not cover (payroll and STP), Peppol eInvoicing, AUD plan prices and a practical setup sequence for small businesses.",
+    keywords: [
+      "Zoho Books Australia",
+      "Zoho Books BAS",
+      "Zoho Books GST Australia",
+      "Zoho Books pricing AUD",
+      "Peppol eInvoicing Zoho Books"
+    ],
+    category: "Zoho Books",
+    date: "2026-11-11",
+    readMins: 6,
+    excerpt:
+      "Zoho Books has a dedicated Australian edition with GST and BAS built in, even on the free plan. The gaps are just as important to know: payroll, and how your BAS actually reaches the ATO.",
+    content: [
+      { type: "p", text: "Most Australian small businesses compare Xero and MYOB, and maybe QuickBooks. Zoho Books rarely makes the first shortlist, yet it has a dedicated Australian edition, prices in AUD that include GST, and BAS reporting from the free plan up. For businesses already using Zoho CRM or Inventory, or running entities in more than one country, it is worth a serious look." },
+      { type: "p", text: "This guide covers what the Australian edition does for GST and BAS, where you will need another tool, what each plan costs, and how to set it up so your BAS agent is not left untangling it at quarter end." },
+      { type: "h2", text: "GST and BAS basics Zoho Books has to handle" },
+      {
+        type: "ul",
+        items: [
+          "GST is charged at 10%, and registration is required once GST turnover reaches $75,000 ($150,000 for non-profits)",
+          "Most small businesses lodge a quarterly BAS; businesses with GST turnover of $20 million or more must report monthly",
+          "Businesses under $10 million turnover can use Simpler BAS, which reports only total sales (G1), GST on sales (1A) and GST on purchases (1B)",
+          "You can account for GST on a cash or accrual basis, subject to ATO eligibility rules"
+        ]
+      },
+      { type: "p", text: "In Zoho Books you set your GST registration details, reporting period and accounting basis in the tax settings, apply tax rates to items, customers and vendors, and the BAS report is built from posted transactions. The Australian edition supports both full BAS and Simpler BAS, adjustments, marking a return as filed and recording the GST payment, so the ledger matches what you lodged." },
+      { type: "note", text: "Confirm the lodgement route before you rely on it. Zoho Books generates the BAS figures; check with Zoho or your BAS agent whether your setup lodges directly to the ATO or whether you transfer the figures through ATO Online services or your agent's portal. ATO rules also change, so confirm thresholds with the ATO or a registered tax or BAS agent." },
+      { type: "h2", text: "What Zoho Books does not do in Australia" },
+      { type: "p", text: "The biggest gap is payroll. Zoho Books does not run Australian payroll or Single Touch Payroll reporting, and Zoho's own payroll product is not offered for Australia. If you have employees, you will need an STP-enabled payroll tool and a routine for posting payroll journals or summaries into Zoho Books. For a team of a few staff that is a short monthly task; for larger payrolls, factor it into the comparison with Xero or MYOB, which bundle payroll." },
+      { type: "p", text: "Bank feeds are the second thing to check. Automatic feeds are available from the Standard plan through a bank feeds provider, while the free plan relies on importing statements. Confirm your bank and card providers are supported during the trial, not after migration." },
+      { type: "h2", text: "Peppol eInvoicing" },
+      { type: "p", text: "Australia's eInvoicing framework runs on the Peppol network, and Zoho Books connects to it through an accredited access point. At the time of writing the feature is in early access: you request enablement from Zoho's Australian support team, verify your ABN, and your organisation name must match the Australian Business Register. Receiving eInvoiced bills from suppliers requires the Professional plan or higher. If you sell to government agencies or large enterprises that prefer eInvoices, enable it early and test with one customer first." },
+      { type: "h2", text: "Zoho Books Australia plans and prices" },
+      {
+        type: "table",
+        head: ["Plan", "Price (AUD/org/month, billed annually, incl. GST)", "Users", "What it adds"],
+        rows: [
+          ["Free", "$0 (revenue under $50,000 a year)", "1 + accountant", "Invoicing, GST tracking, BAS generation, bank reconciliation"],
+          ["Standard", "$16.50", "3", "Bank feeds, progress and retention invoicing, custom fields"],
+          ["Professional", "$33", "5", "Bills, sales and purchase orders, multi-currency, stock tracking, projects"],
+          ["Premium", "$44", "10", "Budgeting, fixed assets, cash flow forecasting, vendor portal"],
+          ["Elite", "$181.50", "10", "Advanced inventory: warehouses, serial and batch tracking, bin locations"],
+          ["Ultimate", "$319", "15", "Custom modules and advanced analytics"]
+        ]
+      },
+      { type: "note", text: "Prices are taken from Zoho's Australian pricing page in late 2026 and include GST. Monthly billing costs more, and add-ons such as extra users, locations and expense claims are charged separately. Zoho updates pricing periodically, so verify current rates on Zoho's official Australian site." },
+      { type: "p", text: "For most service businesses, Standard is the realistic starting point because it adds bank feeds. Trading businesses that issue purchase orders or hold stock should start at Professional. Elite only makes sense if you need multi-warehouse or serial tracking inside Books; many growing product businesses get better value pairing Professional with Zoho Inventory." },
+      { type: "h2", text: "A practical setup sequence" },
+      {
+        type: "ul",
+        items: [
+          "Agree your chart of accounts and GST codes with your accountant or BAS agent before importing anything",
+          "Set the GST basis (cash or accrual) and reporting period to match your existing ATO registration",
+          "Import contacts with ABNs, then items with the correct tax treatment (taxable, GST-free, input-taxed)",
+          "Enter opening balances as at a quarter end, so your first BAS in Zoho Books is a full period",
+          "Connect bank feeds and build bank rules for recurring transactions",
+          "Run the first BAS in parallel with your old system and reconcile the two before you switch over"
+        ]
+      },
+      { type: "p", text: "Starting at a quarter boundary is the single biggest time saver; a mid-quarter cutover means splitting one BAS across two systems. As a certified Zoho partner working with Australian clients, we also set up the payroll journal routine and give your BAS agent accountant access on day one, so the first lodgement is a review rather than a rebuild." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho Books support BAS in Australia?",
+        a: "Yes. The Australian edition tracks GST on transactions and generates both full BAS and Simpler BAS reports, including on the free plan. You can record adjustments, mark the return as filed and record the GST payment. Confirm with Zoho or your BAS agent how the figures will be lodged with the ATO for your setup."
+      },
+      {
+        q: "Can I run payroll and Single Touch Payroll in Zoho Books?",
+        a: "No. Zoho Books does not include Australian payroll or STP reporting. Businesses with employees use a separate STP-enabled payroll product and post payroll journals or summaries into Zoho Books each pay cycle."
+      },
+      {
+        q: "How much does Zoho Books cost in Australia?",
+        a: "As of late 2026, Zoho Books Australia has a free plan for businesses with revenue under $50,000 a year, then paid plans from about A$16.50 per organisation per month (Standard) to A$319 (Ultimate), billed annually and including GST. Verify current pricing on Zoho's official Australian site."
+      }
+    ],
+    relatedApp: { label: "Zoho Books Implementation", href: "/zoho-books" }
+  },
+  {
+    slug: "zoho-inventory-fifo-vs-weighted-average-cost-valuation",
+    title: "Zoho Inventory Valuation: FIFO vs Weighted Average Cost Explained",
+    metaTitle: "Zoho Inventory FIFO vs Weighted Average Cost (2026) | Valuation Method Guide",
+    description:
+      "Zoho Inventory lets you value stock using FIFO or Weighted Average Cost, set per item. See how each method changes COGS, margins and closing stock, where the setting lives, and how to choose before you create items.",
+    keywords: [
+      "Zoho Inventory FIFO",
+      "Zoho Inventory weighted average cost",
+      "Zoho Inventory valuation method",
+      "FIFO vs WAC inventory India",
+      "Zoho Inventory COGS"
+    ],
+    category: "Zoho Inventory",
+    date: "2026-11-13",
+    readMins: 6,
+    excerpt:
+      "The valuation method decides what your cost of goods sold and closing stock look like every month. In Zoho Inventory it is chosen per item at creation, so it is worth deciding before you import your catalogue.",
+    content: [
+      { type: "p", text: "Every time you sell a unit, your system has to decide what that unit cost you. When purchase prices are stable it barely matters. When they move, because of supplier increases, currency swings or freight, the method you choose changes your reported gross margin, your stock value on the balance sheet and the item-level profitability reports your team relies on." },
+      { type: "p", text: "Zoho Inventory supports two methods: FIFO (First In, First Out) and Weighted Average Costing (WAC), which Zoho describes as a moving average. Here is how they differ, how Zoho applies them, and how we help clients choose." },
+      { type: "h2", text: "How the two methods work" },
+      { type: "p", text: "FIFO assumes the oldest stock is sold first. Each sale consumes the earliest purchase lots at their actual cost until that lot runs out, then moves to the next lot. Closing stock is therefore valued at your most recent purchase prices." },
+      { type: "p", text: "WAC divides the total value of stock on hand by the total quantity on hand and uses that average for each sale. In Zoho Inventory the average is recalculated whenever new stock arrives at a different cost. One detail from Zoho's documentation matters for low-stock items: when quantity on hand reaches zero, the previous average is discarded and the next purchase sets a fresh WAC." },
+      { type: "h2", text: "A worked example" },
+      { type: "p", text: "Say you buy 100 units at ₹200, then another 100 units at ₹260 after a supplier price increase. You then sell 120 units at ₹350 each, for revenue of ₹42,000." },
+      {
+        type: "table",
+        head: ["Figure", "FIFO", "Weighted Average"],
+        rows: [
+          ["Cost per unit used", "100 at ₹200, then 20 at ₹260", "₹230 average (₹46,000 / 200 units)"],
+          ["Cost of goods sold", "₹25,200", "₹27,600"],
+          ["Gross profit", "₹16,800", "₹14,400"],
+          ["Closing stock (80 units)", "₹20,800 (at ₹260)", "₹18,400 (at ₹230)"],
+          ["Total cost accounted for", "₹46,000", "₹46,000"]
+        ]
+      },
+      { type: "p", text: "Neither method creates or loses money. Total cost is the same; the methods only decide how much of it lands in this period's COGS versus closing stock. With rising prices, FIFO shows higher profit now and a higher stock value. WAC smooths the swing and reports a more conservative margin." },
+      { type: "h2", text: "How Zoho Inventory applies the method" },
+      {
+        type: "ul",
+        items: [
+          "The method is stored per item. It is assigned when the item, variant or composite item is created",
+          "You can set an organisation-wide default under Settings, then Items, Default Inventory Valuation Method. Zoho added this in its April and May 2026 updates",
+          "The default is also used when items are imported or created through the API without a valuation method specified",
+          "Item-level profit margin estimates use the item's method, for items with inventory tracking enabled",
+          "Zoho's FIFO option under auto batch assignment is a separate setting: it decides which batch ships first, not how cost is calculated"
+        ]
+      },
+      { type: "note", text: "Changing the method on an item that already has transactions is not a simple toggle, and users on Zoho's community forum report existing items defaulting to FIFO when the setting was introduced. Confirm the current behaviour with Zoho support before you rely on changing it later, and decide before importing your catalogue." },
+      { type: "h2", text: "Backdated entries and negative stock" },
+      { type: "p", text: "Both methods are sensitive to transaction order. If a purchase bill is entered with an earlier date than a sale already recorded, Zoho recalculates cost for the later transactions, so last month's COGS can move. If you sell before recording the purchase, stock goes negative and the sale is costed once the purchase arrives. Teams that enter bills late should agree a cut-off routine with their accountant, otherwise reports already shared with management will change." },
+      { type: "h2", text: "Which method should you choose?" },
+      { type: "p", text: "In India, AS 2 and Ind AS 2 permit FIFO or weighted average cost for most inventories, so both are acceptable. Discuss the choice with your chartered accountant and keep it consistent year to year. As a starting point:" },
+      {
+        type: "ul",
+        items: [
+          "Choose FIFO for perishables, batch or expiry-tracked goods, and businesses where item margins must reflect actual lot costs",
+          "Choose WAC for commodities, raw materials and high-volume items bought repeatedly at fluctuating prices, where smoothing helps pricing decisions",
+          "Use one method consistently unless there is a clear reason; mixed methods make item margin reports harder to compare",
+          "If you import, enable landed cost tracking as well, so freight and duty flow into whichever cost method you use"
+        ]
+      },
+      { type: "h2", text: "Where Zoho Books comes in" },
+      { type: "p", text: "When Zoho Inventory is connected to Zoho Books, the cost of goods sold and inventory asset values flow into your ledger. That means the method you set in Inventory directly shapes your profit and loss statement and balance sheet. Run the inventory valuation report alongside the Books stock account at each month-end to make sure they agree." }
+    ],
+    faqs: [
+      {
+        q: "Does Zoho Inventory support FIFO?",
+        a: "Yes. Zoho Inventory supports FIFO and Weighted Average Costing. The method is assigned per item when it is created, and you can set a default for new items under Settings, then Items, Default Inventory Valuation Method."
+      },
+      {
+        q: "Can I use different valuation methods for different items?",
+        a: "Yes. Because the method is stored at item level, you can value perishables on FIFO and bulk raw materials on WAC in the same organisation. Agree the policy with your accountant and apply it consistently."
+      },
+      {
+        q: "Is LIFO available in Zoho Inventory?",
+        a: "No. Zoho Inventory offers FIFO and Weighted Average Costing. LIFO is not permitted under AS 2 or Ind AS 2 in India, or under IFRS, so most businesses we work with would not use it anyway."
+      }
+    ],
+    relatedApp: { label: "Zoho Inventory Implementation", href: "/zoho-inventory" }
   }
 ];
 
